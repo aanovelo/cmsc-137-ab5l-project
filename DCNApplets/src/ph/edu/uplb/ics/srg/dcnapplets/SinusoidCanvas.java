@@ -16,24 +16,7 @@ public class SinusoidCanvas extends Canvas{
 
 	public void paint(Graphics g)
 	{
-		/*
-		float st,t;
-		
-		g.setColor(Color.red);
-		g.drawLine(0, 250, 480, 250);
-		
-		g.setColor(Color.red);
-		g.drawLine(0, 0, 20, 480);
-		
-		
-		g.setColor(Color.blue);
-		for (t=0;t<100;t++)
-		{
-			st = signal.getAmplitude()*(float)Math.sin(2*(float)Math.PI*signal.getFrequency()+signal.getPhase());
-			g.drawLine((int)t, (int)st, (int)t, (int)st);
-		}
-		*/
-		
+
 		int xBase   = 10;
         int top     = 10;
         int yScale  = 50*(int)signal.getAmplitude();
@@ -41,6 +24,7 @@ public class SinusoidCanvas extends Canvas{
 
         int yBase   = top + yScale;
         int x, y;
+        int oldx=xBase,oldy=-1;
 
         // first draw the axis
         g.drawLine( xBase, top, xBase, top + 2*yScale );
@@ -53,7 +37,12 @@ public class SinusoidCanvas extends Canvas{
         {   
         	x = xBase + i;
             y = (int)( yBase - Math.sin( Math.toRadians(i)*signal.getFrequency() + Math.toRadians(signal.getPhase())) * yScale  );
-            g.drawLine( x, y, x, y );
+            if (oldy==-1)
+            	g.drawLine( oldx, y, x, y );
+            else
+            	g.drawLine( oldx, oldy, x, y );
+            oldx=x;
+            oldy=y;
         }
 	}	
 }
