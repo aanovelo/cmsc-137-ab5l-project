@@ -8,7 +8,7 @@ public class Main extends JFrame {
 	
 	public Main(){
 	
-		this.getContentPane().add(new SinusoidCanvas());
+		this.getContentPane().add(new SinusoidCanvas(new PeriodicSignal(2,3,180)));
 		
 		this.setTitle("Data Communications Applets");
 		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
