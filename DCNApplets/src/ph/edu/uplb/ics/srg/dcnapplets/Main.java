@@ -7,10 +7,14 @@ import javax.swing.JFrame;
 public class Main extends JFrame {
 	
 	public Main(){
+	
+		this.getContentPane().add(new SinusoidCanvas());
+		
 		this.setTitle("Data Communications Applets");
 		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		this.setVisible(true);
 		this.setBounds(new Rectangle(640,480));
+	
 	}
 	
 	
