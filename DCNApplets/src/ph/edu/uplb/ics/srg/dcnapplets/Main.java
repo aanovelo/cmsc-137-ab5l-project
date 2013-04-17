@@ -1,4 +1,4 @@
-package ph.edu.uplb.ics.srg;
+package ph.edu.uplb.ics.srg.dcnapplets;
 
 public class Main {
 	public static void main(String args[])
