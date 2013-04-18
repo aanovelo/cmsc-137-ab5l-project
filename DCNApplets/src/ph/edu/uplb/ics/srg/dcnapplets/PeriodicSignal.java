@@ -26,4 +26,19 @@ public class PeriodicSignal {
 	{
 		return phase;		
 	}
+	
+	public void setAmplitude(float amplitude)
+	{
+		this.amplitude = amplitude;
+	}
+	
+	public void setFrequency(float frequency)
+	{
+		this.frequency = frequency;		
+	}
+	
+	public void setPhase(float phase){
+		this.phase = phase;		
+	}
+	
 }
