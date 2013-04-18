@@ -15,23 +15,46 @@ public class SinusoidCanvas extends Canvas{
 		this.signal = signal;
 		this.components = components;
 	}
+	
+	public void setSignal(PeriodicSignal signal)
+	{
+		this.signal = signal;
+	}
 
 	public void paint(Graphics g)
 	{
 
-		int xBase   = 10;
+		int xBase   = 30;
         int top     = 10;
-        int yScale  = 50*(int)signal.getAmplitude();
+        int yScale  = 50;
         int xAxis   = 360;
 
-        int yBase   = top + yScale;
+        int yBase   = top + yScale * 3;
         int x, y, k;
         int oldx=xBase,oldy=-1;
         float sum;
 
+        
+        
+        
         // first draw the axis
-        g.drawLine( xBase, top, xBase, top + 2*yScale );
+        g.drawLine( xBase, top, xBase, top + 2*yScale*3 );
         g.drawLine( xBase, yBase, xBase + xAxis, yBase );
+        
+        
+        g.setColor(Color.blue);
+        for (k=0;k<=6;k++)
+        {
+        	g.drawLine(xBase, top+(k*yScale), xBase+5, top+(k*yScale)); 
+        	g.drawString(Integer.toString(Math.abs(3-k)), xBase-10, 3+top+(k*yScale));
+        }
+        
+        for (k=0;k<=360;k+=90)
+        {
+        	g.drawLine(xBase+k, yBase-4, xBase+k, yBase+4);
+        	g.drawString(Integer.toString(k), xBase+k-2, yBase+15);
+        }
+        
 
         // now plot the graph
         g.setColor( Color.red );
@@ -50,7 +73,7 @@ public class SinusoidCanvas extends Canvas{
         		sum += (Math.sin( Math.toRadians(i)*signal.getFrequency()*k + Math.toRadians(signal.getPhase())))/k;
         	}
         	
-        	y = (int)( yBase - sum * yScale);
+        	y = (int)( yBase - sum * yScale *(int)signal.getAmplitude());
         	
         	
         	if (oldy==-1)
