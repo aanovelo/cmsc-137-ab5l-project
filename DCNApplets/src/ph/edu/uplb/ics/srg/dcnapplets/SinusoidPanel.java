@@ -1,21 +1,52 @@
 package ph.edu.uplb.ics.srg.dcnapplets;
 
+import java.awt.Button;
 import java.awt.Canvas;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Label;
 import java.awt.Panel;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class SinusoidPanel extends Panel{
+public class SinusoidPanel extends Panel implements ActionListener{
 	
 	PeriodicSignal signal;
 	int components;
 	
+	TextField txtAmplitude = new TextField(2);
+	TextField txtFrequency = new TextField(2);
+	TextField txtPhase = new TextField(2);
+	TextField txtFrequencyComponents = new TextField(2);
+	
+	Button btnPlot = new Button("Plot");
 	
 	public SinusoidPanel(PeriodicSignal signal, int components)
 	{
 		this.signal = signal;
 		this.components = components;
+		this.add(new Label("Amplitude:"));
+		this.add(txtAmplitude);
+		this.add(new Label("Frequency:"));
+		this.add(txtFrequency);
+		this.add(new Label("Phase:"));
+		this.add(txtPhase);
+		this.add(new Label("Frequency Components:"));
+		this.add(txtFrequencyComponents);
+		this.add(btnPlot);
+		btnPlot.addActionListener(this);
 	}
+	
+	public void actionPerformed(ActionEvent ae)
+	{
+		signal.setAmplitude(Integer.parseInt(txtAmplitude.getText()));
+		signal.setFrequency(Integer.parseInt(txtFrequency.getText()));
+		signal.setPhase(Integer.parseInt(txtPhase.getText()));
+		components = Integer.parseInt(txtFrequencyComponents.getText());
+		repaint();
+	}
+	
 	
 	public void setSignal(PeriodicSignal signal)
 	{
@@ -26,7 +57,7 @@ public class SinusoidPanel extends Panel{
 	{
 
 		int xBase   = 30;
-        int top     = 10;
+        int top     = 40;
         int yScale  = 50;
         int xAxis   = 360;
 
