@@ -3,14 +3,15 @@ package ph.edu.uplb.ics.srg.dcnapplets;
 import java.awt.Canvas;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Panel;
 
-public class SinusoidCanvas extends Canvas{
+public class SinusoidPanel extends Panel{
 	
 	PeriodicSignal signal;
 	int components;
 	
 	
-	public SinusoidCanvas(PeriodicSignal signal, int components)
+	public SinusoidPanel(PeriodicSignal signal, int components)
 	{
 		this.signal = signal;
 		this.components = components;
