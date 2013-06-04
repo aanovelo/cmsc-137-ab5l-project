@@ -2,6 +2,7 @@ package ph.edu.uplb.ics.srg.dcnapplets;
 
 import java.awt.Button;
 import java.awt.Canvas;
+import java.awt.Checkbox;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Label;
@@ -19,6 +20,7 @@ public class SinusoidPanel extends Panel implements ActionListener{
 	TextField txtFrequency = new TextField(2);
 	TextField txtPhase = new TextField(2);
 	TextField txtFrequencyComponents = new TextField(2);
+	Checkbox  chkIndividual = new Checkbox("Individual Component Only");
 	
 	Button btnPlot = new Button("Plot");
 	
@@ -35,6 +37,7 @@ public class SinusoidPanel extends Panel implements ActionListener{
 		this.add(new Label("Frequency Components:"));
 		this.add(txtFrequencyComponents);
 		this.add(btnPlot);
+		this.add(chkIndividual);
 		btnPlot.addActionListener(this);
 	}
 	
@@ -78,7 +81,7 @@ public class SinusoidPanel extends Panel implements ActionListener{
         for (k=0;k<=6;k++)
         {
         	g.drawLine(xBase, top+(k*yScale), xBase+5, top+(k*yScale)); 
-        	g.drawString(Integer.toString(Math.abs(3-k)), xBase-10, 3+top+(k*yScale));
+        	g.drawString(Integer.toString(3-k), xBase-10, 3+top+(k*yScale));
         }
         
         for (k=0;k<=360;k+=90)
@@ -98,13 +101,19 @@ public class SinusoidPanel extends Panel implements ActionListener{
         	sum=0;
         	x = xBase + i;
         	//y = (int)( yBase - (Math.sin( Math.toRadians(i)*signal.getFrequency() + Math.toRadians(signal.getPhase())) + (Math.sin( Math.toRadians(i)*signal.getFrequency()*3 + Math.toRadians(signal.getPhase())))/3) * yScale  );
-            //y = (int)( yBase - Math.cos( Math.toRadians(i)*signal.getFrequency() + Math.toRadians(signal.getPhase()) - Math.toRadians(90)) * yScale  );
-                    	
-        	for (k=1;k<=components;k+=2)
+            //y = (int)( yBase - Math.cos( Math.toRadians(i)*signal.getFrequency() + Math.toRadians(signal.getPhase()) - Math.toRadians(90)) * yScale  );  	
+        	if (chkIndividual.getState() == true)
         	{
-        		sum += (Math.sin( Math.toRadians(i)*signal.getFrequency()*k + Math.toRadians(signal.getPhase())))/k;
+        		k = components;
+        		sum = (float)(Math.sin( Math.toRadians(i)*signal.getFrequency()*k + Math.toRadians(signal.getPhase())))/k;
         	}
-        	
+        	else
+        	{
+        		for (k=1;k<=components;k+=2)
+        		{
+        			sum += (Math.sin( Math.toRadians(i)*signal.getFrequency()*k + Math.toRadians(signal.getPhase())))/k;
+        		}
+        	}
         	y = (int)( yBase - sum * yScale *(int)signal.getAmplitude());
         	
         	
