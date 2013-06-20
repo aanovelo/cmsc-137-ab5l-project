@@ -66,7 +66,7 @@ figs-within-sections
 \begin_body
 
 \begin_layout Title
-Data Communications and Networking Concepts
+ics.uData Communications and Networking Concepts
 \end_layout
 
 \begin_layout Author
@@ -170,7 +170,12 @@ Delays in Computer Networks
 
 \begin_layout Standard
 There are several sources of delays in computer networks.
- A delay is defined as a disruption in the continues transmission of data.
+ A delay is defined as a disruption in the continuous transmission of data.
+ Before actual data is transmitted, several processes are performed on the
+ data as it travels across the network.
+ Consider for example the simple case of sending the letter 'A' from your
+ lab computer to your teachers computer.
+  
 \end_layout
 
 \begin_layout Part*
