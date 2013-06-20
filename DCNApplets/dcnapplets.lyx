@@ -48,8 +48,8 @@ figs-within-sections
 \shortcut idx
 \color #008000
 \end_index
-\secnumdepth 3
-\tocdepth 3
+\secnumdepth 5
+\tocdepth 5
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
@@ -66,7 +66,7 @@ figs-within-sections
 \begin_body
 
 \begin_layout Title
-Data Communications and Networking Concepts
+Data Communications and Networking Concepts through Java Applets
 \end_layout
 
 \begin_layout Author
@@ -74,16 +74,15 @@ Joseph Anthony C.
  Hermocilla
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
+\begin_layout Chapter*
+Introduction
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Standard
+This part focuses on some introductory concepts in computer networks.
+\end_layout
+
+\begin_layout Section*
 Network Models
 \end_layout
 
@@ -130,7 +129,7 @@ What are the layers of TCP/IP?What are the functions of each layer?
 How does OSI and TCP/IP differ?
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Section*
 Delays in Computer Networks
 \end_layout
 
@@ -166,6 +165,10 @@ What is queuing delay?
 \end_layout
 
 \begin_layout Chapter*
+Physical Layer
+\end_layout
+
+\begin_layout Section*
 Signal Transmission
 \end_layout
 
@@ -235,6 +238,10 @@ What are the different analog-digital encoding techniques?
 \end_layout
 
 \begin_layout Chapter*
+Data Link Layer
+\end_layout
+
+\begin_layout Section*
 Flow Control
 \end_layout
 
@@ -252,11 +259,11 @@ Try to answer the following questions.
 What is flow control?
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Section*
 Error Control
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Go-Back-N
 \end_layout
 
@@ -269,7 +276,7 @@ Go-Back-N retransmits all the frames that were sent after an erroneous frame
 Try to answer the following questions.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Selective Reject
 \end_layout
 
@@ -281,7 +288,7 @@ Selective reject retransmits only the frames that are erroneous..
 Try to answer the following questions.
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Section*
 High-Level Data Link Control
 \end_layout
 
@@ -322,7 +329,7 @@ What are the types of frames and their fields in HDLC?
 Give an example of HDLC operation.
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Section*
 Carrier-Sense Multiple Access with Collision Detection
 \end_layout
 
@@ -346,6 +353,10 @@ What is the flowchart of CSMA-CD operation?
 \end_layout
 
 \begin_layout Chapter*
+Network Layer
+\end_layout
+
+\begin_layout Section*
 IP Routing
 \end_layout
 
@@ -364,6 +375,10 @@ Try to answer the following questions.
 \end_layout
 
 \begin_layout Chapter*
+Application Layer
+\end_layout
+
+\begin_layout Section*
 Encryption
 \end_layout
 
@@ -373,6 +388,50 @@ Encryption disallows easy interpretation of secret messages.
 
 \begin_layout Exercise*
 Try to answer the following questions.
+\end_layout
+
+\begin_layout Itemize
+What is encipherment as a form of security mechanism?
+\end_layout
+
+\begin_layout Itemize
+What is symmetric encryption?
+\end_layout
+
+\begin_layout Itemize
+What is a plaintext?
+\end_layout
+
+\begin_layout Itemize
+What is a ciphertext?
+\end_layout
+
+\begin_layout Itemize
+What is cryptography?
+\end_layout
+
+\begin_layout Itemize
+What is a cipher?
+\end_layout
+
+\begin_layout Itemize
+What is cryptanalysis?
+\end_layout
+
+\begin_layout Itemize
+What is cryptology?
+\end_layout
+
+\begin_layout Itemize
+What is a brute-force attack?
+\end_layout
+
+\begin_layout Itemize
+How do substitution techniques work?
+\end_layout
+
+\begin_layout Itemize
+How to transposition techniques work?
 \end_layout
 
 \end_body
