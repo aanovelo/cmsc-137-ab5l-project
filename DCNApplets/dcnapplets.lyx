@@ -95,9 +95,17 @@ Network models describe the different components of a network and their
  the Transmission Control Protocol/Internet Protocol (TCP/IP).
 \end_layout
 
+\begin_layout Exercise*
+Answer the following questions.
+\end_layout
+
 \begin_layout Itemize
 What is the importance of Network Models?Why is there a need for network
  models?
+\end_layout
+
+\begin_layout Itemize
+What is a protocol?
 \end_layout
 
 \begin_layout Itemize
@@ -105,7 +113,20 @@ What is the general structure of network models?
 \end_layout
 
 \begin_layout Itemize
-What are the accepted network models?
+What are the well-known network models?
+\end_layout
+
+\begin_layout Itemize
+What are the layers of OSI?What are the functions of the protocols for each
+ layer?
+\end_layout
+
+\begin_layout Itemize
+What are the layers of TCP/IP?What are the functions of each layer?
+\end_layout
+
+\begin_layout Itemize
+How does OSI and TCP/IP differ?
 \end_layout
 
 \begin_layout Part*
