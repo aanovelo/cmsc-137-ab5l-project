@@ -72,6 +72,12 @@ Data Communications and Networking Concepts through Java Applets
 \begin_layout Author
 Joseph Anthony C.
  Hermocilla
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter*
@@ -168,6 +174,12 @@ What is queuing delay?
 Physical Layer
 \end_layout
 
+\begin_layout Standard
+The physical layer (Layer 0) is responsible for the physical aspects of
+ the network.
+ These functions include signaling, cabling, and other hardware aspects.
+\end_layout
+
 \begin_layout Section*
 Signal Transmission
 \end_layout
@@ -259,8 +271,33 @@ Try to answer the following questions.
 What is flow control?
 \end_layout
 
+\begin_layout Itemize
+What are the effects of propagation delay and transmission rate?
+\end_layout
+
+\begin_layout Itemize
+How does the sliding window protocol work?
+\end_layout
+
 \begin_layout Section*
 Error Control
+\end_layout
+
+\begin_layout Subsection*
+Stop-and-Wait
+\end_layout
+
+\begin_layout Standard
+In this approach, the sender waits for an acknowledgement frame from the
+ receiver.
+\end_layout
+
+\begin_layout Exercise*
+Try to answer the following questions.
+\end_layout
+
+\begin_layout Itemize
+How does Stop-and-Wait work?
 \end_layout
 
 \begin_layout Subsection*
@@ -276,6 +313,10 @@ Go-Back-N retransmits all the frames that were sent after an erroneous frame
 Try to answer the following questions.
 \end_layout
 
+\begin_layout Itemize
+How does Go-Back-N work?
+\end_layout
+
 \begin_layout Subsection*
 Selective Reject
 \end_layout
@@ -286,6 +327,10 @@ Selective reject retransmits only the frames that are erroneous..
 
 \begin_layout Exercise*
 Try to answer the following questions.
+\end_layout
+
+\begin_layout Itemize
+How does Selective Reject work?
 \end_layout
 
 \begin_layout Section*
