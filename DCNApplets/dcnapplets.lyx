@@ -93,6 +93,7 @@ Network models describe the different components of a network and their
  There are two models that are well known.
  The first is the Open Systems Interconnect (OSI) model and the second is
  the Transmission Control Protocol/Internet Protocol (TCP/IP).
+ Also
 \end_layout
 
 \begin_layout Exercise*
