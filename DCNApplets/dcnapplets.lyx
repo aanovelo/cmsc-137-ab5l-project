@@ -83,7 +83,7 @@ LatexCommand tableofcontents
 
 \end_layout
 
-\begin_layout Part*
+\begin_layout Chapter*
 Network Models
 \end_layout
 
@@ -130,121 +130,13 @@ What are the layers of TCP/IP?What are the functions of each layer?
 How does OSI and TCP/IP differ?
 \end_layout
 
-\begin_layout Part*
-Go-Back-N
-\end_layout
-
-\begin_layout Standard
-Go-Back-N retransmits all the frames that were sent after an erroneous frame
- was transmitted.
-\end_layout
-
-\begin_layout Exercise*
-Try to answer the following questions.
-\end_layout
-
-\begin_layout Part*
-Selective Reject
-\end_layout
-
-\begin_layout Standard
-Selective reject retransmits only the frames that are erroneous..
-\end_layout
-
-\begin_layout Exercise*
-Try to answer the following questions.
-\end_layout
-
-\begin_layout Part*
-Flow Control
-\end_layout
-
-\begin_layout Standard
-Flow control describes how frames are transmitted.
- Recall that frame transmission belongs to the function of the data link
- layer.
-\end_layout
-
-\begin_layout Exercise*
-Try to answer the following questions.
-\end_layout
-
-\begin_layout Itemize
-What is flow control?
-\end_layout
-
-\begin_layout Part*
-Carrier-Sense Multiple Access with Collision Detection
-\end_layout
-
-\begin_layout Standard
-Carrier-Sense Multile Access with Collision Detection is the mechanism used
- by IEEE 802.3(commonly known as Ethernet) for flow control.
- It uses an exponential backoff which randomizes retransmission thereby
- reducing frame collision in the bus topology.
-\end_layout
-
-\begin_layout Exercise*
-Try to answer the following questions.
-\end_layout
-
-\begin_layout Itemize
-How does CSMA-CD works?
-\end_layout
-
-\begin_layout Itemize
-What is the flowchart of CSMA-CD operation?
-\end_layout
-
-\begin_layout Part*
-Encryption
-\end_layout
-
-\begin_layout Standard
-Encryption disallows easy interpretation of secret messages.
-\end_layout
-
-\begin_layout Exercise*
-Try to answer the following questions.
-\end_layout
-
-\begin_layout Part*
-IP Routing
-\end_layout
-
-\begin_layout Standard
-IP packets are transmitted accross a network through routers.
- When an IP packet is sent from a node, it is first transmitted to a gateway
- node, the router, which determines where to forward the packet.
- This is accomplished by the router through its routing table.
- In the routing table, the destination address of the received packet is
- examined and compared to the entries in the table.
- 
-\end_layout
-
-\begin_layout Exercise*
-Try to answer the following questions.
-\end_layout
-
-\begin_layout Part*
-High-Level Data Link Control
-\end_layout
-
-\begin_layout Standard
-HDLC is a simple protocol for the data-link layer.
- 
-\end_layout
-
-\begin_layout Exercise*
-Try to answer the following questions.
-\end_layout
-
-\begin_layout Part*
+\begin_layout Chapter*
 Delays in Computer Networks
 \end_layout
 
 \begin_layout Standard
-There are several sources of delays in computer networks.
+There are several sources of delays in computer networks, in particular
+ packet-switched networks.
  A delay is defined as a disruption in the continuous transmission of data.
  Before actual data is transmitted, several processes are performed on the
  data as it travels across the network.
@@ -257,7 +149,23 @@ There are several sources of delays in computer networks.
 Try to answer the following questions.
 \end_layout
 
-\begin_layout Part*
+\begin_layout Itemize
+What is transmission delay?
+\end_layout
+
+\begin_layout Itemize
+What is node processing delay?
+\end_layout
+
+\begin_layout Itemize
+What is propagation delay?
+\end_layout
+
+\begin_layout Itemize
+What is queuing delay?
+\end_layout
+
+\begin_layout Chapter*
 Signal Transmission
 \end_layout
 
@@ -324,6 +232,147 @@ What are the different analog-analog digital encoding techniques?
 
 \begin_layout Itemize
 What are the different analog-digital encoding techniques?
+\end_layout
+
+\begin_layout Chapter*
+Flow Control
+\end_layout
+
+\begin_layout Standard
+Flow control describes how frames are transmitted.
+ Recall that frame transmission belongs to the function of the data link
+ layer.
+\end_layout
+
+\begin_layout Exercise*
+Try to answer the following questions.
+\end_layout
+
+\begin_layout Itemize
+What is flow control?
+\end_layout
+
+\begin_layout Chapter*
+Error Control
+\end_layout
+
+\begin_layout Section*
+Go-Back-N
+\end_layout
+
+\begin_layout Standard
+Go-Back-N retransmits all the frames that were sent after an erroneous frame
+ was transmitted.
+\end_layout
+
+\begin_layout Exercise*
+Try to answer the following questions.
+\end_layout
+
+\begin_layout Section*
+Selective Reject
+\end_layout
+
+\begin_layout Standard
+Selective reject retransmits only the frames that are erroneous..
+\end_layout
+
+\begin_layout Exercise*
+Try to answer the following questions.
+\end_layout
+
+\begin_layout Chapter*
+High-Level Data Link Control
+\end_layout
+
+\begin_layout Standard
+HDLC is a simple protocol for the data-link layer.
+ 
+\end_layout
+
+\begin_layout Exercise*
+Try to answer the following questions.
+\end_layout
+
+\begin_layout Itemize
+What are the requirements for the bit-oriented data link protocols?
+\end_layout
+
+\begin_layout Itemize
+What is HDLC?
+\end_layout
+
+\begin_layout Itemize
+What are the types of HDLC stations?
+\end_layout
+
+\begin_layout Itemize
+What are the link configurations for HDLC?
+\end_layout
+
+\begin_layout Itemize
+What are the three data transfer modes of operation?
+\end_layout
+
+\begin_layout Itemize
+What are the types of frames and their fields in HDLC?
+\end_layout
+
+\begin_layout Itemize
+Give an example of HDLC operation.
+\end_layout
+
+\begin_layout Chapter*
+Carrier-Sense Multiple Access with Collision Detection
+\end_layout
+
+\begin_layout Standard
+Carrier-Sense Multile Access with Collision Detection is the mechanism used
+ by IEEE 802.3(commonly known as Ethernet) for flow control.
+ It uses an exponential backoff which randomizes retransmission thereby
+ reducing frame collision in the bus topology.
+\end_layout
+
+\begin_layout Exercise*
+Try to answer the following questions.
+\end_layout
+
+\begin_layout Itemize
+How does CSMA-CD works?
+\end_layout
+
+\begin_layout Itemize
+What is the flowchart of CSMA-CD operation?
+\end_layout
+
+\begin_layout Chapter*
+IP Routing
+\end_layout
+
+\begin_layout Standard
+IP packets are transmitted accross a network through routers.
+ When an IP packet is sent from a node, it is first transmitted to a gateway
+ node, the router, which determines where to forward the packet.
+ This is accomplished by the router through its routing table.
+ In the routing table, the destination address of the received packet is
+ examined and compared to the entries in the table.
+ 
+\end_layout
+
+\begin_layout Exercise*
+Try to answer the following questions.
+\end_layout
+
+\begin_layout Chapter*
+Encryption
+\end_layout
+
+\begin_layout Standard
+Encryption disallows easy interpretation of secret messages.
+\end_layout
+
+\begin_layout Exercise*
+Try to answer the following questions.
 \end_layout
 
 \end_body
