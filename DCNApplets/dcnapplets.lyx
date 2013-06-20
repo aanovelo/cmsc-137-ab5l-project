@@ -178,7 +178,7 @@ Carrier-Sense Multiple Access with Collision Detection
 
 \begin_layout Standard
 Carrier-Sense Multile Access with Collision Detection is the mechanism used
- by IEEE 802.3 for flow control.
+ by IEEE 802.3(commonly known as Ethernet) for flow control.
  It uses an exponential backoff which randomizes retransmission thereby
  reducing frame collision in the bus topology.
 \end_layout
