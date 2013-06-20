@@ -96,7 +96,7 @@ Network models describe the different components of a network and their
 \end_layout
 
 \begin_layout Exercise*
-Answer the following questions.
+Try to answer the following questions.
 \end_layout
 
 \begin_layout Itemize
@@ -138,12 +138,20 @@ Go-Back-N retransmits all the frames that were sent after an erroneous frame
  was transmitted.
 \end_layout
 
+\begin_layout Exercise*
+Try to answer the following questions.
+\end_layout
+
 \begin_layout Part*
 Selective Reject
 \end_layout
 
 \begin_layout Standard
 Selective reject retransmits only the frames that are erroneous..
+\end_layout
+
+\begin_layout Exercise*
+Try to answer the following questions.
 \end_layout
 
 \begin_layout Part*
@@ -154,6 +162,10 @@ Flow Control
 Flow control describes how frames are transmitted.
  Recall that frame transmission belongs to the function of the data link
  layer.
+\end_layout
+
+\begin_layout Exercise*
+Try to answer the following questions.
 \end_layout
 
 \begin_layout Itemize
@@ -169,6 +181,10 @@ Carrier-Sense Multile Access with Collision Detection is the mechanism used
  by IEEE 802.3 for flow control.
  It uses an exponential backoff which randomizes retransmission thereby
  reducing frame collision in the bus topology.
+\end_layout
+
+\begin_layout Exercise*
+Try to answer the following questions.
 \end_layout
 
 \begin_layout Itemize
@@ -187,6 +203,10 @@ Encryption
 Encryption disallows easy interpretation of secret messages.
 \end_layout
 
+\begin_layout Exercise*
+Try to answer the following questions.
+\end_layout
+
 \begin_layout Part*
 IP Routing
 \end_layout
@@ -201,6 +221,10 @@ IP packets are transmitted accross a network through routers.
  
 \end_layout
 
+\begin_layout Exercise*
+Try to answer the following questions.
+\end_layout
+
 \begin_layout Part*
 High-Level Data Link Control
 \end_layout
@@ -208,6 +232,10 @@ High-Level Data Link Control
 \begin_layout Standard
 HDLC is a simple protocol for the data-link layer.
  
+\end_layout
+
+\begin_layout Exercise*
+Try to answer the following questions.
 \end_layout
 
 \begin_layout Part*
@@ -224,12 +252,20 @@ There are several sources of delays in computer networks.
  
 \end_layout
 
+\begin_layout Exercise*
+Try to answer the following questions.
+\end_layout
+
 \begin_layout Part*
 Signal Transmission
 \end_layout
 
 \begin_layout Standard
 The main mechanism for transmitting data is through signals.
+\end_layout
+
+\begin_layout Exercise*
+Try to answer the following questions.
 \end_layout
 
 \end_body
