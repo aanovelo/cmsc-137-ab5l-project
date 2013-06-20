@@ -269,5 +269,62 @@ The main mechanism for transmitting data is through signals.
 Try to answer the following questions.
 \end_layout
 
+\begin_layout Itemize
+How is data transmitted over a communication channel?
+\end_layout
+
+\begin_layout Itemize
+What are the elements of a communication model?
+\end_layout
+
+\begin_layout Itemize
+What is a signal?What are its characteristics?
+\end_layout
+
+\begin_layout Itemize
+What is frequency, spectrum, and bandwidth?
+\end_layout
+
+\begin_layout Itemize
+What is the difference between analog and digital signal?
+\end_layout
+
+\begin_layout Itemize
+How do we describe signals as a function of time?
+\end_layout
+
+\begin_layout Itemize
+How do we describe signals as a function of frequency?
+\end_layout
+
+\begin_layout Itemize
+Which is best to describe signals: as function of time or as function of
+ frequency?
+\end_layout
+
+\begin_layout Itemize
+What is the relationship between data rate and bandwidth?
+\end_layout
+
+\begin_layout Itemize
+What is the measure of the strength of a signal?
+\end_layout
+
+\begin_layout Itemize
+What are the different digital-digital encoding techniques?
+\end_layout
+
+\begin_layout Itemize
+What are the different digital-analog encoding techniques?
+\end_layout
+
+\begin_layout Itemize
+What are the different analog-analog digital encoding techniques?
+\end_layout
+
+\begin_layout Itemize
+What are the different analog-digital encoding techniques?
+\end_layout
+
 \end_body
 \end_document
