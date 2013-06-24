@@ -136,12 +136,21 @@ A protocol is a detailed description or a procedure that describes how the
  An example of a protocol is when a lower-ranked military officer initiates
  a salute to a higher-ranked officer.
  For communication to happen, communicating entities must understand the
- rules.
- 
+ rules, or the protocol.
+ In a way, we can think of protocols as instructions that must be followed.
+ What is important is that the entities must follow the protocol.
 \end_layout
 
 \begin_layout Itemize
 What is the general structure of network models? 
+\end_layout
+
+\begin_layout Standard
+Network models follow a layered structure.
+ Each layer is given a name, but are usually referred to by their layer
+ numbers, with the lowest layer numbered as 0.
+ The total number of layers depend on the model.
+ In the layered approach, lower layer provides services to 
 \end_layout
 
 \begin_layout Itemize
