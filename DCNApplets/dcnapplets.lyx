@@ -120,6 +120,8 @@ Data communications is a complex process.
  These components include actual physical devices, such as switches and
  repeaters, as well as software, such as device drivers and protocol implementat
 ions.
+ Managing this complexity involves some organization by grouping together
+ functions that are similar in nature.
  
 \end_layout
 
