@@ -113,6 +113,16 @@ What is the importance of Network Models?Why is there a need for network
  models?
 \end_layout
 
+\begin_layout Standard
+Data communications is a complex process.
+ It is composed of several components that must interact to accomplish the
+ task of sending information from one entity to another.
+ These components include actual physical devices, such as switches and
+ repeaters, as well as software, such as device drivers and protocol implementat
+ions.
+ 
+\end_layout
+
 \begin_layout Itemize
 What is a protocol?
 \end_layout
