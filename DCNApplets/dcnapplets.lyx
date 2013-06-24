@@ -173,6 +173,67 @@ What are the layers of OSI?What are the functions of the protocols for each
  layer?
 \end_layout
 
+\begin_layout Paragraph*
+Physical
+\end_layout
+
+\begin_layout Standard
+The physical layer involves the physical properties
+\end_layout
+
+\begin_layout Paragraph*
+Data Link
+\end_layout
+
+\begin_layout Standard
+The data link layer is responsible for efficiently and reliably transmitting
+ data(frames) at across the link.
+\end_layout
+
+\begin_layout Paragraph*
+Network
+\end_layout
+
+\begin_layout Standard
+The network layer is responsible for addressing and routing across multiple
+ data links.
+\end_layout
+
+\begin_layout Paragraph*
+Transport
+\end_layout
+
+\begin_layout Standard
+The transport layer is responsible for efficiently and reliably trasferring
+ of data across networks.
+\end_layout
+
+\begin_layout Paragraph*
+Session
+\end_layout
+
+\begin_layout Standard
+The session layer is responsible for maintaining the state of the data transfer.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+Presentation
+\end_layout
+
+\begin_layout Standard
+The presentation layer is responsible for encryption and data formats and
+ conversion.
+\end_layout
+
+\begin_layout Paragraph*
+Application
+\end_layout
+
+\begin_layout Standard
+The application layer is responsible for user-specific functions.
+\end_layout
+
 \begin_layout Itemize
 What are the layers of TCP/IP?What are the functions of each layer?
 \end_layout
