@@ -133,8 +133,11 @@ What is a protocol?
 \begin_layout Standard
 A protocol is a detailed description or a procedure that describes how the
  communication can happen.
- An example of a protocol is when a lower rank military officer initiates
+ An example of a protocol is when a lower-ranked military officer initiates
  a salute to a higher-ranked officer.
+ For communication to happen, communicating entities must understand the
+ rules.
+ 
 \end_layout
 
 \begin_layout Itemize
