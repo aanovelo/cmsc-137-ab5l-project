@@ -122,11 +122,19 @@ Data communications is a complex process.
 ions.
  Managing this complexity involves some organization by grouping together
  functions that are similar in nature.
- 
+ The groupings can further be arranged into layers to simplify the understanding
+ of the components.
 \end_layout
 
 \begin_layout Itemize
 What is a protocol?
+\end_layout
+
+\begin_layout Standard
+A protocol is a detailed description or a procedure that describes how the
+ communication can happen.
+ An example of a protocol is when a lower rank military officer initiates
+ a salute to a higher-ranked officer.
 \end_layout
 
 \begin_layout Itemize
