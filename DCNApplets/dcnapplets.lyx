@@ -150,7 +150,10 @@ Network models follow a layered structure.
  Each layer is given a name, but are usually referred to by their layer
  numbers, with the lowest layer numbered as 0.
  The total number of layers depend on the model.
- In the layered approach, lower layer provides services to 
+ In the layered approach, a layer provides services to the layer above it
+ and it uses the services from the layer below it.
+ For example, layer 2 provides service to layer 3 and uses the services
+ from layer 1.
 \end_layout
 
 \begin_layout Itemize
