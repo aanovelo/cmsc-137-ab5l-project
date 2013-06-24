@@ -139,6 +139,8 @@ A protocol is a detailed description or a procedure that describes how the
  rules, or the protocol.
  In a way, we can think of protocols as instructions that must be followed.
  What is important is that the entities must follow the protocol.
+ To put it simply, two persons talking to each other will understand each
+ other if they speak the same language and alternates speaking.
 \end_layout
 
 \begin_layout Itemize
@@ -158,6 +160,12 @@ Network models follow a layered structure.
 
 \begin_layout Itemize
 What are the well-known network models?
+\end_layout
+
+\begin_layout Standard
+Two well-known network models exist.
+ One is the Open Systems Interconnections (OSI) and the other is the Transmissio
+n Control Protocol (TCP).
 \end_layout
 
 \begin_layout Itemize
