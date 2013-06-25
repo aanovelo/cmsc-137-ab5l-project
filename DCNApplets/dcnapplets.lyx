@@ -238,6 +238,40 @@ The application layer is responsible for user-specific functions.
 What are the layers of TCP/IP?What are the functions of each layer?
 \end_layout
 
+\begin_layout Paragraph*
+Physical
+\end_layout
+
+\begin_layout Standard
+The physical layer involves the physical properties
+\end_layout
+
+\begin_layout Paragraph*
+Network
+\end_layout
+
+\begin_layout Standard
+The network layer is responsible for addressing and routing across multiple
+ data links.
+\end_layout
+
+\begin_layout Paragraph*
+Transport
+\end_layout
+
+\begin_layout Standard
+The transport layer is responsible for efficiently and reliably trasferring
+ of data across networks.
+\end_layout
+
+\begin_layout Paragraph*
+Application
+\end_layout
+
+\begin_layout Standard
+The application layer is responsible for user-specific functions.
+\end_layout
+
 \begin_layout Itemize
 How does OSI and TCP/IP differ?
 \end_layout
