@@ -288,7 +288,10 @@ There are several sources of delays in computer networks, in particular
  data as it travels across the network.
  Consider for example the simple case of sending the letter 'A' from your
  lab computer to your teachers computer.
- 
+ To illustrate the concept we are going to use an analogy using the railroad
+ system.
+ These sources of delays are transmission delay, node processing delay,
+ propagation delay, and queueing delay.
 \end_layout
 
 \begin_layout Exercise*
@@ -299,16 +302,53 @@ Try to answer the following questions.
 What is transmission delay?
 \end_layout
 
+\begin_layout Standard
+Normally data is transferred in chunks (packets).
+ Transmission delay happens when the computer takes some time converting
+ the data into signals that can be sent over the physical line.
+ For example, a character in ASCII will be represented as an 8-bit value
+ thus requiring an 8-bit signal.
+ The conversion from the bits to signals is referred to as transmission
+ delay.
+ 
+\end_layout
+
 \begin_layout Itemize
 What is node processing delay?
+\end_layout
+
+\begin_layout Standard
+Node processing delay is caused by the processing done by the computer on
+ the data that must be transferred.
+ Example of processing include breaking large chunks of data, converting
+ across different formats, and security processing.
+ All of these tasks take some time and is referred to as node processing
+ delay.
 \end_layout
 
 \begin_layout Itemize
 What is propagation delay?
 \end_layout
 
+\begin_layout Standard
+The amount of time it takes for a single bit (or signal element) to traverse
+ the link is called propagation delay.
+ To explain this further, consider a communication system where data is
+ treated as a train.
+ We know that a train is composed of several cars.
+ The time it takes for a car to move from one end of the railroad to another
+ is called propagation delay.
+\end_layout
+
 \begin_layout Itemize
 What is queuing delay?
+\end_layout
+
+\begin_layout Standard
+Data transferred across a network usually queues up on some intermediate
+ node.
+ The time it takes for data to wait for an intermediate node to process
+ it is called queuing delay.
 \end_layout
 
 \begin_layout Chapter*
