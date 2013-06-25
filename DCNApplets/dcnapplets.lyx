@@ -83,7 +83,7 @@ LatexCommand tableofcontents
 
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Chapter
 Introduction
 \end_layout
 
@@ -91,7 +91,7 @@ Introduction
 This part focuses on some introductory concepts in computer networks.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Network Models
 \end_layout
 
@@ -276,7 +276,7 @@ The application layer is responsible for user-specific functions.
 How does OSI and TCP/IP differ?
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Delays in Computer Networks
 \end_layout
 
@@ -351,7 +351,7 @@ Data transferred across a network usually queues up on some intermediate
  it is called queuing delay.
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Chapter
 Physical Layer
 \end_layout
 
@@ -361,7 +361,7 @@ The physical layer (Layer 0) is responsible for the physical aspects of
  These functions include signaling, cabling, and other hardware aspects.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Signal Transmission
 \end_layout
 
@@ -434,11 +434,11 @@ What are the different analog-digital encoding techniques?
 
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Chapter
 Data Link Layer
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Flow Control
 \end_layout
 
@@ -464,11 +464,11 @@ What are the effects of propagation delay and transmission rate?
 How does the sliding window protocol work?
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Error Control
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Stop-and-Wait
 \end_layout
 
@@ -485,7 +485,7 @@ Try to answer the following questions.
 How does Stop-and-Wait work?
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Go-Back-N
 \end_layout
 
@@ -502,7 +502,7 @@ Try to answer the following questions.
 How does Go-Back-N work?
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Selective Reject
 \end_layout
 
@@ -518,7 +518,7 @@ Try to answer the following questions.
 How does Selective Reject work?
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsubsection
 High-Level Data Link Control
 \end_layout
 
@@ -559,7 +559,7 @@ What are the types of frames and their fields in HDLC?
 Give an example of HDLC operation.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Carrier-Sense Multiple Access with Collision Detection
 \end_layout
 
@@ -582,11 +582,11 @@ How does CSMA-CD works?
 What is the flowchart of CSMA-CD operation?
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Chapter
 Network Layer
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 IP Routing
 \end_layout
 
@@ -604,11 +604,11 @@ IP packets are transmitted accross a network through routers.
 Try to answer the following questions.
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Chapter
 Application Layer
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Encryption
 \end_layout
 
