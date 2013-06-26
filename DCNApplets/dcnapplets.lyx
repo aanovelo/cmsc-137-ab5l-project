@@ -349,6 +349,19 @@ Application layer provides user-specific applications such as e-mail and
 How does OSI and TCP/IP differ?
 \end_layout
 
+\begin_layout Standard
+TCP/IP came before the OSI was formalized.
+ Originally TCP/IP was never designed to be an international standard.
+ However, since it adoptation was rapid, its use became widespread.
+ Starting from DARPA, academic and research institutions implemented it
+ in operating systems, in particular unix.
+ Unlike OSI where there is clear distinction in the functions of each layer,
+ TCP/IP functions does not fit cleanly in each layer in OSI.
+ Two or three layers in the OSI model are condensed to a layer in TCP/IP.
+ Form example the OSI layers session, presentation, and application are
+ condensed into the single TCP/IP application layer.
+\end_layout
+
 \begin_layout Section
 Delays in Computer Networks
 \end_layout
@@ -459,6 +472,32 @@ How is data transmitted over a communication channel?
 
 \begin_layout Itemize
 What are the elements of a communication model?
+\end_layout
+
+\begin_layout Standard
+In order to understand the data communications we need to have a basic understan
+ding of the communication model.
+ A communication model has several components: source, transmitter, transmission
+ system, receiver, and destination.
+ Let us consider these elements based on human communication.
+ Consider a scenario when a boyfriend would like to say the message 
+\begin_inset Quotes eld
+\end_inset
+
+I love you.
+\begin_inset Quotes erd
+\end_inset
+
+ to his girlfried.
+ The message will come from the boyfriend's brain(source).
+ The message will then be converted into sound using the vocal cords(transmitter
+) of the boyfriend.
+ After speaking the words, the message will travel in the air (transmission
+ system) in the form of sound waves.
+ The girlfriend will hear the words through her ears(receiver).
+ The sound waves will be converted into a message that will be sent to the
+ girlfriend's brain(destination).
+ 
 \end_layout
 
 \begin_layout Itemize
