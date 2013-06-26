@@ -199,6 +199,8 @@ The data link layer is responsible for efficiently and reliably transmitting
  data(frames) across the link, between its ends.
  To accomplish this task, this layer is responsible for detecting errors,
  framing (grouping of bits), and controlling the flow of frames.
+ In multipoint networks, an addressing scheme is also provided by the data
+ link layer.
  
 \end_layout
 
@@ -209,6 +211,13 @@ Network (Layer 3)
 \begin_layout Standard
 The network layer is responsible for addressing and routing across multiple
  data links.
+ The data link functions only cover what happens between two nodes.
+ In a more complex network, several nodes can be present, and moving data
+ across this complex network will require some form of routing.
+ This layers enables heterogenous networks(at the data link level) to communicat
+e.
+ Thus the network layer is also responsible for providing an addressing
+ scheme different from the addressing at the data link layer.
 \end_layout
 
 \begin_layout Paragraph*
@@ -218,6 +227,18 @@ Transport (Layer 4)
 \begin_layout Standard
 The transport layer is responsible for efficiently and reliably trasferring
  of data across networks.
+ The function of the transport layer is very similar to that of the data
+ link layer.
+ The main difference is in the coverage.
+ While the data link layer is responsible for what happens between the ends
+ of the physical link, the transport layer covers what happens between two
+ nodes in the presence of the network layer.
+ This means that the transport layer has a wider coverage.
+ Another responsibility of the transport layer is breaking down data from
+ the session layer.
+ Fragmented data are passed down to the network layer.
+ This layer must guarantee that these arrive in order without missing or
+ damaged data.
 \end_layout
 
 \begin_layout Paragraph*
@@ -264,10 +285,6 @@ Transport
 
 \begin_layout Paragraph*
 Application
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Itemize
