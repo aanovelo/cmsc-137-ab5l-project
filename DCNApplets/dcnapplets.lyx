@@ -295,12 +295,19 @@ Internet (Layer 2)
 
 \begin_layout Standard
 The Internet Layer is similar in function to the Network layer of OSI.
- The main protocol for this layer is the Internet Protocol which describes
- an addressing and routing schemes.
+ The main protocol for this layer is the Internet Protocol(IP) which describes
+ addressing and routing schemes.
+ Normally the functions of the Internet layer are implemented in specialized
+ hardware called routers.
+ 
 \end_layout
 
 \begin_layout Paragraph*
 Transport (Layer 3)
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Paragraph*
