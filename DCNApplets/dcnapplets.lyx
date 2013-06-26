@@ -568,6 +568,17 @@ A signal as a function of time describes a signal varying with time.
  This is the traditional way of describing signals.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s(t)=A\sin(2\pi kf_{1}t)
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 How do we describe signals as a function of frequency?
 \end_layout
