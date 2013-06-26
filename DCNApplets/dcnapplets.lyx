@@ -240,7 +240,7 @@ The transport layer is responsible for efficiently and reliably trasferring
  Fragmented data are passed down to the network layer.
  This layer must guarantee that these arrive in order without missing or
  damaged data.
- This layer is also responsible for the high-leve function of establishing
+ This layer is also responsible for the high-level function of establishing
  and terminating connections.
 \end_layout
 
@@ -559,15 +559,29 @@ Most signals are represented as sine waves.
 \end_layout
 
 \begin_layout Itemize
-What is the difference between analog and digital signal?
+How do we describe signals as a function of time?
 \end_layout
 
-\begin_layout Itemize
-How do we describe signals as a function of time?
+\begin_layout Standard
+A signal as a function of time describes a signal varying with time.
+ The simplest signal is the simple sine wave s(t) = Asin(2*pi*f*t+phase).
+ This is the traditional way of describing signals.
 \end_layout
 
 \begin_layout Itemize
 How do we describe signals as a function of frequency?
+\end_layout
+
+\begin_layout Standard
+It can also be shown that signals can be described as a function of frequency,
+ such that a signal is composed of several component sine waves of different
+ frequencies.
+ In this representation, a signal s(t) = A * SUM (1/k(sin(2*pi*k*f*t)))
+ from 1 to inf.
+ Notice that in this representation, a signal can have an infinite number
+ of frequency components.
+ However, the strength of the signal and its major characteristics are defined
+ in the first few sine wave components.
 \end_layout
 
 \begin_layout Itemize
