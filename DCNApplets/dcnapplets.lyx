@@ -585,6 +585,17 @@ It can also be shown that signals can be described as a function of frequency,
  In theThe fundamental frequency of a signal 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s(t)=A\sum_{k=1}^{inf}\sin(2\pi kf_{1}t)
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 Which is best to describe signals: as function of time or as function of
  frequency?
@@ -612,10 +623,6 @@ What are the different analog-analog digital encoding techniques?
 
 \begin_layout Itemize
 What are the different analog-digital encoding techniques?
-\end_layout
-
-\begin_layout Itemize
-
 \end_layout
 
 \begin_layout Chapter
