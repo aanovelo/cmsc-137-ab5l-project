@@ -156,10 +156,15 @@ Network models follow a layered structure.
  and it uses the services from the layer below it.
  For example, layer 2 provides service to layer 3 and uses the services
  from layer 1.
+ The layers communicate using an implementation-specific interface between
+ layers N and N-1.
+ An entity in a given layer implements that layer's protocol.
+ Entities that implement the same protocol from a given layer are called
+ peer entities.
 \end_layout
 
 \begin_layout Itemize
-What are the well-known network models?
+What are the well-known network models ?
 \end_layout
 
 \begin_layout Standard
@@ -174,24 +179,31 @@ What are the layers of OSI?What are the functions of the protocols for each
 \end_layout
 
 \begin_layout Paragraph*
-Physical
+Physical (Layer 1)
 \end_layout
 
 \begin_layout Standard
 The physical layer involves the physical properties.
+ Essentially, the physical layer is in charge of moving the bits over the
+ channel.
+ It is responsible for aspects such as voltage levels to be used in signals,
+ duplexity, and connector design.
 \end_layout
 
 \begin_layout Paragraph*
-Data Link
+Data Link (Layer 2)
 \end_layout
 
 \begin_layout Standard
 The data link layer is responsible for efficiently and reliably transmitting
- data(frames) at across the link.
+ data(frames) across the link, between its ends.
+ To accomplish this task, this layer is responsible for detecting errors,
+ framing (grouping of bits), and controlling the flow of frames.
+ 
 \end_layout
 
 \begin_layout Paragraph*
-Network
+Network (Layer 3)
 \end_layout
 
 \begin_layout Standard
@@ -200,7 +212,7 @@ The network layer is responsible for addressing and routing across multiple
 \end_layout
 
 \begin_layout Paragraph*
-Transport
+Transport (Layer 4)
 \end_layout
 
 \begin_layout Standard
@@ -209,7 +221,7 @@ The transport layer is responsible for efficiently and reliably trasferring
 \end_layout
 
 \begin_layout Paragraph*
-Session
+Session (Layer 5)
 \end_layout
 
 \begin_layout Standard
@@ -218,7 +230,7 @@ The session layer is responsible for maintaining the state of the data transfer.
 \end_layout
 
 \begin_layout Paragraph*
-Presentation
+Presentation (Layer 6)
 \end_layout
 
 \begin_layout Standard
@@ -227,7 +239,7 @@ The presentation layer is responsible for encryption and data formats and
 \end_layout
 
 \begin_layout Paragraph*
-Application
+Application (Layer 7)
 \end_layout
 
 \begin_layout Standard
@@ -242,26 +254,12 @@ What are the layers of TCP/IP?What are the functions of each layer?
 Physical
 \end_layout
 
-\begin_layout Standard
-The physical layer involves the physical properties.
-\end_layout
-
 \begin_layout Paragraph*
 Network
 \end_layout
 
-\begin_layout Standard
-The network layer is responsible for addressing and routing across multiple
- data links.
-\end_layout
-
 \begin_layout Paragraph*
 Transport
-\end_layout
-
-\begin_layout Standard
-The transport layer is responsible for efficiently and reliably trasferring
- of data across networks.
 \end_layout
 
 \begin_layout Paragraph*
@@ -269,7 +267,7 @@ Application
 \end_layout
 
 \begin_layout Standard
-The application layer is responsible for user-specific functions.
+
 \end_layout
 
 \begin_layout Itemize
