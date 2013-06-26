@@ -677,10 +677,65 @@ To summarize, a square wave can have an infinite bandwidth.
  However the transmission medium will limit the bandwidth that can be transmitte
 d.
  Lastly, the greater the bandwidth the costly it is on the receiver end.
+ In general, if we want to achieve a data rate of W bps we need at least
+ a bandwidth of 2W Hz.
+ 
 \end_layout
 
 \begin_layout Itemize
 What is the measure of the strength of a signal?
+\end_layout
+
+\begin_layout Standard
+Once a signal is transmitted over a medium, the strength of a signal diminishes.
+ The phenomenon is called attenuation.
+ In order to increase signal strength, amplifiers may be used in the transmissio
+n system.
+ Signal strength is usually expressed in decibels, a measure of the difference
+ between two power levels.
+\begin_inset Formula 
+\[
+N_{dB}=10\log_{10}\frac{P_{1}}{P_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N_{dB}$
+\end_inset
+
+= number of decibels
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{1,2}=$
+\end_inset
+
+power values
+\end_layout
+
+\begin_layout Standard
+For example if a given signal has a power of 20mW when inserted in the transmiss
+ion line and in some distance away the measure is 5mW, then the loss can
+ be expressed as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+LOSS=10\log\left(\frac{5}{20}\right)=10\left(-0.6\right)=-6dB
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
