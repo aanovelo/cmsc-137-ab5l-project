@@ -479,12 +479,12 @@ In order to understand the data communications we need to have a basic understan
 ding of the communication model.
  A communication model has several components: source, transmitter, transmission
  system, receiver, and destination.
- Let us consider these elements based on human communication.
+ Let us consider these elements using human communication as an example.
  Consider a scenario when a boyfriend would like to say the message 
 \begin_inset Quotes eld
 \end_inset
 
-I love you.
+I love you!
 \begin_inset Quotes erd
 \end_inset
 
@@ -497,6 +497,31 @@ I love you.
  The girlfriend will hear the words through her ears(receiver).
  The sound waves will be converted into a message that will be sent to the
  girlfriend's brain(destination).
+ 
+\end_layout
+
+\begin_layout Standard
+From the sample scenario, we observe that the original message (the thought)
+ does not reach the destination directly, unless of course mental telepathy
+ is a reality.
+ The message has to be converted into some transmittable form, in this case
+ sound waves.
+ Observe the the form of the original message and the transmitted form are
+ very different.
+ As the sound waves travel through air, it can be affected by other sounds
+ (noise) which can distort the original signal, altering its meaning.
+ The strength of the sound waves eventually lessens as the sound waves move
+ away from the source, the boyfriend needs to shout if his girlfriend is
+ far away from him.
+ The example above can be extended to the telephone system wherein the transmiss
+ion system, instead of just using the air, uses a series of wires to transfer
+ sound waves.
+ 
+\end_layout
+
+\begin_layout Standard
+The communication model described here provides a building block for computer
+ data communications and networking.
  
 \end_layout
 
