@@ -307,7 +307,30 @@ Transport (Layer 3)
 \end_layout
 
 \begin_layout Standard
+The transport layer is responsible for host-to-host delivery of data.
+ Two protocols, User Datagram Protocol (UDP) and Transmission Control Protocol
+ (TCP), defines this layer.
+ 
+\end_layout
 
+\begin_layout Standard
+UDP provides an unreliable delivery of data( no error detection) in order
+ to improve performance.
+ Also, it requires very little overhead because it elimates the connection
+ establishment and termination processes.
+ Some applications, such as online games and streaming services, use this
+ protocol.
+\end_layout
+
+\begin_layout Standard
+TCP on the otherhand is a connection-oriented protocol since it uses connection
+ establishment and termination processes.
+ It provides reliable data transfer by providing error control and guarantees
+ that data is delivered accurately and in proper order.
+ Retransmission of data is also implemented in case of damaged and lost
+ data.
+ TCP is best to use applications that require data to be transmitted accurately,
+ an example of which is file transfer.
 \end_layout
 
 \begin_layout Paragraph*
