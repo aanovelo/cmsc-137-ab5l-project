@@ -652,15 +652,31 @@ Notice that in this representation, a signal can have an infinite number
  If a signal has a zero-frequency component, we call this the direct-current
  or dc component.
  Presence of a dc component affects the properties of a signal.
-\end_layout
-
-\begin_layout Itemize
-Which is best to describe signals: as function of time or as function of
- frequency?
+ 
 \end_layout
 
 \begin_layout Itemize
 What is the relationship between data rate and bandwidth?
+\end_layout
+
+\begin_layout Standard
+Although a given signal may have an infinite number of frequency components,
+ the strength of the signal is confined to a narrow band of frequncies.
+ The width of this band is referred to as the effective bandwidth.
+ However, despite a signal having an infinite bandwidth, any medium can
+ only hold a limited band of frequencies.
+ In general bandwidth is directly proportional to data rate.
+ If we increase the bandwidth, the data rate also increases.
+ It must be observed however that a given bandwidth can support different
+ data rates depending on the needs and capabilities of the receiver.
+ 
+\end_layout
+
+\begin_layout Standard
+To summarize, a square wave can have an infinite bandwidth.
+ However the transmission medium will limit the bandwidth that can be transmitte
+d.
+ Lastly, the greater the bandwidth the costly it is on the receiver end.
 \end_layout
 
 \begin_layout Itemize
