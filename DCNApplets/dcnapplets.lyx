@@ -612,7 +612,13 @@ Notice that in this representation, a signal can have an infinite number
  of frequency components.
  However, the strength of the signal and its major characteristics are defined
  in the first few sine wave components.
- In theThe fundamental frequency of a signal 
+ Given a signal, the range of frequencies that represent the signal is called
+ the spectrum.
+ The absolute bandwidth of the signal is the difference between the maximum
+ frequency component and the smallest frequency component.
+ If a signal has a zero-frequency component, we call this the direct-current
+ or dc component.
+ Presence of a dc component affects the quality of a signal.
 \end_layout
 
 \begin_layout Itemize
