@@ -564,8 +564,10 @@ How do we describe signals as a function of time?
 
 \begin_layout Standard
 A signal as a function of time describes a signal varying with time.
- The simplest signal is the simple sine wave s(t) = Asin(2*pi*f*t+phase).
+ The simplest signal is the simple sine wave.
  This is the traditional way of describing signals.
+ The equation below describes a signal in terms of its amplitude A at given
+ time t.
 \end_layout
 
 \begin_layout Standard
@@ -584,16 +586,14 @@ How do we describe signals as a function of frequency?
 \end_layout
 
 \begin_layout Standard
-It can also be shown that signals can be described as a function of frequency,
- such that a signal is composed of several component sine waves of different
- frequencies.
- In this representation, a signal s(t) = A * SUM (1/k(sin(2*pi*k*f*t)))
- from 1 to inf.
- Notice that in this representation, a signal can have an infinite number
- of frequency components.
- However, the strength of the signal and its major characteristics are defined
- in the first few sine wave components.
- In theThe fundamental frequency of a signal 
+It can also be shown that all signals can be described as a function of
+ frequency, such that a signal is composed of several component sine waves
+ of different frequencies.
+ Consider for example a square wave.
+ Recall that a square wave is used to describe discrete signals.
+ Actually, a square wave is composed of several component sine waves.
+ The equation below describes the component sine waves of a given square
+ wave.
 \end_layout
 
 \begin_layout Standard
@@ -605,6 +605,14 @@ s(t)=A\sum_{k=1}^{inf}\sin(2\pi kf_{1}t)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Notice that in this representation, a signal can have an infinite number
+ of frequency components.
+ However, the strength of the signal and its major characteristics are defined
+ in the first few sine wave components.
+ In theThe fundamental frequency of a signal 
 \end_layout
 
 \begin_layout Itemize
