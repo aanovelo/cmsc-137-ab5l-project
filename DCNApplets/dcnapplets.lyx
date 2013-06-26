@@ -239,6 +239,8 @@ The transport layer is responsible for efficiently and reliably trasferring
  Fragmented data are passed down to the network layer.
  This layer must guarantee that these arrive in order without missing or
  damaged data.
+ This layer is also responsible for the high-leve function of establishing
+ and terminating connections.
 \end_layout
 
 \begin_layout Paragraph*
@@ -247,7 +249,8 @@ Session (Layer 5)
 
 \begin_layout Standard
 The session layer is responsible for maintaining the state of the data transfer.
- 
+ It is involved in coordinating the communication process by synchronizing
+ data flow and reestablishing connection.
 \end_layout
 
 \begin_layout Paragraph*
@@ -255,8 +258,9 @@ Presentation (Layer 6)
 \end_layout
 
 \begin_layout Standard
-The presentation layer is responsible for encryption and data formats and
- conversion.
+The presentation layer is responsible for compression, encryption, data
+ formats, and code conversions.
+ 
 \end_layout
 
 \begin_layout Paragraph*
@@ -265,6 +269,7 @@ Application (Layer 7)
 
 \begin_layout Standard
 The application layer is responsible for user-specific functions.
+ Examples are e-mail, file transfer, and remote access.
 \end_layout
 
 \begin_layout Itemize
