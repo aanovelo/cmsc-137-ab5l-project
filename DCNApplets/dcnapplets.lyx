@@ -535,11 +535,27 @@ In simple terms a signal is an expression with an associated meaning.
  digital data.
  Analog signals are graphically represented as sine waves and discrete signals
  as square waves.
+ Most signals are periodic, that is they follow a repeating pattern in their
+ graphs.
+ Other signals are aperiodic where no pattern is repeated in their graphs.
  
 \end_layout
 
 \begin_layout Itemize
 What is frequency, spectrum, and bandwidth?
+\end_layout
+
+\begin_layout Standard
+Most signals are represented as sine waves.
+ Sine waves represent continuous and periodic signals.
+ As such, signals can be characterized by amplitude, frequency, and phase.
+ Amplitude(A) refers to the strength of a signal and is measured in terms
+ of volts.
+ Frequency(f) refers to the rate of change of a signal and is measured in
+ terms of hertz (Hz) or cycles per second.
+ Period (T) represents the time for one repetition in the signal.
+ Period is equal to 1/f.
+ Phase refers to the relative position of the wave with respect to time.
 \end_layout
 
 \begin_layout Itemize
