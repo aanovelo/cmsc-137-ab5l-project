@@ -533,6 +533,8 @@ In simple terms a signal is an expression with an associated meaning.
  Discrete signals are those that have abrupt changes or breaks.
  Continuous signals represent analog information and discrete signals represent
  digital data.
+ Analog signals are graphically represented as sine waves and discrete signals
+ as square waves.
  
 \end_layout
 
