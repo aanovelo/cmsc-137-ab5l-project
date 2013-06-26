@@ -330,11 +330,19 @@ TCP on the otherhand is a connection-oriented protocol since it uses connection
  Retransmission of data is also implemented in case of damaged and lost
  data.
  TCP is best to use applications that require data to be transmitted accurately,
- an example of which is file transfer.
+ examples of which are file transfer and e-mail.
 \end_layout
 
 \begin_layout Paragraph*
 Application (Layer 4)
+\end_layout
+
+\begin_layout Standard
+Application layer provides user-specific applications such as e-mail and
+ file transfer.
+ There are several protocols in the application layer.
+ Examples are Hypertext Transfer Protocol, File Transfer Protocol, Telnet,
+ Simple Male Transfer Protocol, Domain Name System, and many others.
 \end_layout
 
 \begin_layout Itemize
