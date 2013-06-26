@@ -310,7 +310,8 @@ Normally data is transferred in chunks (packets).
  thus requiring an 8-bit signal.
  The conversion from the bits to signals is referred to as transmission
  delay.
- 
+ Transmission delay is affected by the length of the packet and the rate
+ of the link.
 \end_layout
 
 \begin_layout Itemize
@@ -321,7 +322,8 @@ What is node processing delay?
 Node processing delay is caused by the processing done by the computer on
  the data that must be transferred.
  Example of processing include breaking large chunks of data, converting
- across different formats, and security processing.
+ across different formats, security processing, checking for errors, and
+ determining the output link.
  All of these tasks take some time and is referred to as node processing
  delay.
 \end_layout
@@ -338,6 +340,9 @@ The amount of time it takes for a single bit (or signal element) to traverse
  We know that a train is composed of several cars.
  The time it takes for a car to move from one end of the railroad to another
  is called propagation delay.
+ Propagation delay is dependent on the length of the link (how long the
+ railroad track is) and the propagation speed of the medium (dependent on
+ the medium properties).
 \end_layout
 
 \begin_layout Itemize
@@ -349,6 +354,8 @@ Data transferred across a network usually queues up on some intermediate
  node.
  The time it takes for data to wait for an intermediate node to process
  it is called queuing delay.
+ The amount of delay is dependent on how congested an intermediate node
+ is.
 \end_layout
 
 \begin_layout Chapter
