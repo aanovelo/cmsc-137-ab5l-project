@@ -170,7 +170,8 @@ What are the well-known network models ?
 \begin_layout Standard
 Two well-known network models exist.
  One is the Open Systems Interconnections (OSI) and the other is the Transmissio
-n Control Protocol (TCP).
+n Control Protocol /Internel Protocol(TCP/IP).
+ TCP was developed by DARPA and is currently used by the Internet.
 \end_layout
 
 \begin_layout Itemize
@@ -277,19 +278,33 @@ What are the layers of TCP/IP?What are the functions of each layer?
 \end_layout
 
 \begin_layout Paragraph*
-Physical
+Physical (Layer 1)
+\end_layout
+
+\begin_layout Standard
+The physical layer for TCP/IP is very similar to Layer 0 of OSI.
+ It is responsible for the physical interface like signals, connectors,
+ voltages, etc.
+ Sometimes, included in the physical layer of TCP/IP is the data link layer
+ of the OSI.
 \end_layout
 
 \begin_layout Paragraph*
-Network
+Internet (Layer 2)
+\end_layout
+
+\begin_layout Standard
+The Internet Layer is similar in function to the Network layer of OSI.
+ The main protocol for this layer is the Internet Protocol which describes
+ an addressing and routing schemes.
 \end_layout
 
 \begin_layout Paragraph*
-Transport
+Transport (Layer 3)
 \end_layout
 
 \begin_layout Paragraph*
-Application
+Application (Layer 4)
 \end_layout
 
 \begin_layout Itemize
