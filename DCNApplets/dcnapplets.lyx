@@ -574,7 +574,7 @@ Most signals are represented as sine waves.
 
 .The wavelength of a signal is equal to the period multiplied by the speed
  of light, c, which is equal to 
-\begin_inset Formula $3x10^{8}m/s$
+\begin_inset Formula $3+10^{8}m/s$
 \end_inset
 
 .
@@ -763,6 +763,32 @@ Digital data (zero's and one's) can be transmitted as digital signals (square
 
 \begin_layout Itemize
 What are the different digital-analog encoding techniques?
+\end_layout
+
+\begin_layout Standard
+In some instances, digital data must be converted into analog signals for
+ transmission.
+ The main reason for this is that existing transmission systems are capable
+ of transmitting analog signals only.
+ For example, the public telephone system can transmit analog signals in
+ the voice frequency range of 300Hz to 3400Hz.
+ During the early days when digital transmission systems do not exist, home
+ owners connect to the Internet using a modem(modulator-demodulator) that
+ converts digital characters into tones that can be transmitted over the
+ telephone line.
+ This is referred to as dial-up networking in the early days.
+ There are several techniques to perform this encoding.
+ The most common are the Amplitude Shift Keying(ASK), Frequency Shift-Keying(FSK
+), and Phase Shift Keying(PSK).
+\end_layout
+
+\begin_layout Standard
+Amplitude Shift Keying uses the amplitude to represent 1 and 0.
+ Oftentimes, 1 is denoted by a certain amplitude value and 0 by the absence
+ of the carrier signal (zero amplitude).
+ On voice grade lines, it can achieve a data rate of up to 1200 bps.
+ One application of ASK is transmitting digital data using fiber optic cable
+ as transmission medium.
 \end_layout
 
 \begin_layout Itemize
