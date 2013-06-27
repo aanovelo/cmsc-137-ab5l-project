@@ -765,8 +765,8 @@ In some instances, digital data must be converted into analog signals for
 
 \begin_layout Standard
 Amplitude Shift Keying uses the amplitude to represent 1 and 0.
- Oftentimes, 1 is denoted by a certain amplitude and 0 by the absence of
- the carrier signal (zero amplitude).
+ Oftentimes, 1 is denoted by a certain amplitude value and 0 by the absence
+ of the carrier signal (zero amplitude).
  On voice grade lines, it can achieve a data rate of up to 1200 bps.
  One application of ASK is transmitting digital data using fiber optic cable
  as transmission medium.
