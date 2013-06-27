@@ -504,7 +504,7 @@ From the sample scenario, we observe that the original message (the thought)
  sound waves.
  Observe the the form of the original message and the transmitted form are
  very different.
- As the sound waves travel through air, it can be affected by other sounds
+ As the sound waves travel through ar, it can be affected by other sounds
  (noise) which can distort the original signal, altering its meaning.
  The strength of the sound waves eventually lessens as the sound waves move
  away from the source, the boyfriend needs to shout if his girlfriend is
@@ -746,7 +746,7 @@ What are the different digital-digital encoding techniques?
 Digital data (zero's and one's) can be transmitted as digital signals (square
  wave).
  The main reason for using this encoding technique is that it is easier
- to develop equipment for this type of encoding,e as well as it is cheaper.
+ to develop equipment for this type of encoding, as well as it is cheaper.
  Normally the signaling is based on voltage pulses, referred to as signaling
  elements.
  First let us define some terms.
@@ -789,6 +789,13 @@ Amplitude Shift Keying uses the amplitude to represent 1 and 0.
  On voice grade lines, it can achieve a data rate of up to 1200 bps.
  One application of ASK is transmitting digital data using fiber optic cable
  as transmission medium.
+\end_layout
+
+\begin_layout Standard
+Frequency Shift Keying uses freqiency to represent the binary values.
+ For example we can represent 1 with f=2 and 0 with f=4.
+ FSK is widely used for high frequency radio and LANs that use coaxial as
+ transmission medium.
 \end_layout
 
 \begin_layout Itemize
