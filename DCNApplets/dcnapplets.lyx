@@ -742,6 +742,25 @@ LOSS=10\log\left(\frac{5}{20}\right)=10\left(-0.6\right)=-6dB
 What are the different digital-digital encoding techniques?
 \end_layout
 
+\begin_layout Standard
+Digital data (zero's and one's) can be transmitted as digital signals (square
+ wave).
+ The main reason for using this encoding technique is that it is easier
+ to develop equipment for this type of encoding,e as well as it is cheaper.
+ Normally the signaling is based on voltage pulses, referred to as signaling
+ elements.
+ First let us define some terms.
+ Unipolar means that all the signal elements have the same sign, that is
+ all are positive voltages or all are negative voltages.
+ Polar means that positive or negative vultages are used in the signalling.
+ Data rate refers to rate of transmitting data in bits per second.
+ The duration/legth of a bit is the amount of time it takes for a transmitter
+ to emit a bit.
+ Given a data rate R, then the duration is 1/R.
+ Modulation rate is the rate at which the signal level changes.
+ It is measured in terms of baud or signal elements per second.
+\end_layout
+
 \begin_layout Itemize
 What are the different digital-analog encoding techniques?
 \end_layout
