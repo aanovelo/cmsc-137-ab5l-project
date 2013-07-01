@@ -825,14 +825,44 @@ Nonreturn-to-Zero-Inverted on ones also uses a constant voltage for a bit
  duration.
  However, instead of voltage level, it is the signal transition that indicates
  the value of the bit.
+ If a signal transition from low to high or high to low is present at the
+ start of the bit duration then the signal is interpreted as 1, no transition
+ indicates 0.
+ This is an example of differential encoding since the current value is
+ based on the previous value.
+ Voltage transition is more reliable than voltage level since it the receiver
+ will not be affected by timing errors.
+\end_layout
+
+\begin_layout Standard
+NRZ is easy to work with and makes effective use of bandwidth of the transmissio
+n system.
+ However, it has a DC component and its lack of synchronization capabilities
+ requiring an external clock for timing.
+ 
 \end_layout
 
 \begin_layout Paragraph*
 Bipolar-AMI
 \end_layout
 
+\begin_layout Standard
+Bipolar-AMI is is an example of multilevel binary which uses more than two
+ voltage levels to represent a 1, which alternate in polarity.
+ 0 is represented by the absence of the signal.
+ The advantage of this is that there is no net DC component, thus providing
+ electrical isolation.
+ However, the bandwidth is less than NRZ.
+ Errors can easily be detected given the alternating polarity for 1s.
+\end_layout
+
 \begin_layout Paragraph*
 Pseudoternary
+\end_layout
+
+\begin_layout Standard
+Pseudoternary is very similar to Bipolar-AMI except that it is zero that
+ is represented by alternating polarities and 1 by the absence of a signal.
 \end_layout
 
 \begin_layout Paragraph*
