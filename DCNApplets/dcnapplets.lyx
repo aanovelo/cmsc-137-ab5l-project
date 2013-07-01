@@ -764,18 +764,43 @@ Digital data (zero's and one's) can be transmitted as digital signals (square
 \end_layout
 
 \begin_layout Standard
-At the recevier end, it must know the timing of the bits as well as the
- signal level, either high or low, in order to interpret the signals.
- There are several factors that affect successful interpretation.
+At the recevier end, it must know the timing of the bits, to determine the
+ start and and of a bit, as well as the signal level, either high or low,
+ in order to interpret the signals.
+ There are several factors that affect successful interpretation, including
+ signa-to-noise ration, bandwidth, and data rate.
  First a high signal-to-noise ratio will guarantee a decrease in the bit
  error rate.
  Another, if the data rate is increased, the bit error rate will also increase.
  Lastly, by increasing the bandwidth, data rate will be increased.
+ Desirable encoding schemes can also improve the interpretation.
  
 \end_layout
 
 \begin_layout Standard
-
+There are several factors to consider when comparing different encoding
+ schemes.
+ The first is signal spectrum.
+ If the signal has very few high frequency components, then less bandwidth
+ is required to transmit the signal.
+ The lack of a DC component in the signal provides electrical isolation
+ via transformer.
+ Second is clocking.
+ Clocking is important to synchronize the transmitter and the receiver.
+ An expensive approach here is for the transmitter and the receiver to use
+ an external clock to sychnronize, which requires an additional line.
+ A cheaper method is to embed in the signal the synchronization information.
+ Some encoding techniques use this approach as you will see later.
+ Third is error detection.
+ Several impairments can happen during transmission.
+ Error detection can be built into the physical signal itself to speed up
+ the process.
+ Fourth is immunity to noise.
+ Certain coding schemes are resistant to noise and other signal interference.
+ Lastly, is cost and complexity.
+ Some encoding schemes will require complicated hardware circuitry while
+ others can operate in simple circuits.
+ 
 \end_layout
 
 \begin_layout Itemize
