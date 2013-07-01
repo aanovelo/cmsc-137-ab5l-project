@@ -780,15 +780,22 @@ In some instances, digital data must be converted into analog signals for
  There are several techniques to perform this encoding.
  The most common are the Amplitude Shift Keying(ASK), Frequency Shift-Keying(FSK
 ), and Phase Shift Keying(PSK).
+ A carrier frequency 
+\begin_inset Formula $f_{c}$
+\end_inset
+
+ is used to carry the signal for all the approaches.
 \end_layout
 
 \begin_layout Standard
 Amplitude Shift Keying uses the amplitude to represent 1 and 0.
- Oftentimes, 1 is denoted by a certain amplitude value and 0 by the absence
- of the carrier signal (zero amplitude).
+ Oftentimes, 1 is denoted by a certain amplitude value(actually the presence
+ of the carrier signal) and 0 by the absence of the carrier signal (zero
+ amplitude).
  On voice grade lines, it can achieve a data rate of up to 1200 bps.
  One application of ASK is transmitting digital data using fiber optic cable
  as transmission medium.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -796,6 +803,31 @@ Frequency Shift Keying uses freqiency to represent the binary values.
  For example we can represent 1 with f=2 and 0 with f=4.
  FSK is widely used for high frequency radio and LANs that use coaxial as
  transmission medium.
+ The frequencies are an offset from the carrier frequency but on opposite
+ ends.
+\end_layout
+
+\begin_layout Standard
+Lastly, Phase Shift Keying uses the changes in the phase of the signal for
+ data representation.
+ For example, a phase angle of 90 degrees can represent 1 and a phase angle
+ of 180 degrees can represent a zero.
+ In some cases, the shifts in phase is relative to the previous transmission
+ rather than a reference.
+ This is referred to as differential PSK.
+ One interesting aspect of PSK is that we can use a single signal to represent
+ more than just a single bit.
+ This will improve the efficiency of the transmission.
+ In Quadrature PSK for example, shifts of 90 degrees can be used wherein
+ each shift represents two bits (dibits).
+ 0 degrees represents 00, 90 degrees represents 01, 180 degrees represents
+ 10, and 270 degrees represent 11.
+ Moreover, we can transmit 3 bits using 8 phase angles.
+ 
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Itemize
