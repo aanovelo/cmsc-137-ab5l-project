@@ -803,6 +803,38 @@ There are several factors to consider when comparing different encoding
  
 \end_layout
 
+\begin_layout Paragraph*
+NRZ-L
+\end_layout
+
+\begin_layout Paragraph*
+NRZI
+\end_layout
+
+\begin_layout Paragraph*
+Bipolar-AMI
+\end_layout
+
+\begin_layout Paragraph*
+Pseudoternary
+\end_layout
+
+\begin_layout Paragraph*
+Manchester
+\end_layout
+
+\begin_layout Paragraph*
+Differential Manchester
+\end_layout
+
+\begin_layout Paragraph*
+B8ZS
+\end_layout
+
+\begin_layout Paragraph*
+HDB3
+\end_layout
+
 \begin_layout Itemize
 What are the different digital-analog encoding techniques?
 \end_layout
