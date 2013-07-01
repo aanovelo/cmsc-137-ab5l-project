@@ -807,8 +807,24 @@ There are several factors to consider when comparing different encoding
 NRZ-L
 \end_layout
 
+\begin_layout Standard
+Nonreturn-to-Zero-Level uses two voltages, positive and negative, to represent
+ 1 and 0.
+ During the bit interval, the voltage is constant.
+ The bit interval is the time alloted for the transmission of a single bit.
+ In other encodings, the voltage level may change during a bit interval
+ as we shall see later.
+\end_layout
+
 \begin_layout Paragraph*
 NRZI
+\end_layout
+
+\begin_layout Standard
+Nonreturn-to-Zero-Inverted on ones also uses a constant voltage for a bit
+ duration.
+ However, instead of voltage level, it is the signal transition that indicates
+ the value of the bit.
 \end_layout
 
 \begin_layout Paragraph*
