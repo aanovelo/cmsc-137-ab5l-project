@@ -827,7 +827,10 @@ Lastly, Phase Shift Keying uses the changes in the phase of the signal for
 \end_layout
 
 \begin_layout Standard
-
+ASK and PSK can be combined to further improve transmission efficiency.
+ This technique is called Quadrature Amplitude Modulation (QAM).
+ Using eight phase angles and two amplitudes, 16 signal changes can be achieved
+ which allow it to transmit 4 bits per signal level.
 \end_layout
 
 \begin_layout Itemize
