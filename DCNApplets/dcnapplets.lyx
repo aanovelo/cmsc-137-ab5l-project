@@ -759,6 +759,23 @@ Digital data (zero's and one's) can be transmitted as digital signals (square
  Given a data rate R, then the duration is 1/R.
  Modulation rate is the rate at which the signal level changes.
  It is measured in terms of baud or signal elements per second.
+ For historical reasons, the term Mark represents a binary 1 and the term
+ space represent binary 0.
+\end_layout
+
+\begin_layout Standard
+At the recevier end, it must know the timing of the bits as well as the
+ signal level, either high or low, in order to interpret the signals.
+ There are several factors that affect successful interpretation.
+ First a high signal-to-noise ratio will guarantee a decrease in the bit
+ error rate.
+ Another, if the data rate is increased, the bit error rate will also increase.
+ Lastly, by increasing the bandwidth, data rate will be increased.
+ 
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Itemize
