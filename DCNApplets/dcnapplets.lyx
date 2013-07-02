@@ -884,8 +884,29 @@ Compared to NRZ, multilevel binary does is not as efficient.
 Manchester
 \end_layout
 
+\begin_layout Standard
+Manchester encoding forces a transition at the middle of each bit duration
+ which serves both for timing and data.
+ Midbit transition from low to high represents a one and high to low transition
+ represents a zero.
+ Manchester encoding is used in IEEE 802.3 LAN technology.
+ How does the midbit transition allow for synchronization?What happens is
+ that the receiver will always look for this transition within a bit duration
+ such that if the receiver did not detect this error, then there must be
+ something wrong.
+ Although this makes the timing built in to the signal, it complicates the
+ logic at the receiver end.
+ 
+\end_layout
+
 \begin_layout Paragraph*
 Differential Manchester
+\end_layout
+
+\begin_layout Standard
+Differential Manchester is similar to Manchester except that the midbit
+ transition is for timing only and the transition at the start of the bit
+ duration is used for determining a zero or a one.
 \end_layout
 
 \begin_layout Paragraph*
