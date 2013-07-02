@@ -865,6 +865,21 @@ Pseudoternary is very similar to Bipolar-AMI except that it is zero that
  is represented by alternating polarities and 1 by the absence of a signal.
 \end_layout
 
+\begin_layout Standard
+Compared to NRZ, multilevel binary does is not as efficient.
+ The reason is that ideally, for a 3-level scheme, it should be able to
+ represent 
+\begin_inset Formula $\log_{2}3$
+\end_inset
+
+=1.58 bits.
+ However, it this case, each signal element can represent only a single
+ bit.
+ Another is that at the receiver end, it must distinguish among positive,
+ negative, and zero level signals which complicate its logic.
+ 
+\end_layout
+
 \begin_layout Paragraph*
 Manchester
 \end_layout
