@@ -1151,6 +1151,50 @@ y(t)=A\left[1+M\cos(f_{m}t+\theta_{m}\right]\sin(f_{c}t)
 
 \begin_layout Standard
 Frequency modulation varies the instantaneous frequency.
+ Given a message signal 
+\begin_inset Formula $x_{m}(t)$
+\end_inset
+
+ and the carrier 
+\begin_inset Formula $x_{c}(t)=A_{c}\cos(2\pi f_{c}t$
+\end_inset
+
+), the transmitted signal is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y(t)=A_{c}\cos\left(2\pi f_{c}t+\frac{f_{\Delta}}{f_{m}}\cos\left(2\pi f_{m}t\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Phase modulation alters the phase angle.
+ Consider the modulating signal 
+\begin_inset Formula $m(t)$
+\end_inset
+
+and the carrier signal 
+\begin_inset Formula $c(t)=A_{c}\sin(f_{c}t+\theta_{c})$
+\end_inset
+
+, the modulating signal is given by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y(t)=A_{c}\sin(f_{c}t+m(t)+\theta_{c})
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
