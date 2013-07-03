@@ -1221,6 +1221,14 @@ A common technique is called Pulse Code Modulation (PCM).
  the final signal.
 \end_layout
 
+\begin_layout Standard
+Another approach is Delta Modulation where the values of the bits depend
+ on the level of the signal relative to the previous level.
+ When the signal is going up, a value of 1 is used, otherwise, 0.
+ The main disadvantage of this approach is that a signal that changes fast
+ will cause a loss of information.
+\end_layout
+
 \begin_layout Chapter
 Data Link Layer
 \end_layout
