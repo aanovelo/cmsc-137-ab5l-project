@@ -1201,6 +1201,26 @@ y(t)=A_{c}\sin(f_{c}t+m(t)+\theta_{c})
 What are the different analog-digital encoding techniques?
 \end_layout
 
+\begin_layout Standard
+Naturally occuring data are usually analog, for instance sound.
+ In order for the analog data to be processed by a digital device, say a
+ computer, these analog data are converted to digital signals.
+ This process is call digitization.
+ Similar to a modem, a device that converts analog data to digitial signals
+ is referred to as codec (coder-decoder).
+ 
+\end_layout
+
+\begin_layout Standard
+A common technique is called Pulse Code Modulation (PCM).
+ It involves two steps, sampling and coding.
+ The sampling step takes a sample of the amplitude of the signals waveform
+ at regular intervals.
+ The generated signal should match the corresponding analog signal.
+ The coding step then maps the analog samples to binary code to generate
+ the final signal.
+\end_layout
+
 \begin_layout Chapter
 Data Link Layer
 \end_layout
