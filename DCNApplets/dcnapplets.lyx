@@ -1126,7 +1126,22 @@ c(t)=A\sin(f_{c}t+\theta_{c})
 \begin_layout Standard
 \begin_inset Formula 
 \[
-m(t)=M\cos(m_{c}+\theta_{m})
+m(t)=M\cos(f_{m}+\theta_{m})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The final signal transmitted is the product of the two:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y(t)=A\left[1+M\cos(f_{m}t+\theta_{m}\right]\sin(f_{c}t)
 \]
 
 \end_inset
