@@ -1087,6 +1087,26 @@ ASK and PSK can be combined to further improve transmission efficiency.
 What are the different analog-analog digital encoding techniques?
 \end_layout
 
+\begin_layout Standard
+Analog data can also be transmitted using analog signals.
+ The analog data can be represented at their own frequency (baseband) as
+ in the case of the telephone system.
+ It can also be encoded using a different frequency(carrier) as in the case
+ of radio broadcasting.
+ The altering of a signal in a given frequency by encoding data in it is
+ called modulation.
+ By modulating signals, we can take advantage of higher frequency signals
+ for more efficient transmission.
+ For example, the radio station RJ transmits at a frequency off 100.3 MHz
+ to carry music.
+ Another advantage of modulation is that it allow multiplexing which allows
+ multiple data to be carried by a single high frequency as in the case of
+ cable television where you have a single cable running to your home but
+ you can watch different channels (centered on different low frequency signals).
+ In this section we look at three approaches to modulation namely: amplitude,
+ frequency, and phase.
+\end_layout
+
 \begin_layout Itemize
 What are the different analog-digital encoding techniques?
 \end_layout
