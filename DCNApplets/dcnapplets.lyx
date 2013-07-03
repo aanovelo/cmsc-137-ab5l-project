@@ -1107,6 +1107,33 @@ Analog data can also be transmitted using analog signals.
  frequency, and phase.
 \end_layout
 
+\begin_layout Standard
+Amplitude modulation uses changes in amplitude.
+ Given a carrier signal c(t) and message m(t)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c(t)=A\sin(f_{c}t+\theta_{c})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m(t)=M\cos(m_{c}+\theta_{m})
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 What are the different analog-digital encoding techniques?
 \end_layout
