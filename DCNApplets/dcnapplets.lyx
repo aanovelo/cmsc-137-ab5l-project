@@ -925,6 +925,25 @@ B8ZS
 \begin_layout Standard
 There are instances that data to be sent can consist of long sequence of
  ones or long sequence of zeros.
+ In these cases, especially in long distance communication, the timing of
+ the receiver may be off because of the the constant voltage levels.
+ Scrambling techniques allow contants voltage levels to be replaced by a
+ certain pattern that can still be recognizable by the receiver but allows
+ for synchronization.
+ The pattern should be able to produce a sufficient amount of transitions
+ to synchronize the receiver and the transmitter and must be of the same
+ length as the original.
+\end_layout
+
+\begin_layout Standard
+Bipolar with 8 zeros Substitution is based on the bipolar-AMI.
+ It follows simple substitution rule.
+ If there is an octet of all zeros and the last voltage was positive then
+ the patter 000+-0-+ is used.
+ If the last voltage is negative, we use the pattern 000-+0-.
+ These patterns causes two violations of the AMI code and the occurence
+ of this pattern is statistically proven to be very unlikely in regular
+ transmission.
  
 \end_layout
 
@@ -932,6 +951,66 @@ There are instances that data to be sent can consist of long sequence of
 HDB3
 \end_layout
 
+\begin_layout Standard
+High Density Bipolar 3 Zeros is another scrambling technique that is also
+ based on the Bipolar-AMI.
+ In this approach, a string of four zeros is replaced with one or two pulses
+ with the fourth zero being replaced with a code violation in AMI.
+ 
+\end_layout
+
+\begin_layout Itemize
+Polarity of preceding pulse: Negative
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Number of 1's since last substitution: Odd
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+000-
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Number of 1's since last substitution: Even
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
++00+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Polarity of preceding pulse: Negative
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Number of 1's since last substitution: Odd
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+000+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Number of 1's since last substitution: Even
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+-00-
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Itemize
 What are the different digital-analog encoding techniques?
 \end_layout
