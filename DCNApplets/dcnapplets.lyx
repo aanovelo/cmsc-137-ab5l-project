@@ -909,8 +909,23 @@ Differential Manchester is similar to Manchester except that the midbit
  duration is used for determining a zero or a one.
 \end_layout
 
+\begin_layout Standard
+Some of the disadvantages of biphase (Manchester and Differential Manchester)
+ include high bandwidth requirement, presence of at least one transition
+ (at most two) for a bit duration, requires twice the modulation rate of
+ NRZ.
+ On the other hand, the advantages include self-clocking, absence of a DC
+ component, and error detection.
+\end_layout
+
 \begin_layout Paragraph*
 B8ZS
+\end_layout
+
+\begin_layout Standard
+There are instances that data to be sent can consist of long sequence of
+ ones or long sequence of zeros.
+ 
 \end_layout
 
 \begin_layout Paragraph*
