@@ -1135,7 +1135,7 @@ m(t)=M\cos(f_{m}+\theta_{m})
 \end_layout
 
 \begin_layout Standard
-The final signal transmitted is the product of the two:
+The modullated signal transmitted is the product of the two:
 \end_layout
 
 \begin_layout Standard
@@ -1147,6 +1147,10 @@ y(t)=A\left[1+M\cos(f_{m}t+\theta_{m}\right]\sin(f_{c}t)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Frequency modulation varies the instantaneous frequency.
 \end_layout
 
 \begin_layout Itemize
