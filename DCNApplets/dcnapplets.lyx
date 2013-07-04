@@ -1250,8 +1250,13 @@ Flow control guarantees that the receiving entity is not overwhelmed by
  The receiver has limited resources (for example buffers and processing
  power).
  If the sender will send too much information, the receiver might not be
- able to process all of them.
-  
+ able to process all of them because of the limited resources.
+ In this section, we assume that there are no errors in the frames that
+ are being transmitted.
+ Also, we use a sequence diagram to illustrate the interaction of the sender
+ and the receiver.
+ The sequence diagram shows the progression across time.
+ Before we discuss the 
 \end_layout
 
 \begin_layout Exercise*
