@@ -1256,7 +1256,46 @@ Flow control guarantees that the receiving entity is not overwhelmed by
  Also, we use a sequence diagram to illustrate the interaction of the sender
  and the receiver.
  The sequence diagram shows the progression across time.
- Before we discuss the 
+ Before we discuss the different approaches, let us review some definitions
+ first.
+ Transmission time refers to the time taken to emit all bits into the medium.
+ Propagation time refers to the time it takes for a bit to traverse the
+ link.
+ These times affect the efficiency of the transmission given a flow control
+ protocol.
+ 
+\end_layout
+
+\begin_layout Standard
+The first protocol we are going to look at is called stop-and-wait.
+ In this protocol the sender waits for an acknowledgment(ACK) from the receiver
+ before it sends the next frame.
+ In essence, by not sending an ACK, the receiver can stop the sender from
+ sending the next frame.
+ As you can see, this protocol is simple.
+ However, this approach is effective only for large frames.
+ In todays networks, large chunks of data are divided into smaller pieces.
+ This process is called fragmentation.
+ There are several advantages of doing this as stated below.
+\backslash
+
+\end_layout
+
+\begin_layout Itemize
+The receiver may have a smaller buffer size than the actual data to transmit.
+\end_layout
+
+\begin_layout Itemize
+It is easy to detect errors early if we have small frames.
+ When retransmission is needed in case of erroneous frames, only a smaller-sized
+ frame needs to be retransmitted.
+ 
+\end_layout
+
+\begin_layout Itemize
+In case of a multipoint links wherein several stations are connected, it
+ prevents a single station from occupying the medium for a long period of
+ time.
 \end_layout
 
 \begin_layout Exercise*
