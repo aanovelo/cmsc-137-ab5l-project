@@ -1433,12 +1433,9 @@ a=\frac{\frac{d}{c}}{\frac{L}{R}}=\frac{Rd}{cL}
 \begin_inset Formula $a$
 \end_inset
 
-is thus proportional to the length of the link and the data rate.
+is thus proportional to the length of the link and the data rate which represent
+s the length of the medium in bits.
  
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Exercise*
