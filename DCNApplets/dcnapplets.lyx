@@ -1267,7 +1267,7 @@ Flow control guarantees that the receiving entity is not overwhelmed by
 \end_layout
 
 \begin_layout Standard
-The first protocol we are going to look at is called stop-and-wait.
+The first protocol we are going to look at is called Stop-and-Wait.
  In this protocol the sender waits for an acknowledgment(ACK) from the receiver
  before it sends the next frame.
  In essence, by not sending an ACK, the receiver can stop the sender from
@@ -1434,8 +1434,26 @@ a=\frac{\frac{d}{c}}{\frac{L}{R}}=\frac{Rd}{cL}
 \end_inset
 
 is thus proportional to the length of the link and the data rate which represent
-s the length of the medium in bits.
+s the length of the medium in bits (
+\begin_inset Formula $\frac{Rd}{V}$
+\end_inset
+
+) compared to the length of the frame.
  
+\end_layout
+
+\begin_layout Standard
+To illustrate the concepts, consider a modem on a voice-grade line.
+ The data rate for such connections is 9600 bps.
+ We let 
+\begin_inset Formula $c=2x10^{8}m/s$
+\end_inset
+
+for a typical coaxial cable.
+ If the length of the frame is 500 bits and the distance is about 100m then
+ the utilization is good.
+ However if we let d to be 5000km, the utilization is only 0.5.
+ In general Stop-and-Wait is inefficient despite its simplicity.
 \end_layout
 
 \begin_layout Exercise*
