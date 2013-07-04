@@ -1454,6 +1454,11 @@ for a typical coaxial cable.
  the utilization is good.
  However if we let d to be 5000km, the utilization is only 0.5.
  In general Stop-and-Wait is inefficient despite its simplicity.
+ The main problem with Stop-and-Wait is that it does not take advantage
+ of the fact that the length of the link in bits is sometimes longer than
+ the frame length.
+ This means that we can send another frame while waiting for the acknowledgement
+ of the previous frame.
 \end_layout
 
 \begin_layout Exercise*
