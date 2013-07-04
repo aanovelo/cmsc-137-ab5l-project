@@ -1238,9 +1238,20 @@ Flow Control
 \end_layout
 
 \begin_layout Standard
-Flow control describes how frames are transmitted.
- Recall that frame transmission belongs to the function of the data link
- layer.
+The data link layer is responsible for activities such as framing, error
+ control, and flow control.
+ In general, the goal of the data link layer is efficient and reliable data
+ transfer.
+\end_layout
+
+\begin_layout Standard
+Flow control guarantees that the receiving entity is not overwhelmed by
+ the sending entity.
+ The receiver has limited resources (for example buffers and processing
+ power).
+ If the sender will send too much information, the receiver might not be
+ able to process all of them.
+  
 \end_layout
 
 \begin_layout Exercise*
