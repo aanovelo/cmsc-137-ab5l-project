@@ -1298,6 +1298,66 @@ In case of a multipoint links wherein several stations are connected, it
  time.
 \end_layout
 
+\begin_layout Standard
+Let us analyze the efficiency of this protocol using a half-duplex link
+ by examining the total amount of the time the sender has to wait before
+ sending the next frame.
+ Let us denote this value as 
+\begin_inset Formula $T_{t}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{t}=T_{frame}+T_{prop}+T_{procReceiver}+T_{ack}+T_{prop}+T_{procSender}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we assume that the processing time(
+\begin_inset Formula $T_{procReceiver}$
+\end_inset
+
+and 
+\begin_inset Formula $T_{procSender}$
+\end_inset
+
+) and the acknowledgment frame(
+\begin_inset Formula $T_{ack}$
+\end_inset
+
+) are negligible then 
+\begin_inset Formula $T_{t}$
+\end_inset
+
+becomes just the sum of the frame transmission time and twice the propagation
+ time.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{t}=T_{frame}+2T_{prop}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Exercise*
 Try to answer the following questions.
 \end_layout
