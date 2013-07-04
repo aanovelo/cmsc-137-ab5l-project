@@ -1355,6 +1355,89 @@ T_{t}=T_{frame}+2T_{prop}
 \end_layout
 
 \begin_layout Standard
+We let 
+\begin_inset Formula $U$
+\end_inset
+
+be the measure of efficiency such that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U=\frac{T_{frame}}{\left(T_{frame}+2T_{prop}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can define 
+\begin_inset Formula $a=\frac{T_{prop}}{T_{frame}}$
+\end_inset
+
+ and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U=\frac{1}{1+2a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This represents the maximum utilization of the link.
+ Propagation time(
+\begin_inset Formula $T_{prop}$
+\end_inset
+
+) is equal to the length of the link(
+\begin_inset Formula $d$
+\end_inset
+
+) divided by the propagation velocity(
+\begin_inset Formula $c$
+\end_inset
+
+), which is usually near the speed of light.
+ Transmission time is the length of the frame(
+\begin_inset Formula $L$
+\end_inset
+
+) divided by the data rate(
+\begin_inset Formula $R$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=\frac{\frac{d}{c}}{\frac{L}{R}}=\frac{Rd}{cL}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a$
+\end_inset
+
+is thus proportional to the length of the link and the data rate.
+ 
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
