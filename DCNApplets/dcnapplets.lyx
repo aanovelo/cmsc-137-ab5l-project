@@ -1508,6 +1508,10 @@ The name sliding window comes from the fact that both the sender and the
  On the other hand, in the receive window, the sequence numbers of frames
  received and not yet acknowledged are stored so that the receiver knows
  what frames to process.
+ The send and receive window sizes depend on the frame size, buffer, and
+ propagation time.
+ The receive window will also depend on how fast the receiver processes
+ incoming frames.
  
 \end_layout
 
