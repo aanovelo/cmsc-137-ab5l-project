@@ -1495,6 +1495,11 @@ where
  
 \end_layout
 
+\begin_layout Standard
+The name sliding window comes from the fact that both the sender and the
+ receiver maintains a send window and receive window respectively.
+\end_layout
+
 \begin_layout Exercise*
 Try to answer the following questions.
 \end_layout
