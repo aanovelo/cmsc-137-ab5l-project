@@ -1237,6 +1237,10 @@ Data Link Layer
 Flow Control
 \end_layout
 
+\begin_layout Itemize
+What is flow control?
+\end_layout
+
 \begin_layout Standard
 The data link layer is responsible for activities such as framing, error
  control, and flow control.
@@ -1268,6 +1272,14 @@ Flow control guarantees that the receiving entity is not overwhelmed by
 
 \begin_layout Subsection
 Stop and Wait
+\end_layout
+
+\begin_layout Itemize
+How does Stop-and-Wait work?
+\end_layout
+
+\begin_layout Itemize
+What are the effects of propagation delay and transmission rate?
 \end_layout
 
 \begin_layout Standard
@@ -1469,6 +1481,10 @@ for a typical coaxial cable.
 Sliding Window Flow Control
 \end_layout
 
+\begin_layout Itemize
+How does the sliding window protocol work?
+\end_layout
+
 \begin_layout Standard
 The sliding window flow control allows multiple frames to be in transit
  without waiting for acknowledgement.
@@ -1538,20 +1554,14 @@ Several enhancements are available for stop and wait.
 Try to answer the following questions.
 \end_layout
 
-\begin_layout Itemize
-What is flow control?
-\end_layout
-
-\begin_layout Itemize
-What are the effects of propagation delay and transmission rate?
-\end_layout
-
-\begin_layout Itemize
-How does the sliding window protocol work?
-\end_layout
-
 \begin_layout Section
 Error Control
+\end_layout
+
+\begin_layout Standard
+Another function of the data link layer is error control.
+ During transmission, frames may be damaged or lost in transit.
+ The data link layer must provide functions 
 \end_layout
 
 \begin_layout Subsection
@@ -1565,10 +1575,6 @@ In this approach, the sender waits for an acknowledgement frame from the
 
 \begin_layout Exercise*
 Try to answer the following questions.
-\end_layout
-
-\begin_layout Itemize
-How does Stop-and-Wait work?
 \end_layout
 
 \begin_layout Subsection
