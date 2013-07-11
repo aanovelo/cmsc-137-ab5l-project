@@ -1266,6 +1266,10 @@ Flow control guarantees that the receiving entity is not overwhelmed by
  
 \end_layout
 
+\begin_layout Subsection
+Stop and Wait
+\end_layout
+
 \begin_layout Standard
 The first protocol we are going to look at is called Stop-and-Wait.
  In this protocol the sender waits for an acknowledgment(ACK) from the receiver
@@ -1459,6 +1463,36 @@ for a typical coaxial cable.
  the frame length.
  This means that we can send another frame while waiting for the acknowledgement
  of the previous frame.
+\end_layout
+
+\begin_layout Subsection
+Sliding Window Flow Control
+\end_layout
+
+\begin_layout Standard
+The sliding window flow control allows multiple frames to be in transit
+ without waiting for acknowledgement.
+ To accomplish this, instead of having just a single buffer, the receiver
+ has W buffers.
+ The transmitter can then send W frames without waiting for acknowledgement.
+ In order to keep track of the frames, a sequence number is assigned to
+ each frame.
+ When the receiver sends an ACK, it includes the sequence number of the
+ next frame it expects.
+ The sequence number should be bounded such that there will be no two frames
+ in transit that are of the same sequence number.
+ Usually the frame numbers are modulo 
+\begin_inset Formula $2^{k}$
+\end_inset
+
+where 
+\begin_inset Formula $k$
+\end_inset
+
+ is the size of the sequence number field.
+ For example, if the size of the sequence number field of a frame is three
+ bits (k=3), then they can be numbered from zero to seven.
+ 
 \end_layout
 
 \begin_layout Exercise*
