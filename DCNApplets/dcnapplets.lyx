@@ -1498,6 +1498,9 @@ where
 \begin_layout Standard
 The name sliding window comes from the fact that both the sender and the
  receiver maintains a send window and receive window respectively.
+ The send window is the sequence number of frames that the transmitter can
+ send without waiting for an acknowledgement while the receive window is
+ the set of sequence number that the receiver is ready to accept.
 \end_layout
 
 \begin_layout Exercise*
