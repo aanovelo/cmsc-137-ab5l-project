@@ -1515,6 +1515,25 @@ The name sliding window comes from the fact that both the sender and the
  
 \end_layout
 
+\begin_layout Standard
+Several enhancements are available for stop and wait.
+ One is the ability to acknowledge a frame without permitting the sender
+ to send.
+ This is accomplished by sending a Receive Not Ready (RNR) instead of the
+ normal ACK.
+ Once the receiver is ready to receive frames, it sends a normal ACK frame.
+ In duplex mode (two-way transmission), a technique called piggbacking is
+ used.
+ A frame contains both data and ACK.
+ This approach saves capacity because only one frame is transmitted instead
+ of two(data and ACK).
+ In cases when there is no data to send, an ordinary ACK is used because
+ it is smaller in size than a regular frame.
+ If there is data to send but no new ACK, then the value of the previous
+ ACK is used.
+ 
+\end_layout
+
 \begin_layout Exercise*
 Try to answer the following questions.
 \end_layout
