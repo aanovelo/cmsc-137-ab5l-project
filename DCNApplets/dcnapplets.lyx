@@ -1501,6 +1501,14 @@ The name sliding window comes from the fact that both the sender and the
  The send window is the sequence number of frames that the transmitter can
  send without waiting for an acknowledgement while the receive window is
  the set of sequence number that the receiver is ready to accept.
+ In the send window, the window size varies as ACKs arrive and frames are
+ sent.
+ When a new ACK arrives, the size of the window increases, whereas when
+ a frame is transmitted, the the size of the window descreases.
+ On the other hand, in the receive window, the sequence numbers of frames
+ received and not yet acknowledged are stored so that the receiver knows
+ what frames to process.
+ 
 \end_layout
 
 \begin_layout Exercise*
