@@ -1604,6 +1604,10 @@ Go-Back-N
 \begin_layout Standard
 Go-Back-N retransmits all the frames that were sent after an erroneous frame
  was transmitted.
+ At the receiver end, the erroneous frame and all future frames are discarded
+ until the frame in error is received succesfully.
+ The usual ACK frame is sent by the receiver for frames with no errors.
+ 
 \end_layout
 
 \begin_layout Exercise*
