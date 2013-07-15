@@ -1614,7 +1614,15 @@ Go-Back-N retransmits all the frames that were sent after an erroneous frame
 In case of damaged frames, if a given frame Fi is sent by the transmitter
  and during transit, the frame is damaged, the receiver sends a rejection.
  After the transmitter receives the rejection, it sends Fi again and all
- subsequent frames.
+ subsequent frames sent after Fi.
+\end_layout
+
+\begin_layout Standard
+For a lost frame i, the receiver, after examining the sequence number of
+ the current frame i+1, will notice that it is missing frame i.
+ It will send a NAK or REJ i which forces the transmitter to send frame
+ i and all succeeding frames.
+ 
 \end_layout
 
 \begin_layout Exercise*
