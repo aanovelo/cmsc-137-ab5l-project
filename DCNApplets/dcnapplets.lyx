@@ -1622,6 +1622,12 @@ For a lost frame i, the receiver, after examining the sequence number of
  the current frame i+1, will notice that it is missing frame i.
  It will send a NAK or REJ i which forces the transmitter to send frame
  i and all succeeding frames.
+ If no succeeding frames have been sent after the lost frame i, the receiver
+ will get nothing and after a timeout, the transmitter will send a Request
+ Ready (RR) control frame with the Poll(P) bit set.
+ Once the reciver receives this RR, it sends an ACK with the lost frame
+ number i.
+ The transmitter then sends frame i after getting the ACK i.
  
 \end_layout
 
