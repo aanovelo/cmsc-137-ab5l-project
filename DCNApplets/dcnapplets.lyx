@@ -1561,7 +1561,12 @@ Error Control
 \begin_layout Standard
 Another function of the data link layer is error control.
  During transmission, frames may be damaged or lost in transit.
- The data link layer must provide functions 
+ A lost frame is one that has been transmitted by the transmitter but failed
+ to reach the receiver.
+ A damaged frame on the otherhand is succesfully received by the receiver
+ but it is not the frame that the transmittter sent.
+ The method for handling lost and damaged frames is referred to as Automatic
+ Repeat reQuest (ARQ).
 \end_layout
 
 \begin_layout Subsection
@@ -1569,8 +1574,23 @@ Stop-and-Wait
 \end_layout
 
 \begin_layout Standard
-In this approach, the sender waits for an acknowledgement frame from the
- receiver.
+In this approach, the sender waits for an acknowledgement frame(ACK) from
+ the receiver.
+ If no ACK is received after a certain amount of time, a timer expires and
+ the transmitter must retransmit the frame again.
+ Similar to the stop-and-wait flow control, only one frame is allowed to
+ be in transit at a time thus this method is inefficient.
+ 
+\end_layout
+
+\begin_layout Standard
+Continuous ARQ solves the inefficiency of stop-and-wait by allowing multiple
+ frames to be in transit.
+ The method is similar to the sliding window flow control.
+ If there are no errors (lost or damaged frames), then a 100% link utilization
+ can be achieved.
+ In case there are errors, two approaches are possible namely Go-Back-N
+ and Selective Reject.
 \end_layout
 
 \begin_layout Exercise*
