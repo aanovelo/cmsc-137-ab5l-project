@@ -1660,8 +1660,9 @@ Selective reject retransmits only the frames that are erroneous and is also
  to Go-Back-N.
  This however comes at a cost.
  Since the receiver must keep track of the frames recieved, it must have
- large enough buffer and at the same time more complicated circuitry.
- 
+ large enough buffer.
+ Complicated circuitry must also be present in the receiver since it must
+ reinsert the out of sequence frame.
 \end_layout
 
 \begin_layout Exercise*
