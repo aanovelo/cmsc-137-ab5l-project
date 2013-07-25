@@ -1636,6 +1636,8 @@ In case the acknowledgement is damaged, acknowledgements are cumulative.
  This means that the next acknowledgement (i+n) may arrive before transmitter
  times out of frame i.
  The (i+n) acknowledgement also acknowledges i.
+ Now in case of a time out, then the transmitter sends an RR with P bit
+ set.
  
 \end_layout
 
