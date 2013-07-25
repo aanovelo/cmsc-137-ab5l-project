@@ -1654,7 +1654,14 @@ Selective Reject
 \end_layout
 
 \begin_layout Standard
-Selective reject retransmits only the frames that are erroneous..
+Selective reject retransmits only the frames that are erroneous and is also
+ called Selective Retransmission.
+ This has the advantage of minimizing the numner of transmission as opposed
+ to Go-Back-N.
+ This however comes at a cost.
+ Since the receiver must keep track of the frames recieved, it must have
+ large enough buffer and at the same time more complicated circuitry.
+ 
 \end_layout
 
 \begin_layout Exercise*
