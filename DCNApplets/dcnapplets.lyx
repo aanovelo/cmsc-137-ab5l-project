@@ -1631,6 +1631,10 @@ For a lost frame i, the receiver, after examining the sequence number of
  
 \end_layout
 
+\begin_layout Standard
+In case the acknowledgement is 
+\end_layout
+
 \begin_layout Exercise*
 Try to answer the following questions.
 \end_layout
