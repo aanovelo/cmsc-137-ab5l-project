@@ -1628,7 +1628,7 @@ For a lost frame i, the receiver, after examining the sequence number of
  Once the reciver receives this RR, it sends an ACK with the lost frame
  number i.
  The transmitter then sends frame i after getting the ACK i.
- 
+ This case is also applicable for damaged rejection (REJ) frames.
 \end_layout
 
 \begin_layout Standard
