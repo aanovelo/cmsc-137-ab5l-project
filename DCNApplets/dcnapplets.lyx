@@ -1632,7 +1632,11 @@ For a lost frame i, the receiver, after examining the sequence number of
 \end_layout
 
 \begin_layout Standard
-In case the acknowledgement is 
+In case the acknowledgement is damaged, acknowledgements are cumulative.
+ This means that the next acknowledgement (i+n) may arrive before transmitter
+ times out of frame i.
+ The (i+n) acknowledgement also acknowledges i.
+ 
 \end_layout
 
 \begin_layout Exercise*
