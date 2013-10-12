@@ -669,13 +669,7 @@ Property 3 allows
 \end_inset
 
 .
- Key distribution in this system is simplified.
- Users generate two keys, an enciphering key E and a deciphering key D.
- E can be made public but D is kept privately by the user.
- Any entity who would like to send messages to a user can use the publicly
- available E to encrypt messages but only the user can decrypt the message
- using D.
- 
+ Key distribution in this system
 \end_layout
 
 \begin_layout Subsection

@@ -660,7 +660,44 @@ for every
 \end_layout
 
 \begin_layout Standard
-Property 3 allows E_k to be made public without compromising D_k.
+Property 3 allows 
+\begin_inset Formula $E_{k}$
+\end_inset
+
+ to be made public without compromising 
+\begin_inset Formula $D_{k}$
+\end_inset
+
+.
+ Key distribution in this system is simplified.
+ Users generate two keys, an enciphering key 
+\begin_inset Formula $E$
+\end_inset
+
+ and a deciphering key 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ 
+\begin_inset Formula $E$
+\end_inset
+
+ can be made public but 
+\begin_inset Formula $D$
+\end_inset
+
+ is kept privately by the user.
+ Any entity who would like to send messages to a user can use the publicly
+ available 
+\begin_inset Formula $E$
+\end_inset
+
+ to encrypt messages but only the user can decrypt the message using 
+\begin_inset Formula $D$
+\end_inset
+
+.
  
 \end_layout
 
