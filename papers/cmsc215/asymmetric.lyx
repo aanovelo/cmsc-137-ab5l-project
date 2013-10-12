@@ -65,14 +65,7 @@ Asymmetric Ciphers
 
 \begin_layout Standard
 Cryptographic systems rely on keys for encryption and decryption.
- Traditionally, a single key is required to encrypt an
-\begin_inset CommandInset citation
-LatexCommand cite
-key "merkle_secure_1978"
-
-\end_inset
-
-d to decrypt.
+ Traditionally, a single key is required to encrypt and to decrypt.
  In order for the recipient of the ecrypted message to be decrypted by the
  recipient, the key must also be transmitted.
  However, sending the key over the channel where the actual message will
