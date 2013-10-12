@@ -8,15 +8,24 @@
 
 \section*{Asymmetric Ciphers}
 
-Cryptographic systems rely keys for encryption and decryption. Traditionally,
-a single key is required to encrypt and to decrypt. Thus in order
-for the recipient of the ecrypted message to be decrypted by the recipient,
-the key must also be transmitted. However, sending the key over the
-channel where the actual message will be sent is insecure. The key
-must be transmitted on a different and secure channel\cite{merkle_secure_1978}.
-The secure channel where the key should be transmitted cannot be used
-for normal transmission because it is costly and sometimes difficult
-for users to access and use\cite{merkle_secure_1978}. 
+Cryptographic systems rely on keys for encryption and decryption.
+Traditionally, a single key is required to encrypt an\cite{merkle_secure_1978}d
+to decrypt. In order for the recipient of the ecrypted message to
+be decrypted by the recipient, the key must also be transmitted. However,
+sending the key over the channel where the actual message will be
+sent is insecure. The key must be transmitted on a different and secure
+channel\cite{merkle_secure_1978}. This secure channel where the key
+should be transmitted cannot be used for normal transmission because
+it is costly and sometimes difficult for users to access and use\cite{merkle_secure_1978}.
+This begs the question whether it is possible to send encrypted messages
+in such a way that the key can also be transmitted over the normal
+data and insecure channel. In this section, we focus on solving this
+problem by describing the relevant and important work on asymmetric
+ciphers. 
+
+Secure communication as described by Merkle allows two parties to
+communicate in a private matter even though a third party tries its
+best to learn what is being communicated.
 
 
 \subsection*{Diffie-Helman\cite{diffie_new_1976}}
