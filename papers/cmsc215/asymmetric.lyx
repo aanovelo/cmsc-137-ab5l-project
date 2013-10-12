@@ -78,6 +78,17 @@ key "merkle_secure_1978"
 \end_inset
 
 .
+ The secure channel where the key should be transmitted cannot be used for
+ normal transmission because it is costly and sometimes difficult for users
+ to access and use
+\begin_inset CommandInset citation
+LatexCommand cite
+key "merkle_secure_1978"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Subsection*
