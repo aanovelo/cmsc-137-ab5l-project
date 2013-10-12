@@ -105,8 +105,15 @@ key "merkle_secure_1978"
 
 \begin_layout Standard
 Secure communication as described by Merkle allows two parties to communicate
- in a private matter even though a third party tries its best to learn what
- is being communicated.
+ in a private manner even though a third party tries its best to learn what
+ is being communicated
+\begin_inset CommandInset citation
+LatexCommand cite
+key "merkle_secure_1978"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection*
