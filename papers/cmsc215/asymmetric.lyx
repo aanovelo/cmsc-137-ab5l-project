@@ -134,6 +134,30 @@ The approach by Merkle relaxes the second condition: It is not necessary
  
 \end_layout
 
+\begin_layout Standard
+Merkle's method uses the concept of a puzzle
+\begin_inset CommandInset citation
+LatexCommand cite
+key "merkle_secure_1978"
+
+\end_inset
+
+.
+ A puzzle is a cryptogram that is meant to be solved.
+ Any ecryption function is used to generate a puzzle.
+ To allow the puzzle to be solved, the key size (N) used in the encryption
+ function is restricted.
+ The difficulty of solving a puzzle can be controlled by adjusting the size
+ of N.
+ A very large size (in bits) of N will make it very difficult to solve the
+ puzzle.
+ In addition, in order to be able to solve the puzzle, some redundancy is
+ needed.
+ Redundancy is introduced by encrypting, with the original information,
+ some constant known to Froi, Shiela, and Jade.
+ 
+\end_layout
+
 \begin_layout Subsection*
 Diffie-Helman
 \begin_inset CommandInset citation
