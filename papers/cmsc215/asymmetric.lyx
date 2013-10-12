@@ -59,7 +59,7 @@
 
 \begin_body
 
-\begin_layout Section*
+\begin_layout Section
 Asymmetric Ciphers
 \end_layout
 
@@ -95,7 +95,7 @@ key "merkle_secure_1978"
  and important work on asymmetric ciphers.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Merkle(1978)
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -196,14 +196,23 @@ When Froi receives the N puzzles, he selects a puzzle at random and attempts
  If Jade wants to know the key, then he must solve puzzles randomly and
  check the puzzle ID if it matches the one sent by Froi back to Shiela.
  This will take Jade a long time to solve.
- To put it formally, Jade will require O(N^2) effort to determine the key
- whereas Froi will only need, on the average, O(N).
+ To put it formally, Jade will require 
+\begin_inset Formula $O(N^{2})$
+\end_inset
+
+ effort to determine the key whereas Froi will only need, on the average,
+ 
+\begin_inset Formula $O(N)$
+\end_inset
+
+.
  The function below generates the puzzles sent by Shiela to Froi.
  The encryption function is arbitrary.
 \end_layout
 
 \begin_layout Standard
 \begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily}"
 inline false
 status open
 
@@ -307,6 +316,7 @@ The code below is executed on Froi's side.
 
 \begin_layout Standard
 \begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily}"
 inline false
 status open
 
@@ -438,6 +448,7 @@ Once Shiela receives the the puzzle ID from Froi, then the following code
 
 \begin_layout Standard
 \begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily}"
 inline false
 status open
 
@@ -472,15 +483,18 @@ void continue_transmission()
 \end_layout
 
 \begin_layout Standard
-The approach by Merkle requires an effort of O(N^2) from Jade to get the
- key.
+The approach by Merkle requires an effort of 
+\begin_inset Formula $O(N^{2})$
+\end_inset
+
+ from Jade to get the key.
  However, in todays available computing resources, this can be easily broken.
  The possibility of exponential methods will be more attractive.
  Also the amount of information sent during the initial setup of the communicati
 on is large because N puzzles, consequently N keys, are sent initially.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Diffie-Helman(1976)
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -516,8 +530,8 @@ key
 \end_layout
 
 \begin_layout Standard
-In their original paper, Diffie and Helman differentiate public key cryptosystem
-s and public key distribution systems.
+Diffie and Helman differentiate public key cryptosystems and public key
+ distribution systems.
  We let 
 \begin_inset Formula ${K}$
 \end_inset
@@ -574,7 +588,11 @@ D_{k}:\{M\}\rightarrow\{M\}
 \end_layout
 
 \begin_layout Enumerate
-for every key, 
+for every key 
+\begin_inset Formula $K$
+\end_inset
+
+, 
 \begin_inset Formula $E_{k}$
 \end_inset
 
@@ -641,7 +659,12 @@ for every
 .
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Standard
+Property 3 allows E_k to be made public without compromising D_k.
+ 
+\end_layout
+
+\begin_layout Subsection
 Rivest-Shamir-Adleman(1978)
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -652,7 +675,7 @@ key "rivest_method_1978"
 
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Elgamal(1985)
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -663,7 +686,7 @@ key "elgamal_public_1985"
 
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Elliptic Curve Cryptosystems(1987)
 \begin_inset CommandInset citation
 LatexCommand cite
