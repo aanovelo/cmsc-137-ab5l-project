@@ -11,7 +11,7 @@
 
 Cryptographic systems rely on keys for encryption and decryption.
 Traditionally, a single key is required to encrypt and to decrypt.
-In order for the recipient of the ecrypted message to be decrypted
+In order for the recipient of the encrypted message to be decrypted
 by the recipient, the key must also be transmitted. However, sending
 the key over the channel (normal channel) where the actual message
 will be sent is insecure. The key must be transmitted on a different
@@ -20,10 +20,10 @@ channel where the key should be transmitted cannot be used for normal
 transmission because it is costly and sometimes difficult for users
 to access and use\cite{merkle_secure_1978}. This begs the question
 whether it is possible to send encrypted messages in such a way that
-the key can also be transmitted over the normal channel and still
-achieve secure communication. In this section, we focus on solving
-this problem by describing the relevant and important work on asymmetric
-ciphers.
+the key can also be transmitted over the normal (insecure) channel
+and still achieve secure communication. In this section, we focus
+on solving this problem by describing the relevant and important work
+on asymmetric ciphers.
 
 
 \subsection*{Merkle(1978)\cite{merkle_secure_1978}}
@@ -50,7 +50,7 @@ the key , then it is a solution. The effort by Jade should be exponentially
 higher compared to the effort by Froi or Shiela for a method to be
 considered a solution. 
 
-Merkle's method uses the concept of a puzzle\cite{merkle_secure_1978}.
+Merkle's method uses the concept of puzzles\cite{merkle_secure_1978}.
 A puzzle is a cryptogram that is meant to be solved. Any encryption
 function can be used to generate a puzzle. To allow the puzzle to
 be solved, the key size (N) used in the encryption function is restricted.
@@ -67,27 +67,29 @@ to Froi. First, they both agree on the value of N to use. Shiela then
 generates N puzzles and transmits these N puzzles to Froi using the
 key channel. Each puzzle generated will have a puzzle ID and puzzle
 key. The puzzle ID uniquely identifies each puzzle. The puzzle key
-on the otherhand will be used in future commucations that will happen
-once this puzzle has been solved. 
+on the other hand will be used in future communications that will
+happen once this puzzle has been solved. 
 
 When Froi receives the N puzzles, he selects a puzzle at random and
-attepts to solve the puzzle, with the amount of effort required, as
-defined by the size of the key space specified by Shiela. After solving
-a puzzle, Froi sends the puzzle ID back to Shiela using the key channel.
-The puzzle key, associated with the puzzle ID sent by Froi is then
-used for future communications, this time over the normal channel.
-At this point Jade knows the puzzle ID, since it was sent using the
-key channel, but not the puzzle key. If Jade wants to know the key,
-then he must solve puzzles randomly and check the puzzle id if it
-matches the one sent by Froi back to Shiela. This will take Jade a
-long time to solve. To put it formally, Jade will require O(N\textasciicircum{}2)
+attempts to solve the puzzle, with the amount of effort required,
+as defined by the size of the key space specified by Shiela. After
+solving a puzzle, Froi sends the puzzle ID back to Shiela using the
+key channel. The puzzle key, associated with the puzzle ID sent by
+Froi, is then used for future communications, this time over the normal
+channel. At this point Jade knows the puzzle ID, since it was sent
+using the key channel, but not the puzzle key. If Jade wants to know
+the key, then he must solve puzzles randomly and check the puzzle
+ID if it matches the one sent by Froi back to Shiela. This will take
+Jade a long time to solve. To put it formally, Jade will require O(N\textasciicircum{}2)
 effort to determine the key whereas Froi will only need, on the average,
-O(N). The function below generates the puzzles send by Shiela to Froi.
+O(N). The function below generates the puzzles sent by Shiela to Froi.
+The encryption function is arbitrary.
 
 \begin{lstlisting}
 void generate_puzzle()
 {
-   char* id, key, c, random_key, puzzle, k1, k2, i;
+   bit_string id, key, c, random_key, puzzle, k1, k2;
+   int i;
 
    k1 = rand(MAXINT);
    k2 = rand(MAXINT);
@@ -105,9 +107,89 @@ void generate_puzzle()
 \end{lstlisting}
 
 
+The code below is executed on Froi's side.
+
+\begin{lstlisting}
+void get_id()
+{
+   bit_string id, key, c, selected_puzzle_id, the_puzzle, current_puzzle,
+              temp_constant;
+   int i;
+   
+   selected_puzzle_id = rand(N);
+   receive(c);
+   for (i=0; i<N; i++)
+   {
+      receive(currrent_puzzle);
+      if (i == selected_puzzle_id)
+         the_puzzle = current_puzzle;
+   }
+   for (i=0;i<(c*N);i++)
+   {
+      id = get_id(finverse(i, the_puzzle));  
+      key = get_key(finverse(i, the_puzzle));
+      temp_constant = get_constant(finverse(i, the_puzzle));
+      if (temp_constant == c)
+         send(id);
+   }
+}
+\end{lstlisting}
+
+
+Once Shiela receives the the puzzle ID from Froi, then the following
+code will be executed. Key will be used for subsequent communications
+between the two.
+
+\begin{lstlisting}
+void continue_transmission()
+{
+   receive(ID);
+   key = encryption_function(k2, ID);
+}
+\end{lstlisting}
+
+
+The approach by Merkle requires an effort of O(N\textasciicircum{}2)
+from Jade to get the key. However, in todays available computing resources,
+this can be easily broken. The possibility of exponential methods
+will be more attractive. Also the amount of information sent during
+the initial setup of the communication is large because N puzzles,
+consequently N keys, are sent initially.
+
 
 \subsection*{Diffie-Helman(1976)\cite{diffie_new_1976}}
 
+The work by Diffie and Helman\cite{diffie_new_1976} proposed a method
+such that only one ``key'' needs to be exchanged and in addition
+the time required from Jade to perform cryptanalysis is exponential.
+In addition, it allows authentication because its use allows it to
+be tied to a public file of user information. Shiela can authenticate
+Froi and vice versa. 
+
+In their original paper, Diffie and Helman differentiate public key
+cryptosystems and public key distribution systems. We let ${K}$ be
+the finite key space from which keys $K$ can be obtained and ${M}$
+be the finite message space where messages $M$ are derived. A public
+key cryptosystem is a pair of families of algorithms ${E_{k}}$ and${D_{k}}$
+which represent invertible transformations\cite{diffie_new_1976}.
+\[
+E_{k}:\{M\}\rightarrow\{M\}
+\]
+
+
+\[
+D_{k}:\{M\}\rightarrow\{M\}
+\]
+
+\begin{enumerate}
+\item for every key, $E_{k}$ is the inverse of $D_{k}$,
+\item for every $K$ and $M$, the algorithms $E_{k}$ and $D_{k}$ are
+easy to compute,
+\item for almost every $K$, each easily computed algorithm equivalent to
+$D_{k}$ is computationally infeasible to derive from $E_{k}$,
+\item for every $K$, it is feasible to compute inverse pairs $E_{k}$ and
+$D_{k}$ from $K$.
+\end{enumerate}
 
 \subsection*{Rivest-Shamir-Adleman(1978)\cite{rivest_method_1978}}
 
