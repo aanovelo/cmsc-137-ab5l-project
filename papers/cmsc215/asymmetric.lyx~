@@ -96,9 +96,38 @@ key "merkle_secure_1978"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Flow of messages from source to destination.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename flowchart1.png
 	scale 45
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -222,7 +251,7 @@ When Froi receives the N puzzles, he selects a puzzle at random and attempts
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "basicstyle={\footnotesize\ttfamily}"
+lstparams "basicstyle={\footnotesize\ttfamily},language=C"
 inline false
 status open
 
@@ -326,7 +355,7 @@ The code below is executed on Froi's side.
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "basicstyle={\footnotesize\ttfamily}"
+lstparams "basicstyle={\footnotesize\ttfamily},language=C"
 inline false
 status open
 
@@ -458,7 +487,7 @@ Once Shiela receives the the puzzle ID from Froi, then the following code
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "basicstyle={\footnotesize\ttfamily}"
+lstparams "basicstyle={\footnotesize\ttfamily},language=C"
 inline false
 status open
 
