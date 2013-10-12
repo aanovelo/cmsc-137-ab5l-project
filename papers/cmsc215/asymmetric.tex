@@ -3,18 +3,7 @@
 \documentclass[english]{article}
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
-\usepackage{float}
-
-\makeatletter
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
-\floatstyle{ruled}
-\newfloat{algorithm}{tbp}{loa}
-\providecommand{\algorithmname}{Algorithm}
-\floatname{algorithm}{\protect\algorithmname}
-
-\makeatother
-
+\usepackage{listings}
 \usepackage{babel}
 \begin{document}
 
@@ -93,35 +82,27 @@ then he must solve puzzles randomly and check the puzzle id if it
 matches the one sent by Froi back to Shiela. This will take Jade a
 long time to solve. To put it formally, Jade will require O(N\textasciicircum{}2)
 effort to determine the key whereas Froi will only need, on the average,
-O(N).
+O(N). The function below generates the puzzles send by Shiela to Froi.
 
-\begin{algorithm}
+\begin{lstlisting}
+void generate_puzzle()
+{
+   char* id, key, c, random_key, puzzle, k1, k2, i;
 
-
-\caption{Generate Puzzle}
-void generate\_puzzle()
-
-\{
-
-char{*} id, key, c, random\_key, puzzle, k1, k2;
-
-k1 = rand(MAXINT);
-
-k2 = rand(MAXINT);
-
-c = rand(MAXINT);
-
-send(c);
-
-for (i=0;i<N)
-
-\{
-
-\}
-
-\}
-
-\end{algorithm}
+   k1 = rand(MAXINT);
+   k2 = rand(MAXINT);
+   c = rand(MAXINT);
+   send(c);
+   for (i=0; i<N; i++)
+   {
+      id = encryption_function(k1,i);
+      key = encryption_function(k2, i);
+      random_key = rand(c*N);
+      puzzle = encryption_function(random_key,id,key,c);
+      send(puzzle);
+   }
+}
+\end{lstlisting}
 
 
 
