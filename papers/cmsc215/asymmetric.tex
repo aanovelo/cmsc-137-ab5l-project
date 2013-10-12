@@ -3,6 +3,18 @@
 \documentclass[english]{article}
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
+\usepackage{float}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\providecommand{\algorithmname}{Algorithm}
+\floatname{algorithm}{\protect\algorithmname}
+
+\makeatother
+
 \usepackage{babel}
 \begin{document}
 
@@ -12,31 +24,117 @@ Cryptographic systems rely on keys for encryption and decryption.
 Traditionally, a single key is required to encrypt and to decrypt.
 In order for the recipient of the ecrypted message to be decrypted
 by the recipient, the key must also be transmitted. However, sending
-the key over the channel where the actual message will be sent is
-insecure. The key must be transmitted on a different and secure channel\cite{merkle_secure_1978}.
-This secure channel where the key should be transmitted cannot be
-used for normal transmission because it is costly and sometimes difficult
-for users to access and use\cite{merkle_secure_1978}. This begs the
-question whether it is possible to send encrypted messages in such
-a way that the key can also be transmitted over the normal data and
-insecure channel. In this section, we focus on solving this problem
-by describing the relevant and important work on asymmetric ciphers. 
-
-Secure communication as described by Merkle allows two parties to
-communicate in a private manner even though a third party tries its
-best to learn what is being communicated\cite{merkle_secure_1978}.
+the key over the channel (normal channel) where the actual message
+will be sent is insecure. The key must be transmitted on a different
+and secure channel (key channel)\cite{merkle_secure_1978}. This secure
+channel where the key should be transmitted cannot be used for normal
+transmission because it is costly and sometimes difficult for users
+to access and use\cite{merkle_secure_1978}. This begs the question
+whether it is possible to send encrypted messages in such a way that
+the key can also be transmitted over the normal channel and still
+achieve secure communication. In this section, we focus on solving
+this problem by describing the relevant and important work on asymmetric
+ciphers.
 
 
-\subsection*{Diffie-Helman\cite{diffie_new_1976}}
+\subsection*{Merkle(1978)\cite{merkle_secure_1978}}
+
+Secure communication, as described by Merkle\cite{merkle_secure_1978},
+allows two parties to communicate in a private manner even though
+a third party tries its best to learn what is being communicated.
+We refer to the two parties as Froi and Shiela, and the third party
+as Jade. Since the key channel is important, the following describes
+the characteristics of the channel in relation to Jade.
+\begin{enumerate}
+\item All attempts by Jade to change the messages on the key channel are
+detectable.
+\item Jade will not be able to know the actual content of any message passing
+on the key channel.
+\end{enumerate}
+The approach by Merkle relaxes the second condition: It is not necessary
+for Jade not to know what is being sent in the key channel, he can
+even know everything passing on it. The challenge then is how to securely
+distribute the key satisfying the conditions above. If Froi and Shiela
+have agreed upon a key, and the work needed by Jade to find the key
+is much higher than the effort by Froi and Shiela needed to generate
+the key , then it is a solution. The effort by Jade should be exponentially
+higher compared to the effort by Froi or Shiela for a method to be
+considered a solution. 
+
+Merkle's method uses the concept of a puzzle\cite{merkle_secure_1978}.
+A puzzle is a cryptogram that is meant to be solved. Any encryption
+function can be used to generate a puzzle. To allow the puzzle to
+be solved, the key size (N) used in the encryption function is restricted.
+The difficulty of solving a puzzle can be controlled by adjusting
+the size of N. A very large size (in bits) of N will make it very
+difficult to solve the puzzle. In addition, in order to be able to
+solve the puzzle, some redundancy is needed. Redundancy is introduced
+by encrypting, along with the original message, some constant known
+to Froi, Shiela, and Jade. The absence of the constant when a puzzle
+is decrypted would mean that a wrong key has been used. 
+
+Let us consider the scenario when Shiela wishes to send a message
+to Froi. First, they both agree on the value of N to use. Shiela then
+generates N puzzles and transmits these N puzzles to Froi using the
+key channel. Each puzzle generated will have a puzzle ID and puzzle
+key. The puzzle ID uniquely identifies each puzzle. The puzzle key
+on the otherhand will be used in future commucations that will happen
+once this puzzle has been solved. 
+
+When Froi receives the N puzzles, he selects a puzzle at random and
+attepts to solve the puzzle, with the amount of effort required, as
+defined by the size of the key space specified by Shiela. After solving
+a puzzle, Froi sends the puzzle ID back to Shiela using the key channel.
+The puzzle key, associated with the puzzle ID sent by Froi is then
+used for future communications, this time over the normal channel.
+At this point Jade knows the puzzle ID, since it was sent using the
+key channel, but not the puzzle key. If Jade wants to know the key,
+then he must solve puzzles randomly and check the puzzle id if it
+matches the one sent by Froi back to Shiela. This will take Jade a
+long time to solve. To put it formally, Jade will require O(N\textasciicircum{}2)
+effort to determine the key whereas Froi will only need, on the average,
+O(N).
+
+\begin{algorithm}
 
 
-\subsection*{Rivest-Shamir-Adleman\cite{rivest_method_1978}}
+\caption{Generate Puzzle}
+void generate\_puzzle()
+
+\{
+
+char{*} id, key, c, random\_key, puzzle, k1, k2;
+
+k1 = rand(MAXINT);
+
+k2 = rand(MAXINT);
+
+c = rand(MAXINT);
+
+send(c);
+
+for (i=0;i<N)
+
+\{
+
+\}
+
+\}
+
+\end{algorithm}
 
 
-\subsection*{Elgamal\cite{elgamal_public_1985}}
+
+\subsection*{Diffie-Helman(1976)\cite{diffie_new_1976}}
 
 
-\subsection*{Elliptic Curve Cryptosystems\cite{koblitz_elliptic_1987}}
+\subsection*{Rivest-Shamir-Adleman(1978)\cite{rivest_method_1978}}
+
+
+\subsection*{Elgamal(1985)\cite{elgamal_public_1985}}
+
+
+\subsection*{Elliptic Curve Cryptosystems(1987)\cite{koblitz_elliptic_1987}}
 
 \bibliographystyle{plain}
 \bibliography{asymmetric}

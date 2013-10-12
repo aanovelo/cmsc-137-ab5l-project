@@ -198,6 +198,105 @@ When Froi receives the N puzzles, he selects a puzzle at random and attepts
  This will take Jade a long time to solve.
  To put it formally, Jade will require O(N^2) effort to determine the key
  whereas Froi will only need, on the average, O(N).
+ The function below generates the puzzles send by Shiela to Froi.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+void generate_puzzle()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+   char* id, key, c, random_key, puzzle, k1, k2, i;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   k1 = rand(MAXINT);
+\end_layout
+
+\begin_layout Plain Layout
+
+   k2 = rand(MAXINT);
+\end_layout
+
+\begin_layout Plain Layout
+
+   c = rand(MAXINT);
+\end_layout
+
+\begin_layout Plain Layout
+
+   send(c);
+\end_layout
+
+\begin_layout Plain Layout
+
+   for (i=0; i<N; i++)
+\end_layout
+
+\begin_layout Plain Layout
+
+   {
+\end_layout
+
+\begin_layout Plain Layout
+
+      id = encryption_function(k1,i);
+\end_layout
+
+\begin_layout Plain Layout
+
+      key = encryption_function(k2, i);
+\end_layout
+
+\begin_layout Plain Layout
+
+      random_key = rand(c*N);
+\end_layout
+
+\begin_layout Plain Layout
+
+      puzzle = encryption_function(random_key,id,key,c);
+\end_layout
+
+\begin_layout Plain Layout
+
+      send(puzzle);
+\end_layout
+
+\begin_layout Plain Layout
+
+   }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*

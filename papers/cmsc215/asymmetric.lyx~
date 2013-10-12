@@ -200,8 +200,102 @@ When Froi receives the N puzzles, he selects a puzzle at random and attepts
  whereas Froi will only need, on the average, O(N).
 \end_layout
 
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+void generate_puzzle()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+   char* id, key, c, random_key, puzzle, k1, k2, i;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   k1 = rand(MAXINT);
+\end_layout
+
+\begin_layout Plain Layout
+
+   k2 = rand(MAXINT);
+\end_layout
+
+\begin_layout Plain Layout
+
+   c = rand(MAXINT);
+\end_layout
+
+\begin_layout Plain Layout
+
+   send(c);
+\end_layout
+
+\begin_layout Plain Layout
+
+   for (i=0; i<N; i++)
+\end_layout
+
+\begin_layout Plain Layout
+
+   {
+\end_layout
+
+\begin_layout Plain Layout
+
+      id = encryption_function(k1,i);
+\end_layout
+
+\begin_layout Plain Layout
+
+      key = encryption_function(k2, i);
+\end_layout
+
+\begin_layout Plain Layout
+
+      random_key = rand(c*N);
+\end_layout
+
+\begin_layout Plain Layout
+
+      puzzle = encryption_function(random_key,id,key,c);
+\end_layout
+
+\begin_layout Plain Layout
+
+      send(puzzle);
+\end_layout
+
+\begin_layout Plain Layout
+
+   }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
-Diffie-Helman
+Diffie-Helman(1976)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "diffie_new_1976"
@@ -212,7 +306,7 @@ key "diffie_new_1976"
 \end_layout
 
 \begin_layout Subsection*
-Rivest-Shamir-Adleman
+Rivest-Shamir-Adleman(1978)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "rivest_method_1978"
@@ -223,7 +317,7 @@ key "rivest_method_1978"
 \end_layout
 
 \begin_layout Subsection*
-Elgamal
+Elgamal(1985)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "elgamal_public_1985"
@@ -234,7 +328,7 @@ key "elgamal_public_1985"
 \end_layout
 
 \begin_layout Subsection*
-Elliptic Curve Cryptosystems
+Elliptic Curve Cryptosystems(1987)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "koblitz_elliptic_1987"
