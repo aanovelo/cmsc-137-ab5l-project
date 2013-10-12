@@ -518,17 +518,32 @@ key
 \begin_layout Standard
 In their original paper, Diffie and Helman differentiate public key cryptosystem
 s and public key distribution systems.
- A public key cryptosystem is a pair of families of algorithms which represents
- invertible transformations.
  We let 
 \begin_inset Formula ${K}$
 \end_inset
 
- be the finite key space from which keys can be obtained and 
+ be the finite key space from which keys 
+\begin_inset Formula $K$
+\end_inset
+
+ can be obtained and 
 \begin_inset Formula ${M}$
 \end_inset
 
- be the finite message space where messages are derived.
+ be the finite message space where messages 
+\begin_inset Formula $M$
+\end_inset
+
+ are derived.
+ A public key cryptosystem is a pair of families of algorithms 
+\begin_inset Formula ${E_{k}}$
+\end_inset
+
+ and
+\begin_inset Formula ${D_{k}}$
+\end_inset
+
+ which represent invertible transformations.
  
 \begin_inset Formula 
 \[
