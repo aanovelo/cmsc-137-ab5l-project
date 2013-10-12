@@ -157,7 +157,7 @@ key "merkle_secure_1978"
 , allows two parties to communicate in a private manner even though a third
  party tries its best to learn what is being communicated.
  We refer to the two parties as Froi and Shiela, and the third party as
- Jade.
+ Jade (Figure 1).
  Since the key channel is important, the following describes the characteristics
  of the channel in relation to Jade.
 \end_layout
@@ -483,7 +483,7 @@ void get_id()
 \begin_layout Standard
 Once Shiela receives the the puzzle ID from Froi, then the following code
  will be executed.
- Key will be used for subsequent communications between the two.
+ key will be used for subsequent communications between the two.
 \end_layout
 
 \begin_layout Standard
@@ -627,6 +627,10 @@ D_{k}:\{M\}\rightarrow\{M\}
 
 \end_layout
 
+\begin_layout Standard
+such that 
+\end_layout
+
 \begin_layout Enumerate
 for every key 
 \begin_inset Formula $K$
@@ -738,7 +742,16 @@ Property 3 allows
 \end_inset
 
 .
- 
+ In their paper, Diffie and Helman gave an example public key cryptosystem
+ by multiplying a binary n-vector message m with an invertible binary n
+ x n matrix E.
+ However, this approach is not practical.
+\end_layout
+
+\begin_layout Standard
+Merkle's work was classified by Diffie and Helman as public key distribution
+ system and highlighted its limitations in specifically its high transmission
+ overhead.
 \end_layout
 
 \begin_layout Subsection
