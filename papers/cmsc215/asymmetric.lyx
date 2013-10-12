@@ -127,7 +127,7 @@ key "koblitz_elliptic_1987"
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "cmsc215/asymmetric"
+bibfiles "asymmetric"
 options "plain"
 
 \end_inset

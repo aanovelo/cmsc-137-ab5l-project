@@ -6,21 +6,28 @@
 \usepackage{babel}
 \begin{document}
 
-\section{Asymmetric Ciphers}
+\section*{Asymmetric Ciphers}
+
+Cryptographic systems rely keys for encryption and decryption. Traditionally,
+a single key is required to encrypt and to decrypt. Thus in order
+for the recipient of the ecrypted message to be decrypted by the recipient,
+the key must also be transmitted. However, sending the key over the
+channel where the actual message will be sent is insecure. The key
+must be transmitted on a different and secure channel\cite{merkle_secure_1978}.
 
 
-\subsection{Diffie\_Helman\cite{diffie_new_1976}}
+\subsection*{Diffie-Helman\cite{diffie_new_1976}}
 
 
-\subsection{RSA}
+\subsection*{Rivest-Shamir-Adleman\cite{rivest_method_1978}}
 
 
-\subsection{ElGamal}
+\subsection*{Elgamal\cite{elgamal_public_1985}}
 
 
-\subsection{Elliptic Curve Cryptography}
+\subsection*{Elliptic Curve Cryptosystems\cite{koblitz_elliptic_1987}}
 
 \bibliographystyle{plain}
-\bibliography{cmsc215/asymmetric}
+\bibliography{asymmetric}
 
 \end{document}
