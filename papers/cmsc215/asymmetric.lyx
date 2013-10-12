@@ -749,9 +749,64 @@ Property 3 allows
 \end_layout
 
 \begin_layout Standard
-Merkle's work was classified by Diffie and Helman as public key distribution
- system and highlighted its limitations in specifically its high transmission
- overhead.
+Merkle's
+\begin_inset CommandInset citation
+LatexCommand cite
+key "merkle_secure_1978"
+
+\end_inset
+
+ work was classified by Diffie and Helman as public key distribution system
+ and highlighted its limitations specifically its high transmission overhead
+ again because of sending N puzzles initially.
+ The proposed system is similar to the public key cryptosystem described
+ above, but unlike Merkle's technique, Diffie and Helman approach allows
+ the authentication of users by making the public file read-only
+\begin_inset CommandInset citation
+LatexCommand cite
+key "diffie_new_1976"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The technique proposed is dependent on the difficulty of computing logarithms
+ mod q where q is a prime number representing the number of elements of
+ a finite field.
+ Users generate independent random numbers 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ from the set of integers 
+\begin_inset Formula ${1,2,...,q-1}$
+\end_inset
+
+.
+ The users keep these numbers but the computed value 
+\begin_inset Formula 
+\[
+Y_{i}=\alpha^{X_{i}}mod\: q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+is placed publicly together with the user information.
+ When two users want to communicate, they use the key 
+\begin_inset Formula 
+\[
+K_{ij}=\alpha^{X_{i}X_{j}}mod\: q
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
