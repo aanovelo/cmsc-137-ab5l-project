@@ -198,6 +198,7 @@ When Froi receives the N puzzles, he selects a puzzle at random and attepts
  This will take Jade a long time to solve.
  To put it formally, Jade will require O(N^2) effort to determine the key
  whereas Froi will only need, on the average, O(N).
+ The function below generates the puzzles sent by Shiela to Froi.
 \end_layout
 
 \begin_layout Standard
@@ -217,7 +218,12 @@ void generate_puzzle()
 
 \begin_layout Plain Layout
 
-   char* id, key, c, random_key, puzzle, k1, k2, i;
+   bit_string id, key, c, random_key, puzzle, k1, k2;
+\end_layout
+
+\begin_layout Plain Layout
+
+   int i;
 \end_layout
 
 \begin_layout Plain Layout
@@ -277,6 +283,135 @@ void generate_puzzle()
 \begin_layout Plain Layout
 
       send(puzzle);
+\end_layout
+
+\begin_layout Plain Layout
+
+   }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The code below is executed on Froi's side.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+void get_id()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+   bit_string id, key, c, selected_puzzle_id, the_puzzle, current_puzzle,
+\end_layout
+
+\begin_layout Plain Layout
+
+              temp_constant;
+\end_layout
+
+\begin_layout Plain Layout
+
+   int i;
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+   selected_puzzle_id = rand(N);
+\end_layout
+
+\begin_layout Plain Layout
+
+   receive(c);
+\end_layout
+
+\begin_layout Plain Layout
+
+   for (i=0; i<N; i++)
+\end_layout
+
+\begin_layout Plain Layout
+
+   {
+\end_layout
+
+\begin_layout Plain Layout
+
+      receive(currrent_puzzle);
+\end_layout
+
+\begin_layout Plain Layout
+
+      if (i == selected_puzzle_id)
+\end_layout
+
+\begin_layout Plain Layout
+
+         the_puzzle = current_puzzle;
+\end_layout
+
+\begin_layout Plain Layout
+
+   }
+\end_layout
+
+\begin_layout Plain Layout
+
+   for (i=0;i<(c*N);i++)
+\end_layout
+
+\begin_layout Plain Layout
+
+   {
+\end_layout
+
+\begin_layout Plain Layout
+
+      id = get_id(finverse(i, the_puzzle));  
+\end_layout
+
+\begin_layout Plain Layout
+
+      key = get_key(finverse(i, the_puzzle));
+\end_layout
+
+\begin_layout Plain Layout
+
+      temp_constant = get_constant(finverse(i, the_puzzle));
+\end_layout
+
+\begin_layout Plain Layout
+
+      if (temp_constant == c)
+\end_layout
+
+\begin_layout Plain Layout
+
+         send(id);
 \end_layout
 
 \begin_layout Plain Layout
