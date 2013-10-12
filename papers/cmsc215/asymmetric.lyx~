@@ -886,7 +886,39 @@ K_{Sheila,Froi}=Y_{Shiela}^{X_{Froi}}mod\: q
 
 \end_inset
 
+ 
+\end_layout
 
+\begin_layout Standard
+Jade might be able to compute
+\begin_inset Formula $K_{Shiela,Froi}$
+\end_inset
+
+ from 
+\begin_inset Formula $Y_{Shiela}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y_{Froi}$
+\end_inset
+
+ by computing
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{Shiela,Froi}=Y_{Shiela}^{(\log_{\alpha}Y_{Froi})}mod\: q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+However, if Jade is to perform this computation, it will take him a long
+ time to do so.
 \end_layout
 
 \begin_layout Subsection
