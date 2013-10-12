@@ -68,9 +68,9 @@ Cryptographic systems rely on keys for encryption and decryption.
  Traditionally, a single key is required to encrypt and to decrypt.
  In order for the recipient of the ecrypted message to be decrypted by the
  recipient, the key must also be transmitted.
- However, sending the key over the channel where the actual message will
- be sent is insecure.
- The key must be transmitted on a different and secure channel
+ However, sending the key over the channel (normal channel) where the actual
+ message will be sent is insecure.
+ The key must be transmitted on a different and secure channel (key channel)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "merkle_secure_1978"
@@ -89,8 +89,48 @@ key "merkle_secure_1978"
 
 .
  This begs the question whether it is possible to send encrypted messages
- in such a way that the key can also be transmitted over the normal data
- and insecure channel.
+ in such a way that the key can also be transmitted over the normal channel
+ and still achieve secure communication.
+ In this section, we focus on solving this problem by describing the relevant
+ and important work on asymmetric ciphers.
+\end_layout
+
+\begin_layout Standard
+Secure communication, as described by Merkle
+\begin_inset CommandInset citation
+LatexCommand cite
+key "merkle_secure_1978"
+
+\end_inset
+
+, allows two parties to communicate in a private manner even though a third
+ party tries its best to learn what is being communicated.
+ We refer to the two parties as Froi and Shiela, and the third party as
+ Jade.
+ Since the key channel is important, the following describes the characteristics
+ of the channel in relation to Jade.
+\end_layout
+
+\begin_layout Enumerate
+All attempts by Jade to change the messages on the key channel are detectable.
+\end_layout
+
+\begin_layout Enumerate
+Jade will not be able to know the actual content of any message passing
+ on the key channel.
+\end_layout
+
+\begin_layout Standard
+The approach by Merkle relaxes the second condition: It is not necessary
+ for Jade not to know what is being sent in the key channel, he can even
+ know everything passing on it.
+ The challenge then is how to securely distribute the key satisfying the
+ conditions above.
+ If Froi and Shiela have agreed upon a key, and the work needed by Jade
+ to find the key is much higher than the effort needed to generate the key
+ by Froi and Shiela, then it is a solution.
+ The effort by Jade should be exponentially higher compared to the effort
+ by Froi or Shiela.
  
 \end_layout
 
