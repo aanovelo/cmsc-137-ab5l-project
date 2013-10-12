@@ -95,6 +95,17 @@ key "merkle_secure_1978"
  and important work on asymmetric ciphers.
 \end_layout
 
+\begin_layout Subsection*
+Merkle
+\begin_inset CommandInset citation
+LatexCommand cite
+key "merkle_secure_1978"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 Secure communication, as described by Merkle
 \begin_inset CommandInset citation
@@ -127,10 +138,10 @@ The approach by Merkle relaxes the second condition: It is not necessary
  The challenge then is how to securely distribute the key satisfying the
  conditions above.
  If Froi and Shiela have agreed upon a key, and the work needed by Jade
- to find the key is much higher than the effort needed to generate the key
- by Froi and Shiela, then it is a solution.
+ to find the key is much higher than the effort by Froi and Shiela needed
+ to generate the key , then it is a solution.
  The effort by Jade should be exponentially higher compared to the effort
- by Froi or Shiela for a method to be a solution.
+ by Froi or Shiela for a method to be considered a solution.
  
 \end_layout
 
@@ -144,17 +155,29 @@ key "merkle_secure_1978"
 
 .
  A puzzle is a cryptogram that is meant to be solved.
- Any ecryption function is used to generate a puzzle.
+ Any encryption function can be used to generate a puzzle.
  To allow the puzzle to be solved, the key size (N) used in the encryption
  function is restricted.
  The difficulty of solving a puzzle can be controlled by adjusting the size
  of N.
  A very large size (in bits) of N will make it very difficult to solve the
  puzzle.
- In order to be able to solve the puzzle, some redundancy is needed.
- Redundancy is introduced by encrypting, with the original information,
+ In addition, in order to be able to solve the puzzle, some redundancy is
+ needed.
+ Redundancy is introduced by encrypting, along with the original message,
  some constant known to Froi, Shiela, and Jade.
+ The absence of the constant when a puzzle is decrypted would mean that
+ a wrong key has been used.
  
+\end_layout
+
+\begin_layout Standard
+Let us consider the scenario when Shiela wishes to send a message to Froi.
+ First, they both agree on the value of N to use.
+ Shiela then generates N puzzles and transmits these N puzzles to Froi using
+ the key channel.
+ Shiela chooses the size of the key space such that will require O(N) efforts
+ to break.
 \end_layout
 
 \begin_layout Subsection*
