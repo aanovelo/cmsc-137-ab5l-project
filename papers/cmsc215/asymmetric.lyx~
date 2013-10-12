@@ -95,6 +95,16 @@ key "merkle_secure_1978"
  and important work on asymmetric ciphers.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename flowchart1.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Merkle(1978)
 \begin_inset CommandInset citation
@@ -670,11 +680,34 @@ Property 3 allows
 
 .
  Key distribution in this system is simplified.
- Users generate two keys, an enciphering key E and a deciphering key D.
- E can be made public but D is kept privately by the user.
+ Users generate two keys, an enciphering key 
+\begin_inset Formula $E$
+\end_inset
+
+ and a deciphering key 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ 
+\begin_inset Formula $E$
+\end_inset
+
+ can be made public but 
+\begin_inset Formula $D$
+\end_inset
+
+ is kept privately by the user.
  Any entity who would like to send messages to a user can use the publicly
- available E to encrypt messages but only the user can decrypt the message
- using D.
+ available 
+\begin_inset Formula $E$
+\end_inset
+
+ to encrypt messages but only the user can decrypt the message using 
+\begin_inset Formula $D$
+\end_inset
+
+.
  
 \end_layout
 

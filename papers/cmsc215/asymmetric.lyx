@@ -95,6 +95,16 @@ key "merkle_secure_1978"
  and important work on asymmetric ciphers.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename flowchart1.png
+	scale 44
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Merkle(1978)
 \begin_inset CommandInset citation
