@@ -96,7 +96,7 @@ key "merkle_secure_1978"
 \end_layout
 
 \begin_layout Subsection*
-Merkle
+Merkle(1978)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "merkle_secure_1978"
@@ -176,12 +176,32 @@ Let us consider the scenario when Shiela wishes to send a message to Froi.
  First, they both agree on the value of N to use.
  Shiela then generates N puzzles and transmits these N puzzles to Froi using
  the key channel.
- Shiela chooses the size of the key space such that it will require O(N)
- efforts to break.
+ Each puzzle generated will have a puzzle ID and puzzle key.
+ The puzzle ID uniquely identifies each puzzle.
+ The puzzle key on the otherhand will be used in future commucations that
+ will happen once this puzzle has been solved.
+ 
+\end_layout
+
+\begin_layout Standard
+When Froi receives the N puzzles, he selects a puzzle at random and attepts
+ to solve the puzzle, with the amount of effort required, as defined by
+ the size of the key space specified by Shiela.
+ After solving a puzzle, Froi sends the puzzle ID back to Shiela using the
+ key channel.
+ The puzzle key, associated with the puzzle ID sent by Froi is then used
+ for future communications, this time over the normal channel.
+ At this point Jade knows the puzzle ID, since it was sent using the key
+ channel, but not the puzzle key.
+ If Jade wants to know the key, then he must solve puzzles randomly and
+ check the puzzle id if it matches the one sent by Froi back to Shiela.
+ This will take Jade a long time to solve.
+ To put it formally, Jade will require O(N^2) effort to determine the key
+ whereas Froi will only need, on the average, O(N).
 \end_layout
 
 \begin_layout Subsection*
-Diffie-Helman
+Diffie-Helman(1976)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "diffie_new_1976"
@@ -192,7 +212,7 @@ key "diffie_new_1976"
 \end_layout
 
 \begin_layout Subsection*
-Rivest-Shamir-Adleman
+Rivest-Shamir-Adleman(1978)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "rivest_method_1978"
@@ -203,7 +223,7 @@ key "rivest_method_1978"
 \end_layout
 
 \begin_layout Subsection*
-Elgamal
+Elgamal(1985)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "elgamal_public_1985"
@@ -214,7 +234,7 @@ key "elgamal_public_1985"
 \end_layout
 
 \begin_layout Subsection*
-Elliptic Curve Cryptosystems
+Elliptic Curve Cryptosystems(1987)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "koblitz_elliptic_1987"
