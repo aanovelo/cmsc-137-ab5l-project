@@ -798,14 +798,98 @@ Y_{i}=\alpha^{X_{i}}mod\: q
 
 \begin_layout Standard
 is placed publicly together with the user information.
- When two users want to communicate, they use the key 
+ 
+\end_layout
+
+\begin_layout Standard
+Consider for example Shiela and Froi would like to talk to each other privately.
+ They are going to use the key 
+\begin_inset Formula $K_{Shiela,Froi}$
+\end_inset
+
+below after they generate 
+\begin_inset Formula $X_{Shiela}$
+\end_inset
+
+and 
+\begin_inset Formula $X_{Froi}$
+\end_inset
+
+ and published 
+\begin_inset Formula $Y_{Shiela}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y_{Froi}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
-K_{ij}=\alpha^{X_{i}X_{j}}mod\: q
+K_{Shiela,Froi}=\alpha^{X_{Shiela}X_{Froi}}mod\: q
 \]
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+Shiela will be able to obtain 
+\begin_inset Formula $K_{Shiela,Froi}$
+\end_inset
+
+ by using the public file 
+\begin_inset Formula $Y_{Froi}$
+\end_inset
+
+ and then computing
+\begin_inset Formula 
+\[
+K_{Shiela,Froi}=Y_{Froi}^{X_{Shiela}}mod\: q
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+=(\alpha^{X_{Froi}})^{X_{Shiela}}mod\: q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\alpha^{X_{Froi}X_{Shiela}}=\alpha^{X_{Shiela}X_{Froi}}mod\: q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Froi will be able to obtain the key in the same manner.
+ 
+\begin_inset Formula 
+\[
+K_{Sheila,Froi}=Y_{Shiela}^{X_{Froi}}mod\: q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
