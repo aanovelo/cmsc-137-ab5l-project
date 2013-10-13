@@ -98,7 +98,7 @@ key "merkle_secure_1978"
 
 \begin_layout Standard
 \begin_inset Float figure
-placement p
+placement h
 wide false
 sideways false
 status open
@@ -248,7 +248,7 @@ When Froi receives the N puzzles, he selects a puzzle at random and attempts
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "float=p,language=C,numbers=left"
+lstparams "language=C,numbers=left"
 inline false
 status open
 
@@ -352,7 +352,7 @@ The code below is executed on Froi's side.
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "float=p,language=C,numbers=left"
+lstparams "language=C,numbers=left"
 inline false
 status open
 
@@ -484,7 +484,7 @@ Once Shiela receives the the puzzle ID from Froi, then the following code
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "float=p,language=C,numbers=left"
+lstparams "language=C,numbers=left"
 inline false
 status open
 
@@ -1358,7 +1358,7 @@ exponentiation by repeated squaring and multiplication.
  divisions.
  The encryption and decryption algorithms are shown below.
 \begin_inset listings
-lstparams "float=p,language=C,numbers=left"
+lstparams "language=C,numbers=left"
 inline false
 status open
 
