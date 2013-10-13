@@ -1194,7 +1194,7 @@ P\equiv D(C)\equiv C^{d}(mod\: n)
 \end_layout
 
 \begin_layout Standard
-The the length of the original message is not increased during the encryption
+The length of the original message is not increased during the encryption
  process.
  The pairs 
 \series bold
@@ -1565,9 +1565,9 @@ p-1
 m
 \series default
  to Froi where 
-\series bold
-0<=m<=(p-1)
-\series default
+\begin_inset Formula $0\leq m\leq(p-1)$
+\end_inset
+
 .
  Shiela chooses a number 
 \series bold
@@ -1771,7 +1771,7 @@ key "koblitz_elliptic_1987"
 ) to the equation
 \begin_inset Formula 
 \[
-y^{2}=X^{2}+ax+b,\; a,b\in K
+y^{2}=X^{2}+ax+b,\;\;\; a,b\in K
 \]
 
 \end_inset
