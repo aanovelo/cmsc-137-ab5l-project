@@ -1300,7 +1300,7 @@ d
 \begin_layout Standard
 \begin_inset Formula 
 \[
-e*d\equiv1mod(p-1)*(q-1))
+e*d\equiv1(mod(p-1)*(q-1))
 \]
 
 \end_inset
@@ -1360,6 +1360,64 @@ exponentiation by repeated squaring and multiplication.
 \end_inset
 
  divisions.
+ The encryption algorithm is shown below.
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+long E(long P,int e, int n)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+   long C=1;
+\end_layout
+
+\begin_layout Plain Layout
+
+   int i;
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+   for (i=k;k==0;k--)
+\end_layout
+
+\begin_layout Plain Layout
+
+   {
+\end_layout
+
+\begin_layout Plain Layout
+
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+   }   
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection

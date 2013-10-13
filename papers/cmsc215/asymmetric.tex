@@ -361,6 +361,22 @@ decryption process are exponentiation and division (to compute the
 remainder). The technique is called ``exponentiation by repeated
 squaring and multiplication.'' The technique presented will need
 at most $2*\log_{2}(e)$ multiplications and $2*\log_{2}(e)$ divisions.
+The encryption algorithm is shown below.
+\begin{lstlisting}
+long E(long P,int e, int n)
+{
+   long C=1;
+   int i;
+   
+   for (i=k;k==0;k--)
+   {
+      C = (C * C) % n;
+      if (bit(i,e) == 1) /* bit(i,e) returns the ith bit of e*/
+         C = (C * P) % n;
+   }   
+}
+\end{lstlisting}
+
 
 
 \subsection{Elgamal(1985)\cite{elgamal_public_1985}}

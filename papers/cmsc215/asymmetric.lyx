@@ -1360,6 +1360,74 @@ exponentiation by repeated squaring and multiplication.
 \end_inset
 
  divisions.
+ The encryption algorithm is shown below.
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+long E(long P,int e, int n)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+   long C=1;
+\end_layout
+
+\begin_layout Plain Layout
+
+   int i;
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+   for (i=k;k==0;k--)
+\end_layout
+
+\begin_layout Plain Layout
+
+   {
+\end_layout
+
+\begin_layout Plain Layout
+
+      C = (C * C) % n;
+\end_layout
+
+\begin_layout Plain Layout
+
+      if (bit(i,e) == 1) /* bit(i,e) returns the ith bit of e*/
+\end_layout
+
+\begin_layout Plain Layout
+
+         C = (C * P) % n;
+\end_layout
+
+\begin_layout Plain Layout
+
+   }   
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
