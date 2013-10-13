@@ -6,7 +6,7 @@
 \usepackage{algpseudocode}
 \usepackage{listings}
 
-\title{Hulaan Mo: Some Notes on Cryptography\footnote{This paper is submitted to Prof. Jaderick P. Pabico in partial fulfillment of the requirements in CMSC 215 (Advanced Computer Systems) taken  by the authors during the First Semester of Academic Year 2013-2014 at the Institute of Computer Science, College of Arts and Sciences, University of the Philippines Los Banos.}}
+\title{Hulaan Mo: Some Notes on Cryptography\footnote{This survey paper is submitted to Prof. Jaderick P. Pabico in partial fulfillment of the requirements in CMSC 215 (Advanced Computer Systems) taken  by the authors during the First Semester of Academic Year 2013-2014 at the Institute of Computer Science, College of Arts and Sciences, University of the Philippines Los Banos.}}
 \author{Shiela Kathleen L. Borja\\Joseph Anthony C. Hermocilla\\Mark Froilan B. Tandoc}
 \date{}
 
@@ -54,7 +54,7 @@ U & V & W & X & Z\\
 \end{tabular}
 \\
 
-The plaintext is encrypted two letters at a time, according the the rules:
+The plaintext is encrypted two letters at a time, according the rules:
 \begin{itemize}
 \item Repeating plaintext letters that are in the same pair are separated with a filler letter, such as x, so that balloon would be treated as ba lx lo on.
 \item Two plaintext letters that fall in the same row of the matrix are each replaced by the letter to the right, withe first element of the row circularly following the last. For example, ar is encrypted as RM.
@@ -289,7 +289,7 @@ The decryption algorithm uses the expanded key in reverse order but is not ident
 As discussed by Daemen and Rijmen\cite{daemen1999}, here are some of the known attacks during the writing of the Rijndael Block Cipher Proposal.
 
 \subparagraph{Symmetry properties and weak keys of the DES type}
-The cipher and its inverse have different components, eliminating the the possibility of weak or semi-weak keys of DES type. Equivalent keys are prevented by the non-linearity of the key expansion.
+The cipher and its inverse have different components, eliminating the possibility of weak or semi-weak keys of DES type. Equivalent keys are prevented by the non-linearity of the key expansion.
 
 \subparagraph{Differential Cryptanalysis}
 Differential Cryptanalysis Attacks are possible if the prop ratio is significantly larger than $2^{1-n}$ where n is the block length. AES has no 4-round differential trails with a prop ratio above $2^{-150}$.
@@ -530,7 +530,7 @@ void get_id()
 \end{lstlisting}
 
 
-Once Shiela receives the the puzzle ID from Froi, then the following
+Once Shiela receives the puzzle ID from Froi, then the following
 code will be executed. key will be used for subsequent communications
 between the two.
 
