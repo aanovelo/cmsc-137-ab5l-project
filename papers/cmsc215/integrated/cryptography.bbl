@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{stallings2011}
+William Stallings.
+\newblock {\em Cryptography and Network Security: Principles and Practice}.
+\newblock Pearson Education, Inc, 5 edition, 2011.
+
+\bibitem{landau2000}
+Susan Landau.
+\newblock Standing the test of time: The data encryption standard.
+\newblock {\em Notices of the AMS}, 47(3):341--349, 2000.
+
+\bibitem{daemen1999}
+Joan Daemen and Vincent Rijmen.
+\newblock Aes proposal: Rijndael, 03 1999.
+
+\bibitem{mousa2006}
+Allam Mousa and Ahmad Hamad.
+\newblock Evaluation of the rc4 algorithm for data encryption.
+\newblock {\em International Journal of Computer Science and Applications},
+  3(2):44--56, 2006.
+
+\end{thebibliography}

@@ -252,7 +252,7 @@ When Froi receives the N puzzles, he selects a puzzle at random and attempts
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "basicstyle={\footnotesize\ttfamily},language=C"
+lstparams "language=C,numbers=left"
 inline false
 status open
 
@@ -356,7 +356,7 @@ The code below is executed on Froi's side.
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "basicstyle={\footnotesize\ttfamily},language=C"
+lstparams "language=C,numbers=left"
 inline false
 status open
 
@@ -488,7 +488,7 @@ Once Shiela receives the the puzzle ID from Froi, then the following code
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "basicstyle={\footnotesize\ttfamily},language=C"
+lstparams "language=C,numbers=left"
 inline false
 status open
 
@@ -1362,7 +1362,7 @@ exponentiation by repeated squaring and multiplication.
  divisions.
  The encryption and decryption algorithms are shown below.
 \begin_inset listings
-lstparams "basicstyle={\footnotesize\ttfamily},language=C"
+lstparams "language=C,numbers=left"
 inline false
 status open
 
@@ -1507,6 +1507,15 @@ long D(long C,int d, int n)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+It can be seen that the RSA encryption and decryption algorithms are straightfor
+ward to implement.
+ The challenge however is in the selection of the keys which is dependent
+ of several parameters (e, d, n).
+ In their paper, the creators of RSA also presented several approaches how
+ to generate these parameters to guarantee the security.
 \end_layout
 
 \begin_layout Subsection
