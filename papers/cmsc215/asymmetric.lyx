@@ -919,8 +919,11 @@ K_{Shiela,Froi}=Y_{Shiela}^{(\log_{\alpha}Y_{Froi})}mod\: q
 \begin_layout Standard
 However, if Jade is to perform this computation, it will take him a long
  time to do so.
- This system takes advantage of the fact that logs mod q are expensive to
- compute.
+ This system takes advantage of the fact that 
+\begin_inset Formula $logs\: mod\: q$
+\end_inset
+
+ are expensive to compute.
 \end_layout
 
 \begin_layout Subsection
@@ -932,6 +935,129 @@ key "rivest_method_1978"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The RSA algorithm by Rivest, Shamir, and Andleman was inspired by the work
+ of Diffie and Helman.
+ Despite the breakthrough in Diffie and Helman's work in public key cryptosystem
+s, they did not present any practical implementation that can be used in
+ actual systems.
+ The creators of RSA took the work further by presenting a practical and
+ efficient implementation.
+ Given an encryption procedure 
+\series bold
+E
+\series default
+ ,a decryption procedure 
+\series bold
+D
+\series default
+, and a message 
+\series bold
+M
+\series default
+, a public key cryptosystem have the following properties
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rivest_method_1978"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+Decrypting an encrypted 
+\series bold
+M
+\series default
+ results to 
+\series bold
+M
+\series default
+.
+ 
+\series bold
+D
+\series default
+(
+\series bold
+E
+\series default
+(
+\series bold
+M
+\series default
+)) = 
+\series bold
+M.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+D
+\series default
+ and 
+\series bold
+E
+\series default
+ are easy to compute.
+\end_layout
+
+\begin_layout Enumerate
+Publicly revealing 
+\series bold
+E
+\series default
+ does not mean that it will be easy to compute 
+\series bold
+D
+\series default
+ from 
+\series bold
+E
+\series default
+.
+ It should be difficult or inefficient to compute 
+\series bold
+D
+\series default
+ from 
+\series bold
+E
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\series bold
+M
+\series default
+ is decrypted and then encrypted then 
+\series bold
+M
+\series default
+ is the result.
+ 
+\series bold
+E
+\series default
+(
+\series bold
+D
+\series default
+(
+\series bold
+M
+\series default
+)) = 
+\series bold
+M
+\series default
+.
 \end_layout
 
 \begin_layout Subsection
