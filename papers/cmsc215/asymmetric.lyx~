@@ -94,6 +94,15 @@ key "merkle_secure_1978"
  In this section, we focus on solving this problem by describing the relevant
  and important work on asymmetric ciphers.
  Figure 5 describes the flow in asymmetric cryptography.
+ This section will not cover in detail the concept of 
+\shape italic
+digital signatures
+\shape default
+ which is closely related to the 
+\shape italic
+key distribution problem
+\shape default
+.
 \end_layout
 
 \begin_layout Standard
@@ -524,11 +533,11 @@ on is large because N puzzles, consequently N keys, are sent initially.
 \end_layout
 
 \begin_layout Subsection
-Diffie-Helman (1976)
+Diffie-Hellman (1976)
 \end_layout
 
 \begin_layout Standard
-The work by Diffie and Helman
+The work by Diffie and Hellman
 \begin_inset CommandInset citation
 LatexCommand cite
 key "diffie_new_1976"
@@ -552,7 +561,7 @@ key
 \end_layout
 
 \begin_layout Standard
-Diffie and Helman differentiate 
+Diffie and Hellman differentiate 
 \shape italic
 public key cryptosystems
 \shape default
@@ -735,7 +744,7 @@ Property 3 allows
 \end_inset
 
 .
- In their paper, Diffie and Helman gave an example public key cryptosystem
+ In their paper, Diffie and Hellman gave an example public key cryptosystem
  by multiplying a binary n-vector message m with an invertible binary n
  x n matrix E.
  However, this approach is not practical.
@@ -749,14 +758,14 @@ key "merkle_secure_1978"
 
 \end_inset
 
- work was classified by Diffie and Helman as 
+ work was classified by Diffie and Hellman as 
 \shape italic
 public key distribution system
 \shape default
  and highlighted its limitations specifically its high transmission overhead
  again because of sending N puzzles initially.
  The proposed system is similar to the public key cryptosystem described
- above, but unlike Merkle's technique, Diffie and Helman approach allows
+ above, but unlike Merkle's technique, Diffie and Hellman approach allows
  the authentication of users by making the public file read-only
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -773,8 +782,11 @@ The technique proposed is dependent on the difficulty of computing
 \begin_inset Formula $logs\: mod\: q$
 \end_inset
 
- where q is a prime number representing the number of elements of a finite
- field.
+ where 
+\series bold
+q
+\series default
+ is a prime number representing the number of elements of a finite field.
  Users generate independent random numbers 
 \begin_inset Formula $X_{i}$
 \end_inset
@@ -932,9 +944,9 @@ Rivest-Shamir-Adleman (1978)
 
 \begin_layout Standard
 The RSA algorithm by Rivest, Shamir, and Andleman was inspired by the work
- of Diffie and Helman.
- Despite the breakthrough in Diffie and Helman's work in public key cryptosystem
-s, they did not present any practical implementation that can be used in
+ of Diffie and Hellman.
+ Despite the breakthrough in Diffie and Hellman's work in public key cryptosyste
+ms, they did not present any practical implementation that can be used in
  actual systems.
  The creators of RSA took the work further by presenting a practical and
  efficient implementation.
@@ -1294,7 +1306,7 @@ E
 D
 \series default
  are inverse permutations.
- Although Diffie and Helman
+ Although Diffie and Hellman
 \begin_inset CommandInset citation
 LatexCommand cite
 key "diffie_new_1976"
@@ -1488,16 +1500,109 @@ long D(long C,int d, int n)
 It can be seen that the RSA encryption and decryption algorithms are straightfor
 ward to implement.
  The challenge however is in the selection of the keys which is dependent
- of several parameters (e, d, n).
+ of several parameters (
+\series bold
+e
+\series default
+, 
+\series bold
+d
+\series default
+, 
+\series bold
+n
+\series default
+).
  In their paper, the creators of RSA also presented several approaches how
  to generate these parameters to guarantee the security.
 \end_layout
 
 \begin_layout Subsection
-Elgamal(1985)
+Elgamal (1985)
+\end_layout
+
+\begin_layout Standard
+The RSA
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rivest_method_1978"
+
+\end_inset
+
+ system depends on the difficulty of factoring large integers.
+ Elgamal's work is based on the difficulty of computing logarithms over
+ finite fields
 \begin_inset CommandInset citation
 LatexCommand cite
 key "elgamal_public_1985"
+
+\end_inset
+
+.
+ This approach is similar to Diffie and Hellman but is more practical for
+ implementation.
+ In Diffie and Hellman, 
+\series bold
+q
+\series default
+ is a prime number representing the number of elements of a finite field
+ (we will use 
+\series bold
+p
+\series default
+ instead for consistency with Elgamal's paper).
+ In order for make it difficult to compute the discrete logarithm, 
+\series bold
+p
+\series default
+ must be chosen so that 
+\series bold
+p-1
+\series default
+ have at least one large prime factor.
+ Suppose Shiela wants to send a message 
+\series bold
+m
+\series default
+ to Froi where 
+\series bold
+0<=m<=(p-1)
+\series default
+.
+ Shiela chooses a number 
+\series bold
+k
+\series default
+ uniformly between 
+\series bold
+0
+\series default
+ and 
+\series bold
+p-1
+\series default
+.
+ This 
+\series bold
+k
+\series default
+ will be 
+\begin_inset Formula $X_{Shiela}$
+\end_inset
+
+, which is her secret key.
+ 
+\begin_inset Formula $K_{Shiela,Froi}$
+\end_inset
+
+ is computed as follow:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{Shiela,Froi}=Y_{Froi}^{k}mod\: p
+\]
 
 \end_inset
 
