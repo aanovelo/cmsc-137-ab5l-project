@@ -93,7 +93,7 @@ key "merkle_secure_1978"
  channel and still achieve secure communication.
  In this section, we focus on solving this problem by describing the relevant
  and important work on asymmetric ciphers.
- Firgure 1 describes the flow in asymmetric cryptography.
+ Figure 1 describes the flow in asymmetric cryptography.
 \end_layout
 
 \begin_layout Standard
@@ -973,9 +973,9 @@ D
 \series default
 , and a message 
 \series bold
-M
+P
 \series default
-, a public key cryptosystem have the following properties
+, a public key cryptosystem has the following properties
 \begin_inset CommandInset citation
 LatexCommand cite
 key "rivest_method_1978"
@@ -988,11 +988,11 @@ key "rivest_method_1978"
 \begin_layout Enumerate
 Decrypting an encrypted 
 \series bold
-M
+P
 \series default
  results to 
 \series bold
-M
+P
 \series default
 .
  
@@ -1005,11 +1005,11 @@ E
 \series default
 (
 \series bold
-M
+P
 \series default
 )) = 
 \series bold
-M.
+P.
 \end_layout
 
 \begin_layout Enumerate
@@ -1052,11 +1052,11 @@ E
 \begin_layout Enumerate
 If 
 \series bold
-M
+P
 \series default
- is decrypted and then encrypted then 
+ is decrypted and then encrypted, 
 \series bold
-M
+P
 \series default
  is the result.
  
@@ -1069,17 +1069,17 @@ D
 \series default
 (
 \series bold
-M
+P
 \series default
 )) = 
 \series bold
-M
+P
 \series default
 .
 \end_layout
 
 \begin_layout Standard
-The encryption an decryption functions rely on a key such that the security
+The encryption and decryption functions rely on a key such that the security
  of the functions or procedures rests on the security of the key.
  If 
 \series bold
@@ -1117,14 +1117,249 @@ status open
 
 \begin_layout Plain Layout
 In their paper, it is the encryption function that is made public.
- Other researchers talk about keys not the functions.
+ Other researchers talk about keys being made public, not the functions.
  Essentially, however, there is a one-to-one correspondence between the
  encryption function and the key.
 \end_layout
 
 \end_inset
 
+ If Shiela wants to encrypt a message 
+\series bold
+P
+\series default
+, for Froi, with the key 
+\series bold
+(e, n)
+\series default
+, she must first represent 
+\series bold
+P
+\series default
+ as an integer between 
+\series bold
+0
+\series default
+ and 
+\series bold
+n-1
+\series default
+, where 
+\series bold
+e
+\series default
+ and 
+\series bold
+n
+\series default
+ are positive integers.
  
+\series bold
+P
+\series default
+ is then encrypted to generate the ciphertext 
+\series bold
+C
+\series default
+ by raising 
+\series bold
+P
+\series default
+ to the 
+\begin_inset Formula $e^{th}$
+\end_inset
+
+ power modulo 
+\series bold
+n
+\series default
+.
+ The decryption process will raise the ciphertext to another power 
+\series bold
+d
+\series default
+ modulo 
+\series bold
+n
+\series default
+.
+ The mathematical formulation is shown below.
+ 
+\begin_inset Formula 
+\[
+C\equiv E(P)\equiv P^{e}(mod\: n)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\equiv D(C)\equiv C^{d}(mod\: n)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The the length of the original message is not increased during the encryption
+ process.
+ The pairs 
+\series bold
+(e,n)
+\series default
+ and 
+\series bold
+(d,n)
+\series default
+ are the encryption keys and decryption keys respectively.
+ The encryption key is made public and the decryption key is private to
+ the user.
+ In the above example, 
+\series bold
+(e,n)
+\series default
+ is the public key of Froi, he can decrypt the message using 
+\series bold
+(d,n)
+\series default
+ which is in his possession.
+ The security of the approach is based on the security of the keys, thus
+ the keys must be selected well.
+ 
+\series bold
+n
+\series default
+ is computed as a product of two large random primes 
+\series bold
+p
+\series default
+ and 
+\series bold
+q
+\series default
+, 
+\series bold
+n = p * q
+\series default
+.
+ Although 
+\series bold
+n
+\series default
+ will be made public, 
+\series bold
+p
+\series default
+ and 
+\series bold
+q
+\series default
+ will not, which hides the way 
+\series bold
+d
+\series default
+ can be derived from 
+\series bold
+e
+\series default
+.
+ 
+\series bold
+d
+\series default
+ is a random integer such that 
+\begin_inset Formula $gcd(d,(p-1)*(q-1))=1$
+\end_inset
+
+.
+ 
+\series bold
+e
+\series default
+ is computed from 
+\series bold
+p
+\series default
+, 
+\series bold
+q
+\series default
+, and 
+\series bold
+d
+\series default
+ such that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e*d\equiv1mod(p-1)*(q-1))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This requirement guarantees that properties 1 and 4 above are satisfied,
+ which means that 
+\series bold
+E
+\series default
+ and 
+\series bold
+D
+\series default
+ are inverse permutations.
+ Although Diffie and Helman
+\begin_inset CommandInset citation
+LatexCommand cite
+key "diffie_new_1976"
+
+\end_inset
+
+ also used exponentiation and modulo in determining a common key to be used,
+ their approach is not based on a 
+\begin_inset Quotes eld
+\end_inset
+
+trap-door one-way permutation
+\begin_inset Quotes erd
+\end_inset
+
+ which means that property 4 is satisfied.
+\end_layout
+
+\begin_layout Standard
+The creators of RSA presented an efficient implementation of the of their
+ approach.
+ Note that the basic operations in the encryption and decryption process
+ are exponentiation and division (to compute the remainder).
+ The technique is called 
+\begin_inset Quotes eld
+\end_inset
+
+exponentiation by repeated squaring and multiplication.
+\begin_inset Quotes erd
+\end_inset
+
+ The technique presented will need at most 
+\begin_inset Formula $2*\log_{2}(e)$
+\end_inset
+
+ multiplications and 
+\begin_inset Formula $2*\log_{2}(e)$
+\end_inset
+
+ divisions.
 \end_layout
 
 \begin_layout Subsection
