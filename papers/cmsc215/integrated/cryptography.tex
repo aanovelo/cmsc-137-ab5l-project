@@ -704,18 +704,18 @@ P\equiv D(C)\equiv C^{d}(mod\: n)
 \]
 
 
-The the length of the original message is not increased during the
-encryption process. The pairs \textbf{(e,n)} and \textbf{(d,n)} are
-the encryption keys and decryption keys respectively. The encryption
-key is made public and the decryption key is private to the user.
-In the above example, \textbf{(e,n)} is the public key of Froi, he
-can decrypt the message using \textbf{(d,n)} which is in his possession.
-The security of the approach is based on the security of the keys,
-thus the keys must be selected well. \textbf{n} is computed as a product
-of two large random primes \textbf{p} and \textbf{q}, \textbf{n =
-p {*} q}. Although \textbf{n} will be made public, \textbf{p} and
-\textbf{q} will not, which hides the way \textbf{d} can be derived
-from \textbf{e}. \textbf{d} is a random integer such that $gcd(d,(p-1)*(q-1))=1$.
+The length of the original message is not increased during the encryption
+process. The pairs \textbf{(e,n)} and \textbf{(d,n)} are the encryption
+keys and decryption keys respectively. The encryption key is made
+public and the decryption key is private to the user. In the above
+example, \textbf{(e,n)} is the public key of Froi, he can decrypt
+the message using \textbf{(d,n)} which is in his possession. The security
+of the approach is based on the security of the keys, thus the keys
+must be selected well. \textbf{n} is computed as a product of two
+large random primes \textbf{p} and \textbf{q}, \textbf{n = p {*} q}.
+Although \textbf{n} will be made public, \textbf{p} and \textbf{q}
+will not, which hides the way \textbf{d} can be derived from \textbf{e}.
+\textbf{d} is a random integer such that $gcd(d,(p-1)*(q-1))=1$.
 \textbf{e} is computed from \textbf{p}, \textbf{q}, and \textbf{d}
 such that
 
@@ -789,7 +789,7 @@ representing the number of elements of a finite field (we will use
 for make it difficult to compute the discrete logarithm, \textbf{p}
 must be chosen so that \textbf{p-1} have at least one large prime
 factor. Suppose Shiela wants to send a message \textbf{m} to Froi
-where \textbf{0<=m<=(p-1)}. Shiela chooses a number \textbf{k} uniformly
+where $0\leq m\leq(p-1)$. Shiela chooses a number \textbf{k} uniformly
 between \textbf{0} and \textbf{p-1}. This \textbf{k} will be $X_{Shiela}$,
 which is her secret key. $K_{Shiela,Froi}$ is computed as follow:
 
@@ -835,7 +835,7 @@ of a finite field $GF(q),q=p^{n}$\cite{koblitz_elliptic_1987}. An
 elliptic curve $E_{k}$ define over a field $K$ of characteristic
 $\neq$ 2 or 3 is the set of solutions $(x,y)\in K^{2}$) to the equation
 \[
-y^{2}=X^{2}+ax+b,\; a,b\in K
+y^{2}=X^{2}+ax+b,\;\;\; a,b\in K
 \]
 
 

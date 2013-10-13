@@ -400,6 +400,9 @@ the key can also be transmitted over the normal (insecure) channel
 and still achieve secure communication. In this section, we focus
 on solving this problem by describing the relevant and important work
 on asymmetric ciphers. Figure 5 describes the flow in asymmetric cryptography.
+This section will not cover in detail the concept of \textit{digital
+signatures} which is closely related to the \textit{key distribution
+problem}.
 
 \begin{figure}[h]
 \caption{Flow of messages from source to destination.}
@@ -595,9 +598,9 @@ technique, Diffie and Hellman approach allows the authentication of
 users by making the public file read-only\cite{diffie_new_1976}. 
 
 The technique proposed is dependent on the difficulty of computing
-$logs\: mod\: q$ where q is a prime number representing the number
-of elements of a finite field. Users generate independent random numbers
-$X_{i}$ from the set of integers $\left\{ 1,2,...,q-1\right\} $.
+$logs\: mod\: q$ where \textbf{q} is a prime number representing
+the number of elements of a finite field. Users generate independent
+random numbers $X_{i}$ from the set of integers $\left\{ 1,2,...,q-1\right\} $.
 The users keep these numbers but the computed value 
 \[
 Y_{i}=\alpha^{X_{i}}mod\: q
@@ -768,9 +771,79 @@ long D(long C,int d, int n)
 
 It can be seen that the RSA encryption and decryption algorithms are
 straightforward to implement. The challenge however is in the selection
-of the keys which is dependent of several parameters (e, d, n). In
-their paper, the creators of RSA also presented several approaches
-how to generate these parameters to guarantee the security.
+of the keys which is dependent of several parameters (\textbf{e},
+\textbf{d}, \textbf{n}). In their paper, the creators of RSA also
+presented several approaches how to generate these parameters to guarantee
+the security.
+
+
+\subsection{Elgamal (1985)}
+
+The RSA\cite{rivest_method_1978} system depends on the difficulty
+of factoring large integers. Elgamal's work is based on the difficulty
+of computing logarithms over finite fields\cite{elgamal_public_1985}.
+This approach is similar to Diffie and Hellman but is more practical
+for implementation. In Diffie and Hellman, \textbf{q} is a prime number
+representing the number of elements of a finite field (we will use
+\textbf{p} instead for consistency with Elgamal's paper). In order
+for make it difficult to compute the discrete logarithm, \textbf{p}
+must be chosen so that \textbf{p-1} have at least one large prime
+factor. Suppose Shiela wants to send a message \textbf{m} to Froi
+where \textbf{0<=m<=(p-1)}. Shiela chooses a number \textbf{k} uniformly
+between \textbf{0} and \textbf{p-1}. This \textbf{k} will be $X_{Shiela}$,
+which is her secret key. $K_{Shiela,Froi}$ is computed as follow:
+
+\[
+K_{Shiela,Froi}=Y_{Froi}^{k}mod\: p
+\]
+ $Y_{Froi}$ is public. Then the ciphertext \textbf{C} that will be
+generated is the pair $(c_{1},c_{2})$, such that
+\[
+c_{1}=\alpha^{k}mod\: p
+\]
+
+
+\[
+c_{2}=K_{Shiela,Froi}m\: mod\: p
+\]
+
+
+Since the ciphertext is a pair$(c_{1},c_{2})$, then its size is twice
+the size of the message \textbf{m}. When Froi receives \textbf{C},
+the process of decrypting is divided into two parts. First is to recover
+$K_{Shiela,Froi}$using $c_{1}^{X_{Froi}}mod\: p$. Note that $X_{Froi}$
+is Froi's secret key which only he knows. The second step is to divide
+$c_{2}$ by $K_{Shiela,Froi}$ which recover the message \textbf{m.
+\[
+m=\frac{c_{2}}{K_{Shiela,Froi}}
+\]
+ }The randomization in the encryption process (selection of \textbf{k})
+is unique to Elgamal's method. This results to the ciphertext \textbf{C}
+of the message \textbf{m} not being repeated. This provide added security
+because Jade will not be able to obtain a pattern for running the
+encryption process repeatedly in case he guesses that the message
+is indeed \textbf{m}. Another notable difference is that the structure
+of the system does not disclose obvious relations between two messages
+$m_{1}$ and $m_{2}$ and their simple functions such as the concatenation
+$m_{1}m_{2}$\cite{elgamal_public_1985} .
+
+
+\subsection{Elliptic Curve Cryptosystems (1987)}
+
+The cryptosystems described above is based on the multiplicative group
+of a finite field $GF(q),q=p^{n}$\cite{koblitz_elliptic_1987}. An
+elliptic curve $E_{k}$ define over a field $K$ of characteristic
+$\neq$ 2 or 3 is the set of solutions $(x,y)\in K^{2}$) to the equation
+\[
+y^{2}=X^{2}+ax+b,\; a,b\in K
+\]
+
+
+The main impact of elliptic curve cryptography is enhanced security
+because the counterpart of the discrete logarithms problem (which
+is the basis of the previously discussed methods) in elliptic curves
+is harder\cite{koblitz_elliptic_1987}. 
+
 
 \section{Conclusion} 
 
