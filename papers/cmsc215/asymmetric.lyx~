@@ -113,11 +113,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Flow of messages from source to destination.
-\end_layout
+\begin_inset Graphics
+	filename flowchart1.png
+	scale 60
 
 \end_inset
 
@@ -125,10 +123,19 @@ Flow of messages from source to destination.
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename flowchart1.png
-	scale 45
-	rotateOrigin center
+\begin_inset Caption
+
+\begin_layout Plain Layout
+In Asymmetric Cryptography, two keys are used: a public key and a private
+ key.
+ The public key is used for encryption and the private key for decryption.
+ In the figure, if Shiela wants to send a message to Froi, Key A will be
+ Froi’s public key and Key B will be Froi’s private key.
+ Jade will not be able to decrypt Shiela’s message because he does not have
+ Froi’s private key.
+ This scheme works because it is computationally difficult for Jade to derive
+ the private key of Froi by just using Froi’s public key.
+\end_layout
 
 \end_inset
 
@@ -1771,7 +1778,7 @@ key "koblitz_elliptic_1987"
 ) to the equation
 \begin_inset Formula 
 \[
-y^{2}=X^{2}+ax+b,\; a,b\in K
+y^{2}=X^{2}+ax+b,\;\;\; a,b\in K
 \]
 
 \end_inset

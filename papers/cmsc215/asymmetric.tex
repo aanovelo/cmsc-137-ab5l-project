@@ -30,10 +30,17 @@ signatures} which is closely related to the \textit{key distribution
 problem}.
 
 \begin{figure}[h]
-\caption{Flow of messages from source to destination.}
-
-
 \includegraphics[scale=0.45]{flowchart1}
+
+\caption{In Asymmetric Cryptography, two keys are used: a public key and a
+private key. The public key is used for encryption and the private
+key for decryption. In the figure, if Shiela wants to send a message
+to Froi, Key A will be Froi\textquoteright{}s public key and Key B
+will be Froi\textquoteright{}s private key. Jade will not be able
+to decrypt Shiela\textquoteright{}s message because he does not have
+Froi\textquoteright{}s private key. This scheme works because it is
+computationally difficult for Jade to derive the private key of Froi
+by just using Froi\textquoteright{}s public key.}
 \end{figure}
 
 
