@@ -401,7 +401,7 @@ and still achieve secure communication. In this section, we focus
 on solving this problem by describing the relevant and important work
 on asymmetric ciphers. Figure 5 describes the flow in asymmetric cryptography.
 
-\begin{figure}[h]
+\begin{figure}[p]
 \caption{Flow of messages from source to destination.}
 
 
@@ -469,7 +469,7 @@ effort to determine the key whereas Froi will only need, on the average,
 $O(N)$. The function below generates the puzzles sent by Shiela to
 Froi. The encryption function is arbitrary.
 
-\begin{lstlisting}[language=C,numbers=left]
+\begin{lstlisting}[float=p,language=C,numbers=left]
 void generate_puzzle()
 {
    bit_string id, key, c, random_key, puzzle, k1, k2;
@@ -493,7 +493,7 @@ void generate_puzzle()
 
 The code below is executed on Froi's side.
 
-\begin{lstlisting}[language=C,numbers=left]
+\begin{lstlisting}[float=p,language=C,numbers=left]
 void get_id()
 {
    bit_string id, key, c, selected_puzzle_id, the_puzzle, current_puzzle,
@@ -524,7 +524,7 @@ Once Shiela receives the the puzzle ID from Froi, then the following
 code will be executed. key will be used for subsequent communications
 between the two.
 
-\begin{lstlisting}[language=C,numbers=left]
+\begin{lstlisting}[float=p,language=C,numbers=left]
 void continue_transmission()
 {
    receive(ID);
@@ -735,7 +735,7 @@ remainder). The technique is called ``exponentiation by repeated
 squaring and multiplication.'' The technique presented will need
 at most $2*\log_{2}(e)$ multiplications and $2*\log_{2}(e)$ divisions.
 The encryption and decryption algorithms are shown below.
-\begin{lstlisting}[language=C,numbers=left]
+\begin{lstlisting}[float=p,language=C,numbers=left]
 long E(long P,int e, int n)
 {
    long C=1;

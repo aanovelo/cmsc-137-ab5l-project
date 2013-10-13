@@ -93,7 +93,7 @@ key "merkle_secure_1978"
  channel and still achieve secure communication.
  In this section, we focus on solving this problem by describing the relevant
  and important work on asymmetric ciphers.
- Figure 1 describes the flow in asymmetric cryptography.
+ Figure 5 describes the flow in asymmetric cryptography.
 \end_layout
 
 \begin_layout Standard
@@ -102,10 +102,6 @@ placement h
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -157,7 +153,7 @@ key "merkle_secure_1978"
 , allows two parties to communicate in a private manner even though a third
  party tries its best to learn what is being communicated.
  We refer to the two parties as Froi and Shiela, and the third party as
- Jade (Figure 1).
+ Jade (Figure 5).
  Since the key channel is important, the following describes the characteristics
  of the channel in relation to Jade.
 \end_layout

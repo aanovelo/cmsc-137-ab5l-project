@@ -24,11 +24,9 @@ whether it is possible to send encrypted messages in such a way that
 the key can also be transmitted over the normal (insecure) channel
 and still achieve secure communication. In this section, we focus
 on solving this problem by describing the relevant and important work
-on asymmetric ciphers. Figure 1 describes the flow in asymmetric cryptography.
+on asymmetric ciphers. Figure 5 describes the flow in asymmetric cryptography.
 
 \begin{figure}[h]
-
-
 \caption{Flow of messages from source to destination.}
 
 
@@ -43,7 +41,7 @@ Secure communication, as described by Merkle\cite{merkle_secure_1978},
 allows two parties to communicate in a private manner even though
 a third party tries its best to learn what is being communicated.
 We refer to the two parties as Froi and Shiela, and the third party
-as Jade (Figure 1). Since the key channel is important, the following
+as Jade (Figure 5). Since the key channel is important, the following
 describes the characteristics of the channel in relation to Jade.
 \begin{enumerate}
 \item All attempts by Jade to change the messages on the key channel are
@@ -96,7 +94,7 @@ effort to determine the key whereas Froi will only need, on the average,
 $O(N)$. The function below generates the puzzles sent by Shiela to
 Froi. The encryption function is arbitrary.
 
-\begin{lstlisting}[basicstyle={\footnotesize\ttfamily},language=C]
+\begin{lstlisting}[language=C,numbers=left]
 void generate_puzzle()
 {
    bit_string id, key, c, random_key, puzzle, k1, k2;
@@ -120,7 +118,7 @@ void generate_puzzle()
 
 The code below is executed on Froi's side.
 
-\begin{lstlisting}[basicstyle={\footnotesize\ttfamily},language=C]
+\begin{lstlisting}[language=C,numbers=left]
 void get_id()
 {
    bit_string id, key, c, selected_puzzle_id, the_puzzle, current_puzzle,
@@ -151,7 +149,7 @@ Once Shiela receives the the puzzle ID from Froi, then the following
 code will be executed. key will be used for subsequent communications
 between the two.
 
-\begin{lstlisting}[basicstyle={\footnotesize\ttfamily},language=C]
+\begin{lstlisting}[language=C,numbers=left]
 void continue_transmission()
 {
    receive(ID);
@@ -362,7 +360,7 @@ remainder). The technique is called ``exponentiation by repeated
 squaring and multiplication.'' The technique presented will need
 at most $2*\log_{2}(e)$ multiplications and $2*\log_{2}(e)$ divisions.
 The encryption and decryption algorithms are shown below.
-\begin{lstlisting}[basicstyle={\footnotesize\ttfamily},language=C]
+\begin{lstlisting}[language=C,numbers=left]
 long E(long P,int e, int n)
 {
    long C=1;
@@ -392,6 +390,12 @@ long D(long C,int d, int n)
 }
 \end{lstlisting}
 
+
+It can be seen that the RSA encryption and decryption algorithms are
+straightforward to implement. The challenge however is in the selection
+of the keys which is dependent of several parameters (e, d, n). In
+their paper, the creators of RSA also presented several approaches
+how to generate these parameters to guarantee the security.
 
 
 \subsection{Elgamal(1985)\cite{elgamal_public_1985}}
