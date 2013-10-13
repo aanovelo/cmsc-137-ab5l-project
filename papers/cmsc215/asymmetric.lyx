@@ -1362,6 +1362,7 @@ exponentiation by repeated squaring and multiplication.
  divisions.
  The encryption algorithm is shown below.
 \begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},language=C"
 inline false
 status open
 

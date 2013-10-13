@@ -1402,7 +1402,17 @@ long E(long P,int e, int n)
 
 \begin_layout Plain Layout
 
-      
+      C = (C * C) % n;
+\end_layout
+
+\begin_layout Plain Layout
+
+      if (bit(i,e) == 1) /* bit(i,e) returns the ith bit of e*/
+\end_layout
+
+\begin_layout Plain Layout
+
+         C = (C * P) % n;
 \end_layout
 
 \begin_layout Plain Layout
