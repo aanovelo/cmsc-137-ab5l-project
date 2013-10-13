@@ -788,7 +788,7 @@ key "diffie_new_1976"
 
 \begin_layout Standard
 The technique proposed is dependent on the difficulty of computing 
-\begin_inset Formula $logarithms\: mod\: q$
+\begin_inset Formula $logs\: mod\: q$
 \end_inset
 
  where q is a prime number representing the number of elements of a finite
@@ -814,7 +814,8 @@ Y_{i}=\alpha^{X_{i}}mod\: q
 \end_layout
 
 \begin_layout Standard
-is placed publicly together with the user information.
+is placed publicly together with the user information( such as name and
+ email).
  
 \end_layout
 
@@ -1102,7 +1103,28 @@ trap-door one-way permutation
 \end_inset
 
 .
- In public key cryptosystems
+ In public key cryptosystems the usual 
+\begin_inset Quotes eld
+\end_inset
+
+setup
+\begin_inset Quotes erd
+\end_inset
+
+ time is simply the time it takes to make the encryption function public.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In their paper, it is the encryption function that is made public.
+ Other researchers talk about keys not the functions.
+ Essentially, however, there is a one-to-one correspondence between the
+ encryption function and the key.
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Subsection
