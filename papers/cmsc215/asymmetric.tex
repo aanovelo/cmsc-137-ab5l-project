@@ -166,16 +166,16 @@ the initial setup of the communication is large because N puzzles,
 consequently N keys, are sent initially.
 
 
-\subsection{Diffie-Helman (1976)}
+\subsection{Diffie-Hellman (1976)}
 
-The work by Diffie and Helman\cite{diffie_new_1976} proposed a method
+The work by Diffie and Hellman\cite{diffie_new_1976} proposed a method
 such that only one ``key'' needs to be exchanged and in addition
 the time required from Jade to perform cryptanalysis is exponential.
 In addition, it allows authentication because its use allows it to
 be tied to a public file of user information. Shiela can authenticate
 Froi and vice versa. 
 
-Diffie and Helman differentiate \textit{public key cryptosystems}
+Diffie and Hellman differentiate \textit{public key cryptosystems}
 and \textit{public key distribution systems}. We let ${K}$ be the
 finite key space from which keys $K$ can be obtained and ${M}$ be
 the finite message space where messages $M$ are derived. A \textit{public
@@ -207,16 +207,16 @@ two keys, an enciphering key $E$ and a deciphering key $D$. $E$
 can be made public but $D$ is kept privately by the user. Any entity
 who would like to send messages to a user can use the publicly available
 $E$ to encrypt messages but only the user can decrypt the message
-using $D$. In their paper, Diffie and Helman gave an example public
+using $D$. In their paper, Diffie and Hellman gave an example public
 key cryptosystem by multiplying a binary n-vector message m with an
 invertible binary n x n matrix E. However, this approach is not practical.
 
 Merkle's\cite{merkle_secure_1978} work was classified by Diffie and
-Helman as \textit{public key distribution system} and highlighted
+Hellman as \textit{public key distribution system} and highlighted
 its limitations specifically its high transmission overhead again
 because of sending N puzzles initially. The proposed system is similar
 to the public key cryptosystem described above, but unlike Merkle's
-technique, Diffie and Helman approach allows the authentication of
+technique, Diffie and Hellman approach allows the authentication of
 users by making the public file read-only\cite{diffie_new_1976}. 
 
 The technique proposed is dependent on the difficulty of computing
@@ -280,8 +280,8 @@ $logs\: mod\: q$ are expensive to compute.
 \subsection{Rivest-Shamir-Adleman (1978)}
 
 The RSA algorithm by Rivest, Shamir, and Andleman was inspired by
-the work of Diffie and Helman. Despite the breakthrough in Diffie
-and Helman's work in public key cryptosystems, they did not present
+the work of Diffie and Hellman. Despite the breakthrough in Diffie
+and Hellman's work in public key cryptosystems, they did not present
 any practical implementation that can be used in actual systems. The
 creators of RSA took the work further by presenting a practical and
 efficient implementation. Given an encryption procedure \textbf{E}
@@ -348,7 +348,7 @@ e*d\equiv1(mod(p-1)*(q-1))
 
 This requirement guarantees that properties 1 and 4 above are satisfied,
 which means that \textbf{E} and \textbf{D} are inverse permutations.
-Although Diffie and Helman\cite{diffie_new_1976} also used exponentiation
+Although Diffie and Hellman\cite{diffie_new_1976} also used exponentiation
 and modulo in determining a common key to be used, their approach
 is not based on a ``trap-door one-way permutation'' which means
 that property 4 is satisfied.
