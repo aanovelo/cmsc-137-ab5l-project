@@ -6,7 +6,7 @@
 \usepackage{algpseudocode}
 \usepackage{listings}
 
-\title{Hulaan Mo: Some Notes on Cryptography}
+\title{Hulaan Mo: Some Notes on Cryptography\footnote{This paper is submitted to Prof. Jaderick P. Pabico in partial fulfillment of the requirements in CMSC 215 (Advanced Computer Systems) taken  during the First Semester of Academic Year 2013-2014 at the Institute of Computer Science, College of Arts and Sciences, University of the Philippines Los Banos.}}
 \author{Shiela Kathleen L. Borja\\Joseph Anthony C. Hermocilla\\Mark Froilan B. Tandoc}
 \date{}
 
@@ -405,10 +405,17 @@ signatures} which is closely related to the \textit{key distribution
 problem}.
 
 \begin{figure}[h]
-\caption{Flow of messages from source to destination.}
-
-
 \includegraphics[scale=0.45]{flowchart1}
+
+\caption{In Asymmetric Cryptography, two keys are used: a public key and a
+private key. The public key is used for encryption and the private
+key for decryption. In the figure, if Shiela wants to send a message
+to Froi, Key A will be Froi\textquoteright{}s public key and Key B
+will be Froi\textquoteright{}s private key. Jade will not be able
+to decrypt Shiela\textquoteright{}s message because he does not have
+Froi\textquoteright{}s private key. This scheme works because it is
+computationally difficult for Jade to derive the private key of Froi
+by just using Froi\textquoteright{}s public key.}
 \end{figure}
 
 
@@ -847,7 +854,7 @@ is harder\cite{koblitz_elliptic_1987}.
 
 \section{Conclusion} 
 
-Cryptography is an important research area especially in today’s connected world. The Internet has provided us with services for sharing information electronically. This also increased the threat from some bad guys trying to obtain unauthorized access to information. In this paper, we have presented some concepts from existing literature on the different approaches to cryptography in order to address such threats.
+Cryptography is an important research area especially in today's connected world. The Internet has provided us with services for sharing information electronically. This also increased the threat from some bad guys trying to obtain unauthorized access to information. In this paper, we have presented some concepts from existing literature on the different approaches to cryptography in order to address such threats.
 
 \bibliographystyle{unsrt}
 \bibliography{references}

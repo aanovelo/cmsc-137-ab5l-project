@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.18)  13 OCT 2013 18:26
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.18)  13 OCT 2013 21:19
 entering extended mode
  %&-line parsing enabled.
 **cryptography
@@ -191,11 +191,15 @@ driver: pdftex
 )
 \c@lstlisting=\count111
 LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 15.
 
 Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
@@ -203,8 +207,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 27.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 27.
 
 Underfull \hbox (badness 10000) in paragraph at lines 27--32
 
@@ -263,29 +265,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
-[3] <FeistelEncryptDecrypt2.png, id=19, 634.37pt x 963.6pt>
+[3] <FeistelEncryptDecrypt2.png, id=21, 634.37pt x 963.6pt>
 File: FeistelEncryptDecrypt2.png Graphic file (type png)
 
-<use FeistelEncryptDecrypt2.png> [4 <./FeistelEncryptDecrypt2.png (PNG copy)>]
+<use FeistelEncryptDecrypt2.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-
-<DataEncryptionStandard2.jpg, id=26, 475.7775pt x 963.6pt>
+[4] [5 <./FeistelEncryptDecrypt2.png (PNG copy)>]
+<DataEncryptionStandard2.jpg, id=32, 475.7775pt x 963.6pt>
 File: DataEncryptionStandard2.jpg Graphic file (type jpg)
 
-<use DataEncryptionStandard2.jpg> [5] [6 <./DataEncryptionStandard2.jpg>]
-<AESEncryptionRound2.jpg, id=34, 963.6pt x 722.7pt>
+<use DataEncryptionStandard2.jpg> [6 <./DataEncryptionStandard2.jpg>]
+<AESEncryptionRound2.jpg, id=36, 963.6pt x 722.7pt>
 File: AESEncryptionRound2.jpg Graphic file (type jpg)
 
 <use AESEncryptionRound2.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<AESEncryptionAndDecryption2.jpg, id=35, 593.21625pt x 963.6pt>
+<AESEncryptionAndDecryption2.jpg, id=37, 593.21625pt x 963.6pt>
 File: AESEncryptionAndDecryption2.jpg Graphic file (type jpg)
 
 <use AESEncryptionAndDecryption2.jpg>
@@ -297,22 +302,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--328
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--338
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--338
-
- []
-
 [9 <./AESEncryptionAndDecryption2.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 329--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--338
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 339--347
 
  []
 
-[10] <flowchart1.png, id=49, 736.7525pt x 318.18875pt>
+[10] <flowchart1.png, id=51, 736.7525pt x 318.18875pt>
 File: flowchart1.png Graphic file (type png)
  <use flowchart1.png>
 [11 <./flowchart1.png (PNG copy)>]
@@ -334,19 +339,15 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 757.
  [15]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-
 (./cryptography.bbl [16]) [17] (./cryptography.aux) ) 
 Here is how much of TeX's memory you used:
- 3371 strings out of 495061
- 47172 string characters out of 1182621
- 139344 words of memory out of 3000000
- 6537 multiletter control sequences out of 15000+50000
- 8409 words of font info for 30 fonts, out of 3000000 for 9000
+ 3374 strings out of 495061
+ 47226 string characters out of 1182621
+ 138862 words of memory out of 3000000
+ 6540 multiletter control sequences out of 15000+50000
+ 9024 words of font info for 32 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 27i,8n,51p,1131b,1449s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,8n,51p,1131b,1451s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1
 /public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
@@ -358,12 +359,13 @@ nts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/pu
 blic/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb>
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmtt10.pfb>
-Output written on cryptography.pdf (17 pages, 800265 bytes).
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on cryptography.pdf (17 pages, 812507 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
