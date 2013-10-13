@@ -1606,18 +1606,184 @@ K_{Shiela,Froi}=Y_{Froi}^{k}mod\: p
 
 \end_inset
 
+ 
+\begin_inset Formula $Y_{Froi}$
+\end_inset
+
+ is public.
+ Then the ciphertext 
+\series bold
+C
+\series default
+ that will be generated is the pair 
+\begin_inset Formula $(c_{1},c_{2})$
+\end_inset
+
+, such that
+\begin_inset Formula 
+\[
+c_{1}=\alpha^{k}mod\: p
+\]
+
+\end_inset
+
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c_{2}=K_{Shiela,Froi}m\: mod\: p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since the ciphertext is a pair
+\begin_inset Formula $(c_{1},c_{2})$
+\end_inset
+
+, then its size is twice the size of the message 
+\series bold
+m
+\series default
+.
+ When Froi receives 
+\series bold
+C
+\series default
+, the process of decrypting is divided into two parts.
+ First is to recover 
+\begin_inset Formula $K_{Shiela,Froi}$
+\end_inset
+
+using 
+\begin_inset Formula $c_{1}^{X_{Froi}}mod\: p$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $X_{Froi}$
+\end_inset
+
+ is Froi's secret key which only he knows.
+ The second step is to divide 
+\begin_inset Formula $c_{2}$
+\end_inset
+
+ by 
+\begin_inset Formula $K_{Shiela,Froi}$
+\end_inset
+
+ which recover the message 
+\series bold
+m.
+\begin_inset Formula 
+\[
+m=\frac{c_{2}}{K_{Shiela,Froi}}
+\]
+
+\end_inset
+
+ 
+\series default
+The randomization in the encryption process (selection of 
+\series bold
+k
+\series default
+) is unique to Elgamal's method.
+ This results to the ciphertext 
+\series bold
+C
+\series default
+ of the message 
+\series bold
+m
+\series default
+ not being repeated.
+ This provide added security because Jade will not be able to obtain a pattern
+ for running the encryption process repeatedly in case he guesses that the
+ message is indeed 
+\series bold
+m
+\series default
+.
+ Another notable difference is that the structure of the system does not
+ disclose obvious relations between two messages 
+\begin_inset Formula $m_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{2}$
+\end_inset
+
+ and their simple functions such as the concatenation 
+\begin_inset Formula $m_{1}m_{2}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "elgamal_public_1985"
+
+\end_inset
+
+ .
+\end_layout
+
 \begin_layout Subsection
-Elliptic Curve Cryptosystems(1987)
+Elliptic Curve Cryptosystems (1987)
+\end_layout
+
+\begin_layout Standard
+The cryptosystems described above is based on the multiplicative group of
+ a finite field 
+\begin_inset Formula $GF(q),q=p^{n}$
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "koblitz_elliptic_1987"
 
 \end_inset
 
+.
+ An elliptic curve 
+\begin_inset Formula $E_{k}$
+\end_inset
 
+ define over a field 
+\begin_inset Formula $K$
+\end_inset
+
+ of characteristic 
+\begin_inset Formula $\neq$
+\end_inset
+
+ 2 or 3 is the set of solutions 
+\begin_inset Formula $(x,y)\in K^{2}$
+\end_inset
+
+) to the equation
+\begin_inset Formula 
+\[
+y^{2}=X^{2}+ax+b,\; a,b\in K
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The main impact of elliptic curve cryptography is enhanced security because
+ the counterpart of the discrete logarithms problem (which is the basis
+ of the previously discussed methods) in elliptic curves is harder.
+ 
 \end_layout
 
 \begin_layout Standard
