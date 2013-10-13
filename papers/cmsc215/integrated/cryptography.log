@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.18)  13 OCT 2013 14:19
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.18)  13 OCT 2013 14:47
 entering extended mode
  %&-line parsing enabled.
 **cryptography
@@ -263,34 +263,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
-[3] <FeistelEncryptDecrypt.png, id=19, 304.88907pt x 391.4625pt>
-File: FeistelEncryptDecrypt.png Graphic file (type png)
+[3] <FeistelEncryptDecrypt2.png, id=19, 634.37pt x 963.6pt>
+File: FeistelEncryptDecrypt2.png Graphic file (type png)
 
-<use FeistelEncryptDecrypt.png> [4 <./FeistelEncryptDecrypt.png (PNG copy)>]
+<use FeistelEncryptDecrypt2.png>
+
+LaTeX Warning: Float too large for page by 58.02985pt on input line 169.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
+[4] <DataEncryptionStandard2.jpg, id=27, 475.7775pt x 963.6pt>
+File: DataEncryptionStandard2.jpg Graphic file (type jpg)
 
-<DataEncryptionStandard.png, id=26, 279.0425pt x 687.56876pt>
-File: DataEncryptionStandard.png Graphic file (type png)
-
-<use DataEncryptionStandard.png> [5] [6 <./DataEncryptionStandard.png (PNG copy
-)>] <AESEncryptionRound.png, id=34, 365.11406pt x 268.00125pt>
-File: AESEncryptionRound.png Graphic file (type png)
-
-<use AESEncryptionRound.png>
-<AESEncryptionAndDecryption.png, id=36, 319.1925pt x 366.61969pt>
-File: AESEncryptionAndDecryption.png Graphic file (type png)
-
-<use AESEncryptionAndDecryption.png>
+<use DataEncryptionStandard2.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./AESEncryptionRound.png>] [8 <./AESEncryptionAndDecryption.png (PNG copy)>
-]
+[5] <AESEncryptionRound2.jpg, id=31, 963.6pt x 722.7pt>
+File: AESEncryptionRound2.jpg Graphic file (type jpg)
+
+<use AESEncryptionRound2.jpg>
+Overfull \hbox (108.40945pt too wide) in paragraph at lines 271--272
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<AESEncryptionAndDecryption2.jpg, id=32, 593.21625pt x 963.6pt>
+File: AESEncryptionAndDecryption2.jpg Graphic file (type jpg)
+
+<use AESEncryptionAndDecryption2.jpg>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 326--328
 
  []
@@ -310,11 +324,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 339--347
 
  []
 
-[9] <flowchart1.png, id=48, 736.7525pt x 318.18875pt>
+[7] <flowchart1.png, id=40, 736.7525pt x 318.18875pt>
 File: flowchart1.png Graphic file (type png)
  <use flowchart1.png>
-[10 <./flowchart1.png (PNG copy)>]
-(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8] (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 (/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
@@ -328,36 +344,39 @@ File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 482.
- [11] [12] [13]
+ [9] [10] [11]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 747.
- [14]
-(./cryptography.bbl) [15] (./cryptography.aux) ) 
+ [12]
+(./cryptography.bbl) [13] [14 <./FeistelEncryptDecrypt2.png (PNG copy)>]
+[15 <./DataEncryptionStandard2.jpg>] [16 <./AESEncryptionRound2.jpg>] [17 <./AE
+SEncryptionAndDecryption2.jpg>] [18 <./flowchart1.png (PNG copy)>]
+(./cryptography.aux) ) 
 Here is how much of TeX's memory you used:
- 3370 strings out of 495061
- 47148 string characters out of 1182621
- 134356 words of memory out of 3000000
+ 3371 strings out of 495061
+ 47172 string characters out of 1182621
+ 137087 words of memory out of 3000000
  6537 multiletter control sequences out of 15000+50000
  8409 words of font info for 30 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  27i,8n,51p,1131b,1453s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi5.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/t
-ype1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
-mr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
-f-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fo
-nts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmtt10.pfb>
-Output written on cryptography.pdf (15 pages, 428444 bytes).
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/am
+sfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+r17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.p
+fb>
+Output written on cryptography.pdf (18 pages, 795185 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
+ 125 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

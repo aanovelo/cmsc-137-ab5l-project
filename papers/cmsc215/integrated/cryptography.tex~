@@ -162,7 +162,7 @@ As discussed by Stallings \cite{stallings2011}, the inputs required in the encry
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.7]{FeistelEncryptDecrypt.png}
+\includegraphics[scale=.2]{FeistelEncryptDecrypt2.png}
 \caption{Feistel Encryption and Decryption}
 \label{FeistelEncryptDecrypt}
 \end{center}
@@ -225,7 +225,7 @@ $P^{1}$, a specific 32b permutation of the S-boxes' output, completes the round 
 P guarantees that the output from one round of DES affects the input for the multiple S-boxes in the next round. At the end of all the rounds, DES ends with a final exchange of the left and right halves (and then $P^{-1}$).\cite{landau2000} Figure \ref{DataEncryptionStandard} shows the Data Encryption Standard.
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.4]{DataEncryptionStandard.png}
+\includegraphics[scale=.4]{DataEncryptionStandard2.jpg}
 \caption{The Data Encryption Standard}
 \label{DataEncryptionStandard}
 \end{center}
@@ -268,7 +268,7 @@ Figures \ref{AESEncryptionRound} and \ref{AESEncryptionAndDecryption} shows an A
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.6]{AESEncryptionRound.png}
+\includegraphics[scale=.6]{AESEncryptionRound2.jpg}
 \caption{AES Encryption Round}
 \label{AESEncryptionRound}
 \end{center}
@@ -276,7 +276,7 @@ Figures \ref{AESEncryptionRound} and \ref{AESEncryptionAndDecryption} shows an A
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.6]{AESEncryptionAndDecryption.png}
+\includegraphics[scale=.6]{AESEncryptionAndDecryption2.jpg}
 \caption{AES Encryption and Decryption}
 \label{AESEncryptionAndDecryption}
 \end{center}
@@ -403,14 +403,12 @@ on asymmetric ciphers. Figure 5 describes the flow in asymmetric cryptography.
 
 \begin{figure}[h]
 \caption{Flow of messages from source to destination.}
-
-
 \includegraphics[scale=0.45]{flowchart1}
 \end{figure}
 
 
 
-\subsection{Merkle(1978)\cite{merkle_secure_1978}}
+\subsection{Merkle (1978)}
 
 Secure communication, as described by Merkle\cite{merkle_secure_1978},
 allows two parties to communicate in a private manner even though
@@ -541,7 +539,7 @@ the initial setup of the communication is large because N puzzles,
 consequently N keys, are sent initially.
 
 
-\subsection{Diffie-Helman(1976)\cite{diffie_new_1976}}
+\subsection{Diffie-Helman (1976)}
 
 The work by Diffie and Helman\cite{diffie_new_1976} proposed a method
 such that only one ``key'' needs to be exchanged and in addition
@@ -652,7 +650,7 @@ a long time to do so. This system takes advantage of the fact that
 $logs\: mod\: q$ are expensive to compute.
 
 
-\subsection{Rivest-Shamir-Adleman(1978)\cite{rivest_method_1978}}
+\subsection{Rivest-Shamir-Adleman (1978)}
 
 The RSA algorithm by Rivest, Shamir, and Andleman was inspired by
 the work of Diffie and Helman. Despite the breakthrough in Diffie
