@@ -1360,7 +1360,7 @@ exponentiation by repeated squaring and multiplication.
 \end_inset
 
  divisions.
- The encryption algorithm is shown below.
+ The encryption and decryption algorithms are shown below.
 \begin_inset listings
 lstparams "basicstyle={\footnotesize\ttfamily},language=C"
 inline false
@@ -1418,12 +1418,90 @@ long E(long P,int e, int n)
 
 \begin_layout Plain Layout
 
-   }   
+   }
+\end_layout
+
+\begin_layout Plain Layout
+
+   return C;  
 \end_layout
 
 \begin_layout Plain Layout
 
 }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+long D(long C,int d, int n)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+   long P=1;
+\end_layout
+
+\begin_layout Plain Layout
+
+   int i;
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+   for (i=k;k==0;k--)
+\end_layout
+
+\begin_layout Plain Layout
+
+   {
+\end_layout
+
+\begin_layout Plain Layout
+
+      P = (P * P) % n;
+\end_layout
+
+\begin_layout Plain Layout
+
+      if (bit(i,d) == 1) /* bit(i,d) returns the ith bit of d*/
+\end_layout
+
+\begin_layout Plain Layout
+
+         P = (P * C) % n;
+\end_layout
+
+\begin_layout Plain Layout
+
+   }
+\end_layout
+
+\begin_layout Plain Layout
+
+   return P;  
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
