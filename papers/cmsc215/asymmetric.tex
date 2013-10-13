@@ -178,12 +178,12 @@ In addition, it allows authentication because its use allows it to
 be tied to a public file of user information. Shiela can authenticate
 Froi and vice versa. 
 
-Diffie and Helman differentiate public key cryptosystems and public
-key distribution systems. We let ${K}$ be the finite key space from
-which keys $K$ can be obtained and ${M}$ be the finite message space
-where messages $M$ are derived. A public key cryptosystem is a pair
-of families of algorithms ${E_{k}}$ and${D_{k}}$ which represent
-invertible transformations\cite{diffie_new_1976}. 
+Diffie and Helman differentiate \textit{public key cryptosystems}
+and \textit{public key distribution systems}. We let ${K}$ be the
+finite key space from which keys $K$ can be obtained and ${M}$ be
+the finite message space where messages $M$ are derived. A \textit{public
+key cryptosystem} is a pair of families of algorithms ${E_{k}}$ and${D_{k}}$
+which represent invertible transformations\cite{diffie_new_1976}.
 \[
 E_{k}:\{M\}\rightarrow\{M\}
 \]
@@ -215,24 +215,25 @@ key cryptosystem by multiplying a binary n-vector message m with an
 invertible binary n x n matrix E. However, this approach is not practical.
 
 Merkle's\cite{merkle_secure_1978} work was classified by Diffie and
-Helman as public key distribution system and highlighted its limitations
-specifically its high transmission overhead again because of sending
-N puzzles initially. The proposed system is similar to the public
-key cryptosystem described above, but unlike Merkle's technique, Diffie
-and Helman approach allows the authentication of users by making the
-public file read-only\cite{diffie_new_1976}. 
+Helman as \textit{public key distribution system} and highlighted
+its limitations specifically its high transmission overhead again
+because of sending N puzzles initially. The proposed system is similar
+to the public key cryptosystem described above, but unlike Merkle's
+technique, Diffie and Helman approach allows the authentication of
+users by making the public file read-only\cite{diffie_new_1976}. 
 
 The technique proposed is dependent on the difficulty of computing
-logarithms mod q where q is a prime number representing the number
-of elements of a finite field. Users generate independent random numbers
-$X_{i}$ from the set of integers ${1,2,...,q-1}$. The users keep
-these numbers but the computed value 
+$logarithms\: mod\: q$ where q is a prime number representing the
+number of elements of a finite field. Users generate independent random
+numbers $X_{i}$ from the set of integers $\left\{ 1,2,...,q-1\right\} $.
+The users keep these numbers but the computed value 
 \[
 Y_{i}=\alpha^{X_{i}}mod\: q
 \]
 
 
-is placed publicly together with the user information. 
+is placed publicly together with the user information( such as name
+and email). 
 
 Consider for example Shiela and Froi would like to talk to each other
 privately. They are going to use the key $K_{Shiela,Froi}$below after
@@ -276,10 +277,34 @@ K_{Shiela,Froi}=Y_{Shiela}^{(\log_{\alpha}Y_{Froi})}mod\: q
 
 However, if Jade is to perform this computation, it will take him
 a long time to do so. This system takes advantage of the fact that
-logs mod q are expensive to compute.
+$logs\: mod\: q$ are expensive to compute.
 
 
 \subsection{Rivest-Shamir-Adleman(1978)\cite{rivest_method_1978}}
+
+The RSA algorithm by Rivest, Shamir, and Andleman was inspired by
+the work of Diffie and Helman. Despite the breakthrough in Diffie
+and Helman's work in public key cryptosystems, they did not present
+any practical implementation that can be used in actual systems. The
+creators of RSA took the work further by presenting a practical and
+efficient implementation. Given an encryption procedure \textbf{E}
+,a decryption procedure \textbf{D}, and a message \textbf{M}, a public
+key cryptosystem have the following properties\cite{rivest_method_1978}:
+\begin{enumerate}
+\item Decrypting an encrypted \textbf{M} results to \textbf{M}. \textbf{D}(\textbf{E}(\textbf{M}))
+= \textbf{M.}
+\item \textbf{D} and \textbf{E} are easy to compute.
+\item Publicly revealing \textbf{E} does not mean that it will be easy to
+compute \textbf{D} from \textbf{E}. It should be difficult or inefficient
+to compute \textbf{D} from \textbf{E}.
+\item If \textbf{M} is decrypted and then encrypted then \textbf{M} is the
+result. \textbf{E}(\textbf{D}(\textbf{M})) = \textbf{M}.
+\end{enumerate}
+The encryption an decryption functions rely on a key such that the
+security of the functions or procedures rests on the security of the
+key. If \textbf{E} satisfies properties 1-3 is referred to as ``trap-door
+one way function''. If it also satisfies property 4 then it is referred
+to as ``trap-door one-way permutation''. In public key cryptosystems
 
 
 \subsection{Elgamal(1985)\cite{elgamal_public_1985}}
