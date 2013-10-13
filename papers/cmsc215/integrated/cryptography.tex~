@@ -162,7 +162,7 @@ As discussed by Stallings \cite{stallings2011}, the inputs required in the encry
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.2]{FeistelEncryptDecrypt2.png}
+\includegraphics[scale=.3]{FeistelEncryptDecrypt2.png}
 \caption{Feistel Encryption and Decryption}
 \label{FeistelEncryptDecrypt}
 \end{center}
@@ -225,7 +225,7 @@ $P^{1}$, a specific 32b permutation of the S-boxes' output, completes the round 
 P guarantees that the output from one round of DES affects the input for the multiple S-boxes in the next round. At the end of all the rounds, DES ends with a final exchange of the left and right halves (and then $P^{-1}$).\cite{landau2000} Figure \ref{DataEncryptionStandard} shows the Data Encryption Standard.
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.4]{DataEncryptionStandard2.jpg}
+\includegraphics[scale=.3]{DataEncryptionStandard2.jpg}
 \caption{The Data Encryption Standard}
 \label{DataEncryptionStandard}
 \end{center}
@@ -268,7 +268,7 @@ Figures \ref{AESEncryptionRound} and \ref{AESEncryptionAndDecryption} shows an A
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.6]{AESEncryptionRound2.jpg}
+\includegraphics[scale=.4]{AESEncryptionRound2.jpg}
 \caption{AES Encryption Round}
 \label{AESEncryptionRound}
 \end{center}
@@ -276,7 +276,7 @@ Figures \ref{AESEncryptionRound} and \ref{AESEncryptionAndDecryption} shows an A
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.6]{AESEncryptionAndDecryption2.jpg}
+\includegraphics[scale=.4]{AESEncryptionAndDecryption2.jpg}
 \caption{AES Encryption and Decryption}
 \label{AESEncryptionAndDecryption}
 \end{center}
