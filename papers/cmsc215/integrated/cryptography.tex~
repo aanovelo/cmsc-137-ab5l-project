@@ -854,7 +854,7 @@ is harder\cite{koblitz_elliptic_1987}.
 
 \section{Conclusion} 
 
-Cryptography is an important research area especially in today's connected world. The Internet has provided us with services for sharing information electronically. This also increased the threat from some bad guys trying to obtain unauthorized access to information. In this paper, we have presented some concepts from existing literature on the different approaches to cryptography in order to address such threats.
+Cryptography is an important research area especially in today's connected world. The Internet has provided us with services for sharing information electronically. This also increased the threats from bad guys trying to obtain unauthorized access to information. In this paper, we have presented some concepts from existing literature on the different approaches to cryptography in order to address such threats.
 
 \bibliographystyle{unsrt}
 \bibliography{references}
