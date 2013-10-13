@@ -524,11 +524,11 @@ on is large because N puzzles, consequently N keys, are sent initially.
 \end_layout
 
 \begin_layout Subsection
-Diffie-Helman (1976)
+Diffie-Hellman (1976)
 \end_layout
 
 \begin_layout Standard
-The work by Diffie and Helman
+The work by Diffie and Hellman
 \begin_inset CommandInset citation
 LatexCommand cite
 key "diffie_new_1976"
@@ -552,7 +552,7 @@ key
 \end_layout
 
 \begin_layout Standard
-Diffie and Helman differentiate 
+Diffie and Hellman differentiate 
 \shape italic
 public key cryptosystems
 \shape default
@@ -735,7 +735,7 @@ Property 3 allows
 \end_inset
 
 .
- In their paper, Diffie and Helman gave an example public key cryptosystem
+ In their paper, Diffie and Hellman gave an example public key cryptosystem
  by multiplying a binary n-vector message m with an invertible binary n
  x n matrix E.
  However, this approach is not practical.
@@ -749,14 +749,14 @@ key "merkle_secure_1978"
 
 \end_inset
 
- work was classified by Diffie and Helman as 
+ work was classified by Diffie and Hellman as 
 \shape italic
 public key distribution system
 \shape default
  and highlighted its limitations specifically its high transmission overhead
  again because of sending N puzzles initially.
  The proposed system is similar to the public key cryptosystem described
- above, but unlike Merkle's technique, Diffie and Helman approach allows
+ above, but unlike Merkle's technique, Diffie and Hellman approach allows
  the authentication of users by making the public file read-only
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -932,9 +932,9 @@ Rivest-Shamir-Adleman (1978)
 
 \begin_layout Standard
 The RSA algorithm by Rivest, Shamir, and Andleman was inspired by the work
- of Diffie and Helman.
- Despite the breakthrough in Diffie and Helman's work in public key cryptosystem
-s, they did not present any practical implementation that can be used in
+ of Diffie and Hellman.
+ Despite the breakthrough in Diffie and Hellman's work in public key cryptosyste
+ms, they did not present any practical implementation that can be used in
  actual systems.
  The creators of RSA took the work further by presenting a practical and
  efficient implementation.
@@ -1294,7 +1294,7 @@ E
 D
 \series default
  are inverse permutations.
- Although Diffie and Helman
+ Although Diffie and Hellman
 \begin_inset CommandInset citation
 LatexCommand cite
 key "diffie_new_1976"

@@ -132,14 +132,7 @@ Flow of messages from source to destination.
 \end_layout
 
 \begin_layout Subsection
-Merkle(1978)
-\begin_inset CommandInset citation
-LatexCommand cite
-key "merkle_secure_1978"
-
-\end_inset
-
-
+Merkle (1978)
 \end_layout
 
 \begin_layout Standard
@@ -531,14 +524,7 @@ on is large because N puzzles, consequently N keys, are sent initially.
 \end_layout
 
 \begin_layout Subsection
-Diffie-Helman(1976)
-\begin_inset CommandInset citation
-LatexCommand cite
-key "diffie_new_1976"
-
-\end_inset
-
-
+Diffie-Helman (1976)
 \end_layout
 
 \begin_layout Standard
@@ -941,14 +927,7 @@ However, if Jade is to perform this computation, it will take him a long
 \end_layout
 
 \begin_layout Subsection
-Rivest-Shamir-Adleman(1978)
-\begin_inset CommandInset citation
-LatexCommand cite
-key "rivest_method_1978"
-
-\end_inset
-
-
+Rivest-Shamir-Adleman (1978)
 \end_layout
 
 \begin_layout Standard
