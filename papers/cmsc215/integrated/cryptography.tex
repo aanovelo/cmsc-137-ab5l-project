@@ -260,7 +260,7 @@ $P[\alpha_{1}\alpha_{2}\cdots,\alpha_{3}] \, \oplus \, C[\beta_{1}\beta_{2}\cdot
 Matsui determined the best linear approximate expressions for DES until 20 rounds. He then used a combination of reduced-rounds linear approximation and exhaustive search to get the key. On the average, the attack requires $2^{43}$ known plaintexts. In 1994, this attack broke a DES-encoded message in 50 days.\cite{stallings2011}
 
 \subsubsection{Advanced Encryption Standard (AES)}
-As discussed by Stallings\cite{stallings2011}, AES was first published in 2001 by the National Standards and Technology (NIST) to replace Data Encryption Standard as the approved standard for commercial purposes. The winning algorithm was first known as the Rijndael Block Cipher proposed by Joan Daemen and Vincent Rijmen. AES is a symmetric block cipher that uses a 128b block size and 128, 192, or 56 bit key size. AES do not follow the Feistel structure but each round consists of four different functions:byte substitution, permutation, arithmetic operations over a final field, and XOR with a key. AES also operates in 8-b bytes and the four fundamental operations--addition, subtraction, multiplication and division are all defined over the finite field GF($2^{8}$). Addition of two bytes is defined as XOR operation. Multiplication of two bytes is defined as the multiplication of polynomials modulo an irreducible polynomial of degree 8, $m(x)=x^{8}+x^{4}+x^{3}+x+1$.
+As discussed by Stallings\cite{stallings2011}, AES was first published in 2001 by the National Standards and Technology (NIST) to replace Data Encryption Standard as the approved standard for commercial purposes. The winning algorithm was first known as the Rijndael Block Cipher proposed by Joan Daemen and Vincent Rijmen. AES is a symmetric block cipher that uses a 128b block size and 128, 192, or 56 bit key size. AES does not follow the Feistel structure but each round consists of four different functions:byte substitution, permutation, arithmetic operations over a final field, and XOR with a key. AES also operates in 8-b bytes and the four fundamental operations--addition, subtraction, multiplication and division are all defined over the finite field GF($2^{8}$). Addition of two bytes is defined as XOR operation. Multiplication of two bytes is defined as the multiplication of polynomials modulo an irreducible polynomial of degree 8, $m(x)=x^{8}+x^{4}+x^{3}+x+1$.
 
 \paragraph{AES Encryption}
 As cited by Stallings\cite{stallings2011}, the input for the encryption and decryption algorithms is a single 128b  block which is depicted as a 4x4 matrix of bytes and is copied on a state array modified at each state of encryption and decryption. After the final stage, the state is copied to the output matrix. The key used is also depicted as a square matrix which is then expanded into an array of key schedule words, four bytes each. The ordering of the bytes within the matrix is by column.
@@ -803,7 +803,7 @@ must be chosen so that \textbf{p-1} have at least one large prime
 factor. Suppose Shiela wants to send a message \textbf{m} to Froi
 where $0\leq m\leq(p-1)$. Shiela chooses a number \textbf{k} uniformly
 between \textbf{0} and \textbf{p-1}. This \textbf{k} will be $X_{Shiela}$,
-which is her secret key. $K_{Shiela,Froi}$ is computed as follow:
+which is her secret key. $K_{Shiela,Froi}$ is computed as follows:
 
 \[
 K_{Shiela,Froi}=Y_{Froi}^{k}mod\: p
