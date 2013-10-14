@@ -566,8 +566,8 @@ be tied to a public file of user information. Shiela can authenticate
 Froi and vice versa. 
 
 Diffie and Hellman differentiate \textit{public key cryptosystems}
-and \textit{public key distribution systems}. We let ${K}$ be the
-finite key space from which keys $K$ can be obtained and ${M}$ be
+and \textit{public key distribution systems}. We let \{K\} be the
+finite key space from which keys $K$ can be obtained and \{M\} be
 the finite message space where messages $M$ are derived. A \textit{public
 key cryptosystem} is a pair of families of algorithms ${E_{k}}$ and${D_{k}}$
 which represent invertible transformations\cite{diffie_new_1976}.
