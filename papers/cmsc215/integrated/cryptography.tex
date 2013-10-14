@@ -756,7 +756,7 @@ long E(long P,int e, int n)
    long C=1;
    int i;
    
-   for (i=k;k==0;k--)
+   for (i=k;k>=0;k--)
    {
       C = (C * C) % n;
       if (bit(i,e) == 1) /* bit(i,e) returns the ith bit of e*/
@@ -770,7 +770,7 @@ long D(long C,int d, int n)
    long P=1;
    int i;
    
-   for (i=k;k==0;k--)
+   for (i=k;k>=0;k--)
    {
       P = (P * P) % n;
       if (bit(i,d) == 1) /* bit(i,d) returns the ith bit of d*/
