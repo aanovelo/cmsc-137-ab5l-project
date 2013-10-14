@@ -1673,47 +1673,6 @@ Try to answer the following questions.
 How does Selective Reject work?
 \end_layout
 
-\begin_layout Subsubsection
-High-Level Data Link Control
-\end_layout
-
-\begin_layout Standard
-HDLC is a simple protocol for the data-link layer.
- 
-\end_layout
-
-\begin_layout Exercise*
-Try to answer the following questions.
-\end_layout
-
-\begin_layout Itemize
-What are the requirements for the bit-oriented data link protocols?
-\end_layout
-
-\begin_layout Itemize
-What is HDLC?
-\end_layout
-
-\begin_layout Itemize
-What are the types of HDLC stations?
-\end_layout
-
-\begin_layout Itemize
-What are the link configurations for HDLC?
-\end_layout
-
-\begin_layout Itemize
-What are the three data transfer modes of operation?
-\end_layout
-
-\begin_layout Itemize
-What are the types of frames and their fields in HDLC?
-\end_layout
-
-\begin_layout Itemize
-Give an example of HDLC operation.
-\end_layout
-
 \begin_layout Section
 Carrier-Sense Multiple Access with Collision Detection
 \end_layout

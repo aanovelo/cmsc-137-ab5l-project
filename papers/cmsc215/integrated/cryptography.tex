@@ -366,7 +366,7 @@ The algorithm can be broken into two stages: initialization and operation. In th
 \EndFor
 \State $j = 0$
 \For{$i = 0 \to 255$}
-	\State $j = (j + S[i] + K[i]) mod 256$
+	\State $j = (j + S[i] + K[i]) \bmod 256$
 	\State $swap(S[i], S[j])$
 \EndFor
 \end{algorithmic}
@@ -376,10 +376,10 @@ Stream generation involves cycling through all the elements of the state table, 
 \begin{algorithmic}
 \State $i, j = 0$
 \While{$true$}
-	\State $i = (i + 1) mod 256$
-	\State $j = (j + S[i]) mod 256$
+	\State $i = (i + 1) \bmod 256$
+	\State $j = (j + S[i]) \bmod 256$
 	\State $swap(S[i], S[j])$
-	\State $t = (S[i] + S[j]) mod 256$
+	\State $t = (S[i] + S[j]) \bmod 256$
 	\State $k = S[t]$
 \EndWhile
 \end{algorithmic}
@@ -610,12 +610,12 @@ technique, Diffie and Hellman approach allows the authentication of
 users by making the public file read-only\cite{diffie_new_1976}. 
 
 The technique proposed is dependent on the difficulty of computing
-$logs\: mod\: q$ where \textbf{q} is a prime number representing
+$logs\: \bmod\: q$ where \textbf{q} is a prime number representing
 the number of elements of a finite field. Users generate independent
 random numbers $X_{i}$ from the set of integers $\left\{ 1,2,...,q-1\right\} $.
 The users keep these numbers but the computed value 
 \[
-Y_{i}=\alpha^{X_{i}}mod\: q
+Y_{i}=\alpha^{X_{i}}\bmod\: q
 \]
 
 
@@ -628,29 +628,29 @@ they generate $X_{Shiela}$and $X_{Froi}$ and published $Y_{Shiela}$
 and $Y_{Froi}$.
 
 \[
-K_{Shiela,Froi}=\alpha^{X_{Shiela}X_{Froi}}mod\: q
+K_{Shiela,Froi}=\alpha^{X_{Shiela}X_{Froi}}\bmod\: q
 \]
 
 
 Shiela will be able to obtain $K_{Shiela,Froi}$ by using the public
 file $Y_{Froi}$ and then computing
 \[
-K_{Shiela,Froi}=Y_{Froi}^{X_{Shiela}}mod\: q
+K_{Shiela,Froi}=Y_{Froi}^{X_{Shiela}}\bmod\: q
 \]
  
 \[
-=(\alpha^{X_{Froi}})^{X_{Shiela}}mod\: q
+=(\alpha^{X_{Froi}})^{X_{Shiela}}\bmod\: q
 \]
 
 
 \[
-=\alpha^{X_{Froi}X_{Shiela}}=\alpha^{X_{Shiela}X_{Froi}}mod\: q
+=\alpha^{X_{Froi}X_{Shiela}}=\alpha^{X_{Shiela}X_{Froi}}\bmod\: q
 \]
 
 
 Froi will be able to obtain the key in the same manner. 
 \[
-K_{Sheila,Froi}=Y_{Shiela}^{X_{Froi}}mod\: q
+K_{Sheila,Froi}=Y_{Shiela}^{X_{Froi}}\bmod\: q
 \]
  
 
@@ -658,13 +658,13 @@ Jade might be able to compute$K_{Shiela,Froi}$ from $Y_{Shiela}$
 and $Y_{Froi}$ by computing
 
 \[
-K_{Shiela,Froi}=Y_{Shiela}^{(\log_{\alpha}Y_{Froi})}mod\: q
+K_{Shiela,Froi}=Y_{Shiela}^{(\log_{\alpha}Y_{Froi})}\bmod\: q
 \]
 
 
 However, if Jade is to perform this computation, it will take him
 a long time to do so. This system takes advantage of the fact that
-$logs\: mod\: q$ are expensive to compute.
+$logs\: \bmod\: q$ are expensive to compute.
 
 
 \subsection{Rivest-Shamir-Adleman (1978)}
@@ -707,12 +707,12 @@ modulo \textbf{n}. The decryption process will raise the ciphertext
 to another power \textbf{d} modulo \textbf{n}. The mathematical formulation
 is shown below. 
 \[
-C\equiv E(P)\equiv P^{e}(mod\: n)
+C\equiv E(P)\equiv P^{e}(\bmod\: n)
 \]
 
 
 \[
-P\equiv D(C)\equiv C^{d}(mod\: n)
+P\equiv D(C)\equiv C^{d}(\bmod\: n)
 \]
 
 
@@ -727,12 +727,12 @@ must be selected well. \textbf{n} is computed as a product of two
 large random primes \textbf{p} and \textbf{q}, \textbf{n = p {*} q}.
 Although \textbf{n} will be made public, \textbf{p} and \textbf{q}
 will not, which hides the way \textbf{d} can be derived from \textbf{e}.
-\textbf{d} is a random integer such that $gcd(d,(p-1)*(q-1))=1$.
+\textbf{d} is a random integer such that $\gcd(d,(p-1)*(q-1))=1$.
 \textbf{e} is computed from \textbf{p}, \textbf{q}, and \textbf{d}
 such that
 
 \[
-e*d\equiv1(mod(p-1)*(q-1))
+e*d\equiv1(\bmod(p-1)*(q-1))
 \]
 
 
@@ -808,24 +808,24 @@ between \textbf{0} and \textbf{p-1}. This \textbf{k} will be $X_{Shiela}$,
 which is her secret key. $K_{Shiela,Froi}$ is computed as follows:
 
 \[
-K_{Shiela,Froi}=Y_{Froi}^{k}mod\: p
+K_{Shiela,Froi}=Y_{Froi}^{k}\bmod\: p
 \]
  $Y_{Froi}$ is public. Then the ciphertext \textbf{C} that will be
 generated is the pair $(c_{1},c_{2})$, such that
 \[
-c_{1}=\alpha^{k}mod\: p
+c_{1}=\alpha^{k}\bmod\: p
 \]
 
 
 \[
-c_{2}=K_{Shiela,Froi}m\: mod\: p
+c_{2}=K_{Shiela,Froi}m\: \bmod\: p
 \]
 
 
 Since the ciphertext is a pair$(c_{1},c_{2})$, then its size is twice
 the size of the message \textbf{m}. When Froi receives \textbf{C},
 the process of decrypting is divided into two parts. First is to recover
-$K_{Shiela,Froi}$using $c_{1}^{X_{Froi}}mod\: p$. Note that $X_{Froi}$
+$K_{Shiela,Froi}$using $c_{1}^{X_{Froi}}\bmod\: p$. Note that $X_{Froi}$
 is Froi's secret key which only he knows. The second step is to divide
 $c_{2}$ by $K_{Shiela,Froi}$ which recover the message \textbf{m.
 \[
