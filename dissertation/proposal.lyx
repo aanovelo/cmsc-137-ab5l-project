@@ -116,9 +116,8 @@ ormance machines whereas gaming needs them for an enhanced user experience.
 \end_layout
 
 \begin_layout Standard
-One challenge is how researchers can make use of these machines for scientific
- computing when they are idle, or even when they are being used for another
- purpose.
+Machines used in scientific computing are usually dedicated, which means
+ that they cannot be used for other general-computing purposes.
  
 \end_layout
 
