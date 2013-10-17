@@ -59,8 +59,56 @@
 
 \begin_body
 
+\begin_layout Section
+Introduction
+\end_layout
+
 \begin_layout Standard
-This is my research proposal.
+Scientific applications, such as equation solvers and simulations, are very
+ CPU-intensive.
+ These applications, because of their heavy computational requirements,
+ are usually run in high-performance computing(HPC) infrastructures using
+ supercomputers or commodity clusters.
+ Setting up such infrastructures requires a lot of initial capital and technical
+ investments.
+ Once the infrastructure has been set up, maintenance costs will also be
+ required to update the hardware and software components.
+ Although these infrastructures are indeed useful, studies have shown that
+ they are underutilized[cite].
+ Their usage depends on the computing demand pattern of scientists and researche
+rs.
+ Most HPC clusters in research centers cater to a mix of researchers from
+ different areas.
+ For example, physicists and chemists may share the same HPC cluster running
+ on Linux.
+ Differences in usage requirements of these researchers affect the overall
+ operation of the cluster[cite].
+ Provisioning the hardware and software requirements needed for scientific
+ computing is thus very challenging because of these factors.
+\end_layout
+
+\begin_layout Standard
+Despite the recent advances in hardware (increased processing speed and
+ memory) and their decreasing costs, typical users do not harness the full
+ capacity of their machines either because the software they are using does
+ not support them to or their computing needs do not require access to the
+ full capacity of their machines.
+ Web browsing and word processing, for example, usually do not require high-perf
+ormance machines whereas gaming needs them for an enhanced user experience.
+ Another example is the case of laboratory computers used for instruction
+ in academic institutions.
+ Despite having the latest processors and a good amount of memory, they
+ are typically used just for simple programming exercises which do not require
+ the full access to hardware performance.
+ These underutilized machines can be used for scientific computing needs.
+ 
+\end_layout
+
+\begin_layout Standard
+One challenge is how researchers can make use of these machines for scientific
+ computing when they are idle, or even when they are being used for another
+ purpose.
+ 
 \end_layout
 
 \end_body
