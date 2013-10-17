@@ -59,8 +59,13 @@
 
 \begin_body
 
-\begin_layout Section*
-Title
+\begin_layout Title
+SciCloud: A cloud computing framework for scientific computing
+\end_layout
+
+\begin_layout Date
+Joseph Anthony C.
+ Hermocilla
 \end_layout
 
 \begin_layout Section*
@@ -69,8 +74,8 @@ Thesis
 
 \begin_layout Standard
 Scientific computing can be done over cloud infrastructure and can be guaranteed
- a performance that is comparable when done using bare metal machines such
- as supercomputers or dedicated commodity clusters.
+ a performance that is comparable when performed using bare metal machines
+ such as supercomputers or dedicated commodity clusters.
 \end_layout
 
 \begin_layout Section*
@@ -149,7 +154,8 @@ evaluate existing public cloud offerings (Amazon EC2, Microsoft Azure) for
 \end_layout
 
 \begin_layout Enumerate
-deploy a private cloud setup using OpenStack which will be used for 
+deploy a private cloud setup using OpenStack which will be used for testing
+ 
 \end_layout
 
 \begin_layout Section*
