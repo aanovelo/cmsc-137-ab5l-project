@@ -117,12 +117,25 @@ ormance machines whereas gaming needs them for an enhanced user experience.
 
 \begin_layout Standard
 Machines used in clusters are usually dedicated, which means that they cannot
- be used for other general-computing purposes.
- When running tasks, the number of machines that will be used are set statically.
+ be used for other general-purpose computing needs.
+ When running tasks, the number of machines used from the clusters used
+ are usually statically set.
+ 
 \end_layout
 
 \begin_layout Section*
 Objectives
+\end_layout
+
+\begin_layout Standard
+The objective of this research is to develop solutions to improve scientific
+ computing on the cloud.
+ Specifically, this work aims to 
+\end_layout
+
+\begin_layout Enumerate
+evaluate existing public cloud offerings (Amazon EC2, Microsoft Azure, etc)
+ for applicability in scientific computing tasks;
 \end_layout
 
 \begin_layout Section*
