@@ -60,7 +60,7 @@
 \begin_body
 
 \begin_layout Title
-SciCloud: A cloud computing framework for scientific computing
+SciCloud: A cloud computing framework for high-performance scientific computing
 \end_layout
 
 \begin_layout Date
@@ -73,9 +73,9 @@ Thesis
 \end_layout
 
 \begin_layout Standard
-Scientific computing can be done over cloud infrastructure and can be guaranteed
- a performance that is comparable when performed using bare metal machines
- such as supercomputers or dedicated commodity clusters.
+High-performance scientific computing can be done over cloud infrastructure
+ and can be guaranteed a performance that is comparable when performed using
+ bare metal machines such as supercomputers or dedicated commodity clusters.
 \end_layout
 
 \begin_layout Section*
@@ -143,8 +143,8 @@ Objectives
 \end_layout
 
 \begin_layout Standard
-The main objective of this research is to develop solutions to improve scientifi
-c computing on the cloud.
+The main objective of this proposed research is to develop solutions to
+ improve scientific computing on the cloud.
  Specifically, this work aims to 
 \end_layout
 
@@ -163,7 +163,8 @@ create an MPI implementation that is optimal for the cloud;
 \end_layout
 
 \begin_layout Enumerate
-modify the linux kernel to run 
+create an application framework for cloud computing that works optimally
+ in the cloud.
 \end_layout
 
 \begin_layout Section*
