@@ -83,6 +83,13 @@ Rationale
 \end_layout
 
 \begin_layout Standard
+Since the digital computer was invented, it has been an important tool in
+ doing science.
+ In fact, without it, progress in science will be slow.
+ 
+\end_layout
+
+\begin_layout Standard
 Scientific applications, such as equation solvers and simulations, are very
  CPU-intensive.
  These applications, because of their heavy computational requirements,
