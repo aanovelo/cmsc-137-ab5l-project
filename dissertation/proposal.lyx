@@ -116,9 +116,9 @@ ormance machines whereas gaming needs them for an enhanced user experience.
 \end_layout
 
 \begin_layout Standard
-Machines used in scientific computing are usually dedicated, which means
- that they cannot be used for other general-computing purposes.
- 
+Machines used in clusters are usually dedicated, which means that they cannot
+ be used for other general-computing purposes.
+ When running tasks, the number of machines that will be used are set statically.
 \end_layout
 
 \begin_layout Section*
