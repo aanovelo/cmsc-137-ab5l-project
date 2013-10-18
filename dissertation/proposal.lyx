@@ -74,8 +74,8 @@ Thesis
 
 \begin_layout Standard
 High-performance scientific computing can be done over cloud infrastructure
- and can be guaranteed a performance that is comparable when performed using
- bare metal machines such as supercomputers or dedicated commodity clusters.
+ and can be guaranteed a performance that is comparable to using bare metal
+ machines such as supercomputers or dedicated commodity clusters.
 \end_layout
 
 \begin_layout Section*
