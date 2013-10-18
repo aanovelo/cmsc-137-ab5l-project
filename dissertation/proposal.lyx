@@ -156,8 +156,8 @@ Objectives
 \end_layout
 
 \begin_layout Standard
-The main objective of this research is to develop solutions to improve scientifi
-c computing on the cloud.
+The main objective of this research is to develop cloud computing solutions
+ to improve high-performance scientific computing.
  Specifically, this work aims to 
 \end_layout
 
@@ -167,13 +167,13 @@ evaluate existing public cloud offerings (Amazon EC2, Microsoft Azure) for
 \end_layout
 
 \begin_layout Enumerate
-deploy a private cloud setup using OpenStack, which a general purpose cloud
- computing framework, to be used for testing;
+deploy and operate a private cloud setup using OpenStack, which a general
+ purpose cloud computing framework, to be used for testing;
 \end_layout
 
 \begin_layout Enumerate
-develop an application framework and architecture that makes it easy and
- efficient for scientists to perform scientific experiments on a cloud platform.
+and develop a novel framework and architecture to make it easy and efficient
+ for scientists to perform scientific experiments on the cloud.
 \end_layout
 
 \begin_layout Section*
