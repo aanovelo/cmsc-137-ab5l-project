@@ -83,6 +83,19 @@ Rationale
 \end_layout
 
 \begin_layout Standard
+Since the digital computer was invented, it has been an important tool in
+ doing science.
+ In fact, without it, progress in science will be quite slow.
+ Several scientific breakthroughs have been made possible because of digital
+ computers.
+ From the sequencing of the human genome to the discovery of the Higg's
+ Boson particle, the digital computer has its very important role.
+ From simple arithmetic to modeling biological and systems, the digital
+ computer is able to deliver the result of experiments in a timely and accurate
+ manner.
+\end_layout
+
+\begin_layout Standard
 Scientific applications, such as equation solvers and simulations, are very
  CPU-intensive.
  These applications, because of their heavy computational requirements,
