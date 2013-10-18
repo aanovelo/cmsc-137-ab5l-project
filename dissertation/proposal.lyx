@@ -74,8 +74,8 @@ Thesis
 
 \begin_layout Standard
 High-performance scientific computing can be done over cloud infrastructure
- and can be guaranteed a performance that is comparable when performed using
- bare metal machines such as supercomputers or dedicated commodity clusters.
+ and can be guaranteed a performance that is comparable to using bare metal
+ machines such as supercomputers or dedicated commodity clusters.
 \end_layout
 
 \begin_layout Section*
@@ -156,8 +156,8 @@ Objectives
 \end_layout
 
 \begin_layout Standard
-The main objective of this proposed research is to develop solutions to
- improve scientific computing on the cloud.
+The main objective of this research is to develop cloud computing solutions
+ to improve high-performance scientific computing.
  Specifically, this work aims to 
 \end_layout
 
@@ -167,17 +167,13 @@ evaluate existing public cloud offerings (Amazon EC2, Microsoft Azure) for
 \end_layout
 
 \begin_layout Enumerate
-deploy a private cloud setup using OpenStack, which a general purpose cloud
- computing framework, to be used for testing;
+deploy and operate a private cloud setup using OpenStack, which a general
+ purpose cloud computing framework, to be used for testing;
 \end_layout
 
 \begin_layout Enumerate
-create an MPI implementation that is optimal for the cloud;
-\end_layout
-
-\begin_layout Enumerate
-create an application framework for cloud computing that works optimally
- in the cloud.
+and develop a novel framework and architecture to make it easy and efficient
+ for scientists to perform scientific experiments on the cloud.
 \end_layout
 
 \begin_layout Section*
@@ -187,7 +183,7 @@ Methodology
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "dissertation"
+bibfiles "proposal"
 options "plain"
 
 \end_inset
