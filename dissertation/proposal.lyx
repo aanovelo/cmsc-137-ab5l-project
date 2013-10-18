@@ -97,9 +97,9 @@ Since the digital computer was invented, it has been an important tool in
 
 \begin_layout Standard
 Scientific applications, such as equation solvers and simulations, are very
- CPU-intensive.
+ CPU-intensive and Memory-intensive.
  These applications, because of their heavy computational requirements,
- are usually run in high-performance computing(HPC) infrastructures using
+ are usually run in high-performance computing (HPC) infrastructures using
  supercomputers or commodity clusters.
  Setting up such infrastructures requires a lot of initial capital and technical
  investments.
