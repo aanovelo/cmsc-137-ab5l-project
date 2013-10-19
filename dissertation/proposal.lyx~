@@ -74,15 +74,6 @@ Joseph Anthony C.
  Hermocilla
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Thesis
 \end_layout
@@ -196,8 +187,8 @@ deploy a private cloud setup using OpenStack for testing;
 \end_layout
 
 \begin_layout Enumerate
-identify and describe the characteristics of scientific applications that
- make it a challenge to execute them on the cloud; and 
+Characterize scientific applications to evaluate their executability on
+ the cloud; and 
 \end_layout
 
 \begin_layout Enumerate
