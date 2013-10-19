@@ -211,6 +211,7 @@ Plan of Action
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
+btprint "btPrintAll"
 bibfiles "proposal"
 options "plain"
 
