@@ -74,7 +74,16 @@ Joseph Anthony C.
  Hermocilla
 \end_layout
 
-\begin_layout Section*
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Thesis
 \end_layout
 
@@ -84,7 +93,7 @@ High-performance scientific computing can be done over cloud infrastructure
  currently used in supercomputers or dedicated commodity clusters.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Rationale
 \end_layout
 
@@ -159,15 +168,15 @@ Machines used in clusters are usually dedicated, which means that they cannot
  administrator to schedule the job that must be run.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Nature of Scientific Applications
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 What is Cloud Computing?
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Objectives
 \end_layout
 
@@ -196,7 +205,7 @@ develop a novel framework and architecture to make it easy and efficient
  for scientists to perform scientific experiments on the cloud.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Methodology
 \end_layout
 
