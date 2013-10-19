@@ -5,7 +5,7 @@
 \textclass article
 \begin_preamble
 \usepackage{draftwatermark}
-\SetWatermarkLightness{0.90}
+\SetWatermarkLightness{0.70}
 \SetWatermarkScale{5}
 \end_preamble
 \use_default_options true
@@ -96,9 +96,9 @@ Since the digital computer was invented, it has been an important tool in
  computers.
  From the sequencing of the human genome to the discovery of the Higg's
  Boson particle, the digital computer has its very important role.
- From simple arithmetic to modeling biological and systems, the digital
- computer is able to deliver the result of experiments in a timely and accurate
- manner.
+ From simple arithmetic to modeling biological and physical systems, the
+ digital computer is able to deliver the result of experiments in an accurate
+ and timely manner.
 \end_layout
 
 \begin_layout Standard
@@ -106,7 +106,7 @@ Scientific applications, such as equation solvers and simulations, are very
  CPU-intensive and Memory-intensive.
  These applications, because of their heavy computational requirements,
  are usually run in high-performance computing (HPC) infrastructures using
- supercomputers or commodity clusters.
+ supercomputers or commodity clusters for distributed computations.
  Setting up such infrastructures requires a lot of initial capital and technical
  investments.
  Once the infrastructure has been set up, maintenance costs will also be
@@ -123,11 +123,11 @@ key "ostermann_performance_2010"
  Their usage depends on the computing demand pattern of scientists and researche
 rs.
  Most HPC clusters in research centers cater to a mix of researchers from
- different areas.
+ different study areas.
  For example, physicists and chemists may share the same HPC cluster running
- on Linux.
+ on Linux operating system.
  Differences in usage requirements of these researchers affect the overall
- operation of the cluster[cite].
+ operation of the cluster.
  Provisioning the hardware and software requirements needed for scientific
  computing is thus very challenging because of these factors.
 \end_layout
@@ -136,8 +136,8 @@ rs.
 Despite the recent advances in hardware (increased processing speed and
  memory) and their decreasing costs, typical users do not harness the full
  capacity of their machines, either because the software they are using
- does not support them to or their computing needs do not require access
- to the full capacity of their machines.
+ does not support them or their computing needs do not require access to
+ the full capacity of their machines.
  Web browsing and word processing, for example, usually do not require high-perf
 ormance machines whereas gaming needs them for an enhanced user experience.
  Another example is the case of laboratory computers used for instruction
