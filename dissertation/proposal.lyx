@@ -155,6 +155,8 @@ Machines used in clusters are usually dedicated, which means that they cannot
  When running tasks, the number of machines used from the clusters used
  are usually statically set often with the assistance of system administrators
  managing the cluster.
+ A scientist who needs to perform a simulation need to contact the cluster
+ administrator to schedule the job that must be run.
 \end_layout
 
 \begin_layout Section*
