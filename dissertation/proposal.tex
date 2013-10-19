@@ -1,0 +1,102 @@
+%% LyX 2.0.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{draftwatermark}
+\SetWatermarkLightness{0.92}
+\SetWatermarkScale{5}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\title{SciCloud: A cloud computing framework for high-performance scientific
+computing}
+
+
+\date{Joseph Anthony C. Hermocilla}
+
+\maketitle
+
+\section*{Thesis}
+
+High-performance scientific computing can be done over cloud infrastructure
+and can be guaranteed a performance that is comparable to using bare
+metal machines such as supercomputers or dedicated commodity clusters.
+
+
+\section*{Rationale}
+
+Since the digital computer was invented, it has been an important
+tool in doing science. In fact, without it, progress in science will
+be quite slow. Several scientific breakthroughs have been made possible
+because of digital computers. From the sequencing of the human genome
+to the discovery of the Higg's Boson particle, the digital computer
+has its very important role. From simple arithmetic to modeling biological
+and systems, the digital computer is able to deliver the result of
+experiments in a timely and accurate manner.
+
+Scientific applications, such as equation solvers and simulations,
+are very CPU-intensive and Memory-intensive. These applications, because
+of their heavy computational requirements, are usually run in high-performance
+computing (HPC) infrastructures using supercomputers or commodity
+clusters. Setting up such infrastructures requires a lot of initial
+capital and technical investments. Once the infrastructure has been
+set up, maintenance costs will also be required to update the hardware
+and software components. Although these infrastructures are indeed
+useful, studies have shown that they are underutilized\cite{ostermann_performance_2010}.
+Their usage depends on the computing demand pattern of scientists
+and researchers. Most HPC clusters in research centers cater to a
+mix of researchers from different areas. For example, physicists and
+chemists may share the same HPC cluster running on Linux. Differences
+in usage requirements of these researchers affect the overall operation
+of the cluster{[}cite{]}. Provisioning the hardware and software requirements
+needed for scientific computing is thus very challenging because of
+these factors.
+
+Despite the recent advances in hardware (increased processing speed
+and memory) and their decreasing costs, typical users do not harness
+the full capacity of their machines, either because the software they
+are using does not support them to or their computing needs do not
+require access to the full capacity of their machines. Web browsing
+and word processing, for example, usually do not require high-performance
+machines whereas gaming needs them for an enhanced user experience.
+Another example is the case of laboratory computers used for instruction
+in academic institutions. Despite having the latest processors and
+a good amount of memory, they are typically used just for simple programming
+exercises which do not require the full access to hardware performance.
+These underutilized machines can be used for scientific computing
+needs. 
+
+Machines used in clusters are usually dedicated, which means that
+they cannot be used for other general-purpose computing needs. When
+running tasks, the number of machines used from the clusters used
+are usually statically set. 
+
+
+\section*{Objectives}
+
+The main objective of this research is to develop cloud computing
+solutions to improve high-performance scientific computing. Specifically,
+this work aims to 
+\begin{enumerate}
+\item evaluate existing public cloud offerings (Amazon EC2, Microsoft Azure)
+for applicability in scientific computing tasks;
+\item deploy and operate a private cloud setup using OpenStack, which a
+general purpose cloud computing framework, to be used for testing;
+\item and develop a novel framework and architecture to make it easy and
+efficient for scientists to perform scientific experiments on the
+cloud.
+\end{enumerate}
+
+\section*{Methodology}
+
+\bibliographystyle{plain}
+\bibliography{proposal}
+
+\end{document}

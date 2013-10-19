@@ -5,7 +5,7 @@
 \textclass article
 \begin_preamble
 \usepackage{draftwatermark}
-\SetWatermarkLightness{0.92}
+\SetWatermarkLightness{0.90}
 \SetWatermarkScale{5}
 \end_preamble
 \use_default_options true
