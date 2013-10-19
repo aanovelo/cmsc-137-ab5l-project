@@ -159,6 +159,10 @@ Machines used in clusters are usually dedicated, which means that they cannot
  administrator to schedule the job that must be run.
 \end_layout
 
+\begin_layout Subsection*
+Nature of Scientific Applications
+\end_layout
+
 \begin_layout Section*
 Objectives
 \end_layout
