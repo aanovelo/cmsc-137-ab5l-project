@@ -191,7 +191,7 @@ deploy a private cloud setup using OpenStack for testing;
 \end_layout
 
 \begin_layout Enumerate
-Characterize scientific applications to evaluate their executability on
+characterize scientific applications to evaluate their executability on
  the cloud; and 
 \end_layout
 
@@ -202,6 +202,10 @@ develop a novel framework and architecture to make it easy and efficient
 
 \begin_layout Section
 Methodology
+\end_layout
+
+\begin_layout Section
+Plan of Action
 \end_layout
 
 \begin_layout Standard
