@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.1.19)  19 OCT 2013 18:24
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.1.19)  19 OCT 2013 18:32
 entering extended mode
  %&-line parsing enabled.
 **proposal
@@ -161,22 +161,23 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 1565 strings out of 495061
- 18821 string characters out of 1182621
+ 1567 strings out of 495061
+ 18843 string characters out of 1182621
  72587 words of memory out of 3000000
- 4749 multiletter control sequences out of 15000+50000
- 11669 words of font info for 30 fonts, out of 3000000 for 9000
+ 4750 multiletter control sequences out of 15000+50000
+ 12445 words of font info for 31 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  32i,10n,26p,232b,251s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> 
-</home/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </h
-ome/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home
-/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/ja
-chermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/jache
-rmocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm3583.600pk>
-Output written on proposal.pdf (2 pages, 56660 bytes).
+</home/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </h
+ome/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home
+/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/ja
+chermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/jache
+rmocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/jachermo
+cilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm3583.600pk>
+Output written on proposal.pdf (2 pages, 63478 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
+ 197 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
