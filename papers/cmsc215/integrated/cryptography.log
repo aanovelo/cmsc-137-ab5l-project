@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.18)  15 OCT 2013 09:01
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.18)  19 OCT 2013 11:39
 entering extended mode
  %&-line parsing enabled.
 **cryptography
@@ -139,18 +139,18 @@ Package color Info: Driver file: pdftex.def on input line 130.
 ) (./cryptography.aux)
 \openout1 = `cryptography.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -208,172 +208,164 @@ driver: pdftex
 )
 \c@lstlisting=\count111
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 20.
+(Font)              <17.28> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 20.
+(Font)              <12> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 20.
+(Font)              <8> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 20.
+(Font)              <6> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 20.
+(Font)              <5> on input line 22.
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
+Underfull \hbox (badness 10000) in paragraph at lines 31--33
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 32.
+(Font)              <7> on input line 34.
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--37
+Underfull \hbox (badness 10000) in paragraph at lines 34--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--46
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <142.26378> not available
-(Font)              size <24.88> substituted on input line 46.
+(Font)              size <24.88> substituted on input line 48.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 47--61
+Underfull \hbox (badness 10000) in paragraph at lines 49--63
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 64.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--84
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--104
+Underfull \hbox (badness 10000) in paragraph at lines 80--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--106
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--136
+Underfull \hbox (badness 10000) in paragraph at lines 129--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
 
  []
 
-[3] <FeistelEncryptDecrypt2.png, id=21, 634.37pt x 963.6pt>
-File: FeistelEncryptDecrypt2.png Graphic file (type png)
-
-<use FeistelEncryptDecrypt2.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+[3] <figure1.jpg, id=21, 597.432pt x 844.8363pt>
+File: figure1.jpg Graphic file (type jpg)
+ <use figure1.jpg> [4 <./figure1.jpg>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-[4] [5 <./FeistelEncryptDecrypt2.png (PNG copy)>]
-<DataEncryptionStandard2.jpg, id=32, 475.7775pt x 963.6pt>
-File: DataEncryptionStandard2.jpg Graphic file (type jpg)
+ [5] <figure2.jpg, id=32, 597.432pt x 844.8363pt>
+File: figure2.jpg Graphic file (type jpg)
+ <use figure2.jpg>
+[6 <./figure2.jpg>] <figure3.jpg, id=36, 844.8363pt x 597.432pt>
+File: figure3.jpg Graphic file (type jpg)
 
-<use DataEncryptionStandard2.jpg> [6 <./DataEncryptionStandard2.jpg>]
-<AESEncryptionRound2.jpg, id=36, 963.6pt x 722.7pt>
-File: AESEncryptionRound2.jpg Graphic file (type jpg)
-
-<use AESEncryptionRound2.jpg>
+<use figure3.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<AESEncryptionAndDecryption2.jpg, id=37, 593.21625pt x 963.6pt>
-File: AESEncryptionAndDecryption2.jpg Graphic file (type jpg)
-
-<use AESEncryptionAndDecryption2.jpg>
+<figure4.jpg, id=37, 597.432pt x 844.8363pt>
+File: figure4.jpg Graphic file (type jpg)
+ <use figure4.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7] [8 <./AESEncryptionRound2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 331--333
-
- []
-
-[9 <./AESEncryptionAndDecryption2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 334--343
+[7] [8 <./figure3.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 335--337
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--343
+Underfull \hbox (badness 10000) in paragraph at lines 338--347
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--352
+Underfull \hbox (badness 10000) in paragraph at lines 338--347
 
  []
 
-[10] <flowchart1.png, id=51, 736.7525pt x 318.18875pt>
-File: flowchart1.png Graphic file (type png)
- <use flowchart1.png>
-[11 <./flowchart1.png (PNG copy)>]
+[9 <./figure4.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 348--356
+
+ []
+
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 (/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 497.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 380.
 
 
 (/usr/share/texmf-texlive/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 497.
- [12] [13] [14]
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 380.
+ [10]
+<flowchart1.png, id=51, 736.7525pt x 318.18875pt>
+File: flowchart1.png Graphic file (type png)
+ <use flowchart1.png> [11 <./flowchart1.png (PNG copy)>] [12] [13] [14]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 762.
- [15]
-(./cryptography.bbl [16]) [17] (./cryptography.aux)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 792.
+ [15] (./cryptography.bbl [16])
+[17] (./cryptography.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 117.38377pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 3461 strings out of 495061
- 48776 string characters out of 1182621
- 137352 words of memory out of 3000000
- 6615 multiletter control sequences out of 15000+50000
+ 3455 strings out of 495061
+ 48261 string characters out of 1182621
+ 136714 words of memory out of 3000000
+ 6609 multiletter control sequences out of 15000+50000
  9323 words of font info for 33 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 29i,11n,51p,1131b,1551s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,11n,51p,1146b,1551s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts
@@ -388,7 +380,7 @@ ts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6
 .pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/s
 hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-
 texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on cryptography.pdf (17 pages, 815680 bytes).
+Output written on cryptography.pdf (17 pages, 3188259 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
