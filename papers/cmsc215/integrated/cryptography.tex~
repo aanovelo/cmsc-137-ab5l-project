@@ -171,9 +171,9 @@ Block cipher allows a block of plaintext to be treated as a whole and used to pr
 \subsubsection{Feistel Cipher Structure}
 As discussed by Stallings \cite{stallings2011}, the inputs required in the encryption algorithm are the plaintext block of length 2w bits, where w is the half of the total block size, and a key $K$. The plaintext block is then divided into two halves, $L_{0}$ and $R_{0}$, which pass through n rounds of processing and then combine to create  the ciphertext. In each round, substitution is performed on the left-half block , $L_{0}$. This is done by applying a round function F to the right-half block and then applying XOR to F's output and the left-half block. The round function has the same general structure for each round but is parameterized by the round subkey $K_{i}$. The decryption algorithm for the Feistel cipher is basically the same as the encryption process with the rule: Use the ciphertext as a input to the algorithm, but use subkeys $K_{i}$  in reverse order. In order to ensure that decryption is the inverse of encryption, the final round of a Feistel cipher switches the ciphertext to ($R_{0}$, $L_{0}$). Figure \ref{FeistelEncryptDecrypt} shows the Feistel encryption and decryption processes.
 
-\begin{figure}[h]
+\begin{figure}
 \begin{center}
-\includegraphics[scale=.4]{figure1.jpg}
+\includegraphics[height=20cm]{Diagram1.png}
 \caption{Feistel Encryption and Decryption. $LE_{n}$ is the left block and $RE_{n}$ is the right block \cite{stallings2011}.}
 \label{FeistelEncryptDecrypt}
 \end{center}
@@ -244,9 +244,9 @@ $P^{1}$, a specific 32-bit permutation of the S-boxes' output, completes the rou
 \end{tabular}
 
 $P$ guarantees that the output from one round of DES affects the input for the multiple S-boxes in the next round. At the end of all the rounds, DES ends with a final exchange of the left and right halves (and then $P^{-1}$) \cite{landau2000}. Figure \ref{DataEncryptionStandard} shows the Data Encryption Standard.
-\begin{figure}[h]
+\begin{figure}
 \begin{center}
-\includegraphics[scale=.4]{figure2.jpg}
+\includegraphics[height=18cm]{Diagram2.png}
 \caption{The Data Encryption Standard. $L_{n}$ is the left block and $R_{n}$ is the right block \cite{stallings2011}.}
 \label{DataEncryptionStandard}
 \end{center}
@@ -287,17 +287,17 @@ All of the stages are reversible. For the SubBytes, ShiftRows, and  MixColumns, 
 
 Figures \ref{AESEncryptionRound} and \ref{AESEncryptionAndDecryption} shows an AES Encryption Round and the AES encryption and decryption respectively.
 
-\begin{figure}[h]
+\begin{figure}
 \begin{center}
-\includegraphics[scale=.4]{figure3.jpg}
+\includegraphics[height=13cm]{Diagram3.png}
 \caption{AES Encryption Round\cite{stallings2011}.}
 \label{AESEncryptionRound}
 \end{center}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}
 \begin{center}
-\includegraphics[scale=.4]{figure4.jpg}
+\includegraphics[height=20cm]{Diagram4.png}
 \caption{AES Encryption and Decryption\cite{stallings2011}.}
 \label{AESEncryptionAndDecryption}
 \end{center}
