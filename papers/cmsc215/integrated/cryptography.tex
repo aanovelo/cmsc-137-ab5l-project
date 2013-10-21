@@ -165,25 +165,25 @@ Other terms that are used in the sections are:
 Block cipher allows a block of plaintext to be treated as a whole and used to produce a ciphertext block of equal length. The simplest techniques that can be used to encrypt a block of plaintext are substitution and permutation. Substitution replaces a symbol or groups of symbols with a corresponding ciphertext symbols or groups of symbols. Permutation replaces a sequence of plaintext symbols with a permutation of the same set of symbols \cite{stallings2011}.
 
 \subsubsection{Feistel Cipher Structure}
-As discussed by Stallings \cite{stallings2011}, the inputs required in the encryption algorithm are the plaintext block of length 2w bits and a key $K$. The plaintext block is then divided into two halves, $L_{0}$ and $R_{0}$, which pass through n rounds of processing and then combine to create  the ciphertext. In each round, substitution is performed on the left-half block , $L_{0}$. This is done by applying a round function F to the right-half block and then applying XOR to F's output and the left-half block. The round function has the same general structure for each round but is parameterized by the round subkey $K_{i}$. The decryption algorithm for the Feistel cipher is basically the same as the encryption process with the rule: Use the ciphertext as a input to the algorithm, but use subkeys $K_{i}$  in reverse order. In order to ensure that decryption is the inverse of encryption, the final round of a Feistel cipher switches the ciphertext to ($R_{0}$, $L_{0}$). Figure \ref{FeistelEncryptDecrypt} shows the Feistel encryption and decryption processes.
+As discussed by Stallings \cite{stallings2011}, the inputs required in the encryption algorithm are the plaintext block of length 2w bits, where w is the half of the total block size, and a key $K$. The plaintext block is then divided into two halves, $L_{0}$ and $R_{0}$, which pass through n rounds of processing and then combine to create  the ciphertext. In each round, substitution is performed on the left-half block , $L_{0}$. This is done by applying a round function F to the right-half block and then applying XOR to F's output and the left-half block. The round function has the same general structure for each round but is parameterized by the round subkey $K_{i}$. The decryption algorithm for the Feistel cipher is basically the same as the encryption process with the rule: Use the ciphertext as a input to the algorithm, but use subkeys $K_{i}$  in reverse order. In order to ensure that decryption is the inverse of encryption, the final round of a Feistel cipher switches the ciphertext to ($R_{0}$, $L_{0}$). Figure \ref{FeistelEncryptDecrypt} shows the Feistel encryption and decryption processes.
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=.4]{figure1.jpg}
-\caption{Feistel Encryption and Decryption\cite{stallings2011}.}
+\caption{Feistel Encryption and Decryption. $LE_{n}$ is the left block and $RE_{n}$ is the right block \cite{stallings2011}.}
 \label{FeistelEncryptDecrypt}
 \end{center}
 \end{figure}
 
 \subsubsection{The Data Encryption Standard (DES)}
-The Data Encryption Standard is a block cipher encrypts the data in 64-bits blocks through a 56-bits key. It is the most widely used public cryptosystem in the world. It is mainly used for electronic funds transfer, civilian satellite communications security, and UNIX password protection.\cite{landau2000} DES was first proposed in 1975 and was adopted by the National Bureau of Standards(NBS) in 1977. DES was approved as the Federal Information Processing Standard 46 \cite{stallings2011}.
+The Data Encryption Standard is a block cipher encrypts the data in 64-bit blocks through a 56-bit key. It is the most widely used public cryptosystem in the world. It is mainly used for electronic funds transfer, civilian satellite communications security, and UNIX password protection.\cite{landau2000} DES was first proposed in 1975 and was adopted by the National Bureau of Standards(NBS) in 1977. DES was approved as the Federal Information Processing Standard 46 \cite{stallings2011}.
 
-	The development of DES can be traced back to the development of LUCIFER, a Feistel block cipher that uses 64-bits blocks and 128-bits key. LUCIFER became very promising leading IBM, its developers, to launch a new marketable commercial encryption product which can be implemented on a chip. The result of the new project was a more cryptanalysis-secure version of LUCIFER that uses 56b key. In 1973, NBS accepted proposals for a national cipher standard where IBM submitted the refined version of LUCIFER which was later adopted as the Data Encryption Standard \cite{stallings2011}.
+	The development of DES can be traced back to the development of LUCIFER, a Feistel block cipher that uses 64-bit blocks and 128-bit key. LUCIFER became very promising leading IBM, its developers, to launch a new marketable commercial encryption product which can be implemented on a chip. The result of the new project was a more cryptanalysis-secure version of LUCIFER that uses 56b key. In 1973, NBS accepted proposals for a national cipher standard where IBM submitted the refined version of LUCIFER which was later adopted as the Data Encryption Standard \cite{stallings2011}.
 	
 	DES came under fire even before its adaptation as a standard due to its enormous key size reduction and its classified design criteria for its internal structure, S-boxes. The critics were concerned that the new key size is vulnerable to brute-force attacks. Also, they were concerned that the classified  design criteria might hide weak points that would enable the National Security Agency(NSA) to decipher messages without the key \cite{stallings2011}. Despite the issues surrounding DES, it remained as a strong  encryption algorithm until the mid 1990s when a USD250,000 computer built by the Electronic Frontier Foundation (EFF) decoded a DES-encoded message in 56 hours. This was later improved to 22 hours using a combination of 100,000 networked PCs and the EFF machine \cite{landau2000}.
 
 \paragraph{DES Encryption}
-As discussed by Landau \cite{landau2000}, input to the algorithm are the plaintext grouped into 64-bits blocks and a single 56-bits key. First step in the encryption is to rearrange the 64-bits plaintext to produce a permuted input. Throughout the whole plaintext, a single 56-bits key is used to determine the transformation of all the blocks. DES uses a 48-bits subkey for each of the sixteen identical rounds of mixing. DES begins with  an initial permutation $P$ and ends with its inverse, $P^{-1}$. Selecting the subkeys or “key schedule” begins with splitting the 56-bits key into two 28-bits halves. Each half is rotated one or two bits (one bit in rounds 1, 2, 9 and 16; two bits otherwise) then the two halves are put back together, and then the 48 bits are chosen and put in order as follows:
+As discussed by Landau \cite{landau2000}, input to the algorithm are the plaintext grouped into 64-bit blocks and a single 56-bit key. First step in the encryption is to rearrange the 64-bit plaintext to produce a permuted input. Throughout the whole plaintext, a single 56-bit key is used to determine the transformation of all the blocks. DES uses a 48-bit subkey for each of the sixteen identical rounds of mixing. DES begins with  an initial permutation $P$ and ends with its inverse, $P^{-1}$. Selecting the subkeys or “key schedule” begins with splitting the 56-bit key into two 28-bit halves. Each half is rotated one or two bits (one bit in rounds 1, 2, 9 and 16; two bits otherwise) then the two halves are put back together, and then the 48 bits are chosen and put in order as follows:
 
 \begin{tabular}{*{6}{|c}|}
 \hline
@@ -210,12 +210,12 @@ DES is a standard Feistel construction:\\
 L_{i}=R_{i-1}
 \]
 \[
-R_{i}=L-i-1 \, xor \, f(R_{i-1}, K_{i})
+R_{i}=L-i-1 \, \oplus \, f(R_{i-1}, K_{i})
 \]
 
 where
 \[
-f(R_{i-1}, K_{i})=P(S(E(R_{i}-1) \, xor \, K_{i}))
+f(R_{i-1}, K_{i})=P(S(E(R_{i}-1) \, \oplus \, K_{i}))
 \]
 with the operations
 \[
@@ -224,9 +224,9 @@ E(expansion),S(S-boxlookup),P(permutation)
 
 The expansion operation E begins with bit 32 and cycles back to the beginning, using all the bits in order, repeating every fourth and fifth bits. E allows every bit of a DES ciphertext to depend on every bit of the plaintext and every bit of the key \cite{landau2000}.
 
-After performing XOR operation on the round subkey and the expanded right half, the result is then passed through the S-boxes. Each of the S-box takes an input of six bits and has an output of four bits. Each of the output of the eight S-boxes is concatenated producing a 32-bits output \cite{landau2000}.
+After performing XOR operation on the round subkey and the expanded right half, the result is then passed through the S-boxes. Each of the S-box takes an input of six bits and has an output of four bits. Each of the output of the eight S-boxes is concatenated producing a 32-bit output \cite{landau2000}.
 
-$P^{1}$, a specific 32-bits permutation of the S-boxes' output, completes the round function. It carries 1, ..., 32 into the following list:
+$P^{1}$, a specific 32-bit permutation of the S-boxes' output, completes the round function. It carries 1, ..., 32 into the following list:
 \begin{tabular}{*{8}{|c}|}
 \hline
 16 & 7 & 20 & 21 & 29 & 12 & 28 & 17\\
@@ -243,7 +243,7 @@ $P$ guarantees that the output from one round of DES affects the input for the m
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=.4]{figure2.jpg}
-\caption{The Data Encryption Standard\cite{stallings2011}.}
+\caption{The Data Encryption Standard. $L_{n}$ is the left block and $R_{n}$ is the right block \cite{stallings2011}.}
 \label{DataEncryptionStandard}
 \end{center}
 \end{figure}
@@ -272,12 +272,12 @@ $P[\alpha_{1}\alpha_{2}\cdots,\alpha_{3}] \, \oplus \, C[\beta_{1}\beta_{2}\cdot
 Matsui determined the best linear approximate expressions for DES until 20 rounds. He then used a combination of reduced-rounds linear approximation and exhaustive search to get the key. On the average, the attack requires $2^{43}$ known plaintexts. In 1994, this attack broke a DES-encoded message in 50 days \cite{stallings2011}.
 
 \subsubsection{Advanced Encryption Standard (AES)}
-As discussed by Stallings \cite{stallings2011}, AES was first published in 2001 by the National Standards and Technology (NIST) to replace Data Encryption Standard as the approved standard for commercial purposes. The winning algorithm was first known as the Rijndael Block Cipher proposed by Joan Daemen and Vincent Rijmen. AES is a symmetric block cipher that uses a 128b block size and 128, 192, or 56 bit key size. AES does not follow the Feistel structure but each round consists of four different functions:byte substitution, permutation, arithmetic operations over a final field, and XOR with a key. AES also operates in 8-b bytes and the four fundamental operations--addition, subtraction, multiplication and division are all defined over the finite field GF($2^{8}$). Addition of two bytes is defined as XOR operation. Multiplication of two bytes is defined as the multiplication of polynomials modulo an irreducible polynomial of degree 8, $m(x)=x^{8}+x^{4}+x^{3}+x+1$.
+As discussed by Stallings \cite{stallings2011}, AES was first published in 2001 by the National Standards and Technology (NIST) to replace Data Encryption Standard as the approved standard for commercial purposes. The winning algorithm was first known as the Rijndael Block Cipher proposed by Joan Daemen and Vincent Rijmen. AES is a symmetric block cipher that uses a 128b block size and 128, 192, or 56 bit key size. AES does not follow the Feistel structure but each round consists of four different functions:byte substitution, permutation, arithmetic operations over a final field, and XOR with a key. AES also operates in 8-bit bytes and the four fundamental operations--addition, subtraction, multiplication and division are all defined over the finite field GF($2^{8}$). Addition of two bytes is defined as XOR operation. Multiplication of two bytes is defined as the multiplication of polynomials modulo an irreducible polynomial of degree 8, $m(x)=x^{8}+x^{4}+x^{3}+x+1$.
 
 \paragraph{AES Encryption}
 As cited by Stallings \cite{stallings2011}, the input for the encryption and decryption algorithms is a single 128-bit block which is depicted as a 4x4 matrix of bytes and is copied on a state array modified at each state of encryption and decryption. After the final stage, the state is copied to the output matrix. The key used is also depicted as a square matrix which is then expanded into an array of key schedule words, four bytes each. The ordering of the bytes within the matrix is by column.
 
-The number of rounds(N) in the cipher depends on the length of the key: 10 rounds for 16-Byte keys, 12 rounds for 24-Byte, and 14 rounds for 32-Byte keys. For the first N-1 rounds, there are four distinct transformation functions: SubBytes, ShiftRows, MixColumns, and AddRoundKey. \textit{SubBytes} uses an S-box to perform a byte-by-byte substitution of the block. \textit{ShiftRows} is a simple permutation. \textit{MixColumns} is a substitution that makes use of arithmetic over GF($2^{8}$). \textit{AddRoundKey} is a simple bitwise XOR of the current block with a portion of the expanded key. The final round has  three transformation functions. There is also an initial single transformation (AddRoundKey) before the first round (Round 0). The cipher begins and ends with an AddRoundKey stage since only this stage makes use of the key.
+The number of rounds(N) in the cipher depends on the length of the key: 10 rounds for 16-byte keys, 12 rounds for 24-byte, and 14 rounds for 32-byte keys. For the first N-1 rounds, there are four distinct transformation functions: SubBytes, ShiftRows, MixColumns, and AddRoundKey. \textit{SubBytes} uses an S-box to perform a byte-by-byte substitution of the block. \textit{ShiftRows} is a simple permutation. \textit{MixColumns} is a substitution that makes use of arithmetic over GF($2^{8}$). \textit{AddRoundKey} is a simple bitwise XOR of the current block with a portion of the expanded key. The final round has  three transformation functions. There is also an initial single transformation (AddRoundKey) before the first round (Round 0). The cipher begins and ends with an AddRoundKey stage since only this stage makes use of the key.
 
 All of the stages are reversible. For the SubBytes, ShiftRows, and  MixColumns, an inverse function is used in the decryption algorithm. In the AddRoundKey stage, the inverse is determined by performing an XOR operation between the same round key to the block, using the result that $A\oplus B\oplus B = A$.
 
