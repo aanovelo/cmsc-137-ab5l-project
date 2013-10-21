@@ -174,8 +174,10 @@ What is Cloud Computing?
 \begin_layout Standard
 Cloud computing is a recent buzzword in computing.
  The diversity of applications running on top of the Internet, from e-commerce
- and banking to social networks, forces the vendors address the issue of
- scale.
+ and banking to social networks, forces the vendors to address the issue
+ of scale.
+ In the case of social networking sites, the continuously increasing number
+ of users will demand additional computing resources to be provisioned.
  
 \end_layout
 
