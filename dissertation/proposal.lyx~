@@ -312,6 +312,44 @@ key "armbrust_view_2010"
 \end_layout
 
 \begin_layout Section
+Related Work
+\end_layout
+
+\begin_layout Standard
+A few studies have been made regarding the use of cloud for scientific computing.
+ In 2010, Ostermann et.
+ al.
+ conducted a performance analysis of EC2 cloud computing services for scientific
+ computing using microbenchmarks and kernels.
+ in 2011, Iosup et.
+ al.
+ conducted a performance analysis of cloud computing services for Many-Tasks
+ Scientific Computing
+\begin_inset CommandInset citation
+LatexCommand cite
+key "iosup_performance_2011"
+
+\end_inset
+
+.
+ In 2012, Zhao et.
+ al.
+ presented an early effort in designing and building CloudDragon, a scientific
+ cloud platform which is based on OpenNebula.
+ Most recently, Ludescher et.
+ al.
+ developed a cloud-based execution frameworks for scientific problem solving
+ environments which combines a private and public cloud setup
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ludescher_cloud-based_2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
 Objectives
 \end_layout
 
@@ -400,6 +438,20 @@ Create sample applications using the newly created API.
 
 \begin_layout Paragraph
 To achieve Objective 4
+\end_layout
+
+\begin_layout Enumerate
+Survey a group of scientists to identify their most commonly used scientific
+ applications.
+\end_layout
+
+\begin_layout Enumerate
+Partially implement the features of the identified applications using the
+ API developed in Objective 3
+\end_layout
+
+\begin_layout Enumerate
+Deploy the application as a Software-as-a-Service.
 \end_layout
 
 \begin_layout Standard

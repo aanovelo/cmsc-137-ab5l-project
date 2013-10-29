@@ -312,6 +312,44 @@ key "armbrust_view_2010"
 \end_layout
 
 \begin_layout Section
+Related Work
+\end_layout
+
+\begin_layout Standard
+A few studies have been made regarding the use of cloud for scientific computing.
+ In 2010, Ostermann et.
+ al.
+ conducted a performance analysis of EC2 cloud computing services for scientific
+ computing using microbenchmarks and kernels.
+ In 2011, Iosup et.
+ al.
+ conducted a performance analysis of cloud computing services for Many-Tasks
+ Scientific Computing
+\begin_inset CommandInset citation
+LatexCommand cite
+key "iosup_performance_2011"
+
+\end_inset
+
+.
+ In 2012, Zhao et.
+ al.
+ presented an early effort in designing and building CloudDragon, a scientific
+ cloud platform which is based on OpenNebula.
+ Most recently, Ludescher et.
+ al.
+ developed a cloud-based execution frameworks for scientific problem solving
+ environments which combines a private and public cloud setup
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ludescher_cloud-based_2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
 Objectives
 \end_layout
 
