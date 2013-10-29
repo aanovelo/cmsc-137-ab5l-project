@@ -188,6 +188,7 @@ The nature of software created for science, involving complex calculations,
  Grid computing extends the capabilities of clusters by going beyond the
  local area network extending through a wide area network, in a totally
  distributed manner.
+ Grid computing is usually federated.
  
 \end_layout
 
