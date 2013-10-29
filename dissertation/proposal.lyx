@@ -157,8 +157,8 @@ What is Scientific Computing?
 \end_layout
 
 \begin_layout Standard
-According to Wikipedia, Scientific Computing, also known as computational
- science, involves the use of computers for solving problems in science.
+According to Wikipedia, Scientific Computing, also known as Computational
+ Science, involves the use of computers for solving problems in science.
  It is concerned with model construction, which is mostly mathematical,
  as well as quantitative analysis.
  It is also involved in computer simulation and other forms of computation
@@ -166,16 +166,30 @@ According to Wikipedia, Scientific Computing, also known as computational
  Scientists develop software that models the system being studied and run
  them with various parameters.
  The nature of the models requires a lot computations(floating point operations)
- and data and are often run on supercomputers.
- 
+ and data.
 \end_layout
 
 \begin_layout Subsection
-Supercomputers, Clusters, and Grid Computing
+Desktop Computers, Supercomputers, Clusters, and Grid Computing
 \end_layout
 
 \begin_layout Standard
-
+The nature of software created for science, involving complex calculations,
+ will require a different approach to their implementation and execution.
+ Desktop computers are useful for small scale simulations but are slow for
+ complex experiments.
+ Supercomputers are computers, way beyond the capabilities of desktop computers,
+ that have a specialized architecture optimized for floating point operations.
+ However, these types of computers are usually very costly.
+ Clusters are a collection of typical desktop computers connected through
+ a local area network and is less costly.
+ They execute scientific applications in a distributed manner usually using
+ distributed shared memory or message passing.
+ Grid computing extends the capabilities of clusters by going beyond the
+ local area network extending through a wide area network, in a totally
+ distributed manner.
+ Grid computing is usually federated.
+ 
 \end_layout
 
 \begin_layout Subsection
