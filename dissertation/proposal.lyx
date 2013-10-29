@@ -112,16 +112,9 @@ ts, are usually run in high-performance computing (HPC) infrastructures
  Once the infrastructure has been set up, maintenance costs will also be
  required to update the hardware and software components.
  Although these infrastructures are indeed useful, studies have shown that
- they are underutilized
-\begin_inset CommandInset citation
-LatexCommand cite
-key "ostermann_performance_2010"
-
-\end_inset
-
-.
+ they are underutilized.
  Their usage depends on the computing demand pattern of scientists and researche
-rs which often make these infrastructures idle[cite].
+rs which often make these infrastructures idle.
  Most HPC clusters in research centers cater to a mix of researchers from
  different study areas.
  For example, physicists and chemists may share the same HPC cluster running
@@ -160,7 +153,7 @@ Machines used in clusters are usually dedicated, which means that they cannot
 \end_layout
 
 \begin_layout Subsection
-Nature of Scientific Applications
+What is Scientific Computing?
 \end_layout
 
 \begin_layout Subsection
@@ -180,8 +173,66 @@ Cloud computing is a recent buzzword in computing.
 g number of users will demand additional physical computing resources to
  be provisioned.
  Application developers who develop software can focus on implementing functiona
-lity instead of optimization.
+lity instead on optimizing code to address increasing demand.
  
+\end_layout
+
+\begin_layout Standard
+The widely accepted definition of cloud computing is from the National Institute
+ of Standards and Technology
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mell_nist_2011"
+
+\end_inset
+
+.
+ It defines cloud computing as 
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+a model for enabling ubiquitous, convenient, on-demand network access to
+ a shared pool of configurable computing resources (e.g., networks, servers,
+ storage, applications, and services) that can be rapidly provisioned and
+ released with minimal management effort or service provider interaction
+ .
+ This cloud model promotes availability and is composed of five essential
+ characteristics , three service models , and four deployment models .
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are five main characteristics of cloud computing
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mell_nist_2011"
+
+\end_inset
+
+.
+ First, on-demand access allows users to provision computing resources without
+ requiring human interaction from the service provider.
+ Second, the capabilities are available over the network accessible through
+ standard mechanisms.
+ Third, the resources are pooled and serve multiple users in a multi-tenant
+ model.
+ The physical and virtual resources are dynamically assigned and reassigned
+ depending on the demand.
+ Fourth, provisioning of capabilities is elastic to quickly scale out and
+ rapidly released to quickly scale in.
+ Lastly, cloud systems provide a metering capability at some level of abstractio
+n appropriate to the type of service.
+\end_layout
+
+\begin_layout Standard
+Service models for cloud computing include Software-as-a-Service(SaaS),
+ Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS).
 \end_layout
 
 \begin_layout Section
