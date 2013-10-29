@@ -391,7 +391,11 @@ Identify patterns in creating scientific applications and develop software
 \end_layout
 
 \begin_layout Enumerate
-Create an application programming interface (API) 
+Create an application programming interface (API) for scientific applications.
+\end_layout
+
+\begin_layout Enumerate
+Create sample applications using the newly created API.
 \end_layout
 
 \begin_layout Paragraph

@@ -402,6 +402,20 @@ Create sample applications using the newly created API.
 To achieve Objective 4
 \end_layout
 
+\begin_layout Enumerate
+Survey a group of scientists to identify their most commonly used scientific
+ applications.
+\end_layout
+
+\begin_layout Enumerate
+Partially implement the features of the identified applications using the
+ API developed in Objective 3
+\end_layout
+
+\begin_layout Enumerate
+Deploy the application as a Software-as-a-Service.
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
