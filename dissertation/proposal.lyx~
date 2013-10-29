@@ -153,11 +153,7 @@ Machines used in clusters are usually dedicated, which means that they cannot
 \end_layout
 
 \begin_layout Subsection
-Nature of Scientific Applications
-\end_layout
-
-\begin_layout Standard
-Scientific applications
+What is Scientific Computing?
 \end_layout
 
 \begin_layout Subsection
@@ -232,6 +228,43 @@ key "mell_nist_2011"
  rapidly released to quickly scale in.
  Lastly, cloud systems provide a metering capability at some level of abstractio
 n appropriate to the type of service.
+\end_layout
+
+\begin_layout Standard
+Service models for cloud computing include Software-as-a-Service(SaaS),
+ Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mell_nist_2011"
+
+\end_inset
+
+.
+ SaaS allows users to access and use software running on a cloud infrastructure,
+ for example Google Docs.
+ PaaS allows users to deploy their own applications in a cloud infrastructure
+ using programming languages and frameworks supported by the provider.
+ IaaS provides the user with the most basic computing resources such as
+ processor, storage, and network.
+\end_layout
+
+\begin_layout Standard
+There are four ways to deploy a cloud
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mell_nist_2011"
+
+\end_inset
+
+.
+ A private cloud is operated for a single organization which can be managed
+ by the organization itself or a third party and can be housed within or
+ outside the organization's premises.
+ A community cloud is shared by several organizations to support a specific
+ community.
+ Public clouds are available for the general public.
+ Lastly, hybrid clouds is a composition of two or more clouds.
+ 
 \end_layout
 
 \begin_layout Section
