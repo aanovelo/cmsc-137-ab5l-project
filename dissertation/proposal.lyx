@@ -156,8 +156,26 @@ Machines used in clusters are usually dedicated, which means that they cannot
 What is Scientific Computing?
 \end_layout
 
+\begin_layout Standard
+According to Wikipedia, Scientific Computing, also known as computational
+ science, involves the use of computers for solving problems in science.
+ It is concerned with model construction, which is mostly mathematical,
+ as well as quantitative analysis.
+ It is also involved in computer simulation and other forms of computation
+ that are used to solve problems in various scientific disciplines.
+ Scientists develop software that models the system being studied and run
+ them with various parameters.
+ The nature of the models requires a lot computations(floating point operations)
+ and data and are often run on supercomputers.
+ 
+\end_layout
+
 \begin_layout Subsection
 Supercomputers, Clusters, and Grid Computing
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Subsection

@@ -156,6 +156,20 @@ Machines used in clusters are usually dedicated, which means that they cannot
 What is Scientific Computing?
 \end_layout
 
+\begin_layout Standard
+According to Wikipedia, Scientific Computing, also known as computational
+ science, involves the use of computers for solving problems in science.
+ It is concerned with model construction, which is mostly mathematical,
+ as well as quantitative analysis.
+ It is also involved in computer simulation and other forms of computation
+ that are used to solve problems in various scientific disciplines.
+ Scientists develop software that models the system being studied and run
+ them with various parameters.
+ The nature of the models requires a lot computations(floating point operations)
+ and data and are often run on supercomputers.
+ 
+\end_layout
+
 \begin_layout Subsection
 Supercomputers, Clusters, and Grid Computing
 \end_layout
@@ -265,6 +279,18 @@ key "mell_nist_2011"
  Public clouds are available for the general public.
  Lastly, hybrid clouds is a composition of two or more clouds.
  
+\end_layout
+
+\begin_layout Standard
+Another notable characterization of cloud computing was developed at the
+ University of California Berkeley
+\begin_inset CommandInset citation
+LatexCommand cite
+key "armbrust_view_2010"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
