@@ -327,30 +327,85 @@ evaluate existing public cloud offerings (Amazon EC2, Microsoft Azure) for
 \end_layout
 
 \begin_layout Enumerate
-deploy a private cloud setup using OpenStack for testing; 
+develop and deploy a private cloud over commodity desktop computers which
+ satisfy scientific applications requirements; 
 \end_layout
 
 \begin_layout Enumerate
-characterize scientific applications to evaluate their executability on
- the cloud; and 
+develop a novel framework and platform to make it easy and efficient for
+ scientists to develop scientific applications; and
 \end_layout
 
 \begin_layout Enumerate
-develop a novel framework and architecture to make it easy and efficient
- for scientists to perform scientific experiments on the cloud.
+deploy a private cloud with software for scientific applications.
 \end_layout
 
 \begin_layout Section
 Methodology
 \end_layout
 
-\begin_layout Section
-Plan of Action
+\begin_layout Paragraph
+To achieve Objective 1
+\end_layout
+
+\begin_layout Enumerate
+Obtain accounts from Amazon EC2 and Microsoft Azure.
+\end_layout
+
+\begin_layout Paragraph
+To achieve Objective 2
+\end_layout
+
+\begin_layout Enumerate
+Identify key characteristics of scientific applications in terms of computation,
+ storage, and network.
+\end_layout
+
+\begin_layout Enumerate
+Deploy a 5-node private setup.
+\end_layout
+
+\begin_layout Enumerate
+Study internal architecture of existing cloud computing frameworks(IaaS)
+ to identify modules that can be modified to support the requirements of
+ scientific applications.
+\end_layout
+
+\begin_layout Enumerate
+Perform the necessary architectural and implementation specific changes
+ to support scientific applications.
+\end_layout
+
+\begin_layout Paragraph
+To achieve Objective 3
+\end_layout
+
+\begin_layout Enumerate
+Identify key characteristics of scientific applications in terms of architectura
+l and data representation.
+\end_layout
+
+\begin_layout Enumerate
+Identify patterns in creating scientific applications and develop software
+ abstractions.
+\end_layout
+
+\begin_layout Enumerate
+Create an application programming interface (API) for scientific applications.
+\end_layout
+
+\begin_layout Enumerate
+Create sample applications using the newly created API.
+\end_layout
+
+\begin_layout Paragraph
+To achieve Objective 4
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
+btprint "btPrintAll"
 bibfiles "proposal"
 options "plain"
 
