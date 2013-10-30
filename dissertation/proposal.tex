@@ -178,7 +178,9 @@ In 2012, Zhao et. al. presented an early effort in designing and building
 CloudDragon, a scientific cloud platform which is based on OpenNebula.
 Most recently, Ludescher et. al. developed a cloud-based execution
 frameworks for scientific problem solving environments which combines
-a private and public cloud setup\cite{ludescher_cloud-based_2013}.
+a private and public cloud setup\cite{ludescher_cloud-based_2013}.In
+2010, Schad et. al. performed runtime measurements in the cloud and
+noted the variability due to the multitenant nature of the cloud\cite{schad_runtime_2010}.
 
 
 \section{Objectives}
@@ -202,18 +204,21 @@ for scientists to develop scientific applications; and
 \paragraph{To achieve Objective 1}
 \begin{enumerate}
 \item Obtain accounts from Amazon EC2 and Microsoft Azure.
+\item Review existing benchmarks and execute them on the platforms mentioned
+above.
 \end{enumerate}
 
 \paragraph{To achieve Objective 2}
 \begin{enumerate}
 \item Identify key characteristics of scientific applications in terms of
 computation, storage, and network.
-\item Deploy a 5-node private setup.
-\item Study internal architecture of existing cloud computing frameworks(IaaS)
+\item Deploy a 5-node private cloud setup for testing.
+\item Study internal architecture of existing cloud computing frameworks
+(Eucalyptus\cite{nurmi_eucalyptus_2009} and OpenStack\cite{sefraoui_openstack:_2012})
 to identify modules that can be modified to support the requirements
 of scientific applications.
-\item Perform the necessary architectural and implementation specific changes
-to support scientific applications.
+\item Design and implement a cloud system with an architecture and implementation
+specific to support scientific applications.
 \end{enumerate}
 
 \paragraph{To achieve Objective 3}
@@ -235,7 +240,6 @@ the API developed in Objective 3
 \item Deploy the application as a Software-as-a-Service.
 \end{enumerate}
 \bibliographystyle{plain}
-\nocite{*}
 \bibliography{proposal}
 
 \end{document}

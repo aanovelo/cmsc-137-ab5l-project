@@ -2,44 +2,61 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: proposal.aux
 The style file: plain.bst
 Database file #1: proposal.bib
-You've used 1 entry,
+Warning--to sort, need author or key in _vonlaszewski-08-cloud.pdf_????
+Warning--to sort, need author or key in _home_????
+Warning--to sort, need author or key in _performance_????
+Warning--empty author in _performance_????
+Warning--empty journal in _performance_????
+Warning--empty year in _performance_????
+Warning--empty journal in blagojevic_priority_????
+Warning--empty year in blagojevic_priority_????
+Warning--there's a number but no volume in corradi_vm_????
+Warning--empty year in corradi_vm_????
+Warning--empty journal in gamage_vpipe:_????
+Warning--empty year in gamage_vpipe:_????
+Warning--empty booktitle in nurmi_eucalyptus_2009
+Warning--empty booktitle in rimal_taxonomy_2009
+Warning--empty booktitle in taherimonfared_as_2011
+Warning--empty booktitle in younge_analysis_2011
+You've used 88 entries,
             2118 wiz_defined-function locations,
-            503 strings with 4245 characters,
-and the built_in function-call counts, 612 in all, are:
-= -- 60
-> -- 33
-< -- 1
-+ -- 14
-- -- 12
-* -- 44
-:= -- 98
-add.period$ -- 4
-call.type$ -- 1
-change.case$ -- 9
+            921 strings with 21049 characters,
+and the built_in function-call counts, 36378 in all, are:
+= -- 3494
+> -- 2106
+< -- 40
++ -- 845
+- -- 740
+* -- 2815
+:= -- 5896
+add.period$ -- 263
+call.type$ -- 88
+change.case$ -- 638
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 24
-empty$ -- 42
-format.name$ -- 12
-if$ -- 132
+cite$ -- 104
+duplicate$ -- 1291
+empty$ -- 2543
+format.name$ -- 740
+if$ -- 7549
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 2
-pop$ -- 12
+int.to.str$ -- 88
+missing$ -- 82
+newline$ -- 435
+num.names$ -- 170
+pop$ -- 666
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 546
 quote$ -- 0
-skip$ -- 18
+skip$ -- 978
 stack$ -- 0
-substring$ -- 38
-swap$ -- 10
-text.length$ -- 1
+substring$ -- 2104
+swap$ -- 368
+text.length$ -- 40
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
-warning$ -- 0
-while$ -- 5
-width$ -- 2
-write$ -- 14
+type$ -- 352
+warning$ -- 16
+while$ -- 342
+width$ -- 90
+write$ -- 948
+(There were 16 warnings)
