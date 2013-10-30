@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.18)  30 OCT 2013 09:19
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.18)  30 OCT 2013 09:21
 entering extended mode
  %&-line parsing enabled.
 **proposal
@@ -38,48 +38,6 @@ Package: inputenc 2008/03/30 v1.1d Input encoding file
 (/usr/share/texmf-texlive/tex/latex/base/latin9.def
 File: latin9.def 2008/03/30 v1.1d Input encoding file
 ))
-(/usr/share/texmf-texlive/tex/latex/draftwatermark/draftwatermark.sty
-Package: draftwatermark 2006/06/30 1.0 Put a gray textual watermark on document
- pages
-
-(/usr/share/texmf-texlive/tex/latex/everypage/everypage.sty
-Package: everypage 2007/06/20 1.1 Hooks to run on every page
-)
-(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks16
-)
-(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-(/etc/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
-)
-Package graphics Info: Driver file: pdftex.def on input line 91.
-
-(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
-\Gread@gobject=\count87
-))
-\Gin@req@height=\dimen103
-\Gin@req@width=\dimen104
-)
-(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
-
-(/etc/texmf/tex/latex/config/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 130.
-)
-\sc@wm@fontsize=\skip43
-)
 (/usr/share/texmf-texlive/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
@@ -88,8 +46,8 @@ Language: english 2005/03/30 v3.3o English support from the babel system
 
 (/usr/share/texmf-texlive/tex/generic/babel/babel.def
 File: babel.def 2008/07/06 v3.8l Babel common definitions
-\babel@savecnt=\count88
-\U@D=\dimen105
+\babel@savecnt=\count87
+\U@D=\dimen103
 )
 \l@british = a dialect from \language\l@english 
 \l@UKenglish = a dialect from \language\l@english 
@@ -111,20 +69,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
-
-(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count89
-\scratchdimen=\dimen106
-\scratchbox=\box26
-\nofMPsegments=\count90
-\nofMParguments=\count91
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count92
-\MPscratchDim=\dimen107
-\MPnumerator=\count93
-\everyMPtoPDFconversion=\toks18
-)
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -141,58 +85,42 @@ Overfull \hbox (13.27362pt too wide) in paragraph at lines 43--61
  run in high-performance
  []
 
+[1
 
-LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <142.26378> not available
-(Font)              size <35.83> substituted on input line 75.
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-] [2] [3]
-Overfull \hbox (38.4125pt too wide) in paragraph at lines 216--220
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+Overfull \hbox (33.41373pt too wide) in paragraph at lines 216--220
 []\T1/cmr/m/n/10 Study in-ter-nal ar-chi-tec-ture of ex-ist-ing cloud com-put-i
 ng frame-works (Eucalyptus[[]]
  []
 
-[4] (./proposal.bbl [5]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
+[4] (./proposal.bbl
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
 
-[6] [7] [8] [9] [10] [11]
-Underfull \hbox (badness 1442) in paragraph at lines 489--495
-[]\T1/cmr/m/n/10 David Went-zlaff, Charles Gru-en-wald III, Nathan Beck-mann, K
-evin
- []
-
-[12]) [13] (./proposal.aux)
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 106.43378pt have occurred.
-
- ) 
+[5]) [6] (./proposal.aux) ) 
 Here is how much of TeX's memory you used:
- 1668 strings out of 495061
- 20994 string characters out of 1182621
- 73921 words of memory out of 3000000
- 4848 multiletter control sequences out of 15000+50000
- 13221 words of font info for 32 fonts, out of 3000000 for 9000
+ 822 strings out of 495061
+ 8843 string characters out of 1182621
+ 61648 words of memory out of 3000000
+ 4041 multiletter control sequences out of 15000+50000
+ 12452 words of font info for 31 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 32i,10n,27p,232b,318s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> 
-</home/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </h
-ome/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home
-/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/ja
-chermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/jache
-rmocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/jachermo
-cilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/jachermocil
-la/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm3583.600pk></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on proposal.pdf (13 pages, 142593 bytes).
+ 25i,6n,18p,182b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/jachermocilla/.texmf-var/fonts/pk/ljfour/jkn
+appen/ec/ecti1000.600pk> </home/jachermocilla/.texmf-var/fonts/pk/ljfour/jknapp
+en/ec/ecbx1000.600pk> </home/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecbx1200.600pk> </home/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/
+ecrm1000.600pk> </home/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecb
+x1440.600pk> </home/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm12
+00.600pk> </home/jachermocilla/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.
+600pk></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on proposal.pdf (6 pages, 103086 bytes).
 PDF statistics:
- 357 PDF objects out of 1000 (max. 8388607)
+ 284 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
