@@ -1,4 +1,4 @@
-What is this paper all about?
+What is this paper all about?
 
 
 What problem is being addressed by the research?
@@ -27,6 +27,8 @@ Can we replicate the experiments?
 
 What are specific things that we observed in the system?
 
+
+What are the limitations of the system?
 
 
 
