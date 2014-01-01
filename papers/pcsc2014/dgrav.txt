@@ -7,10 +7,31 @@ What problem is being addressed by the research?
 Why is the study significant?
 
 
-What is the proposed solution?
+What is the proposed solution/system?
 
 
-How is our solution compared to others?
+What is the main contribution of this research?
+
+
+What is the architecture of our proposed solution/system?
+
+
+How did we assess the performance of the solution/system?
+
+
+How is our solution compared to others?Is it better?
+
+
+Can we replicate the experiments?
+
+
+What are specific things that we observed in the system?
+
+
+
+
+
+
 
 
 
