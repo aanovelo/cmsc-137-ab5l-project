@@ -7,7 +7,12 @@ What problem is being addressed by the research?
 Why is the study significant?
 
 
-What are the related studies?
+What is the proposed solution?
+
+
+How is our solution compared to others?
+
+
 
 
 
