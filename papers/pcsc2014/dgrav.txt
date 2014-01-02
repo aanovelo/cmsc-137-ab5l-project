@@ -2,11 +2,16 @@
 
 The paper is all about dgrav, a system for measuring data gravity.
 
-2. What problem is being addressed by the research?
+2. What problem is being addressed by the research?What do we want to know?
 
-
+We would like to know the "degree of attraction" between applications logic and data.
 
 3. Why is the study significant?
+
+Majority of applications separate business logic and data sources.
+For example, web applications use PHP for the application logic and 
+MySQL for data source. These two usually exist as separate operating 
+system processes. 
 
 
 4. What is the proposed solution/system?
