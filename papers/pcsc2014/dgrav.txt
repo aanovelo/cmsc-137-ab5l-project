@@ -1,6 +1,6 @@
 1. What is this paper all about?
 
-The paper is all about dgrav, a system for measuring data gravity.
+
 
 2. What problem is being addressed by the research?What do we want to know?
 
@@ -13,8 +13,10 @@ For example, web applications use PHP for the application logic and
 MySQL for data source. These two usually exist as separate operating 
 system processes. 
 
-
 4. What is the proposed solution/system?
+
+Our solution is to adopt the concept of data gravity as proposed by McRoy.
+Data gravity is quantitatively describes the 
 
 
 5. What is the main contribution of this research?
