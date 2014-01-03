@@ -15,8 +15,9 @@ system processes.
 
 4. What is the proposed solution/system?
 
-Our solution is to adopt the concept of data gravity as proposed by McRoy.
-Data gravity is quantitatively describes the 
+Our solution is to adopt the concept of data gravity as proposed by McRory.
+Data gravity quantitatively describes the tendency of data to be attracted
+to applications. 
 
 
 5. What is the main contribution of this research?
