@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "Master." > /mirror/hosts.master
+echo "Master." > /root/master.txt
 
