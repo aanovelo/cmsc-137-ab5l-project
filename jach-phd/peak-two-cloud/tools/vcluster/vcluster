@@ -1,8 +1,15 @@
 #!/bin/bash
 
-#This is a virtual cluster script for starting a virtual cluster in openstack
-#author Joseph Anthony C. Hermocilla
-#
+source minicluster-openrc.sh
+
+#Some variables
+MASTER_IMAGE=mpi-master-image
+SLAVE_IMAGE=mpi-slave-image
+FLAVOR=jach.custom_1_512
+USER_DATA_SLAVE=init-slave.sh
+USER_DATA_MASTER=init-master.sh
+
+nova image-list
 
 
 
