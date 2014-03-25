@@ -9,7 +9,7 @@ FLAVOR=jach.custom_1_512
 USER_DATA_SLAVE=init-slave.sh
 USER_DATA_MASTER=init-master.sh
 
-nova boot mpi-master --image $MASTER_IMAGE --flavor $FLAVOR --user-data $USER_DATA_MASTER
+nova boot mpi-master --image $MASTER_IMAGE --flavor $FLAVOR --user-data ./$USER_DATA_MASTER
 
 
 
