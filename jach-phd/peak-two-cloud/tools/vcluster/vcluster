@@ -8,12 +8,17 @@ SLAVE_IMAGE=mpi-slave-image
 FLAVOR=jach.custom_1_512
 USER_DATA_SLAVE=init-slave.sh
 USER_DATA_MASTER=init-master.sh
-MASTER_NAME=jach-master
+CLUSTER_NAME=$1 
+NUM_SLAVES=$2
 
 echo "-->Starting frontend/master node..."
-nova boot $MASTER_NAME --image $MASTER_IMAGE --flavor $FLAVOR --user-data ./$USER_DATA_MASTER
+nova boot $CLUSTER_NAME-master --image $MASTER_IMAGE --flavor $FLAVOR --user-data ./$USER_DATA_MASTER
 
-
+for ((i=1;i<=$2;i++))
+do
+echo "-->Starting slave node $i..."
+  nova boot $CLUSTER_NAME-slave-$i --image $SLAVE_IMAGE --flavor $FLAVOR --user-data ./$USER_DATA_MASTER
+done
 
 
 
