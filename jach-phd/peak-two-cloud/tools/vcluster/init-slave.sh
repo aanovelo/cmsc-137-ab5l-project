@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Slave."
+echo "Hello"
