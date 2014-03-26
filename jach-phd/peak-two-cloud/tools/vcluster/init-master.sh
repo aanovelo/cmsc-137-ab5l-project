@@ -1,3 +1,2 @@
 #!/bin/sh
-echo "Hello World from Master!"
-touch /root/master.txt
+echo "Hello World from Master!" > /root/master.txt
