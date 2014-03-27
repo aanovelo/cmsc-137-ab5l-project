@@ -25,7 +25,7 @@ echo "$MASTER_IP"
 
 for ((i=1;i<=$2;i++))
 do
-echo "-->Starting slave node $i..."
+  echo "-->Starting slave node $i..."
   nova boot $CLUSTER_NAME-slave-$i --image $SLAVE_IMAGE --flavor $FLAVOR --user-data ./$USER_DATA_MASTER
 done
 
