@@ -19,6 +19,6 @@ echo "$SLAVE_NAME" >> /mirror/nodes.txt
 rm /etc/hosts
 ln -s /mirror/hosts.mpi /etc/hosts
 
-
+lamboot
 
 
