@@ -16,3 +16,7 @@ ln -s /mirror/hosts.mpi /etc/hosts
 echo "$MASTER_NAME" > /mirror/nodes.txt
 chown mpiuser.mpiuser /mirror/nodes.txt
 chmod 777 /mirror/nodes.txt
+
+echo "UserKnownHostsFile /dev/null" >> /etc/ssh/ssh_config
+echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
+
