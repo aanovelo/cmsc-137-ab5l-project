@@ -1,4 +1,5 @@
 #!/bin/sh
+echo "Executing initialization script for master..."
 #echo "Hello World from Master!"
 #echo "Hello World from Master!" > /root/master.txt
 #echo -n "Master IP Address: "

@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "Executing initialization script for slave..."
+
+
 MASTER_IP=10.0.3.231
 
 mount $MASTER_IP:/mirror /mirror
