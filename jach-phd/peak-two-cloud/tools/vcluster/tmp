@@ -16,6 +16,8 @@ echo $SLAVE_IP
 echo "$SLAVE_IP  $SLAVE_NAME" >> /mirror/hosts.mpi
 echo "$SLAVE_NAME" >> /mirror/nodes.txt
 
+rm /etc/hosts
+ln -s /mirror/hosts.mpi /etc/hosts
 
 
 
