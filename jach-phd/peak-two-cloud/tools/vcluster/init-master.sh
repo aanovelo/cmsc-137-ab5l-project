@@ -7,7 +7,8 @@ MASTER_NAME=jach-master
 #echo -n "Master IP Address: "
 MASTER_IP=`/sbin/ifconfig eth0 | sed -n 's/.*inet *addr:\([0-9\.]*\).*/\1/p'`
 
-echo "$MASTER_IP  $MASTER_NAME" > /mirror/hosts.mpi
+echo "127.0.0.1  localhost" > /mirror/hosts.mpi
+echo "$MASTER_IP  $MASTER_NAME" >> /mirror/hosts.mpi
 chown mpiuser.mpiuser /mirror/hosts.mpi
 chmod 777 /mirror/hosts.mpi
 rm /etc/hosts
@@ -19,4 +20,6 @@ chmod 777 /mirror/nodes.txt
 
 echo "UserKnownHostsFile /dev/null" >> /etc/ssh/ssh_config
 echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
+
+lamboot
 
