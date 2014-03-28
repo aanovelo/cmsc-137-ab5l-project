@@ -14,8 +14,8 @@ NUM_SLAVES=$2
 echo "-->Starting frontend/master node..."
 nova boot $CLUSTER_NAME-master --image $MASTER_IMAGE --flavor $FLAVOR --user-data ./$USER_DATA_MASTER > /dev/null
 
-echo "Please wait for a while..."
-sleep 50
+echo "Please wait for 5 mins..."
+sleep 5m
 
 nova list --name $CLUSTER_NAME-master --fields Networks | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' > master_ip.txt
 
