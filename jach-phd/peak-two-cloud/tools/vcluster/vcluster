@@ -24,8 +24,6 @@ nova list --name $CLUSTER_NAME-master --fields Networks | grep -oE '((1?[0-9][0-
 
 MASTER_IP=`cat master_ip.txt`
 
-echo "$MASTER_IP"
-
 cp init-slave.template $USER_DATA_SLAVE
 replace MASTER_IP_VALUE $MASTER_IP -- $USER_DATA_SLAVE
 
@@ -39,7 +37,10 @@ do
   nova boot $CLUSTER_NAME-slave-$i --image $SLAVE_IMAGE --flavor $FLAVOR --user-data ./$USER_DATA_SLAVE > /dev/null
 done
 
-
+echo "------------------------------------------------------------"
+echo "You can now connect to $MASTER_IP to run your MPI programs."
+echo "For more information contact jachermocilla@gmail.com"
+echo "------------------------------------------------------------"
 
 
 
