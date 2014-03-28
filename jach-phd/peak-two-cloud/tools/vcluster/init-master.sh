@@ -6,3 +6,4 @@ echo "Executing initialization script for master..."
 MASTER_IP=`/sbin/ifconfig eth0 | sed -n 's/.*inet *addr:\([0-9\.]*\).*/\1/p'`
 
 echo "$MASTER_IP  jach-master" > /mirror/hosts.mpi
+chown mpiuser.mpiuser /mirror/hosts.mpi
