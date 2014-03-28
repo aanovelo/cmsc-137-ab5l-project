@@ -14,6 +14,7 @@ SLAVE_IP=`/sbin/ifconfig eth0 | sed -n 's/.*inet *addr:\([0-9\.]*\).*/\1/p'`
 echo $SLAVE_IP
 
 echo "$SLAVE_IP  $SLAVE_NAME" >> /mirror/hosts.mpi
+echo "$SLAVE_NAME" >> /mirror/nodes.txt
 
 
 
