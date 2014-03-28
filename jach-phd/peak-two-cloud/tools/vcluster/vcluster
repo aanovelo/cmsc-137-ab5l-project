@@ -42,7 +42,7 @@ echo "You can now connect to $MASTER_IP to run your MPI programs."
 echo "                           "
 echo "    ssh mpiuser@$MASTER_IP "
 echo "                           "
-echo "For more information contact jachermocilla@gmail.com"
+echo "For more information email jachermocilla@gmail.com"
 echo "------------------------------------------------------------"
 
 
