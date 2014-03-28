@@ -30,6 +30,7 @@ for ((i=1;i<=$2;i++))
 do
   echo "-->Starting slave node #$i..."
   nova boot $CLUSTER_NAME-slave-$i --image $SLAVE_IMAGE --flavor $FLAVOR --user-data ./$USER_DATA_SLAVE > /dev/null
+  replace SLAVE_NAME_VALUE $CLUSTER_NAME-slave-$i -- $USER_DATA_SLAVE
 done
 
 
