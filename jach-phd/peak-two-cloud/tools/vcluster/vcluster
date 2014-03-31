@@ -22,7 +22,7 @@ cp $USER_DATA_MASTER_TEMPLATE $USER_DATA_MASTER
 replace MASTER_NAME_VALUE $CLUSTER_NAME-master -- $USER_DATA_MASTER
 
 echo "-->Starting frontend/master node..."
-nova boot $CLUSTER_NAME-master --image $MASTER_IMAGE --flavor $FLAVOR --user-data ./$USER_DATA_MASTER > /dev/null
+nova boot $CLUSTER_NAME-master --image $MASTER_IMAGE --flavor $FLAVOR --user-data $USER_DATA_MASTER > /dev/null
 
 echo "Please wait 5 mins for the master to boot..."
 sleep 5m
@@ -41,7 +41,7 @@ do
   echo "-->Starting slave node #$i..."
   cp tmp $USER_DATA_SLAVE
   replace SLAVE_NAME_VALUE $CLUSTER_NAME-slave-$i -- $USER_DATA_SLAVE
-  nova boot $CLUSTER_NAME-slave-$i --image $SLAVE_IMAGE --flavor $FLAVOR --user-data ./$USER_DATA_SLAVE > /dev/null
+  nova boot $CLUSTER_NAME-slave-$i --image $SLAVE_IMAGE --flavor $FLAVOR --user-data $USER_DATA_SLAVE > /dev/null
 done
 
 echo "------------------------------------------------------------"
