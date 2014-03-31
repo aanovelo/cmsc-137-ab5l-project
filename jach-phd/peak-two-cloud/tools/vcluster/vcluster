@@ -1,12 +1,11 @@
 #!/bin/bash
 
-source minicluster-openrc.sh
-
 PWD=`pwd`
-
 WORKDIR=.
 
 cd $WORKDIR
+
+source minicluster-openrc.sh
 
 #Some variables
 MASTER_IMAGE=mpi-master-image
