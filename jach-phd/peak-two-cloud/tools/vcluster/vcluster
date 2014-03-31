@@ -19,7 +19,7 @@ CLUSTER_NAME=$1
 NUM_SLAVES=$2
 
 cp $USER_DATA_MASTER_TEMPLATE $USER_DATA_MASTER
-replace MASTER_NAME_VALUE $CLUSTER_NAME-master -- $USER_DATA_MASTER
+replace MASTER_NAME_VALUE $CLUSTER_NAME-master -- $USER_DATA_MASTER > /dev/null
 
 echo "-->Starting frontend/master node..."
 nova boot $CLUSTER_NAME-master --image $MASTER_IMAGE --flavor $FLAVOR --user-data $USER_DATA_MASTER > /dev/null
@@ -32,7 +32,7 @@ nova list --name $CLUSTER_NAME-master --fields Networks | grep -oE '((1?[0-9][0-
 MASTER_IP=`cat master_ip.txt`
 
 cp $USER_DATA_SLAVE_TEMPLATE $USER_DATA_SLAVE
-replace MASTER_IP_VALUE $MASTER_IP -- $USER_DATA_SLAVE
+replace MASTER_IP_VALUE $MASTER_IP -- $USER_DATA_SLAVE > /dev/null
 
 cp $USER_DATA_SLAVE tmp
 

@@ -20,6 +20,9 @@ export OS_TENANT_NAME="minicluster"
 export OS_USERNAME="minicluster"
 
 # With Keystone you pass the keystone password.
-echo "Please enter your OpenStack Password: "
-read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD=$OS_PASSWORD_INPUT
+
+#echo "Please enter your OpenStack Password: "
+#read -sr OS_PASSWORD_INPUT
+#export OS_PASSWORD=$OS_PASSWORD_INPUT
+
+export OS_PASSWORD=minicluster
