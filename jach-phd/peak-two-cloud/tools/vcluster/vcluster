@@ -2,16 +2,23 @@
 
 source minicluster-openrc.sh
 
+
+WORKDIR=.
+
+cd $WORKDIR
+
 #Some variables
 MASTER_IMAGE=mpi-master-image
 SLAVE_IMAGE=mpi-slave-image
 FLAVOR=jach.custom_1_512
-USER_DATA_SLAVE=init-slave.sh
-USER_DATA_MASTER=init-master.sh
+USER_DATA_SLAVE_TEMPLATE=$WORKDIR/init-slave.template
+USER_DATA_SLAVE=$WORKDIR/init-slave.sh
+USER_DATA_MASTER_TEMPLATE=$WORKDIR/init-master.template
+USER_DATA_MASTER=$WORKDIR/init-master.sh
 CLUSTER_NAME=$1 
 NUM_SLAVES=$2
 
-cp init-master.template $USER_DATA_MASTER
+cp $USER_DATA_MASTER_TEMPLATE $USER_DATA_MASTER
 replace MASTER_NAME_VALUE $CLUSTER_NAME-master -- $USER_DATA_MASTER
 
 echo "-->Starting frontend/master node..."
@@ -24,7 +31,7 @@ nova list --name $CLUSTER_NAME-master --fields Networks | grep -oE '((1?[0-9][0-
 
 MASTER_IP=`cat master_ip.txt`
 
-cp init-slave.template $USER_DATA_SLAVE
+cp $USER_DATA_SLAVE_TEMPLATE $USER_DATA_SLAVE
 replace MASTER_IP_VALUE $MASTER_IP -- $USER_DATA_SLAVE
 
 cp $USER_DATA_SLAVE tmp
