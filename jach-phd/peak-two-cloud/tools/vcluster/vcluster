@@ -2,6 +2,7 @@
 
 source minicluster-openrc.sh
 
+PWD=`pwd`
 
 WORKDIR=.
 
@@ -52,5 +53,5 @@ echo "                           "
 echo "For more information email jachermocilla@gmail.com"
 echo "------------------------------------------------------------"
 
-
+cd $PWD
 

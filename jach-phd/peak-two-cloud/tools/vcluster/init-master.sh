@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Executing initialization script for master..."
-MASTER_NAME=biostat-master
+MASTER_NAME=jach-master
 
 #echo "Hello World from Master!"
 #echo "Hello World from Master!" > /root/master.txt
