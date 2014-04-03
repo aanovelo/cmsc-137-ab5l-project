@@ -1,0 +1,56 @@
+#!/bin/bash
+
+PWD=`pwd`
+WORKDIR=.
+
+cd $WORKDIR
+
+source minicluster-openrc.sh
+
+#Some variables
+MASTER_IMAGE=mpi-master-image
+SLAVE_IMAGE=mpi-slave-image
+FLAVOR=jach.custom_1_512
+USER_DATA_SLAVE_TEMPLATE=$WORKDIR/init-slave.template
+USER_DATA_SLAVE=$WORKDIR/init-slave.sh
+USER_DATA_MASTER_TEMPLATE=$WORKDIR/init-master.template
+USER_DATA_MASTER=$WORKDIR/init-master.sh
+CLUSTER_NAME=$1 
+NUM_SLAVES=$2
+
+cp $USER_DATA_MASTER_TEMPLATE $USER_DATA_MASTER
+replace MASTER_NAME_VALUE $CLUSTER_NAME-master -- $USER_DATA_MASTER > /dev/null
+
+echo "-->Starting frontend/master node..."
+nova boot $CLUSTER_NAME-master --image $MASTER_IMAGE --flavor $FLAVOR --user-data $USER_DATA_MASTER > /dev/null
+
+echo "Please wait 5 mins for the master to boot..."
+sleep 5m
+
+nova list --name $CLUSTER_NAME-master --fields Networks | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' > master_ip.txt
+
+MASTER_IP=`cat master_ip.txt`
+
+cp $USER_DATA_SLAVE_TEMPLATE $USER_DATA_SLAVE
+replace MASTER_IP_VALUE $MASTER_IP -- $USER_DATA_SLAVE > /dev/null
+
+cp $USER_DATA_SLAVE tmp
+
+for ((i=1;i<=$2;i++))
+do
+  echo "-->Starting slave node #$i..."
+  cp tmp $USER_DATA_SLAVE
+  replace SLAVE_NAME_VALUE $CLUSTER_NAME-slave-$i -- $USER_DATA_SLAVE > /dev/null
+  nova boot $CLUSTER_NAME-slave-$i --image $SLAVE_IMAGE --flavor $FLAVOR --user-data $USER_DATA_SLAVE > /dev/null
+done
+
+echo "------------------------------------------------------------"
+echo "You can now connect to $MASTER_IP to run your MPI programs."
+echo "                           "
+echo "    ssh mpiuser@$MASTER_IP "
+echo "                           "
+echo "For more information email jachermocilla@gmail.com"
+echo "------------------------------------------------------------"
+
+cd $PWD
+
