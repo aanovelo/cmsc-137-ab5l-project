@@ -204,8 +204,8 @@ Peak2Cloud (P2C) is an Openstack-based private cloud deployed as testbed
  We present how P2C was setup, configured, and tested.
  We also describe vcluster, a tool for rapidly deploying message-passing
  clusters on P2C.
- Finally, we show and analyze some benchmark results on the performance
- of virtual clusters deployed on P2C.
+ Lastly, we present an analysis of some benchmark results on the performance
+ of P2C deployed virtual clusters.
 \end_layout
 
 \begin_layout Keywords
@@ -287,8 +287,17 @@ key "mell_nist_2011"
 \end_layout
 
 \begin_layout Standard
-Cloud computing service models include Software-as-a-Service(SaaS), Platform-as-
-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS).
+Cloud computing offers service models which include Software-as-a-Service(SaaS),
+ Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS).
+ IaaS allows the consumer to provision computing resources(hardware, network,
+ storage) to run arbitrary software including operating systems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mell_nist_2011"
+
+\end_inset
+
+.
  
 \end_layout
 
