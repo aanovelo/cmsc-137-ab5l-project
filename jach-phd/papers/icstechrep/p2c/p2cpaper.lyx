@@ -145,7 +145,7 @@ Hermocilla
 status open
 
 \begin_layout Plain Layout
-e-mail: 
+E-mail: 
 \begin_inset CommandInset href
 LatexCommand href
 target "jchermocilla@up.edu.ph"
@@ -267,24 +267,28 @@ status collapsed
 
 \end_inset
 
- computing is becoming a popular choice for deploying online services.
- 
+ computing has become a buzzword in today's modern living, though some still
+ does not know its meaning.
+ Although there is no agreed upon meaning of the term, the definition given
+ by NIST 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "iosup_performance_2011"
+key "mell_nist_2011"
 
 \end_inset
 
-
+ is widely used.
+ The popularity of cloud computing comes from its availability to provision
+ additional resources on demand with minimum intervention from the provider.
 \end_layout
 
 \begin_layout Section
-Previous Work
+Related Work
 \end_layout
 
 \begin_layout Standard
-Several studies have been published to evaluate the applicability of the
- cloud for scientific computing.
+Studies have been published to evaluate the applicability of the cloud for
+ scientific computing.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ekanayake_high_2010"
@@ -340,7 +344,8 @@ key "walker_benchmarking_????"
 
 \end_inset
 
-
+.Most of these utilized the public cloud, specifically Amazon EC2 as their
+ testbed.
 \end_layout
 
 \begin_layout Subsection

@@ -145,7 +145,7 @@ Hermocilla
 status open
 
 \begin_layout Plain Layout
-e-mail: 
+E-mail: 
 \begin_inset CommandInset href
 LatexCommand href
 target "jchermocilla@up.edu.ph"
@@ -267,25 +267,84 @@ status collapsed
 
 \end_inset
 
- computing is becoming a popular choice for deploying online services.
+ computing has become a buzzword in today's modern living, though some still
+ does not know its meaning.
+ Although there is no agreed upon meaning of the term, the definition given
+ by NIST 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mell_nist_2011"
+
+\end_inset
+
+ is widely used.
+ Studies on cloud computing address the 
+\end_layout
+
+\begin_layout Section
+Related Work
+\end_layout
+
+\begin_layout Standard
+Studies have been published to evaluate the applicability of the cloud for
+ scientific computing.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ekanayake_high_2010"
+
+\end_inset
+
  
 \begin_inset CommandInset citation
 LatexCommand cite
-key "iosup_performance_2011"
+key "evangelinos_cloud_2008"
 
 \end_inset
 
 
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "exposito_performance_2013"
 
-\begin_layout Section
-Previous Work
-\end_layout
+\end_inset
 
-\begin_layout Standard
-Several studies have been published to evaluate the applicability of the
- cloud for scientific computing.
-  
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ludescher_cloud-based_2013"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mauch_high_2013"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jackson_performance_2010"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhai_cloud_2011"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "walker_benchmarking_????"
+
+\end_inset
+
+.Most of these utilized the public cloud, specifically Amazon EC2 as their
+ testbed.
 \end_layout
 
 \begin_layout Subsection

@@ -145,7 +145,7 @@ Hermocilla
 status open
 
 \begin_layout Plain Layout
-e-mail: 
+E-mail: 
 \begin_inset CommandInset href
 LatexCommand href
 target "jchermocilla@up.edu.ph"
@@ -267,24 +267,16 @@ status collapsed
 
 \end_inset
 
- computing is becoming a popular choice for deploying online services.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "iosup_performance_2011"
-
-\end_inset
-
-
+ computing has become a buzzword in today's modern living
 \end_layout
 
 \begin_layout Section
-Previous Work
+Related Work
 \end_layout
 
 \begin_layout Standard
-Several studies have been published to evaluate the applicability of the
- cloud for scientific computing.
+Studies have been published to evaluate the applicability of the cloud for
+ scientific computing.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ekanayake_high_2010"
@@ -320,6 +312,28 @@ key "mauch_high_2013"
 \end_inset
 
 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jackson_performance_2010"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhai_cloud_2011"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "walker_benchmarking_????"
+
+\end_inset
+
+.Most of these utilized the public cloud, specifically Amazon EC2 as their
+ testbed.
 \end_layout
 
 \begin_layout Subsection
