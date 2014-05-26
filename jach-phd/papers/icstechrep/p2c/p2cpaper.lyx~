@@ -204,8 +204,8 @@ Peak2Cloud (P2C) is an Openstack-based private cloud deployed as testbed
  We present how P2C was setup, configured, and tested.
  We also describe vcluster, a tool for rapidly deploying message-passing
  clusters on P2C.
- Finally, we show and analyze some benchmark results on the message-passing
- performance of virtual clusters deployed on P2C.
+ Finally, we show and analyze some benchmark results on the performance
+ of virtual clusters deployed on P2C.
 \end_layout
 
 \begin_layout Keywords
@@ -267,19 +267,20 @@ status collapsed
 
 \end_inset
 
- computing has become a buzzword in today's modern living, though some still
- does not know its meaning.
- Although there is no agreed upon meaning of the term, the definition given
- by NIST 
+ computing has become a buzzword in today's modern computing, though there
+ is no agreed upon meaning of the term.
+ In 2011, NIST 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "mell_nist_2011"
 
 \end_inset
 
- is widely used.
- The popularity of cloud computing comes from its availability to provision
- additional resources on demand with minimum intervention from the provider.
+ published a definition that is widely quoted and used.
+ The popularity of cloud computing comes from its ability to provision additiona
+l resources on demand with minimum intervention from the provider.
+ For example, a website with a sudden increase in workload can start another
+ server machine almost instantaneously to accommodate the additional load.
 \end_layout
 
 \begin_layout Section
@@ -360,31 +361,20 @@ another subsection
 Methodology
 \end_layout
 
-\begin_layout Theorem
-\begin_inset Argument
-status collapsed
-
-\begin_layout Plain Layout
-Theorem name
+\begin_layout Subsection
+Openstack
 \end_layout
 
-\end_inset
-
-For a named theorem or theorem-like environment you need to insert the name
- through 
-\family sans
-Insert\SpecialChar \menuseparator
-Short Title
-\family default
-, as done here.
+\begin_layout Subsection
+Hardware Requirements
 \end_layout
 
-\begin_layout Lemma
-If you don't want a theorem or lemma name don't add one.
+\begin_layout Subsection
+Network Architecture
 \end_layout
 
-\begin_layout Proof
-And here's the proof!
+\begin_layout Subsection
+vcluster
 \end_layout
 
 \begin_layout Section
