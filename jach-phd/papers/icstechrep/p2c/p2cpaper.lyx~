@@ -209,7 +209,8 @@ Peak2Cloud (P2C) is an Openstack-based private cloud deployed as testbed
 \end_layout
 
 \begin_layout Keywords
-cloud computing, scientific computing, message passing
+cloud computing, scientific computing, high-performance computing, message
+ passing
 \end_layout
 
 \begin_layout Section
@@ -277,10 +278,16 @@ key "mell_nist_2011"
 \end_inset
 
  published a definition that is widely quoted and used.
- The popularity of cloud computing comes from its ability to provision additiona
-l resources on demand with minimum intervention from the provider.
+ The popularity of cloud computing mainly comes from its ability to provision
+ additional resources on demand with minimum intervention from the provider.
+ It leverages advances in virtualization and web services technologies.
  For example, a website with a sudden increase in workload can start another
- server machine almost instantaneously to accommodate the additional load.
+ server machine (virtual) almost instantaneously to accommodate the additional
+ load.
+\end_layout
+
+\begin_layout Standard
+Cloud computing service models include  
 \end_layout
 
 \begin_layout Section
@@ -375,6 +382,10 @@ Network Architecture
 
 \begin_layout Subsection
 vcluster
+\end_layout
+
+\begin_layout Subsection
+Benchmarks
 \end_layout
 
 \begin_layout Section
@@ -533,7 +544,9 @@ Acknowlegment
 \end_layout
 
 \begin_layout Standard
-Many thanks to the reviewers as well as to ICS.
+This work is funded through the Department of Science and Technology (DOST)
+ Accelerated Science and Technology Human Resource Development Program (ASTHRD)
+ scholarship.
 \end_layout
 
 \begin_layout Standard
