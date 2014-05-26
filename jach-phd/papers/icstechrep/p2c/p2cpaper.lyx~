@@ -204,7 +204,7 @@ Peak2Cloud (P2C) is an Openstack-based private cloud deployed as testbed
  We present how P2C was setup, configured, and tested.
  We also describe vcluster, a tool for rapidly deploying message-passing
  clusters on P2C.
- Lastly, we present and analyze some benchmark results on the performance
+ Lastly, we present an analysis of some benchmark results on the performance
  of P2C deployed virtual clusters.
 \end_layout
 

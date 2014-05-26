@@ -1,9 +1,8 @@
 %% LyX 2.0.2 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
-\documentclass[twocolumn,english]{IEEEtran}
+\documentclass[onecolumn,english]{IEEEtran}
 \usepackage[T1]{fontenc}
 \usepackage{babel}
-\usepackage{amsthm}
 \usepackage{graphicx}
 \usepackage[unicode=true,
  bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1,
@@ -16,10 +15,6 @@
 \makeatletter
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
-\DeclareRobustCommand*{\lyxarrow}{%
-\@ifstar
-{\leavevmode\,$\triangleleft$\,\allowbreak}
-{\leavevmode\,$\triangleright$\,\allowbreak}}
 %% Because html converters don't know tabularnewline
 \providecommand{\tabularnewline}{\\}
 
@@ -28,10 +23,6 @@
  \let\oldforeign@language\foreign@language
  \DeclareRobustCommand{\foreign@language}[1]{%
    \lowercase{\oldforeign@language{#1}}}
-\theoremstyle{plain}
-\newtheorem{thm}{\protect\theoremname}
-\theoremstyle{plain}
-\newtheorem{lem}[thm]{\protect\lemmaname}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
 % for subfigures/subtables
@@ -43,9 +34,6 @@
 
 \makeatother
 
-\providecommand{\lemmaname}{Lemma}
-\providecommand{\theoremname}{Theorem}
-
 \begin{document}
 
 
@@ -56,7 +44,7 @@
 
 
 \author{Joseph Anthony C.~Hermocilla %
-\thanks{e-mail: \protect\href{mailto:jchermocilla@up.edu.ph}{jchermocilla@up.edu.ph}.%
+\thanks{E-mail: \protect\href{mailto:jchermocilla@up.edu.ph}{jchermocilla@up.edu.ph}.%
 }}
 
 
@@ -71,23 +59,39 @@ Philippines Los Banos}
 Peak2Cloud (P2C) is an Openstack-based private cloud deployed as testbed
 for scientific computing. We present how P2C was setup, configured,
 and tested. We also describe vcluster, a tool for rapidly deploying
-message-passing clusters on P2C. Finally, we show and analyze some
-benchmark results on the message-passing performance of virtual clusters
-deployed on P2C.\end{abstract}
+message-passing clusters on P2C. Lastly, we present an analysis of
+some benchmark results on the performance of P2C deployed virtual
+clusters.\end{abstract}
 \begin{IEEEkeywords}
-cloud computing, scientific computing, message passing
+cloud computing, scientific computing, high-performance computing,
+message passing
 \end{IEEEkeywords}
 
 \section{Introduction}
 
-\IEEEPARstart{ C}{loud} computing is becoming a popular choice
-for deploying online services. \cite{iosup_performance_2011}
+\IEEEPARstart{ C}{loud} computing has become a buzzword in today's
+modern computing, though there is no agreed upon meaning of the term.
+In 2011, NIST \cite{mell_nist_2011} published a definition that is
+widely quoted and used. The popularity of cloud computing mainly comes
+from its ability to provision additional resources on demand with
+minimum intervention from the provider. It leverages advances in virtualization
+and web services technologies. For example, a website with a sudden
+increase in workload can start another server machine (virtual) almost
+instantaneously to accommodate the additional load.
+
+Cloud computing offers service models which include Software-as-a-Service(SaaS),
+Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS).
+IaaS allows the consumer to provision computing resources(hardware,
+network, storage) to run arbitrary software including operating systems
+\cite{mell_nist_2011}. 
 
 
-\section{Previous Work}
+\section{Related Work}
 
-text text text text text text text text text text text text text text
-text\cite{bourguiba_improving_2014}
+Studies have been published to evaluate the applicability of the cloud
+for scientific computing.\cite{ekanayake_high_2010} \cite{evangelinos_cloud_2008}\cite{exposito_performance_2013}\cite{ludescher_cloud-based_2013}\cite{mauch_high_2013}\cite{jackson_performance_2010}\cite{zhai_cloud_2011}\cite{walker_benchmarking_????}.Most
+of these utilized the public cloud, specifically Amazon EC2 as their
+testbed.
 
 
 \subsection{subsection}
@@ -97,16 +101,24 @@ text\cite{bourguiba_improving_2014}
 
 
 \section{Methodology}
-\begin{thm}[Theorem name]
-For a named theorem or theorem-like environment you need to insert
-the name through \textsf{Insert\lyxarrow{}Short Title}, as done here.\end{thm}
-\begin{lem}
-If you don't want a theorem or lemma name don't add one.\end{lem}
-\begin{IEEEproof}
-And here's the proof!
-\end{IEEEproof}
 
-\section{Results}
+
+\subsection{Openstack}
+
+
+\subsection{Hardware Requirements}
+
+
+\subsection{Network Architecture}
+
+
+\subsection{vcluster}
+
+
+\subsection{Benchmarks}
+
+
+\section{Results and Discussion}
 
 \begin{figure}[htbp]
 \begin{centering}
@@ -150,9 +162,11 @@ Citation:
 
 \section*{Acknowlegment}
 
-Many thanks to the reviewers as well as to ICS.
+This work is funded through the Department of Science and Technology
+(DOST) Accelerated Science and Technology Human Resource Development
+Program (ASTHRD) scholarship.
 
-\bibliographystyle{./IEEEtran}
+\bibliographystyle{IEEEtran}
 \bibliography{p2cpaper}
 
 \begin{IEEEbiography}[{{\includegraphics[clip,width=1in,height=1.25in]{me-new}}}]
