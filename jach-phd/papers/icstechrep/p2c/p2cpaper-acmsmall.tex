@@ -47,10 +47,11 @@
 %       currently affiliated with NASA.
 
 \begin{abstract}
-Peak2Cloud (P2C) is an Openstack-based private cloud for scientific and high performance 
-computing. First, we present how P2C was configured and tested. Then we describe 
-vcluster, a tool for rapidly deploying message-passing clusters on P2C. Lastly, we 
-analyze some benchmark results on the performance of P2C deployed virtual clusters.
+Peak2Cloud (P2C) is an Openstack-based private cloud for scientific and high 
+performance computing. First, we present how P2C was configured and tested. Then
+we describe vcluster, a tool for rapidly deploying message-passing clusters on 
+P2C. Lastly, we analyze some benchmark results on the performance of P2C 
+deployed virtual clusters.
 \end{abstract}
 
 \category{C.2.4}{Computer-Communication Networks}{Distributed Systems}
@@ -59,8 +60,8 @@ analyze some benchmark results on the performance of P2C deployed virtual cluste
 
 \keywords{cloud computing, high-performance computing}
 
-\acmformat{Joseph Anthony C. Hermocilla, 2010.Peak2Cloud: Scientific Computing on the 
- Cloud.}
+\acmformat{Joseph Anthony C. Hermocilla, 2010.Peak2Cloud: Scientific Computing
+ on the Cloud.}
 % At a minimum you need to supply the author names, year and a title.
 % IMPORTANT:
 % Full first names whenever they are known, surname last, followed by a period.
@@ -73,8 +74,9 @@ analyze some benchmark results on the performance of P2C deployed virtual cluste
 % The remaining information (journal title, volume, article number, date, etc.) is 'auto-generated'.
 
 \begin{bottomstuff}
-This work is supported by the Philippine Department of Science and Technology (DOST) 
-Accelerated Science and Technology Human Resource Development Program (ASTHRDP). 
+This work is supported by the Philippine Department of Science and Technology 
+(DOST) Accelerated Science and Technology Human Resource Development 
+Program (ASTHRDP). 
 
 Author's addresse: J. A. C. Hermocilla, Institute of Computer Science,
 University of the Philippines Los Banos
@@ -84,28 +86,27 @@ University of the Philippines Los Banos
 
 
 \section{Introduction}
-Cloud computing has become a buzzword in today's modern computing, though there is no 
-agreed upon meaning of the term. In 2011, NIST \cite{mell_nist_2011} published a 
-definition that is widely quoted and used. The popularity of cloud computing mainly 
-comes from its ability to provision additional resources on demand with minimum 
-intervention from the provider. It leverages advances in virtualization and web 
-services technologies. For example, a website with a sudden increase in workload can 
-start another server machine (virtual) almost instantaneously to accommodate the 
-additional load.
+Cloud computing has become a buzzword in today's modern computing, though there
+ is no agreed upon meaning of the term. In 2011, NIST \cite{mell_nist_2011} 
+published a definition that is widely quoted and used. The popularity of cloud 
+computing mainly comes from its ability to provision additional resources on 
+demand with minimum intervention from the provider. It leverages advances in 
+virtualization and web services technologies. For example, a website with a 
+sudden increase in workload can start another server machine (virtual) almost 
+instantaneously to accommodate the additional load.
 
 Cloud computing offers service models which include Software-as-a-Service(SaaS), 
-Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS). IaaS allows the 
-consumer to provision computing resources(hardware, network, storage) to run arbitrary 
-software including operating systems \cite{mell_nist_2011}. 
-
+Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS). IaaS allows 
+the consumer to provision computing resources(hardware, network, storage) to 
+run arbitrary software including operating systems \cite{mell_nist_2011}. 
 
 \section{Related Work}
-Studies have been published to evaluate the applicability of the cloud for scientific 
-computing.\cite{ekanayake_high_2010} \cite{evangelinos_cloud_2008}
+Studies have been published to evaluate the applicability of the cloud for 
+scientific computing.\cite{ekanayake_high_2010} \cite{evangelinos_cloud_2008}
 \cite{exposito_performance_2013}\cite{ludescher_cloud-based_2013}
 \cite{mauch_high_2013}\cite{jackson_performance_2010}\cite{zhai_cloud_2011}
-\cite{walker_benchmarking_????}.Most of these utilized the public cloud, specifically 
-Amazon EC2 as their testbed.
+\cite{walker_benchmarking_????}.Most of these utilized the public cloud, 
+specifically Amazon EC2 as their testbed.
 
 
 
@@ -114,16 +115,16 @@ Amazon EC2 as their testbed.
 \subsection{Openstack}
 Openstack an open source software framework for deploying clouds.
 \cite{sefraoui_openstack:_2012} It is based on Nebula 
-used by NASA. It provides a public interface that is compatible with Amazon EC2. There
-are several components of Openstack which are developed separately. Keystone is used to 
-manage authorization and authentication. Glance manages the virtual machine images. The 
-Nova component is used for managing compute nodes. 
+used by NASA. It provides a public interface that is compatible with Amazon EC2. 
+There are several components of Openstack which are developed separately. 
+Keystone is used to manage authorization and authentication. Glance manages the 
+virtual machine images. The Nova component is used for managing compute nodes. 
 
 \subsection{Hardware}
-P2C uses commercial-off-the-shelf(COTS) hardware. The cloud controller(1 unit) and 
-compute nodes(2 units) 
-is a four-core Intel(R) Core(TM) i3-2000 3.10GHz CPU with 4GB RAM and 100GB disk. A 
-16-port Dell PowerConnect 2716 switch connects the controller and the nodes.  
+P2C uses commercial-off-the-shelf(COTS) hardware. The cloud controller(1 unit) 
+and compute nodes(2 units) is a four-core Intel(R) Core(TM) i3-2000 3.10GHz CPU 
+with 4GB RAM and 100GB disk. A 16-port Dell PowerConnect 2716 switch connects 
+the controller and the nodes.  
 
 \subsection{Network Topology}
 
