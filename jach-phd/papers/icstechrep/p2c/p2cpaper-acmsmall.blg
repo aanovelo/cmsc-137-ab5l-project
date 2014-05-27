@@ -8,45 +8,45 @@ Warning--empty booktitle in jackson_performance_2010
 Warning--empty address in jackson_performance_2010
 Warning--empty year in walker_benchmarking_????
 Warning--empty address in zhai_cloud_2011
-You've used 9 entries,
+You've used 10 entries,
             5290 wiz_defined-function locations,
-            1286 strings with 16726 characters,
-and the built_in function-call counts, 15194 in all, are:
-= -- 2142
-> -- 438
+            1293 strings with 16885 characters,
+and the built_in function-call counts, 16197 in all, are:
+= -- 2319
+> -- 458
 < -- 0
-+ -- 138
-- -- 568
-* -- 1069
-:= -- 1503
-add.period$ -- 46
-call.type$ -- 9
-change.case$ -- 67
-chr.to.int$ -- 9
-cite$ -- 14
-duplicate$ -- 749
-empty$ -- 522
-format.name$ -- 184
-if$ -- 3233
++ -- 142
+- -- 576
+* -- 1115
+:= -- 1597
+add.period$ -- 51
+call.type$ -- 10
+change.case$ -- 72
+chr.to.int$ -- 10
+cite$ -- 15
+duplicate$ -- 832
+empty$ -- 582
+format.name$ -- 192
+if$ -- 3509
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 31
-newline$ -- 125
-num.names$ -- 72
-pop$ -- 292
+missing$ -- 35
+newline$ -- 133
+num.names$ -- 80
+pop$ -- 316
 preamble$ -- 1
-purify$ -- 112
+purify$ -- 122
 quote$ -- 0
-skip$ -- 235
+skip$ -- 260
 stack$ -- 0
-substring$ -- 2294
-swap$ -- 93
+substring$ -- 2377
+swap$ -- 103
 text.length$ -- 838
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 126
+type$ -- 140
 warning$ -- 5
-while$ -- 72
+while$ -- 83
 width$ -- 0
-write$ -- 206
+write$ -- 223
 (There were 5 warnings)

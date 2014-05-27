@@ -388,6 +388,13 @@ Hardware Requirements
 
 \begin_layout Subsection
 Network Architecture
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sefraoui_openstack:_2012"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -575,7 +582,7 @@ phy entries embedded in the LaTeX-file.
 
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "p2cpaper"
+bibfiles "cloudcomp"
 options "IEEEtran"
 
 \end_inset
