@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.18)  27 MAY 2014 16:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.18)  27 MAY 2014 16:51
 entering extended mode
  %&-line parsing enabled.
 **p2cpaper-acmsmall
@@ -206,6 +206,15 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
 Missing character: There is no Ã in font pncr7t!
 Missing character: There is no ³ in font pncr7t!
  (./p2cpaper-acmsmall.bbl
+Underfull \vbox (badness 1215) has occurred while \output is active []
+
+
+Overfull \vbox (72.27pt too high) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+Non-PDF special ignored!
+
+]
 Missing character: There is no â in font pncr7t!
 Missing character: There is no € in font pncr7t!
 Missing character: There is no “ in font pncr7t!
@@ -215,16 +224,6 @@ Underfull \hbox (badness 1377) in paragraph at lines 37--44
 par-al-lel com-put-ing with clouds and
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (72.27pt too high) has occurred while \output is active []
-
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-Non-PDF special ignored!
-
-]
 Missing character: There is no â in font pncr7t!
 Missing character: There is no € in font pncr7t!
 Missing character: There is no ™ in font pncr7t!
@@ -263,7 +262,7 @@ Here is how much of TeX's memory you used:
  5932 multiletter control sequences out of 15000+50000
  21321 words of font info for 45 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 32i,8n,22p,310b,290s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,8n,22p,310b,276s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base
 /8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
 /share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf
@@ -271,7 +270,7 @@ Here is how much of TeX's memory you used:
 ts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helv
 etic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ncntrsbk/uncr8a.pfb><
 /usr/share/texmf-texlive/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on p2cpaper-acmsmall.pdf (2 pages, 78155 bytes).
+Output written on p2cpaper-acmsmall.pdf (2 pages, 79303 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
