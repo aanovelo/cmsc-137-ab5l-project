@@ -32,18 +32,15 @@
 \ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
 \ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
 
-\bibitem[\protect\citeauthoryear{Khazaei, Misic, and Misic}{Khazaei
-  et~al\mbox{.}}{2013}]%
-        {khazaei_fine-grained_2013}
-{Hamzeh Khazaei}, {Jelena Misic}, {and} {Vojislav~B. Misic}. 2013.
-\newblock \showarticletitle{A Fine-Grained Performance Model of Cloud Computing
-  Centers}.
-\newblock {\em {IEEE} Transactions on Parallel and Distributed Systems\/} {24},
-  11 (Nov. 2013), 2138--2147.
+\bibitem[\protect\citeauthoryear{Mell and Grance}{Mell and Grance}{2011}]%
+        {mell_nist_2011}
+{Peter Mell} {and} {Timothy Grance}. 2011.
+\newblock \showarticletitle{The {NIST} definition of cloud computing (draft)}.
+\newblock {\em {NIST} special publication\/} {800}, 145 (2011), 7.
 \newblock
-\showISSN{1045-9219}
-\showDOI{%
-\url{http://dx.doi.org/10.1109/TPDS.2012.280}}
+\showURL{%
+\url{http://pre-developer.att.com/home/learn/enablingtechnologies/The_NIST_Def%
+inition_of_Cloud_Computing.pdf}}
 
 
 \end{thebibliography}
