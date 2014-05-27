@@ -33,24 +33,12 @@
 \begin{document}
 
 % Page heads
-\markboth{G. Zhou et al.}{A Multifrequency MAC Specially Designed for WSN Applications}
+\markboth{J. A. C. Hermocilla}{Peak2Cloud: Scientific Computing on the Cloud}
 
 % Title portion
-\title{A Multifrequency MAC Specially Designed for Wireless Sensor Network Applications}
-\author{GANG ZHOU
-\affil{College of William and Mary}
-YAFENG WU
-\affil{University of Virginia}
-TING YAN
-\affil{Eaton Innovation Center}
-TIAN HE
-\affil{University of Minnesota}
-CHENGDU HUANG
-\affil{Google}
-JOHN A. STANKOVIC
-\affil{University of Virginia}
-TAREK F. ABDELZAHER
-\affil{University of Illinois at Urbana-Champaign}}
+\title{Peak2Cloud: Scientific Computing on the Cloud}
+\author{JOSEPH ANTHONY C. HERMOCILLA
+\affil{University of the Philippines Los Banos}}
 % NOTE! Affiliations placed here should be for the institution where the
 %       BULK of the research was done. If the author has gone to a new
 %       institution, before publication, the (above) affiliation should NOT be changed.
@@ -59,36 +47,22 @@ TAREK F. ABDELZAHER
 %       currently affiliated with NASA.
 
 \begin{abstract}
-Multifrequency media access control has been well understood in
-general wireless ad hoc networks, while in wireless sensor networks,
-researchers still focus on single frequency solutions. In wireless
-sensor networks, each device is typically equipped with a single
-radio transceiver and applications adopt much smaller packet sizes
-compared to those in general wireless ad hoc networks. Hence, the
-multifrequency MAC protocols proposed for general wireless ad hoc
-networks are not suitable for wireless sensor network applications,
-which we further demonstrate through our simulation experiments. In
-this article, we propose MMSN, which takes advantage of
-multifrequency availability while, at the same time, takes into
-consideration the restrictions of wireless sensor networks. Through
-extensive experiments, MMSN exhibits the prominent ability to utilize
-parallel transmissions among neighboring nodes. When multiple physical
-frequencies are available, it also achieves increased energy
-efficiency, demonstrating the ability to work against radio
-interference and the tolerance to a wide range of measured time
-synchronization errors.
+Peak2Cloud (P2C) is an Openstack-based private cloud for scientific and high performance computing.
+First, we present how P2C was configured and tested. Then we describe vcluster, a tool for 
+rapidly deploying message-passing clusters on P2C. Lastly, we analyze some benchmark results on the 
+performance of P2C deployed virtual clusters.
 \end{abstract}
 
-\category{C.2.2}{Computer-Communication Networks}{Network Protocols}
+%\category{C.2.2}{Computer-Communication Networks}{Network Protocols}
 
-\terms{Design, Algorithms, Performance}
+%\terms{Design, Algorithms, Performance}
 
-\keywords{Wireless sensor networks, media access control,
-multi-channel, radio interference, time synchronization}
+%\keywords{Wireless sensor networks, media access control,
+%multi-channel, radio interference, time synchronization}
 
-\acmformat{Gang Zhou, Yafeng Wu, Ting Yan, Tian He, Chengdu Huang, John A. Stankovic,
-and Tarek F. Abdelzaher, 2010. A multifrequency MAC specially
-designed for  wireless sensor network applications.}
+%acmformat{Gang Zhou, Yafeng Wu, Ting Yan, Tian He, Chengdu Huang, John A. Stankovic,
+%and Tarek F. Abdelzaher, 2010. A multifrequency MAC specially
+%designed for  wireless sensor network applications.}
 % At a minimum you need to supply the author names, year and a title.
 % IMPORTANT:
 % Full first names whenever they are known, surname last, followed by a period.
@@ -101,15 +75,11 @@ designed for  wireless sensor network applications.}
 % The remaining information (journal title, volume, article number, date, etc.) is 'auto-generated'.
 
 \begin{bottomstuff}
-This work is supported by the National Science Foundation, under
-grant CNS-0435060, grant CCR-0325197 and grant EN-CS-0329609.
+This work is supported by the Department of Science and Technology (DOST) Accelerated Science and Technology 
+Human Resource Development Program (ASTHRDP). 
 
-Author's addresses: G. Zhou, Computer Science Department,
-College of William and Mary; Y. Wu  {and} J. A. Stankovic,
-Computer Science Department, University of Virginia; T. Yan,
-Eaton Innovation Center; T. He, Computer Science Department,
-University of Minnesota; C. Huang, Google; T. F. Abdelzaher,
-(Current address) NASA Ames Research Center, Moffett Field, California 94035.
+Author's addresses: J. A. C. Hermocilla, Institute of Computer Science,
+University of the Philippines Los Banos
 \end{bottomstuff}
 
 \maketitle

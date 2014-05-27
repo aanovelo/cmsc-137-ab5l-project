@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.18)  27 MAY 2014 11:38
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.18)  27 MAY 2014 12:04
 entering extended mode
  %&-line parsing enabled.
 **p2cpaper-acmsmall
@@ -178,35 +178,34 @@ File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
 \everyMPtoPDFconversion=\toks16
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 113.
+(Font)              <8> on input line 83.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 113.
+(Font)              <6> on input line 83.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 113.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 113.
+(Font)              <5> on input line 83.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 83.
  (/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for OMS+pnc on input line 113.
-
+LaTeX Font Info:    Try loading font information for OMS+pnc on input line 83.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omspnc.fd
 File: omspnc.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 113.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 115.
-
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 85.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 115.
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <8> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 115.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 85.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 118.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 88.
+
+Underfull \vbox (badness 5331) has occurred while \output is active []
+
 
 Overfull \vbox (72.27pt too high) has occurred while \output is active []
 
@@ -215,121 +214,26 @@ Non-PDF special ignored!
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 169.
+(Font)              <7> on input line 139.
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--199
+Underfull \hbox (badness 10000) in paragraph at lines 159--169
 []\OT1/pnc/m/n/10 So pro-to-cols [Bahl 2002,Culler 2001,Zhou 2006,Adya 2001,Cul
 ler 2001;
  []
 
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 203.
-[2]
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 173.
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <9> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 226.
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 196.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 226.
+(Font)              <9> on input line 196.
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 247.
- [3] <acmsmall-mouse.pdf, id=32, 151.56625pt x 134.5025pt>
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 217.
+[2] <acmsmall-mouse.pdf, id=24, 151.56625pt x 134.5025pt>
 File: acmsmall-mouse.pdf Graphic file (type pdf)
 
-<use acmsmall-mouse.pdf> [4 </home/jachermocilla/texmf/tex/acmsmall/acmsmall-mo
-use.pdf>]
-
-LaTeX Warning: Citation `Abril07' on page 5 undefined on input line 393.
-
-
-LaTeX Warning: Citation `Cohen07' on page 5 undefined on input line 394.
-
-
-LaTeX Warning: Citation `JCohen96' on page 5 undefined on input line 394.
-
-
-LaTeX Warning: Citation `Kosiur01' on page 5 undefined on input line 395.
-
-
-LaTeX Warning: Citation `Harel79' on page 5 undefined on input line 396.
-
-
-LaTeX Warning: Citation `Editor00' on page 5 undefined on input line 396.
-
-
-LaTeX Warning: Citation `Editor00a' on page 5 undefined on input line 398.
-
-
-LaTeX Warning: Citation `Spector90' on page 5 undefined on input line 399.
-
-
-LaTeX Warning: Citation `Douglass98' on page 5 undefined on input line 400.
-
-
-LaTeX Warning: Citation `Knuth97' on page 5 undefined on input line 400.
-
-
-LaTeX Warning: Citation `Andler79' on page 5 undefined on input line 402.
-
-
-LaTeX Warning: Citation `Smith10' on page 5 undefined on input line 403.
-
-
-LaTeX Warning: Citation `VanGundy07' on page 5 undefined on input line 404.
-
-
-LaTeX Warning: Citation `Harel78' on page 5 undefined on input line 405.
-
-
-LaTeX Warning: Citation `Clarkson85' on page 5 undefined on input line 405.
-
-
-LaTeX Warning: Citation `anisi03' on page 5 undefined on input line 406.
-
-
-LaTeX Warning: Citation `Thornburg01' on page 5 undefined on input line 406.
-
-
-LaTeX Warning: Citation `Ablamowicz07' on page 5 undefined on input line 406.
-
-
-LaTeX Warning: Citation `Poker06' on page 5 undefined on input line 407.
-
-
-LaTeX Warning: Citation `Obama08' on page 5 undefined on input line 407.
-
-
-LaTeX Warning: Citation `Novak03' on page 5 undefined on input line 407.
-
-
-LaTeX Warning: Citation `Lee05' on page 5 undefined on input line 408.
-
-
-LaTeX Warning: Citation `JoeScientist001' on page 5 undefined on input line 408
-.
-
-
-LaTeX Warning: Citation `rous08' on page 5 undefined on input line 409.
-
-
-LaTeX Warning: Citation `SaeediMEJ10' on page 5 undefined on input line 410.
-
-
-LaTeX Warning: Citation `SaeediJETC10' on page 5 undefined on input line 410.
-
-
-LaTeX Warning: Citation `Kirschmer:2010:AEI:1958016.1958018' on page 5 undefine
-d on input line 411.
-
-
-LaTeX Warning: Citation `MR781536' on page 5 undefined on input line 413.
-
-
-LaTeX Warning: Citation `MR781537' on page 5 undefined on input line 413.
-
-
-Underfull \vbox (badness 6575) has occurred while \output is active []
-
- [5]
-(./p2cpaper-acmsmall.bbl [6]
+<use acmsmall-mouse.pdf> [3 </home/jachermocilla/texmf/tex/acmsmall/acmsmall-mo
+use.pdf>] [4] (./p2cpaper-acmsmall.bbl [5]
 Underfull \hbox (badness 5217) in paragraph at lines 243--250
 []\OT1/pnc/m/n/8 Dave No-vak. 2003. Sol-der man. Video. In \OT1/pnc/m/it/8 ACM 
 SIG-GRAPH 2003 Video Re-view on An-i-ma-
@@ -353,41 +257,42 @@ Underfull \hbox (badness 2005) in paragraph at lines 316--324
 Press, Mi-lan Italy, 422--431.
  []
 
-) [7] [1
 
-] (./p2cpaper-acmsmall.aux)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+ [6])
+[7] [1
 
- ) 
+] (./p2cpaper-acmsmall.aux) ) 
 Here is how much of TeX's memory you used:
- 2824 strings out of 495061
- 35044 string characters out of 1182621
- 112565 words of memory out of 3000000
- 5983 multiletter control sequences out of 15000+50000
- 33034 words of font info for 66 fonts, out of 3000000 for 9000
+ 2820 strings out of 495061
+ 35005 string characters out of 1182621
+ 114589 words of memory out of 3000000
+ 5981 multiletter control sequences out of 15000+50000
+ 31059 words of font info for 63 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  32i,17n,27p,310b,497s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/public/a
-msfonts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
-mmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></u
-sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
-mf-texlive/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-texlive/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
-fonts/cm/cmtt8.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pf
-b></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/tex
-mf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texmf-texlive/fonts
-/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ncntrs
-bk/uncr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on p2cpaper-acmsmall.pdf (8 pages, 249598 bytes).
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.
+enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmmi9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr5.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-texlive/fonts/t
+ype1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic
+/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></us
+r/share/texmf-texlive/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-tex
+live/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-texlive/fonts/type1/
+urw/ncntrsbk/uncri8a.pfb>
+Output written on p2cpaper-acmsmall.pdf (8 pages, 244621 bytes).
 PDF statistics:
  123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
