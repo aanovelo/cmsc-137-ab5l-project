@@ -95,22 +95,9 @@ virtualization and web services technologies. For example, a website with a
 sudden increase in workload can start another server machine (virtual) almost 
 instantaneously to accommodate the additional load.
 
-Cloud computing offers service models which include Software-as-a-Service(SaaS), 
-Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS). IaaS allows 
+Cloud computing offers service models which include Software-as-a-Service(SaaS), Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS). IaaS allows 
 the consumer to provision computing resources(hardware, network, storage) to 
 run arbitrary software including operating systems \cite{mell_nist_2011}. 
-
-\section{Related Work}
-Studies have been published to evaluate the applicability of the cloud for 
-scientific computing.\cite{ekanayake_high_2010} \cite{evangelinos_cloud_2008}
-\cite{exposito_performance_2013}\cite{ludescher_cloud-based_2013}
-\cite{mauch_high_2013}\cite{jackson_performance_2010}\cite{zhai_cloud_2011}
-\cite{walker_benchmarking_????}.Most of these utilized the public cloud, 
-specifically Amazon EC2 as their testbed.
-
-
-
-\section{Methodology}
 
 \subsection{Openstack}
 Openstack an open source software framework for deploying clouds.
@@ -120,6 +107,22 @@ There are several components of Openstack which are developed separately.
 Keystone is used to manage authorization and authentication. Glance manages the 
 virtual machine images. The Nova component is used for managing compute nodes.
 Horizon provides a front-end to users to manage instances in the cloud.  
+
+
+\section{Related Work}
+Studies have been published to evaluate the applicability of the cloud for 
+scientific computing.\cite{ekanayake_high_2010} \cite{evangelinos_cloud_2008}
+\cite{exposito_performance_2013}\cite{ludescher_cloud-based_2013}
+\cite{mauch_high_2013}\cite{jackson_performance_2010}\cite{zhai_cloud_2011}
+\cite{walker_benchmarking_????}. Most of these utilized the public cloud, 
+specifically Amazon EC2 as their testbed.
+
+
+
+
+
+\section{Methodology}
+We describe the 
 
 \subsection{Hardware}
 P2C uses commercial-off-the-shelf(COTS) hardware. The cloud controller(1 unit) 
