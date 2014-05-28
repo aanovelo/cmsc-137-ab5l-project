@@ -1,50 +1,46 @@
 This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: p2cpaper-acmsmall.aux
 The style file: ACM-Reference-Format-Journals.bst
-Illegal, another \bibdata command---line 38 of file p2cpaper-acmsmall.aux
- : \bibdata
- :         {walker}
-I'm skipping whatever remains of this command
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: cloudcomp.bib
 Warning--empty address in ekanayake_high_2010
 Warning--empty booktitle in jackson_performance_2010
 Warning--empty address in jackson_performance_2010
-Warning--empty year in walker_benchmarking_????
+Warning--page numbers missing in both pages and numpages fields in walker_benchmarking_2008
 Warning--empty address in zhai_cloud_2011
 You've used 10 entries,
             5290 wiz_defined-function locations,
-            1293 strings with 16885 characters,
-and the built_in function-call counts, 16197 in all, are:
-= -- 2319
+            1296 strings with 16896 characters,
+and the built_in function-call counts, 16457 in all, are:
+= -- 2416
 > -- 458
 < -- 0
 + -- 142
 - -- 576
-* -- 1115
-:= -- 1597
+* -- 1128
+:= -- 1599
 add.period$ -- 51
 call.type$ -- 10
 change.case$ -- 72
 chr.to.int$ -- 10
 cite$ -- 15
-duplicate$ -- 832
-empty$ -- 582
+duplicate$ -- 847
+empty$ -- 592
 format.name$ -- 192
-if$ -- 3509
+if$ -- 3615
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 35
+missing$ -- 39
 newline$ -- 133
 num.names$ -- 80
-pop$ -- 316
+pop$ -- 306
 preamble$ -- 1
 purify$ -- 122
 quote$ -- 0
-skip$ -- 260
+skip$ -- 267
 stack$ -- 0
-substring$ -- 2377
-swap$ -- 103
+substring$ -- 2392
+swap$ -- 104
 text.length$ -- 838
 text.prefix$ -- 0
 top$ -- 0
@@ -53,4 +49,4 @@ warning$ -- 5
 while$ -- 83
 width$ -- 0
 write$ -- 223
-(There was 1 error message)
+(There were 5 warnings)

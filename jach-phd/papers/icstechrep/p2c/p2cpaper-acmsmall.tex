@@ -107,19 +107,26 @@ used by NASA. It provides a public interface that is compatible with Amazon EC2.
 There are several components of Openstack which are developed separately. 
 Keystone is used to manage authorization and authentication. Glance manages the 
 virtual machine images. The Nova component is used for managing compute nodes.
-Horizon provides a front-end to users to manage instances in the cloud.  
+Horizon provides a front-end to users to manage instances in the cloud. 
+Figure~\ref{fig:openstack} shows the interaction of the Openstack components.
 
 
 \begin{figure}
 \centerline{\includegraphics{images/openstack}}
 \caption{Openstack at a glance.}
-\label{fig:one}
+\label{fig:openstack}
 \end{figure}
 
 
 \section{Related Work}
 Studies have been published to evaluate the applicability of the cloud for 
-scientific computing.
+scientific computing. The works described below focuses on performance.
+
+\cite{walker_benchmarking_2008} showed that a performance gap between running 
+HPC applications on a baremetal cluster and on an Amazon's EC2 provisioned 
+cluster. They suggested that in order for cloud computing to be a viable 
+alternative for HPC, providers must improve in the area of network 
+interconnection.
 
 \cite{evangelinos_cloud_2008} found that Amazon's EC2 may be a credible 
 solution for on-demand and small-sized HPC applications. They supported this 
@@ -162,7 +169,6 @@ network(10 Gigabit Ethernet).
 on a cloud. The paper emphasized that the use of a public cloud can result to 
 a magnitude of cost savings.
 
-\cite{walker_benchmarking_????}. 
 
 Most of these utilized the public cloud, 
 specifically Amazon EC2 as their testbed.
@@ -177,22 +183,21 @@ connects the controller and the nodes.
 
 \begin{figure}
 \centerline{\includegraphics{images/nodes}}
-\caption{Hardware}
-\label{fig:one}
+\caption{Hardware used in P2C.}
+\label{fig:nodes}
 \end{figure}
 
 \begin{figure}
 \centerline{\includegraphics{images/switch}}
-\caption{Hardware}
-\label{fig:two}
+\caption{Switch used in P2C.}
+\label{fig:switch}
 \end{figure}
-
 
 \subsection{Network Topology}
 \begin{figure}
 \centerline{\includegraphics{images/network}}
-\caption{Network}
-\label{fig:three}
+\caption{Network topology}
+\label{fig:network}
 \end{figure}
 
 
@@ -214,7 +219,6 @@ The author would like to thank the Lord.
 % Bibliography
 \bibliographystyle{ACM-Reference-Format-Journals}
 \bibliography{cloudcomp}
-\bibliography{walker}
 %\bibliography{acmsmall-sample-bibfile}
                              % Sample .bib file with references that match those in
                              % the 'Specifications Document (V1.5)' as well containing

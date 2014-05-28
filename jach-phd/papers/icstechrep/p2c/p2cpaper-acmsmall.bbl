@@ -134,11 +134,12 @@ inition_of_Cloud_Computing.pdf}}
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Walker}{Walker}{}]%
-        {walker_benchmarking_????}
-{Edward Walker}.
-\newblock Benchmarking Amazon {EC2} for high-performance scientific computing.
-\newblock   (????).
+\bibitem[\protect\citeauthoryear{Walker}{Walker}{2008}]%
+        {walker_benchmarking_2008}
+{Edward Walker}. 2008.
+\newblock \showarticletitle{Benchmarking Amazon {EC2} for high-performance
+  scientific computing}.
+\newblock {\em {;Login}\/} {33}, 5 (Oct. 2008).
 \newblock
 \showURL{%
 \url{https://www.usenix.org/legacy/publications/login/2008-10/openpdfs/walker.%
