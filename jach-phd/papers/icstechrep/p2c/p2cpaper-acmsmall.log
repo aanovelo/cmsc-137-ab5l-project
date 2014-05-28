@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.1.13)  28 MAY 2014 17:48
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.1.13)  28 MAY 2014 17:49
 entering extended mode
  %&-line parsing enabled.
 **p2cpaper-acmsmall
@@ -314,11 +314,7 @@ Underfull \hbox (badness 4660) in paragraph at lines 205--214
 ices and Ap-pli-ca-tions \OT1/pnc/m/n/8 1, 1 (April 2010), 7--18.
  []
 
-) [5 <./images/network.jpg>] (./p2cpaper-acmsmall.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) [5 <./images/network.jpg>] (./p2cpaper-acmsmall.aux) ) 
 Here is how much of TeX's memory you used:
  2793 strings out of 495061
  35005 string characters out of 1182621
@@ -327,15 +323,15 @@ Here is how much of TeX's memory you used:
  24037 words of font info for 49 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  32i,8n,22p,310b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
-fonts/cm/cmtt8.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pf
-b></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/tex
-mf-texlive/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-texlive/fonts/
-type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ncntrsb
-k/uncri8a.pfb>
-Output written on p2cpaper-acmsmall.pdf (5 pages, 205117 bytes).
+{/usr/share/texmf-texli
+ve/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy
+8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/
+share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texli
+ve/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/ur
+w/ncntrsbk/uncb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ncntrsbk/uncr8a
+.pfb></usr/share/texmf-texlive/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on p2cpaper-acmsmall.pdf (5 pages, 205115 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
