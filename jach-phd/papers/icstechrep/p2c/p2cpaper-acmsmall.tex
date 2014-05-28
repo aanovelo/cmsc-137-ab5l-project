@@ -107,13 +107,22 @@ the public. Lastly, {\it hybrid} clouds are composition of two or more clouds
 
 Cloud computing offers service models which include 
 {\it Software-as-a-Service(SaaS), 
-Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS)}. IaaS 
-allows the consumer to provision computing resources(hardware, network, 
-storage) to run arbitrary software including operating systems
-\cite{mell_nist_2011}. A popular IaaS public cloud is the Amazon's Elastic 
-Compute Cloud(EC2) and Simple Storage Service(S3).
+Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS)}. Most 
+are familiar with SaaS as it is provides user functionality, Google Docs 
+and Dropbox being a notable example. Developers on the other hand will be
+more acquainted with PaaS because they use APIs to develop applications in 
+which Google App Engine is an example.IaaS allows the consumer to provision 
+computing resources(hardware,network, storage) to run arbitrary software 
+including operating systems\cite{mell_nist_2011}. A popular IaaS public cloud 
+is Amazon's Elastic Compute Cloud(EC2) and Simple Storage Service(S3). Most IaaS 
+providers use proprietary technologies in their implementation. Lately, a number 
+of open source frameworks have been released for deploying IaaS private clouds. 
+Openstack is the most popular and will be described in the next section.
 
-\subsection{Openstack}
+
+
+
+\section{Openstack}
 Openstack is an open source software framework for deploying IaaS 
 clouds \cite{sefraoui_openstack:_2012}. This framework is widely supported 
 by the community and has a large user base, including NASA. 
@@ -130,12 +139,11 @@ disk images
 \item {\it Compute("Nova")} - provides virtual servers upon demand 
 \item {\it Dashboard("Horizon")} - provides a modular web-based user interface 
 for all the Openstack services
-\item {\it Identity"Keystone"} - provides authentication and authorization for 
+\item {\it Identity("Keystone")} - provides authentication and authorization for 
 all Openstack services
 \item {\it Networking("Quantum")} - provides "network connectivity as a service"
 \item {\it Block Storage("Cinder")} - provides persistent block storage for 
 guest VMs
-
 \end{itemize}
  
 Figure~\ref{fig:openstack} shows the interaction of the major Openstack 
