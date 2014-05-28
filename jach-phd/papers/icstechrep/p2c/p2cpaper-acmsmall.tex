@@ -87,7 +87,7 @@ University of the Philippines Los Banos
 
 \section{Introduction}
 Cloud computing has become a buzzword in today's modern computing, though there
- is no agreed upon meaning of the term. In 2011, NIST \cite{mell_nist_2011} 
+ is no agreed upon meaning of the term. In 2011, \cite{mell_nist_2011} of NIST  
 published a definition that is widely quoted and used. The popularity of cloud 
 computing mainly comes from its ability to provision additional resources on 
 demand with minimum intervention from the provider. It leverages advances in 
@@ -95,20 +95,43 @@ virtualization and web services technologies. For example, a website with a
 sudden increase in workload can start another server machine (possibly virtual)
  almost instantaneously to accommodate the additional load.
 
-Cloud computing offers service models which include Software-as-a-Service(SaaS), 
-Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS). IaaS allows 
-the consumer to provision computing resources(hardware, network, storage) to 
-run arbitrary software including operating systems \cite{mell_nist_2011}. 
+Cloud computing offers service models which include 
+{\it Software-as-a-Service(SaaS), 
+Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS)}. IaaS 
+allows the consumer to provision computing resources(hardware, network, 
+storage) to run arbitrary software including operating systems
+\cite{mell_nist_2011}. 
+
+A cloud can be deployed in several ways. {\it Private} clouds are operated for 
+an organization. {\it Community} clouds are shared by several organizations to 
+support a community with shared concerns. {\it Public} clouds are available to 
+the public. Lastly, hybrid clouds are composition of two or more clouds
+\cite{mell_nist_2011}.
 
 \subsection{Openstack}
 Openstack an open source software framework for deploying clouds.
 \cite{sefraoui_openstack:_2012} It is based on Nebula 
 used by NASA. It provides a public interface that is compatible with Amazon EC2. 
-There are several components of Openstack which are developed separately. 
-Keystone is used to manage authorization and authentication. Glance manages the 
-virtual machine images. The Nova component is used for managing compute nodes.
-Horizon provides a front-end to users to manage instances in the cloud. 
-Figure~\ref{fig:openstack} shows the interaction of the Openstack components.
+Several components of Openstack which are developed separately. The names in 
+parenthesis represent the project name used by the developers.
+
+\begin{itemize}
+\item {\it Object Store("Swift")} - provides storage
+\item {\it Image("Glance"} - provides a catalog and repository for virtual 
+disk images
+\item {\it Compute("Nova")} - provides virtual servers upon demand 
+\item {\it Dashboard("Horizon")} - provides a modular web-based user interface 
+for all the Openstack services
+\item {\it Identity"Keystone"} - provides authentication and authorization for 
+all Openstack services
+\item {\it Networking("Quantum")} - provides "network connectivity as a service"
+\item {\it Block Storage("Cinder")} - provides persistent block storage for 
+guest VMs
+
+\end{itemize}
+ 
+Figure~\ref{fig:openstack} shows the interaction of the major Openstack 
+components. 
 
 
 \begin{figure}
