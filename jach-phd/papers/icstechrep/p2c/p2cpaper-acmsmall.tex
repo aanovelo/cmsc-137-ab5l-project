@@ -157,7 +157,7 @@ guest VMs
  
 Figure~\ref{fig:openstack} shows the interaction of the major Openstack 
 components. The dashboard represents the front-end to access compute, storage, 
-and network resources. 
+and networking resources. 
 
 
 \begin{figure}
@@ -169,7 +169,8 @@ and network resources.
 
 \section{Related Work}
 Studies have been published to evaluate the applicability of the cloud for 
-scientific computing. The works described below focus on performance.
+scientific computing. The works described below focus on the performance 
+evaluation of clouds for scientific applications.
 
 \cite{walker_benchmarking_2008} showed that a performance gap between running 
 HPC applications on a baremetal cluster and on an Amazon's EC2 provisioned 
@@ -223,10 +224,13 @@ cloud suffers from variability in performance probably because of multitenancy
 and limited network infrastructure.
 
 \section{Methodology}
+Peak2Cloud is a combination of hardware, software, and network configuration. 
+In this section we describe how these are combined to achieve the desired 
+results. Openstack is the cloud software used as previously mentioned.
 
 \subsection{Hardware}
 P2C uses commercial-off-the-shelf(COTS) hardware. The cloud controller(1 unit) 
-and compute nodes(2 units) is a four-core Intel(R) Core(TM) i3-2000 3.10GHz CPU 
+and compute nodes(2 units) are four-core Intel(R) Core(TM) i3-2000 3.10GHz CPU 
 with 4GB RAM and 100GB disk. A 1GBps, 16-port Dell PowerConnect 2716 switch 
 connects the controller and the nodes.  
 
