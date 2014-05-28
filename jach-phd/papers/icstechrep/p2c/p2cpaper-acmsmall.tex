@@ -1,0 +1,167 @@
+% v2-acmsmall-sample.tex, dated March 6 2012
+% This is a sample file for ACM small trim journals
+%
+% Compilation using 'acmsmall.cls' - version 1.3 (March 2012), Aptara Inc.
+% (c) 2010 Association for Computing Machinery (ACM)
+%
+% Questions/Suggestions/Feedback should be addressed to => "acmtexsupport@aptaracorp.com".
+% Users can also go through the FAQs available on the journal's submission webpage.
+%
+% Steps to compile: latex, bibtex, latex latex
+%
+% For tracking purposes => this is v1.3 - March 2012
+
+\documentclass[prodmode,acmtocs]{acmsmall} % Aptara syntax
+
+% Package to generate and customize Algorithm as per ACM style
+\usepackage[ruled]{algorithm2e}
+\renewcommand{\algorithmcfname}{ALGORITHM}
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\SetAlCapHSkip{0pt}
+\IncMargin{-\parindent}
+
+% Metadata Information
+\acmVolume{2014}
+\acmNumber{1}
+\acmArticle{2}
+\acmYear{2014}
+\acmMonth{6}
+
+% Document starts
+\begin{document}
+
+% Page heads
+\markboth{J. A. C. Hermocilla}{Peak2Cloud: Scientific Computing on the Cloud}
+
+% Title portion
+\title{Peak2Cloud: Scientific Computing on the Cloud}
+\author{JOSEPH ANTHONY C. HERMOCILLA
+\affil{University of the Philippines Los Banos}}
+% NOTE! Affiliations placed here should be for the institution where the
+%       BULK of the research was done. If the author has gone to a new
+%       institution, before publication, the (above) affiliation should NOT be changed.
+%       The authors 'current' address may be given in the "Author's addresses:" block (below).
+%       So for example, Mr. Abdelzaher, the bulk of the research was done at UIUC, and he is
+%       currently affiliated with NASA.
+
+\begin{abstract}
+Peak2Cloud (P2C) is an Openstack-based private cloud for scientific and high 
+performance computing. First, we present how P2C was configured and tested. Then
+we describe vcluster, a tool for rapidly deploying message-passing clusters on 
+P2C. Lastly, we analyze some benchmark results on the performance of P2C 
+deployed virtual clusters.
+\end{abstract}
+
+\category{C.2.4}{Computer-Communication Networks}{Distributed Systems}
+
+\terms{Network operating systems}
+
+\keywords{cloud computing, high-performance computing}
+
+\acmformat{Joseph Anthony C. Hermocilla, 2010.Peak2Cloud: Scientific Computing
+ on the Cloud.}
+% At a minimum you need to supply the author names, year and a title.
+% IMPORTANT:
+% Full first names whenever they are known, surname last, followed by a period.
+% In the case of two authors, 'and' is placed between them.
+% In the case of three or more authors, the serial comma is used, that is, all author names
+% except the last one but including the penultimate author's name are followed by a comma,
+% and then 'and' is placed before the final author's name.
+% If only first and middle initials are known, then each initial
+% is followed by a period and they are separated by a space.
+% The remaining information (journal title, volume, article number, date, etc.) is 'auto-generated'.
+
+\begin{bottomstuff}
+This work is supported by the Philippine Department of Science and Technology 
+(DOST) Accelerated Science and Technology Human Resource Development 
+Program (ASTHRDP). 
+
+Author's address: J. A. C. Hermocilla, Institute of Computer Science,
+University of the Philippines Los Banos
+\end{bottomstuff}
+
+\maketitle
+
+
+\section{Introduction}
+Cloud computing has become a buzzword in today's modern computing, though there
+ is no agreed upon meaning of the term. In 2011, NIST \cite{mell_nist_2011} 
+published a definition that is widely quoted and used. The popularity of cloud 
+computing mainly comes from its ability to provision additional resources on 
+demand with minimum intervention from the provider. It leverages advances in 
+virtualization and web services technologies. For example, a website with a 
+sudden increase in workload can start another server machine (virtual) almost 
+instantaneously to accommodate the additional load.
+
+Cloud computing offers service models which include Software-as-a-Service(SaaS), 
+Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS). IaaS allows 
+the consumer to provision computing resources(hardware, network, storage) to 
+run arbitrary software including operating systems \cite{mell_nist_2011}. 
+
+\section{Related Work}
+Studies have been published to evaluate the applicability of the cloud for 
+scientific computing.\cite{ekanayake_high_2010} \cite{evangelinos_cloud_2008}
+\cite{exposito_performance_2013}\cite{ludescher_cloud-based_2013}
+\cite{mauch_high_2013}\cite{jackson_performance_2010}\cite{zhai_cloud_2011}
+\cite{walker_benchmarking_????}.Most of these utilized the public cloud, 
+specifically Amazon EC2 as their testbed.
+
+
+
+\section{Methodology}
+
+\subsection{Openstack}
+Openstack an open source software framework for deploying clouds.
+\cite{sefraoui_openstack:_2012} It is based on Nebula 
+used by NASA. It provides a public interface that is compatible with Amazon EC2. 
+There are several components of Openstack which are developed separately. 
+Keystone is used to manage authorization and authentication. Glance manages the 
+virtual machine images. The Nova component is used for managing compute nodes. 
+
+\subsection{Hardware}
+P2C uses commercial-off-the-shelf(COTS) hardware. The cloud controller(1 unit) 
+and compute nodes(2 units) is a four-core Intel(R) Core(TM) i3-2000 3.10GHz CPU 
+with 4GB RAM and 100GB disk. A 1GBps, 16-port Dell PowerConnect 2716 switch connects 
+the controller and the nodes.  
+
+\begin{figure}
+\centerline{\includegraphics{images/nodes-300}}
+\caption{Hardware}
+\label{fig:one}
+\end{figure}
+
+
+\subsection{Network Topology}
+
+\subsection{vcluster}
+
+\subsection{Benchmarks}
+
+
+\section{Results and Discussion}
+
+\section{Conclusions}
+
+% Acknowledgments
+\begin{acks}
+The author would like to thank the Lord.
+\end{acks}
+
+% Bibliography
+\bibliographystyle{ACM-Reference-Format-Journals}
+\bibliography{cloudcomp}
+%\bibliography{acmsmall-sample-bibfile}
+                             % Sample .bib file with references that match those in
+                             % the 'Specifications Document (V1.5)' as well containing
+                             % 'legacy' bibs and bibs with 'alternate codings'.
+                             % Gerry Murray - March 2012
+
+% History dates
+\received{May 2014}{June 2014}{June 2014}
+
+\end{document}
+% End of v2-acmsmall-sample.tex (March 2012) - Gerry Murray, ACM
+
+

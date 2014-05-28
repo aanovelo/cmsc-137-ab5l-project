@@ -77,6 +77,25 @@ Test
 Introduction
 \end_layout
 
+\begin_layout Standard
+CLOUD computing has become a buzzword in today’s modern computing, though
+ there is no agreed upon meaning of the term.
+ In 2011, NIST [1] published a definition that is widely quoted and used.
+ The popularity of cloud computing mainly comes from its ability to provision
+ additional resources on demand with minimum intervention from the provider.
+ It leverages advances in virtualization and web services technologies.
+ For example, a website with a sudden increase in workload can start another
+ server machine (virtual) almost instantaneously to accommodate the additional
+ load.
+\end_layout
+
+\begin_layout Standard
+Cloud computing offers service models which include Software-as-a-Service(SaaS),
+ Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS).
+ IaaS allows the consumer to provision computing resources(hardware, network,
+ storage) to run arbitrary software including operating systems [1].
+\end_layout
+
 \begin_layout Section
 Related Work
 \end_layout
