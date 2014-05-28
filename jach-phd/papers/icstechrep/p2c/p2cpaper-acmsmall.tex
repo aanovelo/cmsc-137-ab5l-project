@@ -98,8 +98,8 @@ discussion of what cloud computing is can be found in the literature
 \cite{buyya_cloud_2009}\cite{qian_cloud_2009}\cite{armbrust_view_2010}
 \cite{zhang_cloud_2010}.
 
-A cloud can be deployed in several ways, depending on can access the services 
-it provides. {\it Private} clouds are operated for 
+A cloud can be deployed in several ways, depending on who can access the 
+services it provides. {\it Private} clouds are operated for 
 an organization. {\it Community} clouds are shared by several organizations to 
 support a community with shared concerns. {\it Public} clouds are available to 
 the public. Lastly, {\it hybrid} clouds are composition of two or more clouds
@@ -114,11 +114,14 @@ storage) to run arbitrary software including operating systems
 Compute Cloud(EC2) and Simple Storage Service(S3).
 
 \subsection{Openstack}
-Openstack an open source software framework for deploying IaaS private clouds
-\cite{sefraoui_openstack:_2012}. It is based on Nebula 
-used by NASA. It provides a public interface that is compatible with Amazon EC2. 
-Several components of Openstack which are developed separately. The name in 
-parenthesis represents the project name as referred by the developers.
+Openstack is an open source software framework for deploying IaaS 
+clouds \cite{sefraoui_openstack:_2012}. This framework is widely supported 
+by the community and has a large user base, including NASA. 
+It provides a control interface that is compatible with Amazon's EC2, allowing 
+easy transition for new users. Components of Openstack are developed 
+separately providing modularity to the system. Below are the main components or
+modules of Openstack (the name in parenthesis represents the project name as 
+referred to by the developers).
 
 \begin{itemize}
 \item {\it Object Store("Swift")} - provides storage
