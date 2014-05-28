@@ -128,12 +128,15 @@ conclusion by running a low-order coupled atmosphere-ocean simulation on EC2.
 Ekanayake\cite{ekanayake_high_2010} presented performance analayis of HPC applications on virtualized 
 resources. They concluded that cloud techonologies work well for pleasingly-
 parallel problems. The main limitation of cloud technologies is the high 
-overhead for applications with complex communication patterns even with large 
+overhead for applications with complex communication patterns, even with large 
 data sets. 
 
-
-
-\cite{jackson_performance_2010}
+Jackson\cite{jackson_performance_2010} compared the performance of conventional 
+HPC platforms to Amazon EC2. Their results showed that EC2 is six times slower 
+than a typical mid-range Linux cluster, and twenty times slower than a modern 
+HPC system. This is mainly because of the communication overhead. They also 
+noted that variability in performance can be significant due to the shared 
+nature of the environment.
 
 \cite{zhai_cloud_2011}
 
