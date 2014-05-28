@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.1.13)  28 MAY 2014 15:27
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.1.13)  28 MAY 2014 15:50
 entering extended mode
  %&-line parsing enabled.
-**p2cpaper-acmsmall.tex
+**p2cpaper-acmsmall
 (./p2cpaper-acmsmall.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
@@ -279,19 +279,63 @@ Underfull \hbox (badness 4132) in paragraph at lines 78--87
 -vices Cloud. IEEE, 159--168.
  []
 
-) [4 <./images/network.jpg>] (./p2cpaper-acmsmall.aux)
+) (./p2cpaper-acmsmall.bbl
+Missing character: There is no â in font pncr7t!
+Missing character: There is no € in font pncr7t!
+Missing character: There is no “ in font pncr7t!
+
+Underfull \hbox (badness 1377) in paragraph at lines 37--44
+[]\OT1/pnc/m/n/8 Jaliya Ekanayake and Ge-of-frey Fox. 2010. High per-for-mance 
+par-al-lel com-put-ing with clouds and
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./images/network.jpg>]
+Missing character: There is no â in font pncr7t!
+Missing character: There is no € in font pncr7t!
+Missing character: There is no ™ in font pncr7t!
+Missing character: There is no â in font pncr7t!
+Missing character: There is no € in font pncr7t!
+Missing character: There is no “ in font pncr7t!
+Missing character: There is no Ã in font pncr7t!
+Missing character: There is no ³ in font pncr7t!
+Missing character: There is no Ã in font pncr7t!
+Missing character: There is no ± in font pncr7t!
+Missing character: There is no Ã in font pncr7t!
+Missing character: There is no ³ in font pncr7t!
+
+Underfull \hbox (badness 1931) in paragraph at lines 78--87
+[]\OT1/pnc/m/n/8 Keith R. Jack-son, La-vanya Ra-makr-ish-nan, Kr-ishna Muriki, 
+Shane Canon, Shreyas Cho-lia, John
+ []
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 78--87
+\OT1/pnc/m/n/8 Shalf, Har-vey J. Wasser-man, and Nicholas J. Wright. 2010. Per-
+for-mance Anal-y-sis of High
+ []
+
+
+Underfull \hbox (badness 4132) in paragraph at lines 78--87
+\OT1/pnc/m/n/8 Per-for-mance Com-put-ing Ap-pli-ca-tions on the Ama-zon Web Ser
+-vices Cloud. IEEE, 159--168.
+ []
+
+) [5] (./p2cpaper-acmsmall.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2786 strings out of 495061
- 34888 string characters out of 1182621
- 110146 words of memory out of 3000000
+ 2788 strings out of 495061
+ 34932 string characters out of 1182621
+ 111146 words of memory out of 3000000
  5954 multiletter control sequences out of 15000+50000
  22515 words of font info for 47 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 32i,9n,22p,314b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,9n,22p,310b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type
 1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
@@ -300,9 +344,9 @@ b></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/tex
 mf-texlive/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-texlive/fonts/
 type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ncntrsb
 k/uncri8a.pfb>
-Output written on p2cpaper-acmsmall.pdf (4 pages, 175227 bytes).
+Output written on p2cpaper-acmsmall.pdf (5 pages, 178465 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
+ 55 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
