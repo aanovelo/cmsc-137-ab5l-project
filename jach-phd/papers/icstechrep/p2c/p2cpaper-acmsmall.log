@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.1.13)  28 MAY 2014 16:45
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.1.13)  28 MAY 2014 17:26
 entering extended mode
  %&-line parsing enabled.
 **p2cpaper-acmsmall
@@ -206,6 +206,9 @@ LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <8> not available
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 88.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \vbox (72.27pt too high) has occurred while \output is active []
 
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -235,11 +238,33 @@ Missing character: There is no â in font pncr7t!
 Missing character: There is no € in font pncr7t!
 Missing character: There is no “ in font pncr7t!
 
-Underfull \hbox (badness 1377) in paragraph at lines 37--44
+Underfull \hbox (badness 1184) in paragraph at lines 52--62
+[]\OT1/pnc/m/n/8 Rajkumar Buyya, Chee Shin Yeo, Sriku-mar Venu-gopal, James Bro
+berg, and Ivona Brandic. 2009.
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 52--62
+\OT1/pnc/m/n/8 Cloud com-put-ing and emerg-ing IT plat-forms: Vi-sion, hype, an
+d re-al-ity for de-liv-er-ing com-
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 52--62
+\OT1/pnc/m/n/8 put-ing as the 5th util-ity. \OT1/pnc/m/it/8 Fu-ture Gen-er-a-ti
+on Com-puter Sys-tems \OT1/pnc/m/n/8 25, 6 (June 2009), 599--616.
+ []
+
+Missing character: There is no â in font pncr7t!
+Missing character: There is no € in font pncr7t!
+Missing character: There is no “ in font pncr7t!
+
+Underfull \hbox (badness 1377) in paragraph at lines 66--73
 []\OT1/pnc/m/n/8 Jaliya Ekanayake and Ge-of-frey Fox. 2010. High per-for-mance 
 par-al-lel com-put-ing with clouds and
  []
 
+[4 <./images/switch.jpg> <./images/network.jpg>]
 Missing character: There is no â in font pncr7t!
 Missing character: There is no € in font pncr7t!
 Missing character: There is no ™ in font pncr7t!
@@ -253,32 +278,44 @@ Missing character: There is no ± in font pncr7t!
 Missing character: There is no Ã in font pncr7t!
 Missing character: There is no ³ in font pncr7t!
 
-Underfull \vbox (badness 3039) has occurred while \output is active []
-
- [4 <./images/switch.jpg> <./images/network.jpg>]
-Underfull \hbox (badness 1931) in paragraph at lines 78--87
+Underfull \hbox (badness 1931) in paragraph at lines 107--116
 []\OT1/pnc/m/n/8 Keith R. Jack-son, La-vanya Ra-makr-ish-nan, Kr-ishna Muriki, 
 Shane Canon, Shreyas Cho-lia, John
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 78--87
+Underfull \hbox (badness 2837) in paragraph at lines 107--116
 \OT1/pnc/m/n/8 Shalf, Har-vey J. Wasser-man, and Nicholas J. Wright. 2010. Per-
 for-mance Anal-y-sis of High
  []
 
 
-Underfull \hbox (badness 4132) in paragraph at lines 78--87
+Underfull \hbox (badness 4132) in paragraph at lines 107--116
 \OT1/pnc/m/n/8 Per-for-mance Com-put-ing Ap-pli-ca-tions on the Ama-zon Web Ser
 -vices Cloud. IEEE, 159--168.
  []
 
+Missing character: There is no â in font pncr7t!
+Missing character: There is no € in font pncr7t!
+Missing character: There is no “ in font pncr7t!
+
+Underfull \hbox (badness 7203) in paragraph at lines 205--214
+[]\OT1/pnc/m/n/8 Qi Zhang, Lu Cheng, and Raouf Boutaba. 2010. Cloud com-put-ing
+: state-of-the-art and re-
+ []
+
+
+Underfull \hbox (badness 4660) in paragraph at lines 205--214
+\OT1/pnc/m/n/8 search chal-lenges. \OT1/pnc/m/it/8 Jour-nal of In-ter-net Ser-v
+ices and Ap-pli-ca-tions \OT1/pnc/m/n/8 1, 1 (April 2010), 7--18.
+ []
+
 ) [5] (./p2cpaper-acmsmall.aux) ) 
 Here is how much of TeX's memory you used:
- 2789 strings out of 495061
- 34932 string characters out of 1182621
- 109119 words of memory out of 3000000
- 5956 multiletter control sequences out of 15000+50000
+ 2793 strings out of 495061
+ 35005 string characters out of 1182621
+ 111423 words of memory out of 3000000
+ 5960 multiletter control sequences out of 15000+50000
  24037 words of font info for 49 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  32i,8n,22p,310b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -290,7 +327,7 @@ ts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helv
 etic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ncntrsbk/uncb8a.pfb><
 /usr/share/texmf-texlive/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-
 texlive/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on p2cpaper-acmsmall.pdf (5 pages, 203780 bytes).
+Output written on p2cpaper-acmsmall.pdf (5 pages, 204830 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
