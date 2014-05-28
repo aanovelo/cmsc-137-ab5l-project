@@ -125,14 +125,11 @@ services (web applications). They provide instances with operating systems that
 can run web server software, scripting engine, and database management systems. 
 Linux-Apache-MySQL-PHP (LAMP) stack is a typical configuration for an instance.
 The success of this technology is enormous and people are still looking for uses 
-of the cloud beyond hosting. The science community is one group that is 
-interested in leveraging the use of cloud. They are looking at the possibility 
-of running entire scientific applications on the cloud. These applications 
-are compute and communication intensive which differs greatly from web 
-applications.
- 
-
-
+beyond hosting. The science community is one group that is interested in 
+leveraging the use of cloud. They are looking at the possibility of running 
+entire scientific applications on the cloud. These applications are compute and 
+communication intensive which differs greatly from web applications. This work 
+explores this possibility through the Peak2Cloud. 
 
 \section{Openstack}
 Openstack is an open source software framework for deploying IaaS 
@@ -159,7 +156,8 @@ guest VMs
 \end{itemize}
  
 Figure~\ref{fig:openstack} shows the interaction of the major Openstack 
-components. 
+components. The dashboard represents the front-end to access compute, storage, 
+and network resources. 
 
 
 \begin{figure}
@@ -171,7 +169,7 @@ components.
 
 \section{Related Work}
 Studies have been published to evaluate the applicability of the cloud for 
-scientific computing. The works described below focuses on performance.
+scientific computing. The works described below focus on performance.
 
 \cite{walker_benchmarking_2008} showed that a performance gap between running 
 HPC applications on a baremetal cluster and on an Amazon's EC2 provisioned 
@@ -220,9 +218,9 @@ network(10 Gigabit Ethernet).
 on a cloud. The paper emphasized that the use of a public cloud can result to 
 a magnitude of cost savings.
 
-
-Most of these utilized the public cloud, 
-specifically Amazon EC2 as their testbed.
+A recurring observation based on the above works is that primarily, the public 
+cloud suffers from variability in performance probably because of multitenancy 
+and limited network infrastructure.
 
 \section{Methodology}
 
