@@ -119,10 +119,39 @@ Horizon provides a front-end to users to manage instances in the cloud.
 
 \section{Related Work}
 Studies have been published to evaluate the applicability of the cloud for 
-scientific computing.\cite{ekanayake_high_2010} \cite{evangelinos_cloud_2008}
-\cite{exposito_performance_2013}\cite{ludescher_cloud-based_2013}
-\cite{mauch_high_2013}\cite{jackson_performance_2010}\cite{zhai_cloud_2011}
-\cite{walker_benchmarking_????}. Most of these utilized the public cloud, 
+scientific computing.
+
+In the work of Evangelinos\cite{evangelinos_cloud_2008},they found that Amazon's EC2 may be a credible 
+solution for on-demand and small-sized HPC applications. They supported this 
+conclusion by running a low-order coupled atmosphere-ocean simulation on EC2.
+
+Ekanayake\cite{ekanayake_high_2010} presented performance analayis of HPC applications on virtualized 
+resources. They concluded that cloud techonologies work well for pleasingly-
+parallel problems. The main limitation of cloud technologies is the high 
+overhead for applications with complex communication patterns even with large 
+data sets. 
+
+
+
+\cite{jackson_performance_2010}
+
+\cite{zhai_cloud_2011}
+
+\cite{mauch_high_2013}
+
+In 2013, Exposito concluded that HPC 
+application scalability depends mainly on the communication performance. Their 
+study involved the use of Amazon's EC2 Cluster Compute (CC) platform targeted 
+to HPC applications. This platform provides access to a high-speed network(
+10 Gigabit Ethernet)\cite{exposito_performance_2013}.
+
+
+
+\cite{ludescher_cloud-based_2013}
+
+\cite{walker_benchmarking_????}. 
+
+Most of these utilized the public cloud, 
 specifically Amazon EC2 as their testbed.
 
 \section{Methodology}
@@ -130,8 +159,8 @@ specifically Amazon EC2 as their testbed.
 \subsection{Hardware}
 P2C uses commercial-off-the-shelf(COTS) hardware. The cloud controller(1 unit) 
 and compute nodes(2 units) is a four-core Intel(R) Core(TM) i3-2000 3.10GHz CPU 
-with 4GB RAM and 100GB disk. A 1GBps, 16-port Dell PowerConnect 2716 switch connects 
-the controller and the nodes.  
+with 4GB RAM and 100GB disk. A 1GBps, 16-port Dell PowerConnect 2716 switch 
+connects the controller and the nodes.  
 
 \begin{figure}
 \centerline{\includegraphics{images/nodes}}
