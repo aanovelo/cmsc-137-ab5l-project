@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.1.13)  28 MAY 2014 11:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.1.13)  28 MAY 2014 11:56
 entering extended mode
  %&-line parsing enabled.
 **p2cpaper-acmsmall.tex
@@ -144,7 +144,11 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count94
 \algocf@algoframe=\box39
 \algocf@algobox=\box40
-) (./p2cpaper-acmsmall.aux)
+) (./p2cpaper-acmsmall.aux
+
+LaTeX Warning: Label `fig:one' multiply defined.
+
+)
 \openout1 = `p2cpaper-acmsmall.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -160,8 +164,7 @@ LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Try loading font information for OT1+pnc on input line 33.
-
-(/usr/share/texmf-texlive/tex/latex/psnfss/ot1pnc.fd
+ (/usr/share/texmf-texlive/tex/latex/psnfss/ot1pnc.fd
 File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
 )
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
@@ -205,6 +208,10 @@ LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <8> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 85.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 88.
+
+<images/openstack.jpg, id=1, 301.125pt x 124.465pt>
+File: images/openstack.jpg Graphic file (type jpg)
+ <use images/openstack.jpg>
 Missing character: There is no Ã in font pncr7t!
 Missing character: There is no ³ in font pncr7t!
 
@@ -216,19 +223,19 @@ Overfull \vbox (72.27pt too high) has occurred while \output is active []
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 Non-PDF special ignored!
 
-] <images/nodes.jpg, id=13, 150.5625pt x 200.75pt>
+] <images/nodes.jpg, id=14, 150.5625pt x 200.75pt>
 File: images/nodes.jpg Graphic file (type jpg)
 
-<use images/nodes.jpg> <images/switch.jpg, id=14, 150.5625pt x 113.42375pt>
+<use images/nodes.jpg> <images/switch.jpg, id=15, 150.5625pt x 113.42375pt>
 File: images/switch.jpg Graphic file (type jpg)
 
-<use images/switch.jpg> <images/network.jpg, id=15, 501.875pt x 207.77625pt>
+<use images/switch.jpg> <images/network.jpg, id=16, 501.875pt x 207.77625pt>
 File: images/network.jpg Graphic file (type jpg)
 
 <use images/network.jpg> (./p2cpaper-acmsmall.bbl
-Underfull \vbox (badness 7362) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <./images/nodes.jpg> <./images/switch.jpg>]
+ [2 <./images/openstack.jpg> <./images/nodes.jpg>]
 Missing character: There is no â in font pncr7t!
 Missing character: There is no € in font pncr7t!
 Missing character: There is no “ in font pncr7t!
@@ -251,6 +258,9 @@ Missing character: There is no ± in font pncr7t!
 Missing character: There is no Ã in font pncr7t!
 Missing character: There is no ³ in font pncr7t!
 
+Underfull \vbox (badness 3039) has occurred while \output is active []
+
+ [3 <./images/switch.jpg> <./images/network.jpg>]
 Underfull \hbox (badness 1931) in paragraph at lines 78--87
 []\OT1/pnc/m/n/8 Keith R. Jack-son, La-vanya Ra-makr-ish-nan, Kr-ishna Muriki, 
 Shane Canon, Shreyas Cho-lia, John
@@ -268,26 +278,30 @@ Underfull \hbox (badness 4132) in paragraph at lines 78--87
 -vices Cloud. IEEE, 159--168.
  []
 
-[3 <./images/network.jpg>]) [4] (./p2cpaper-acmsmall.aux) ) 
+) [4] (./p2cpaper-acmsmall.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2781 strings out of 495061
- 34776 string characters out of 1182621
- 110107 words of memory out of 3000000
- 5950 multiletter control sequences out of 15000+50000
+ 2786 strings out of 495061
+ 34888 string characters out of 1182621
+ 110146 words of memory out of 3000000
+ 5954 multiletter control sequences out of 15000+50000
  22515 words of font info for 47 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  32i,8n,22p,314b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-te
-xlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
-msy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb></u
-sr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-te
-xlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1
-/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ncntrsbk/unc
-r8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on p2cpaper-acmsmall.pdf (4 pages, 166780 bytes).
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmtt8.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pf
+b></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/tex
+mf-texlive/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-texlive/fonts/
+type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ncntrsb
+k/uncri8a.pfb>
+Output written on p2cpaper-acmsmall.pdf (4 pages, 173428 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
+ 52 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
