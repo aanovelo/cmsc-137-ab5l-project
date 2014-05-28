@@ -6,47 +6,48 @@ Database file #1: cloudcomp.bib
 Warning--empty address in ekanayake_high_2010
 Warning--empty booktitle in jackson_performance_2010
 Warning--empty address in jackson_performance_2010
-Warning--empty year in walker_benchmarking_????
+Warning--empty address in qian_cloud_2009
+Warning--page numbers missing in both pages and numpages fields in walker_benchmarking_2008
 Warning--empty address in zhai_cloud_2011
-You've used 10 entries,
+You've used 14 entries,
             5290 wiz_defined-function locations,
-            1293 strings with 16885 characters,
-and the built_in function-call counts, 16197 in all, are:
-= -- 2319
-> -- 458
+            1323 strings with 17939 characters,
+and the built_in function-call counts, 22705 in all, are:
+= -- 3256
+> -- 732
 < -- 0
-+ -- 142
-- -- 576
-* -- 1115
-:= -- 1597
-add.period$ -- 51
-call.type$ -- 10
-change.case$ -- 72
-chr.to.int$ -- 10
-cite$ -- 15
-duplicate$ -- 832
-empty$ -- 582
-format.name$ -- 192
-if$ -- 3509
++ -- 232
+- -- 766
+* -- 1613
+:= -- 2267
+add.period$ -- 72
+call.type$ -- 14
+change.case$ -- 110
+chr.to.int$ -- 14
+cite$ -- 20
+duplicate$ -- 1198
+empty$ -- 830
+format.name$ -- 296
+if$ -- 5006
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 35
-newline$ -- 133
-num.names$ -- 80
-pop$ -- 316
+missing$ -- 52
+newline$ -- 175
+num.names$ -- 112
+pop$ -- 421
 preamble$ -- 1
-purify$ -- 122
+purify$ -- 180
 quote$ -- 0
-skip$ -- 260
+skip$ -- 395
 stack$ -- 0
-substring$ -- 2377
-swap$ -- 103
-text.length$ -- 838
+substring$ -- 3123
+swap$ -- 162
+text.length$ -- 1044
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 140
-warning$ -- 5
-while$ -- 83
+type$ -- 196
+warning$ -- 6
+while$ -- 109
 width$ -- 0
-write$ -- 223
-(There were 5 warnings)
+write$ -- 302
+(There were 6 warnings)

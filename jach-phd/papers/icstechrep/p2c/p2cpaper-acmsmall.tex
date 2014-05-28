@@ -86,60 +86,152 @@ University of the Philippines Los Banos
 
 
 \section{Introduction}
-Cloud computing has become a buzzword in today's modern computing, though there
- is no agreed upon meaning of the term. In 2011, NIST \cite{mell_nist_2011} 
+Cloud computing has become a buzzword in today's modern computing although 
+there is no agreed upon meaning of the term. \cite{mell_nist_2011} of NIST  
 published a definition that is widely quoted and used. The popularity of cloud 
 computing mainly comes from its ability to provision additional resources on 
-demand with minimum intervention from the provider. It leverages advances in 
-virtualization and web services technologies. For example, a website with a 
-sudden increase in workload can start another server machine (virtual) almost 
-instantaneously to accommodate the additional load.
+demand with minimal intervention from the provider. It leverages advances in 
+virtualization and web service technologies. For example, an owner who observes 
+a sudden increase in workload on his website can start another server machine 
+(possibly virtual) almost instantaneously to accommodate the additional load. 
+An extensive discussion of what cloud computing is can be found in the 
+literature\cite{buyya_cloud_2009}\cite{qian_cloud_2009}
+\cite{armbrust_view_2010}\cite{zhang_cloud_2010}.
 
-Cloud computing offers service models which include Software-as-a-Service(SaaS), 
-Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS). IaaS allows 
-the consumer to provision computing resources(hardware, network, storage) to 
-run arbitrary software including operating systems \cite{mell_nist_2011}. 
+A cloud can be deployed in several ways, depending on who can access the 
+services it provides. {\it Private} clouds are operated for 
+an organization. {\it Community} clouds are shared by several organizations to 
+support a community with shared concerns. {\it Public} clouds are available to 
+the public. Lastly, {\it hybrid} clouds are composition of two or more clouds
+\cite{mell_nist_2011}.
+
+Cloud computing offers service models which include 
+{\it Software-as-a-Service(SaaS), 
+Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS)}. IaaS 
+allows the consumer to provision computing resources(hardware, network, 
+storage) to run arbitrary software including operating systems
+\cite{mell_nist_2011}. A popular IaaS public cloud is the Amazon's Elastic 
+Compute Cloud(EC2) and Simple Storage Service(S3).
+
+\subsection{Openstack}
+Openstack is an open source software framework for deploying IaaS 
+clouds \cite{sefraoui_openstack:_2012}. This framework is widely supported 
+by the community and has a large user base, including NASA. 
+It provides a control interface that is compatible with Amazon's EC2, allowing 
+easy transition for new users. Components of Openstack are developed 
+separately providing modularity to the system. Below are the main components or
+modules of Openstack (the name in parenthesis represents the project name as 
+referred to by the developers).
+
+\begin{itemize}
+\item {\it Object Store("Swift")} - provides storage
+\item {\it Image("Glance"} - provides a catalog and repository for virtual 
+disk images
+\item {\it Compute("Nova")} - provides virtual servers upon demand 
+\item {\it Dashboard("Horizon")} - provides a modular web-based user interface 
+for all the Openstack services
+\item {\it Identity"Keystone"} - provides authentication and authorization for 
+all Openstack services
+\item {\it Networking("Quantum")} - provides "network connectivity as a service"
+\item {\it Block Storage("Cinder")} - provides persistent block storage for 
+guest VMs
+
+\end{itemize}
+ 
+Figure~\ref{fig:openstack} shows the interaction of the major Openstack 
+components. 
+
+
+\begin{figure}
+\centerline{\includegraphics{images/openstack}}
+\caption{Openstack at a glance.}
+\label{fig:openstack}
+\end{figure}
+
 
 \section{Related Work}
 Studies have been published to evaluate the applicability of the cloud for 
-scientific computing.\cite{ekanayake_high_2010} \cite{evangelinos_cloud_2008}
-\cite{exposito_performance_2013}\cite{ludescher_cloud-based_2013}
-\cite{mauch_high_2013}\cite{jackson_performance_2010}\cite{zhai_cloud_2011}
-\cite{walker_benchmarking_????}.Most of these utilized the public cloud, 
+scientific computing. The works described below focuses on performance.
+
+\cite{walker_benchmarking_2008} showed that a performance gap between running 
+HPC applications on a baremetal cluster and on an Amazon's EC2 provisioned 
+cluster. They suggested that in order for cloud computing to be a viable 
+alternative for HPC, providers must improve in the area of network 
+interconnection.
+
+\cite{evangelinos_cloud_2008} found that Amazon's EC2 may be a credible 
+solution for on-demand and small-sized HPC applications. They supported this 
+conclusion by running a low-order coupled atmosphere-ocean simulation on EC2.
+
+\cite{ekanayake_high_2010} presented performance analysis of HPC applications on virtualized 
+resources. They concluded that cloud techonologies work well for pleasingly-
+parallel problems. The main limitation of cloud technologies is the high 
+overhead for applications with complex communication patterns, even with large 
+data sets. 
+
+\cite{jackson_performance_2010} compared the performance of conventional 
+HPC platforms to Amazon EC2. Their results showed that EC2 is six times slower 
+than a typical mid-range Linux cluster, and twenty times slower than a modern 
+HPC system. This is mainly because of the communication overhead. They also 
+noted that variability in performance can be significant due to the shared 
+nature of the cloud environment.
+
+\cite{zhai_cloud_2011} conducted a comprehensive comparison of the performance 
+of a baremetal cluster(connected using Infiniband) and a cluster deployed 
+using Amazon's Cluster Compute Instances (CCI). The study also revealed that
+running MPI applications in the cloud yielded more positive results compared to 
+published results. They also highlight the flexibility and elasticity advantage of 
+using cloud.   
+
+\cite{mauch_high_2013} presented the High Performance Cloud Computing (HPC2) 
+model. This model enables the provisioning of elastic virtual clusters which 
+avoids the initial cost for physically owned hardware. They also presented a 
+novel architecture for HPC IaaS clouds which support InfiniBand with QoS 
+mechanisms since existing platforms still use Ethernet.
+
+\cite{exposito_performance_2013} concluded that HPC application scalability 
+depends mainly on the communication performance. Their study involved the use 
+of Amazon's EC2 Cluster Compute Instances (CCI) platform targeted to HPC 
+applications. This platform provides access to a high-speed 
+network(10 Gigabit Ethernet).
+
+\cite{ludescher_cloud-based_2013} presented a novel code execution framework
+(CEF) to execute problem solving environment (PSE) source code in parallel 
+on a cloud. The paper emphasized that the use of a public cloud can result to 
+a magnitude of cost savings.
+
+
+Most of these utilized the public cloud, 
 specifically Amazon EC2 as their testbed.
 
-
-
 \section{Methodology}
-
-\subsection{Openstack}
-Openstack an open source software framework for deploying clouds.
-\cite{sefraoui_openstack:_2012} It is based on Nebula 
-used by NASA. It provides a public interface that is compatible with Amazon EC2. 
-There are several components of Openstack which are developed separately. 
-Keystone is used to manage authorization and authentication. Glance manages the 
-virtual machine images. The Nova component is used for managing compute nodes. 
 
 \subsection{Hardware}
 P2C uses commercial-off-the-shelf(COTS) hardware. The cloud controller(1 unit) 
 and compute nodes(2 units) is a four-core Intel(R) Core(TM) i3-2000 3.10GHz CPU 
-with 4GB RAM and 100GB disk. A 1GBps, 16-port Dell PowerConnect 2716 switch connects 
-the controller and the nodes.  
+with 4GB RAM and 100GB disk. A 1GBps, 16-port Dell PowerConnect 2716 switch 
+connects the controller and the nodes.  
 
 \begin{figure}
-\centerline{\includegraphics{images/nodes-300}}
-\caption{Nodes}
-\label{fig:one}
+\centerline{\includegraphics{images/nodes}}
+\caption{Hardware used in P2C.}
+\label{fig:nodes}
 \end{figure}
 
 \begin{figure}
 \centerline{\includegraphics{images/switch}}
-\caption{Switch}
-\label{fig:one}
+\caption{Switch used in P2C.}
+\label{fig:switch}
+\end{figure}
+
+\subsection{Network Topology}
+\begin{figure}
+\centerline{\includegraphics{images/network}}
+\caption{Network topology}
+\label{fig:network}
 \end{figure}
 
 
-\subsection{Network Topology}
 
 \subsection{vcluster}
 

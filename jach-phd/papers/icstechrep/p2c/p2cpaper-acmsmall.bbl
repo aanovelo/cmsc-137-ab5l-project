@@ -32,6 +32,35 @@
 \ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
 \ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
 
+\bibitem[\protect\citeauthoryear{Armbrust, Fox, Griffith, Joseph, Katz,
+  Konwinski, Lee, Patterson, Rabkin, and Stoica}{Armbrust
+  et~al\mbox{.}}{2010}]%
+        {armbrust_view_2010}
+{Michael Armbrust}, {Armando Fox}, {Rean Griffith}, {Anthony~D. Joseph}, {Randy
+  Katz}, {Andy Konwinski}, {Gunho Lee}, {David Patterson}, {Ariel Rabkin},
+  {and} {Ion Stoica}. 2010.
+\newblock \showarticletitle{A view of cloud computing}.
+\newblock {\it Commun. {ACM}} {53}, 4 (2010), 50–58.
+\newblock
+\showURL{%
+\url{http://dl.acm.org/citation.cfm?id=1721672}}
+
+
+\bibitem[\protect\citeauthoryear{Buyya, Yeo, Venugopal, Broberg, and
+  Brandic}{Buyya et~al\mbox{.}}{2009}]%
+        {buyya_cloud_2009}
+{Rajkumar Buyya}, {Chee~Shin Yeo}, {Srikumar Venugopal}, {James Broberg}, {and}
+  {Ivona Brandic}. 2009.
+\newblock \showarticletitle{Cloud computing and emerging {IT} platforms:
+  Vision, hype, and reality for delivering computing as the 5th utility}.
+\newblock {\em Future Generation Computer Systems\/} {25}, 6 (June 2009),
+  599--616.
+\newblock
+\showISSN{{0167739X}}
+\showDOI{%
+\url{http://dx.doi.org/10.1016/j.future.2008.12.001}}
+
+
 \bibitem[\protect\citeauthoryear{Ekanayake and Fox}{Ekanayake and Fox}{2010}]%
         {ekanayake_high_2010}
 {Jaliya Ekanayake} {and} {Geoffrey Fox}. 2010.
@@ -124,6 +153,17 @@
 inition_of_Cloud_Computing.pdf}}
 
 
+\bibitem[\protect\citeauthoryear{Qian, Luo, Du, and Guo}{Qian
+  et~al\mbox{.}}{2009}]%
+        {qian_cloud_2009}
+{Ling Qian}, {Zhiguo Luo}, {Yujian Du}, {and} {Leitao Guo}. 2009.
+\newblock \showarticletitle{Cloud computing: an overview}.
+\newblock In {\em Cloud Computing}. Springer, 626–631.
+\newblock
+\showURL{%
+\url{http://link.springer.com/chapter/10.1007/978-3-642-10665-1_63}}
+
+
 \bibitem[\protect\citeauthoryear{Sefraoui}{Sefraoui}{2012}]%
         {sefraoui_openstack:_2012}
 {Omar Sefraoui}. 2012.
@@ -134,11 +174,12 @@ inition_of_Cloud_Computing.pdf}}
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Walker}{Walker}{}]%
-        {walker_benchmarking_????}
-{Edward Walker}.
-\newblock Benchmarking Amazon {EC2} for high-performance scientific computing.
-\newblock   (????).
+\bibitem[\protect\citeauthoryear{Walker}{Walker}{2008}]%
+        {walker_benchmarking_2008}
+{Edward Walker}. 2008.
+\newblock \showarticletitle{Benchmarking Amazon {EC2} for high-performance
+  scientific computing}.
+\newblock {\em {;Login}\/} {33}, 5 (Oct. 2008).
 \newblock
 \showURL{%
 \url{https://www.usenix.org/legacy/publications/login/2008-10/openpdfs/walker.%
@@ -156,6 +197,20 @@ pdf}}
 \newblock
 \showURL{%
 \url{http://dl.acm.org/citation.cfm?id=2063363}}
+
+
+\bibitem[\protect\citeauthoryear{Zhang, Cheng, and Boutaba}{Zhang
+  et~al\mbox{.}}{2010}]%
+        {zhang_cloud_2010}
+{Qi Zhang}, {Lu Cheng}, {and} {Raouf Boutaba}. 2010.
+\newblock \showarticletitle{Cloud computing: state-of-the-art and research
+  challenges}.
+\newblock {\em Journal of Internet Services and Applications\/} {1}, 1 (April
+  2010), 7--18.
+\newblock
+\showISSN{1867-4828, 1869-0238}
+\showDOI{%
+\url{http://dx.doi.org/10.1007/s13174-010-0007-6}}
 
 
 \end{thebibliography}
