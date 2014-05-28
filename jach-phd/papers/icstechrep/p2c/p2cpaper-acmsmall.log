@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.1.13)  28 MAY 2014 14:33
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.1.13)  28 MAY 2014 15:27
 entering extended mode
  %&-line parsing enabled.
 **p2cpaper-acmsmall.tex
@@ -223,19 +223,19 @@ Non-PDF special ignored!
 ]
 Missing character: There is no Ã in font pncr7t!
 Missing character: There is no ³ in font pncr7t!
- <images/nodes.jpg, id=14, 150.5625pt x 200.75pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./images/openstack.jpg>] <images/nodes.jpg, id=17, 150.5625pt x 200.75pt>
 File: images/nodes.jpg Graphic file (type jpg)
 
-<use images/nodes.jpg> <images/switch.jpg, id=15, 150.5625pt x 113.42375pt>
+<use images/nodes.jpg> <images/switch.jpg, id=18, 150.5625pt x 113.42375pt>
 File: images/switch.jpg Graphic file (type jpg)
 
-<use images/switch.jpg> <images/network.jpg, id=16, 501.875pt x 207.77625pt>
+<use images/switch.jpg> <images/network.jpg, id=19, 501.875pt x 207.77625pt>
 File: images/network.jpg Graphic file (type jpg)
 
 <use images/network.jpg> (./p2cpaper-acmsmall.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <./images/openstack.jpg>]
 Missing character: There is no â in font pncr7t!
 Missing character: There is no € in font pncr7t!
 Missing character: There is no “ in font pncr7t!
@@ -245,6 +245,10 @@ Underfull \hbox (badness 1377) in paragraph at lines 37--44
 par-al-lel com-put-ing with clouds and
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./images/nodes.jpg> <./images/switch.jpg>]
 Missing character: There is no â in font pncr7t!
 Missing character: There is no € in font pncr7t!
 Missing character: There is no ™ in font pncr7t!
@@ -258,9 +262,6 @@ Missing character: There is no ± in font pncr7t!
 Missing character: There is no Ã in font pncr7t!
 Missing character: There is no ³ in font pncr7t!
 
-Underfull \vbox (badness 7907) has occurred while \output is active []
-
- [3 <./images/nodes.jpg> <./images/switch.jpg>]
 Underfull \hbox (badness 1931) in paragraph at lines 78--87
 []\OT1/pnc/m/n/8 Keith R. Jack-son, La-vanya Ra-makr-ish-nan, Kr-ishna Muriki, 
 Shane Canon, Shreyas Cho-lia, John
@@ -299,7 +300,7 @@ b></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/tex
 mf-texlive/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-texlive/fonts/
 type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ncntrsb
 k/uncri8a.pfb>
-Output written on p2cpaper-acmsmall.pdf (4 pages, 174354 bytes).
+Output written on p2cpaper-acmsmall.pdf (4 pages, 175227 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

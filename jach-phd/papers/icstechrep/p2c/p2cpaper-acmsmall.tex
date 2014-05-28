@@ -138,16 +138,24 @@ HPC system. This is mainly because of the communication overhead. They also
 noted that variability in performance can be significant due to the shared 
 nature of the cloud environment.
 
-\cite{zhai_cloud_2011}
+\cite{zhai_cloud_2011} conducted a comprehensive comparison of the performance 
+of a baremetal cluster(connected using Infiniband) and a cluster deployed 
+using Amazon's Cluster Compute Instances (CCI). The study also revealed that
+running MPI applications in the cloud yielded more positive results compared to 
+published results. They also highlight the flexibility and elasticity advantage of 
+using cloud.   
 
-\cite{mauch_high_2013}
+\cite{mauch_high_2013} presented the High Performance Cloud Computing (HPC2) 
+model. This model enables the provisioning of elastic virtual clusters which 
+avoids the initial cost for physically owned hardware. They also presented a 
+novel architecture for HPC IaaS clouds which support InfiniBand with QoS 
+mechanisms since existing platforms still use Ethernet.
 
 \cite{exposito_performance_2013} concluded that HPC application scalability 
 depends mainly on the communication performance. Their study involved the use 
-of Amazon's EC2 Cluster Compute (CC) platform targeted to HPC applications. 
-This platform provides access to a high-speed network(10 Gigabit Ethernet).
-
-
+of Amazon's EC2 Cluster Compute Instances (CCI) platform targeted to HPC 
+applications. This platform provides access to a high-speed 
+network(10 Gigabit Ethernet).
 
 \cite{ludescher_cloud-based_2013}
 
