@@ -248,14 +248,21 @@ Figure~\ref{fig:switch} show the nodes and the switch respectively.
 \label{fig:switch}
 \end{figure}
 
+
+\subsection{Software}
+P2C uses the Havana version of Openstack. Figure~\ref{fig:network} shows what 
+Openstack component is installed on each node. The host openstack-clc is the 
+cloud controller and contains Keystone, Glance, Nova, Horizon, and Nova-Network.
+The compute nodes, hosts openstack-compute-01 and openstack-compute-02, has 
+and Nova-Network installed. 
+
 \subsection{Network Topology}
 Figure~\ref{fig:network} shows the network topology of P2C. Each node has two 
 NICs connected to different networks. The first NIC is connected through a 
 100MBps Ethernet accesible through the institute's network (10.0.3.0/24 subnet).
 This setup allows staff to access the instances from their own computers
 through the bridge interface in the nodes. The second NIC is connected to a 
-network used for managing the setup. 
-
+network(192.168.1.0/24 subnet) used for managing the setup. 
 
 \begin{figure}
 \centerline{\includegraphics{images/network}}
