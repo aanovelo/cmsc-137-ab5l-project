@@ -272,7 +272,12 @@ through the bridge interface in the nodes. The second NIC is connected to a
 \end{figure}
 
 
-
+\subsection{VM Images}
+Openstack supports different virtual machine monitors(VMMs) such as Xen and 
+KVM. In P2C, we use KVM since it it the default that comes with Ubuntu. 
+In order to start instances, virtual machine images must be present. 
+Thus, several images were uploaded which include Ubuntu Server 12.04, 
+Debian, and Windows XP.
 
 
 \subsection{vcluster}
@@ -291,15 +296,14 @@ Figure~\ref{fig:p2c-dashboard} shows the P2C dashboard.
 \label{fig:p2c-dashboard}
 \end{figure}
 
-\subsection{VM Images}
 
 Figure~\ref{fig:p2c-vmimages} shows the supported VM images in P2C.
 
-\begin{figure}
-\centerline{\includegraphics{images/p2c-vmimages}}
-\caption{Supported VM images.}
-\label{fig:p2c-vmimages}
-\end{figure}
+%\begin{figure}
+%\centerline{\includegraphics{images/p2c-vmimages}}
+%\caption{Supported VM images.}
+%\label{fig:p2c-vmimages}
+%\end{figure}
 
 \section{Conclusions}
 
