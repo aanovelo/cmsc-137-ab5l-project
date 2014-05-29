@@ -275,16 +275,18 @@ through the bridged interface in the nodes. The second NIC is connected to a
 \subsection{VM Images}
 Openstack supports different virtual machine monitors(VMMs) such as Xen and 
 KVM. In P2C, we use KVM since it it the default that comes with Ubuntu. 
-In order to start instances, virtual machine images must be present. 
-Thus, several images were uploaded which include Ubuntu Server 12.04, 
-Debian 7, and Windows XP.
-
+In order to start instances, virtual machine(VM) images must be selected. 
+Ubuntu Server 12.04, Debian 7, and Windows XP are the supported images for 
+the moment.
 
 \subsection{Running a Web application on P2C}
-In order to test P2C, INSTANT was deployed on an instance in P2C. It is 
-a web application for administering exam to students. The machine instance 
-used has 4 VCPU, 1G RAM, and 10G disk. It uses the standard LAMP stack 
-mentioned above.
+In order to test P2C, a web appplication, called INSTANT, was deployed on an 
+instance in P2C. It is an application to administer exam to students. 
+The machine instance used has 4 VCPU, 1G RAM, and 10G disk. 
+It uses the standard LAMP stack mentioned above.
+
+\subsection{Manual MPI cluster deployment}
+
 
 
 \subsection{vcluster}
