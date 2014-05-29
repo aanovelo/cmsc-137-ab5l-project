@@ -254,7 +254,8 @@ P2C uses the Havana version of Openstack. Figure~\ref{fig:network} shows what
 Openstack component is installed on each node. The host openstack-clc is the 
 cloud controller and contains Keystone, Glance, Nova, Horizon, and Nova-Network.
 The compute nodes, hosts openstack-compute-01 and openstack-compute-02, has 
-Nova and Nova-Network installed. 
+Nova and Nova-Network installed. Ubuntu Server 12.01 was used as the host 
+operating system for the nodes. 
 
 \subsection{Network Topology}
 Figure~\ref{fig:network} shows the network topology of P2C. Each node has two 
@@ -271,6 +272,9 @@ through the bridge interface in the nodes. The second NIC is connected to a
 \end{figure}
 
 
+\subsection{VM Images}
+
+
 
 \subsection{vcluster}
 
@@ -278,6 +282,15 @@ through the bridge interface in the nodes. The second NIC is connected to a
 
 
 \section{Results and Discussion}
+
+Figure~\ref{fig:p2c-dashboard} shows the P2C dashboard.
+
+
+\begin{figure}
+\centerline{\includegraphics{images/p2c-dashboard}}
+\caption{P2C Dashboard}
+\label{fig:p2c-dashboard}
+\end{figure}
 
 \section{Conclusions}
 
