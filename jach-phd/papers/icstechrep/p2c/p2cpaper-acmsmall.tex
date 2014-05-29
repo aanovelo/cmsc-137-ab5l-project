@@ -255,7 +255,8 @@ Openstack component is installed on each node. The host openstack-clc is the
 cloud controller and contains Keystone, Glance, Nova, Horizon, and Nova-Network.
 The compute nodes, hosts openstack-compute-01 and openstack-compute-02, has 
 Nova and Nova-Network installed. Ubuntu Server 12.01 was used as the host 
-operating system for the nodes. 
+operating system for the nodes. MPICH-2 was selected as the clustering software.
+
 
 \subsection{Network Topology}
 Figure~\ref{fig:network} shows the network topology of P2C. Each node has two 
@@ -285,11 +286,11 @@ instance in P2C. It is an application to administer exam to students.
 The machine instance used has 4 VCPU, 1G RAM, and 10G disk. 
 It uses the standard LAMP stack mentioned above.
 
-\subsection{Manual MPI cluster deployment}
-
-
-
 \subsection{vcluster}
+Deploying an MPI cluster manually in P2C is very similar to doing it using 
+actual hardware and is quite cumbersome. vcluster automates this process 
+and allows users to deploy a working cluster on demand and terminate it 
+after use.      
 
 \begin{figure}
 \centerline{\includegraphics{images/vcluster-start}}
