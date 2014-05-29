@@ -124,12 +124,13 @@ Clouds today are used mainly for hosting web sites and deploying online
 services (web applications). They provide instances with operating systems that 
 can run web server software, scripting engine, and database management systems. 
 Linux-Apache-MySQL-PHP (LAMP) stack is a typical configuration for an instance.
+
 The success of this technology is enormous and people are still looking for uses 
 beyond hosting. The science community is one group that is interested in 
 leveraging the use of cloud. They are looking at the possibility of running 
-entire scientific applications on the cloud. These applications are compute and 
-communication intensive which differs greatly from web applications. This work 
-explores this possibility through the P2C. 
+entire scientific applications on the cloud. However, these applications are 
+compute and communication intensive compared to web applications. This work 
+explores this possibility through P2C. 
 
 \section{Openstack}
 Openstack is an open source software framework for deploying IaaS 
@@ -226,7 +227,7 @@ and limited network infrastructure.
 \section{Methodology}
 P2C is a combination of hardware, software, and network configuration. 
 In this section we describe how these are combined to achieve the desired 
-results. Openstack is the cloud software used as previously mentioned.
+results.
 
 \subsection{Hardware}
 P2C uses commercial-off-the-shelf(COTS) hardware. The cloud controller(1 unit) 
@@ -248,6 +249,14 @@ Figure~\ref{fig:switch} show the nodes and the switch respectively.
 \end{figure}
 
 \subsection{Network Topology}
+Figure~\ref{fig:network} shows the network topology of P2C. Each node has two 
+NICs connected to different networks. The first NIC is connected through a 
+100MBps Ethernet accesible through the institute's network (10.0.3.0/24 subnet).
+This setup allows staff to access the instances from their own computers
+through the bridge interface in the nodes. The second NIC is connected to a 
+network used for managing the setup. 
+
+
 \begin{figure}
 \centerline{\includegraphics{images/network}}
 \caption{Network topology}
