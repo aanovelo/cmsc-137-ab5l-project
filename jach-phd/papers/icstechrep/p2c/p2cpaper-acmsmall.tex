@@ -277,10 +277,19 @@ Openstack supports different virtual machine monitors(VMMs) such as Xen and
 KVM. In P2C, we use KVM since it it the default that comes with Ubuntu. 
 In order to start instances, virtual machine images must be present. 
 Thus, several images were uploaded which include Ubuntu Server 12.04, 
-Debian, and Windows XP.
+Debian 7, and Windows XP.
+
+
+\subsection{Running a Web application on P2C}
+In order to test P2C, INSTANT was deployed on an instance in P2C. It is 
+a web application for administering exam to students. The machine instance 
+used has 4 VCPU, 1G RAM, and 10G disk. It uses the standard LAMP stack 
+mentioned above.
 
 
 \subsection{vcluster}
+
+
 
 \subsection{Benchmarks}
 
@@ -297,7 +306,30 @@ Figure~\ref{fig:p2c-dashboard} shows the P2C dashboard.
 \end{figure}
 
 
-Figure~\ref{fig:p2c-vmimages} shows the supported VM images in P2C.
+
+\subsection{INSTANT Results}
+The performance of the application was measured using awstats and is shown in 
+Table~\ref{tbl:awstats}
+
+\begin{table}%
+\tbl{AWSTATS Statistics\label{tab:awstats}}{%
+\begin{tabular}{|l|l|}
+\hline
+Unique visitors   & 225\\\hline
+Number of visits  & 395 (1.75 visits/visitor)\\\hline
+Pages             & 146, 032 (369.7 pages/visit)\\\hline
+Hits              & 158,237 (400.6 hits/visit)\\\hline
+Bandwidth         & 700.77 MB\\\hline
+\end{tabular}}
+\end{table}%
+
+
+
+
+
+
+
+%Figure~\ref{fig:p2c-vmimages} shows the supported VM images in P2C.
 
 %\begin{figure}
 %\centerline{\includegraphics{images/p2c-vmimages}}
