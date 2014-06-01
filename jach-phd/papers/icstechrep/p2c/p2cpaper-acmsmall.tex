@@ -288,9 +288,11 @@ It uses the standard LAMP stack mentioned above.
 
 \subsection{vcluster}
 Deploying an MPI cluster manually in P2C is very similar to doing it using 
-actual hardware and is quite cumbersome. vcluster automates this process 
-and allows users to deploy a working cluster on demand and terminate it 
-after use.      
+actual hardware and is quite cumbersome. After the host OS is installed, 
+clustering packages such as MPICH2, OpenMPI, or LAM-MPI must be installed. 
+Also, most cluster deployment use NFS to share the master filesystem 
+to slave nodes. vcluster automates this process and allows users to deploy 
+a working cluster on demand and terminate it after use.      
 
 \begin{figure}
 \centerline{\includegraphics{images/vcluster-start}}
