@@ -285,7 +285,9 @@ the moment.
 In order to test P2C, a web appplication, called INSTANT, was deployed on an 
 instance in P2C. It is an application to administer exam to students. 
 The machine instance used has 4 VCPU, 1G RAM, and 10G disk. 
-It uses the standard LAMP stack mentioned above.
+It uses the standard LAMP stack mentioned above. 
+One hundred fifty students concurrently accessed the application from the 
+lab network(10.0.4.y) for 1.5 hours (7-8:30pm).
 
 \subsection{vcluster}
 Deploying an MPI cluster manually in P2C is very similar to doing it using 
@@ -309,18 +311,15 @@ instances belonging to a project. The control panel on the left
 has options for starting and terminating instances and viewing 
 statistics.  
 
-
 \begin{figure}
 \centerline{\includegraphics{images/p2c-dashboard}}
 \caption{P2C Dashboard.}
 \label{fig:p2c-dashboard}
 \end{figure}
 
-
-
 \subsection{INSTANT Results}
 The performance of the application was measured using awstats and is shown in 
-Table~\ref{tab:awstats}
+Table~\ref{tab:awstats}. 
 
 \begin{table}%
 \tbl{AWSTATS Statistics\label{tab:awstats}}{%
