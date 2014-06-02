@@ -295,12 +295,15 @@ actual hardware and is quite cumbersome. After the host OS is installed,
 clustering packages such as MPICH2, OpenMPI, or LAM-MPI must be installed. 
 Also, most cluster deployment use NFS to share the master filesystem 
 to slave nodes. vcluster automates this process and allows users to deploy 
-a working cluster on demand and terminate it after use.      
-
-
-
+a working cluster on demand and terminate it after use. Each node in 
+the cluster is 1 VCPU, 512MB RAM, and 5GB disk.
 
 \subsection{Benchmarks}
+In order to test the performance of P2C for scientific cloud computing, 
+the Intel MPI Benchmarks(IMB) were executed on a vcluster deployed cluster.
+IMB consists of several tests, however we selected a one test for single 
+transfer(PinpPong), parallel transfer(Sendrecv), and collective 
+operations(bcast). The test cluster has one master node and 9 slave nodes.
 
 
 \section{Results and Discussion}
