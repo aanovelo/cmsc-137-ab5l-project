@@ -416,8 +416,8 @@
   \global\@acmtaccessfalse
   \global\@acmtocefalse
   \global\@acmteacfalse
-  \def\@journalName{ACM Transactions on Computer Systems}
-  \def\@journalNameShort{ACM Trans. Comput. Syst.}
+  \def\@journalName{ICS-UPLB Technical Reports}
+  \def\@journalNameShort{ICS Tech Rep}
   \def\@journalCode{tocs}        
   \def\@permissionCodeOne{0734-2071} 
 }
@@ -2453,15 +2453,14 @@ Permission to make digital or hard copies  of part or all of this work
 for personal or classroom use is
 granted without fee provided that copies are not made or distributed for profit or commercial
 advantage and that copies show this notice on the first page or initial screen of a display
-along with the full citation. Copyrights for components of this work owned by others than ACM
+along with the full citation. Copyrights for components of this work owned by others than ICS-UPLB
 must be honored. Abstracting with credit is permitted. To copy otherwise, to republish,
 to post on servers, to redistribute to lists, or to use any component of this work in other
 works requires prior specific permission and\hspace*{.5pt}/or a fee. 
-Permissions may be requested from Publications Dept., ACM, Inc., 2 Penn Plaza, Suite 701, 
-New York, NY 10121-0701 USA, fax $+$1 (212) 869-0481,
-or permissions@acm.org.\par\box\@permissionbox
-\copyrightline\par
-\doiline
+Permissions may be requested from the Institute of Computer Science, University 
+of the Philippines Los Banos.\par\box\@permissionbox
+%\copyrightline\par
+%\doiline
 \vskip-13pt
 \strut
 \end@float
