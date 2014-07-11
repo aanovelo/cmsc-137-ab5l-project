@@ -68,7 +68,11 @@ rm $CLUSTER_NAME.tmp
 
 cd $PWD
 
-echo "---------------------------------------------------------------"
-echo "|You can now ssh@$MASTER_PUBLIC_IP                             |"
-echo "---------------------------------------------------------------"
+echo "---------------------------------------------------------------------"
+echo "You can now connect to $MASTER_PUBLIC_IP to run your Hadoop programs."
+echo "                           "
+echo "    ssh hduser@$MASTER_PUBLIC_IP "
+echo "                           "
+echo "For more information email jachermocilla@gmail.com"
+echo "---------------------------------------------------------------------"
 
