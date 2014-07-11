@@ -24,8 +24,9 @@ NUM_SLAVES=$2
 cp $USER_DATA_MASTER_TEMPLATE $USER_DATA_MASTER
 replace MASTER_NAME_VALUE $CLUSTER_NAME-hadoop-master -- $USER_DATA_MASTER > /dev/null
 
+source admin-openrc.sh
 echo "-->Starting frontend/master node. This may take a while..."
-nova boot $CLUSTER_NAME-hadoop-master --image $MASTER_IMAGE --flavor $FLAVOR --user-data $USER_DATA_MASTER > /dev/null
+nova boot $CLUSTER_NAME-hadoop-master --image $MASTER_IMAGE --flavor $FLAVOR --user-data $USER_DATA_MASTER --availability-zone nova:openstack-compute-01 > /dev/null
 
 #delay needed to make sure the master is fully up.
 sleep 3m
@@ -40,6 +41,12 @@ replace MASTER_NAME_VALUE $CLUSTER_NAME-hadoop-master -- $USER_DATA_SLAVE > /dev
 
 cp $USER_DATA_SLAVE tmp
 
+#associate free floating IP
+MASTER_PUBLIC_IP=`nova floating-ip-list | grep None | cut -d '|' -f 2 | head -1 | tr -d ' '`
+nova add-floating-ip $CLUSTER_NAME-hadoop-master $MASTER_PUBLIC_IP
+
+
+source hadoop-openrc.sh
 for ((i=1;i<=$2;i++))
 do
   echo "-->Starting slave node #$i..."
@@ -52,4 +59,8 @@ done
 sleep 3m
 
 cd $PWD
+
+echo "---------------------------------------------------------------"
+echo "|You can now ssh@$MASTER_PUBLIC_IP                             |"
+echo "---------------------------------------------------------------"
 
