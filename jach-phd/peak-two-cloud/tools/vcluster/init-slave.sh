@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Executing initialization script for slave..."
-MASTER_IP=10.0.3.226
-SLAVE_NAME=jach-slave-2
+MASTER_IP=192.168.10.2
+SLAVE_NAME=grav-slave-10
 
 echo "Unmounting /mirror"
 umount /mirror
