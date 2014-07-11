@@ -21,6 +21,7 @@ USER_DATA_SLAVE=$WORKDIR/$CLUSTER_NAME.init-slave.sh
 USER_DATA_MASTER_TEMPLATE=$WORKDIR/init-master.template
 USER_DATA_MASTER=$WORKDIR/$CLUSTER_NAME.init-master.sh
 MASTER_IP_FILE=$CLUSTER_NAME.master_ip.txt
+
 cp $USER_DATA_MASTER_TEMPLATE $USER_DATA_MASTER
 replace MASTER_NAME_VALUE $CLUSTER_NAME-hadoop-master -- $USER_DATA_MASTER > /dev/null
 
@@ -39,7 +40,7 @@ cp $USER_DATA_SLAVE_TEMPLATE $USER_DATA_SLAVE
 replace MASTER_IP_VALUE $MASTER_IP -- $USER_DATA_SLAVE > /dev/null
 replace MASTER_NAME_VALUE $CLUSTER_NAME-hadoop-master -- $USER_DATA_SLAVE > /dev/null
 
-cp $USER_DATA_SLAVE tmp
+cp $USER_DATA_SLAVE $CLUSTER_NAME.tmp
 
 #associate free floating IP
 MASTER_PUBLIC_IP=`nova floating-ip-list | grep None | cut -d '|' -f 2 | head -1 | tr -d ' '`
@@ -50,7 +51,7 @@ source hadoop-openrc.sh
 for ((i=1;i<=$2;i++))
 do
   echo "-->Starting slave node #$i..."
-  cp tmp $USER_DATA_SLAVE
+  cp $CLUSTER_NAME.tmp $USER_DATA_SLAVE
   replace SLAVE_NAME_VALUE $CLUSTER_NAME-hadoop-slave-$i -- $USER_DATA_SLAVE > /dev/null
   nova boot $CLUSTER_NAME-hadoop-slave-$i --image $SLAVE_IMAGE --flavor $FLAVOR --user-data $USER_DATA_SLAVE > /dev/null
 done
@@ -63,6 +64,7 @@ sleep 3m
 rm $USER_DATA_MASTER
 rm $USER_DATA_SLAVE
 rm $MASTER_IP_FILE
+rm $CLUSTER_NAME.tmp
 
 cd $PWD
 
