@@ -64,13 +64,13 @@ rm $USER_DATA_SLAVE
 rm $MASTER_IP_FILE
 rm $CLUSTER_NAME.tmp
 
-echo "------------------------------------------------------------"
+echo "------------------------------------------------------------------"
 echo "You can now connect to $MASTER_PUBLIC_IP to run your MPI programs."
 echo "                           "
 echo "    ssh mpiuser@$MASTER_PUBLIC_IP "
 echo "                           "
 echo "For more information email jachermocilla@gmail.com"
-echo "------------------------------------------------------------"
+echo "------------------------------------------------------------------"
 
 cd $PWD
 
