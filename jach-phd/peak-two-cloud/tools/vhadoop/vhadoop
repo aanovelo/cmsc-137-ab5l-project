@@ -11,14 +11,14 @@ cd $WORKDIR
 source hadoop-openrc.sh
 
 #Some variables
+CLUSTER_NAME=$1 
 MASTER_IMAGE=hadoop-master-image
 SLAVE_IMAGE=hadoop-slave-image
 FLAVOR=jach.custom_1_1024_20
 USER_DATA_SLAVE_TEMPLATE=$WORKDIR/init-slave.template
-USER_DATA_SLAVE=$WORKDIR/init-slave.sh
+USER_DATA_SLAVE=$WORKDIR/$CLUSTER_NAME.init-slave.sh
 USER_DATA_MASTER_TEMPLATE=$WORKDIR/init-master.template
-USER_DATA_MASTER=$WORKDIR/init-master.sh
-CLUSTER_NAME=$1 
+USER_DATA_MASTER=$WORKDIR/$CLUSTER_NAME.init-master.sh
 NUM_SLAVES=$2
 
 cp $USER_DATA_MASTER_TEMPLATE $USER_DATA_MASTER
@@ -57,6 +57,10 @@ done
 
 #delay needed to make sure the master is fully up.
 sleep 3m
+
+rm $USER_DATA_MASTER
+rm $USER_DATA_SLAVE
+
 
 cd $PWD
 
