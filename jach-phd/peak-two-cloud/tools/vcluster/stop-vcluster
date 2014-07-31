@@ -17,7 +17,7 @@ source minicluster-openrc.sh
 for ((i=1;i<=$2;i++))
 do
    echo -n "Stopping slave $i..."
-   nova delete $1-mpi-slave-$i
+   nova delete $1-slave-$i
    echo "done"
 done
 
