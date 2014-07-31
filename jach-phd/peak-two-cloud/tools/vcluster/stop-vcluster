@@ -1,0 +1,18 @@
+#!/bin/bash
+
+source admin-openrc.sh
+
+echo -n "Stopping master..."
+nova delete $1-mpi-master
+
+echo "done"
+
+source hadoop-openrc.sh
+
+for ((i=1;i<=$2;i++))
+do
+   echo -n "Stopping slave $i..."
+   nova delete $1-mpi-slave-$i
+   echo "done"
+done
+
