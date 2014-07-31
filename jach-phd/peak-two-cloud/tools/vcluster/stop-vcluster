@@ -1,5 +1,10 @@
 #!/bin/bash
 
+PWD=`pwd`
+WORKDIR=.
+
+cd $WORKDIR
+
 source admin-openrc.sh
 
 echo -n "Stopping master..."
@@ -7,7 +12,7 @@ nova delete $1-mpi-master
 
 echo "done"
 
-source hadoop-openrc.sh
+source minicluster-openrc.sh
 
 for ((i=1;i<=$2;i++))
 do
@@ -15,4 +20,6 @@ do
    nova delete $1-mpi-slave-$i
    echo "done"
 done
+
+cd $PWD
 
