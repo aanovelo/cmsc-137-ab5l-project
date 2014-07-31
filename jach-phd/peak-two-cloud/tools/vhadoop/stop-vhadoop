@@ -1,5 +1,10 @@
 #!/bin/bash
 
+PWD=`pwd`
+WORKDIR=.
+
+cd $WORKDIR
+
 source admin-openrc.sh
 
 echo -n "Stopping master..."
@@ -15,4 +20,6 @@ do
    nova delete $1-hadoop-slave-$i
    echo "done"
 done
+
+cd $PWD
 
